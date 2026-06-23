@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="opensource_multilingual_application">Un fork multilingue de Kreate, conçu pour la performance, l\'amélioration de l\'interface utilisateur et l\'ajout de nouvelles fonctionnalités.</string>
+    <string name="your_library">Mise en cache intelligente.</string>
+    <string name="organized_in_one_place">Mise en cache automatique des titres pour une écoute hors ligne, avec limites ajustables. Téléchargez vos morceaux pour un accès permanent.</string>
+    <string name="beautiful_player">Interface intuitive et moderne.</string>
+    <string name="listen_songs_sing_lyrics">Profitez d\'une expérience raffinée avec une magnifique interface, des thèmes personnalisables, et des paroles synchronisées mot à mot.</string>
+    <string name="many_effects">Fonctionnalités avancées.</string>
+    <string name="visualizer_preview_timeline">Visualiseur audio, minuterie de mise en veille, contrôles audio complets, et bien plus encore.</string>
+    <string name="artist_page_title">Pages Artiste Détaillées.</string>
+    <string name="artist_page_desc">Explorez des profils d\'artistes complets avec leurs meilleurs titres, albums et artistes similaires.</string>
+    <string name="discord_rpc_title">Discord Rich Presence.</string>
+    <string name="discord_rpc_desc">Partagez ce que vous écoutez avec vos amis sur Discord en temps réel.</string>
+    <string name="modern">Support à long terme.</string>
+    <string name="rimusic_is_multilingual_modern_powerful">N-Zik est un projet open source en constante évolution offrant des mises à jour OTA et une large compatibilité, y compris avec Android Auto.</string>
+    <string name="listen_to_your_favourite_music">Écouter votre musique préférée</string>
+    <string name="download_rimusic_now">Télécharger N-Zik maintenant</string>
+    <string name="repository">Code source</string>
+    <string name="releases">Versions</string>
+    <string name="issue_tracker">Suivi des problèmes</string>
+    <string name="custom_version">Version personnalisée</string>
+</resources>

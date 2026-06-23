@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="opensource_multilingual_application">A multilingual fork of Kreate, built with performance improvements, UI/UX refinement, and new features.</string>
+    <string name="your_library">Smart Offline Caching.</string>
+    <string name="organized_in_one_place">Automatically cache songs for offline playback with customizable cache limits. Download tracks for permanent access.</string>
+    <string name="beautiful_player">Modern and Intuitive UI.</string>
+    <string name="listen_songs_sing_lyrics">Enjoy a refined user experience with a beautiful interface, custom themes, and word-by-word synced lyrics.</string>
+    <string name="many_effects">Advanced Features.</string>
+    <string name="visualizer_preview_timeline">Audio visualizer, sleep timer, advanced audio controls, and many more features.</string>
+    <string name="artist_page_title">Detailed Artist Pages.</string>
+    <string name="artist_page_desc">Explore comprehensive artist profiles with top tracks, albums, and similar artists.</string>
+    <string name="discord_rpc_title">Discord Rich Presence.</string>
+    <string name="discord_rpc_desc">Share what you\'re listening to with your friends on Discord in real-time.</string>
+    <string name="modern">Long-term Support.</string>
+    <string name="rimusic_is_multilingual_modern_powerful">N-Zik is an evolving open-source project delivering frequent OTA updates and broad platform support including Android Auto.</string>
+    <string name="listen_to_your_favourite_music">Listen to your favorite music</string>
+    <string name="download_rimusic_now">Download N-Zik Now.</string>
+    <string name="repository">Repository</string>
+    <string name="releases">Releases</string>
+    <string name="issue_tracker">Issue tracker</string>
+    <string name="custom_version">Custom version</string>
+</resources>

@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="165" height="54" viewBox="0 0 165 54" fill="none">
+  <rect x="0.75" y="0.75" width="163.5" height="52.5" rx="9.25" fill="#0E1113" stroke="#2A3236" stroke-width="1.5"/>
+  <g transform="translate(7,7) scale(0.625)">
+    <circle cx="32" cy="32" r="30" fill="#ffffff"/>
+    <circle cx="32" cy="32" r="30" fill="#115BCA" opacity="0.15"/>
+    <circle cx="32" cy="32" r="30" fill="none" stroke="#115BCA" stroke-width="2.5" opacity="0.4"/>
+    <ellipse cx="32" cy="32" rx="12" ry="28" fill="none" stroke="#115BCA" stroke-width="1.8" opacity="0.7"/>
+    <ellipse cx="32" cy="32" rx="22" ry="28" fill="none" stroke="#115BCA" stroke-width="1.2" opacity="0.5"/>
+    <ellipse cx="32" cy="32" rx="28" ry="12" fill="none" stroke="#115BCA" stroke-width="1.8" opacity="0.7"/>
+    <ellipse cx="32" cy="32" rx="28" ry="20" fill="none" stroke="#115BCA" stroke-width="1" opacity="0.35" transform="rotate(-15 32 32)"/>
+  </g>
+  <text x="56" y="21" font-family="Inter, system-ui, -apple-system, sans-serif" font-size="10" font-weight="500" fill="#9DB3BE" letter-spacing="1">LAUNCHED ON</text>
+  <text x="56" y="40" font-family="Inter, system-ui, -apple-system, sans-serif" font-size="18" font-weight="700" fill="#EEF1F3">DevGlobe</text>
+</svg>
