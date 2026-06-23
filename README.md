@@ -2,8 +2,7 @@
 
 Official website for **N-Zik**, hosted at [n-zik.vercel.app](https://n-zik.vercel.app/).
 
-> **Note:** This project is based on the website from **[RiMusic](https://github.com/fast4x/RiMusic)**, itself forked from **[ViMusic](https://github.com/vfsfitvnm/ViMusic)**.
-
+> **Note:** This project is based on the website from **[RiMusic](https://github.com/fast4x/RiMusic)**
 ## About
 
 **N-Zik** is a multilingual Android application for streaming music from YouTube Music, with performance improvements, UI/UX refinement, bug fixes, and new features.
