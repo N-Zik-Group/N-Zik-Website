@@ -65,6 +65,8 @@ class Multilingual {
     for (const option of element.children) {
       if (option.attributes.lang.value == this.language) {
         langSelect.childNodes[0].textContent = option.innerText;
+        const headerText = document.getElementById('headerLangText');
+        if (headerText) headerText.textContent = option.innerText;
         break;
       }
     }
@@ -77,36 +79,42 @@ class Multilingual {
     console.log("Language change to: " + lang)
     LoadingScreen.unload();
     langSelect.childNodes[0].textContent = a.target.innerText;
+    const headerText = document.getElementById('headerLangText');
+    if (headerText) headerText.textContent = a.target.innerText;
     langSel.setAttribute("value", lang);
     this.updateLanguage(a.target);
     this.loadStrings(lang);
-    document.getElementsByTagName("a")[0].focus()
+    if (document.activeElement) document.activeElement.blur();
     setTimeout(() => {
       LoadingScreen.loaded();
     }, 400);
   }
   langEvent(e) {
-    if (e.target.id == langSelect.id) {
-      document.body.classList.toggle("visible");
-      if (window.innerWidth < 640){
-       }
-      return;
-    }
-    if (e.target.parentElement){
-      if (e.target.id == "globe" || e.target.parentElement.id == "globe"){
-        document.body.classList.add("visible");
-        if (window.innerWidth > 640)
-          document.getElementById("langSelect").focus()
-        return;
-      }
-    }
-    if (e.target.id == langOption.id) {
-      return;
-    }
-    if (e.target.parentElement) {
-      if (e.target.parentElement.id == langOption.id) {
+    if (e.target.closest('#langOption')) {
+      if (e.target.tagName.toLowerCase() === 'div') {
         this.changeLang(e);
       }
+      return;
+    }
+    
+    const isLangSelect = e.target.closest('#langSelect') !== null;
+    const isGlobe = e.target.closest('#globe-container') !== null || e.target.closest('#globe') !== null;
+    
+    if (isLangSelect || isGlobe) {
+      const langBorder = document.getElementById("langBorder");
+      const langOption = document.getElementById("langOption");
+      if (isGlobe) {
+        document.getElementById("globe-container").appendChild(langBorder);
+        langOption.style.top = "calc(100% + 5px)";
+        langOption.style.bottom = "auto";
+      } else {
+        langSelect.appendChild(langBorder);
+        langOption.style.bottom = "calc(100% + 5px)";
+        langOption.style.top = "auto";
+      }
+      
+      document.body.classList.toggle("visible");
+      return;
     }
     if (document.body.classList.contains("visible")){
       document.body.classList.remove("visible");

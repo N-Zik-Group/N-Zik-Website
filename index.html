@@ -61,6 +61,18 @@
     ontouchstart="detecttouch()"
     onload="LoadingScreen.loaded()"
   >
+    <script>
+      const preference = localStorage.getItem('dark');
+      if (preference == 'true') {
+        document.body.classList.add('dark');
+      } else if (
+        preference !== 'false' &&
+        window.matchMedia &&
+        window.matchMedia('(prefers-color-scheme: dark)').matches
+      ) {
+        document.body.classList.add('dark');
+      }
+    </script>
     <div class="loadingScreen">
       <div class="loader"></div>
     </div>
@@ -72,8 +84,8 @@
         <div class="container">
           <div class="site-header-inner">
             <div class="brand header-brand">
-              <h1 class="m-0">
-                <a href="#" tabindex="0">
+              <h1 class="m-0" style="display: flex; align-items: center; gap: 12px;">
+                <a href="#" tabindex="0" style="display: flex;">
                   <img
                     class="header-logo-image"
                     src="images/n-zik.svg"
@@ -81,8 +93,42 @@
                     alt="Logo"
                   />
                 </a>
+                <span id="headerTitle" style="font-size: 24px; font-weight: bold; color: var(--color);">N-Zik</span>
               </h1>
             </div>
+            <nav class="header-nav" style="display: flex; gap: 32px; align-items: center; justify-content: center; flex: 1;">
+              <a href="#hero" id="homeLink" style="color: var(--color); text-decoration: none; font-weight: 600; font-size: 16px; transition: opacity 0.2s; display: flex; align-items: center; gap: 4px;">
+                <img class="home-icon" src="images/n-zik.svg" width="16" height="16" style="display: none;" alt="N-Zik Home" />
+                <span class="home-text">Home</span>
+              </a>
+              <div style="position: relative;" class="nav-dropdown-container">
+                <div id="featuresDropdownTrigger" style="cursor: pointer; color: var(--color); font-weight: 600; font-size: 16px; display: flex; align-items: center; gap: 4px;" onclick="document.getElementById('featuresDropdown').classList.toggle('show')">
+                  <div id="featuresNavTextWrapper" class="nav-text-slider">
+                    <span id="featuresNavText">Features</span>
+                  </div>
+                  <svg width="10" height="6" viewBox="0 0 12 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="2 2 6 6 10 2"></polyline></svg>
+                </div>
+                <div id="featuresDropdown" class="section-dropdown">
+                  <a href="#feature-modern_ui" class="feature-link" data-name="Modern UI">Modern UI</a>
+                  <a href="#feature-lyrics" class="feature-link" data-name="Lyrics">Lyrics</a>
+                  <a href="#feature-visualizer" class="feature-link" data-name="Visualizer">Visualizer</a>
+                  <a href="#feature-discord" class="feature-link" data-name="Discord RPC">Discord RPC</a>
+                  <a href="#feature-presets" class="feature-link" data-name="Theme Presets">Theme Presets</a>
+                  <a href="#feature-youtube" class="feature-link" data-name="YouTube">YouTube Integration</a>
+                  <a href="#feature-stats" class="feature-link" data-name="Statistics">Listening Stats</a>
+                  <a href="#feature-caching" class="feature-link" data-name="Offline Caching">Offline Caching</a>
+                  <a href="#feature-search" class="feature-link" data-name="Search">Smart Search</a>
+                  <a href="#feature-ota" class="feature-link" data-name="OTA Updates">OTA Updates</a>
+                  <a href="#feature-carrousel" class="feature-link" data-name="Carousel Player">Carousel Player</a>
+                  <a href="#feature-artist" class="feature-link" data-name="Artist Profiles">Artist Profiles</a>
+                  <a href="#feature-settings" class="feature-link" data-name="Audio Controls">Audio Controls</a>
+                  <a href="#feature-playlists" class="feature-link" data-name="Playlists">Playlists</a>
+                  <a href="#feature-queue" class="feature-link" data-name="Playback Queue">Playback Queue</a>
+                  <a href="#feature-history" class="feature-link" data-name="History">History</a>
+                </div>
+              </div>
+              <a href="#download" style="color: var(--color); text-decoration: none; font-weight: 600; font-size: 16px; transition: opacity 0.2s;">Download</a>
+            </nav>
             <div
               style="
                 align-items: right;
@@ -195,69 +241,88 @@
                   />
                 </g>
               </svg>
-              <svg
-                tabindex="0"
-                id="globe"
-                width="36px"
-                height="36px"
-                viewBox="0 0 13.3 13.4"
-                version="1.1"
-                id="toggledark"
-                xml:space="preserve"
-                xmlns="http://www.w3.org/2000/svg"
-                xmlns:svg="http://www.w3.org/2000/svg"
+              <li
+                style="
+                  display: flex;
+                  align-items: center;
+                  cursor: pointer;
+                  position: relative;
+                "
+                id="globe-container"
               >
-                <title>Change Language</title>
-                <defs id="defs1" />
-                <circle
+                <svg
+                  tabindex="0"
+                  class="focustoggle"
+                  id="globe"
+                  width="36px"
+                  height="36px"
+                  viewBox="0 0 13.3 13.4"
+                  version="1.1"
+                  xml:space="preserve"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:svg="http://www.w3.org/2000/svg"
+                >
+                  <title>Change Language</title>
+                  <defs id="defs1" />
+                  <circle
+                    style="
+                      fill: none;
+                      stroke: var(--color);
+                      stroke-opacity: 1;
+                      stroke-width: 0.75454;
+                    "
+                    id="path2"
+                    cx="6.648"
+                    cy="6.717"
+                    r="5.519"
+                  />
+                  <path
+                    id="rect2"
+                    style="
+                      fill: none;
+                      stroke: var(--color);
+                      stroke-opacity: 1;
+                      stroke-width: 0.75454;
+                    "
+                    d="M 1.413,4.95 H 11.87 Z"
+                  />
+                  <path
+                    id="rect2-7"
+                    style="
+                      fill: none;
+                      stroke: var(--color);
+                      stroke-opacity: 1;
+                      stroke-width: 0.75454;
+                    "
+                    d="M 1.419,8.489 H 11.86 Z"
+                  />
+                  <path
+                    id="rect3"
+                    style="
+                      fill: none;
+                      stroke: var(--color);
+                      stroke-opacity: 1;
+                      stroke-width: 0.75454;
+                    "
+                    d="m 6.638,1.218 c 0,0 -2.482,2.441 -2.482,5.503 0,3.061 2.482,5.503 2.482,5.503 0,0 2.482,-2.442 2.482,-5.503 0,-3.062 -2.482,-5.503 -2.482,-5.503 z"
+                  />
+                </svg>
+                <span
+                  id="headerLangText"
                   style="
-                    fill: none;
-                    stroke: var(--color);
-                    stroke-opacity: 1;
-                    stroke-width: 0.75454;
+                    margin-left: 8px;
+                    color: var(--color);
+                    font-weight: 600;
                   "
-                  id="path2"
-                  cx="6.648"
-                  cy="6.717"
-                  r="5.519"
-                />
-                <path
-                  id="rect2"
-                  style="
-                    fill: none;
-                    stroke: var(--color);
-                    stroke-opacity: 1;
-                    stroke-width: 0.75454;
-                  "
-                  d="M 1.413,4.95 H 11.87 Z"
-                />
-                <path
-                  id="rect2-7"
-                  style="
-                    fill: none;
-                    stroke: var(--color);
-                    stroke-opacity: 1;
-                    stroke-width: 0.75454;
-                  "
-                  d="M 1.419,8.489 H 11.86 Z"
-                />
-                <path
-                  id="rect3"
-                  style="
-                    fill: none;
-                    stroke: var(--color);
-                    stroke-opacity: 1;
-                    stroke-width: 0.75454;
-                  "
-                  d="M 6.841,1.235 H 6.42 c 0,0 -1.909,2.322 -1.909,5.378 0,3.236 1.909,5.577 1.909,5.577 h 0.421 c 0,0 1.943,-2.341 1.943,-5.56 0,-3.073 -1.943,-5.395 -1.943,-5.395 z"
-                />
-              </svg>
+                  >English</span
+                >
+              </li>
             </div>
           </div>
         </div>
       </header>
       <main>
-        <section class="hero text-center text-light">
+        <section id="hero" class="hero text-center text-light">
           <div class="hero-bg"></div>
           <div class="container-sm">
             <div class="hero-inner">
@@ -302,7 +367,7 @@
                       "
                       alt="Get it on GitHub (Beta)"
                   /></a>
-                  <br><br>
+                  <br /><br />
                   <a
                     href="https://devglobe.app/projects/n-zik?utm_source=badge&amp;utm_large=embed"
                     target="_blank"
@@ -316,135 +381,303 @@
                   </a>
                 </div>
               </div>
-              <div class="mockup-container three-phones">
-                <div class="mockup-bg">
-                  <img src="images/hero-bg.svg" alt="illustration" />
+              <div class="feature-extended" style="justify-content: center">
+                <div
+                  class="feature-extended-image"
+                  style="margin: 0 auto; flex: none"
+                >
+                  <div class="mockup-bg">
+                    <img src="images/hero-bg.svg" alt="illustration" />
+                  </div>
+                  <div class="mockup-container two-phones">
+                    <img
+                      class="device-mockup phone-left"
+                      src="./images/Screenshots/homewhite.webp"
+                      alt="Light Theme"
+                      loading="lazy"
+                      decoding="async"
+                    />
+                    <img
+                      class="device-mockup phone-right"
+                      src="./images/Screenshots/homeamoled.webp"
+                      alt="AMOLED Theme"
+                      loading="lazy"
+                      decoding="async"
+                    />
+                    <img
+                      class="device-mockup phone-center"
+                      src="./images/Screenshots/homedark.webp"
+                      alt="Dark Theme"
+                      loading="lazy"
+                      decoding="async"
+                    />
+                  </div>
                 </div>
-                <img
-                  class="device-mockup phone-left"
-                  src="./images/Screenshots/9.webp"
-                  alt="Light Theme"
-                  loading="lazy"
-                  decoding="async"
-                />
-                <img
-                  tabindex="0"
-                  class="device-mockup phone-center"
-                  src="./images/Screenshots/1.webp"
-                  alt="AMOLED Theme"
-                  loading="lazy"
-                  decoding="async"
-                />
-                <img
-                  class="device-mockup phone-right"
-                  src="./images/Screenshots/8.webp"
-                  alt="Dark Theme"
-                  loading="lazy"
-                  decoding="async"
-                />
               </div>
             </div>
           </div>
         </section>
-        <section class="features-extended section">
+        <section id="features" class="features-extended section">
           <div class="features-extended-inner section-inner">
             <div class="features-extended-wrap">
               <div class="container">
-                <div class="feature-extended">
+                <div id="feature-ui" class="feature-extended">
                   <div class="feature-extended-image">
                     <div class="mockup-bg">
                       <img src="./images/feature-bg-01.svg" alt="background" />
                     </div>
-                    <img
-                      class="device-mockup is-revealing up"
-                      src="./images/Screenshots/2.webp"
-                      alt="Library screenshot"
-                      loading="lazy"
-                      decoding="async"
-                    />
+
+                    <div
+                      class="video-mockup-wrapper device-mockup is-revealing up"
+                    >
+                      <video
+                        class="video-element"
+                        src="./videos/home.mp4"
+                        autoplay
+                        loop
+                        muted
+                        playsinline
+                      ></video>
+                      <img
+                        class="frame-overlay"
+                        src="./images/X17Ultra Frame.png"
+                        alt="Phone Frame"
+                      />
+                    </div>
                   </div>
                   <div class="feature-extended-body">
                     <div class="is-revealing down flex">
                       <div>
-                        <h3 tabindex="0" name="your_library" class="mt-0 mb-16">
-                          Smart Offline Caching.
+                        <h3
+                          tabindex="0"
+                          name="feat_modern_ui"
+                          class="mt-0 mb-16"
+                        >
+                          Modern & Intuitive UI.
                         </h3>
-                        <p name="organized_in_one_place" class="m-0">
-                          Automatically cache songs for offline playback with
-                          customizable cache limits. Download tracks for
-                          permanent access.
+                        <p name="feat_modern_ui_desc" class="m-0">
+                          Enjoy a refined user experience with a beautiful
+                          interface, seamless navigation, and YouTube
+                          integration.
                         </p>
                       </div>
                     </div>
                   </div>
                 </div>
-                <div class="feature-extended">
+                <div id="feature-lyrics" class="feature-extended">
                   <div class="feature-extended-image">
                     <div class="mockup-bg">
                       <img src="./images/feature-bg-02.svg" alt="background" />
                     </div>
-                    <img
-                      class="device-mockup is-revealing up"
-                      src="./images/Screenshots/3.webp"
-                      alt="Player screenshot"
-                      loading="lazy"
-                      decoding="async"
-                    />
+                    <div
+                      class="video-mockup-wrapper device-mockup is-revealing up"
+                    >
+                      <video
+                        class="video-element"
+                        src="./videos/lyrics.mp4"
+                        autoplay
+                        loop
+                        muted
+                        playsinline
+                      ></video>
+                      <img
+                        class="frame-overlay"
+                        src="./images/X17Ultra Frame.png"
+                        alt="Phone Frame"
+                      />
+                    </div>
+                  </div>
+                  <div class="feature-extended-body">
+                    <div class="is-revealing down flex">
+                      <div>
+                        <h3 tabindex="0" name="feat_lyrics" class="mt-0 mb-16">
+                          Advanced Lyrics Support.
+                        </h3>
+                        <p name="feat_lyrics_desc" class="m-0">
+                          Fetch, display, edit, synchronize, and translate
+                          lyrics in real-time.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div id="feature-visualizer" class="feature-extended">
+                  <div class="feature-extended-image">
+                    <div class="mockup-bg">
+                      <img src="./images/feature-bg-03.svg" alt="background" />
+                    </div>
+                    <div
+                      class="video-mockup-wrapper device-mockup is-revealing up"
+                    >
+                      <video
+                        class="video-element"
+                        src="./videos/vz.mp4"
+                        autoplay
+                        loop
+                        muted
+                        playsinline
+                      ></video>
+                      <img
+                        class="frame-overlay"
+                        src="./images/X17Ultra Frame.png"
+                        alt="Phone Frame"
+                      />
+                    </div>
                   </div>
                   <div class="feature-extended-body">
                     <div class="is-revealing down flex">
                       <div>
                         <h3
                           tabindex="0"
-                          name="beautiful_player"
+                          name="feat_visualizer"
                           class="mt-0 mb-16"
                         >
-                          Modern and Intuitive UI.
+                          Immersive Audio Visualizer.
                         </h3>
-                        <p name="listen_songs_sing_lyrics" class="m-0">
-                          Enjoy a refined user experience with a beautiful
-                          interface, Discord Rich Presence, and custom themes.
+                        <p name="feat_visualizer_desc" class="m-0">
+                          Enjoy real-time visual effects synchronized perfectly
+                          with your music.
                         </p>
                       </div>
                     </div>
                   </div>
                 </div>
-                <div class="feature-extended">
+                <div id="feature-discord" class="feature-extended">
                   <div class="feature-extended-image">
                     <div class="mockup-bg">
-                      <img src="./images/feature-bg-03.svg" alt="background" />
+                      <img src="./images/feature-bg-04.svg" alt="background" />
                     </div>
-                    <img
-                      class="device-mockup is-revealing up"
-                      src="./images/Screenshots/4.webp"
-                      alt="Player screenshot"
-                      loading="lazy"
-                      decoding="async"
-                    />
+                    <div class="mockup-container two-phones is-revealing up">
+                      <img
+                        class="device-mockup phone-left"
+                        src="./images/Screenshots/discordrpc.webp"
+                        alt="Discord Rich Presence"
+                        loading="lazy"
+                        decoding="async"
+                      />
+                      <img
+                        class="device-mockup phone-right"
+                        src="./images/Screenshots/compte2discord.webp"
+                        alt="Discord Profile"
+                        loading="lazy"
+                        decoding="async"
+                      />
+                    </div>
                   </div>
                   <div class="feature-extended-body">
                     <div class="is-revealing down flex">
                       <div>
-                        <h3 tabindex="0" name="many_effects" class="mt-0 mb-16">
-                          Advanced Features.
+                        <h3 tabindex="0" name="feat_discord" class="mt-0 mb-16">
+                          Discord Rich Presence.
                         </h3>
-                        <p name="visualizer_preview_timeline" class="m-0">
-                          Advanced lyrics support, audio visualizer, sleep
-                          timer, and advanced audio controls.
+                        <p name="feat_discord_desc" class="m-0">
+                          Show off your current musical vibe by displaying your
+                          playing track directly on your Discord profile.
                         </p>
                       </div>
                     </div>
                   </div>
                 </div>
-                <div class="feature-extended">
+
+                <div id="feature-themes" class="feature-extended">
+                  <div class="feature-extended-image">
+                    <div class="mockup-bg">
+                      <img src="./images/feature-bg-04.svg" alt="background" />
+                    </div>
+                    <div
+                      class="preset-carousel-wrapper"
+                      style="position: relative"
+                    >
+                      <button
+                        class="carousel-btn prev"
+                        onclick="
+                          this.parentElement
+                            .querySelector('.preset-carousel')
+                            .scrollBy({ left: -220, behavior: 'smooth' })
+                        "
+                      >
+                        ❮
+                      </button>
+                      <button
+                        class="carousel-btn next"
+                        onclick="
+                          this.parentElement
+                            .querySelector('.preset-carousel')
+                            .scrollBy({ left: 220, behavior: 'smooth' })
+                        "
+                      >
+                        ❯
+                      </button>
+                      <div class="preset-carousel is-revealing up">
+                        <img
+                          class="device-mockup"
+                          src="./images/Screenshots/preset0.webp"
+                          alt="Theme Preset 1"
+                          loading="lazy"
+                          decoding="async"
+                        />
+                        <img
+                          class="device-mockup"
+                          src="./images/Screenshots/preset1.webp"
+                          alt="Theme Preset 2"
+                          loading="lazy"
+                          decoding="async"
+                        />
+                        <img
+                          class="device-mockup"
+                          src="./images/Screenshots/preset2.webp"
+                          alt="Theme Preset 3"
+                          loading="lazy"
+                          decoding="async"
+                        />
+                        <img
+                          class="device-mockup"
+                          src="./images/Screenshots/preset3.webp"
+                          alt="Theme Preset 4"
+                          loading="lazy"
+                          decoding="async"
+                        />
+                        <img
+                          class="device-mockup"
+                          src="./images/Screenshots/preset4.webp"
+                          alt="Theme Preset 5"
+                          loading="lazy"
+                          decoding="async"
+                        />
+                        <img
+                          class="device-mockup"
+                          src="./images/Screenshots/preset5.webp"
+                          alt="Theme Preset 6"
+                          loading="lazy"
+                          decoding="async"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="feature-extended-body">
+                    <div class="is-revealing down flex">
+                      <div>
+                        <h3 tabindex="0" name="feat_presets" class="mt-0 mb-16">
+                          Theme Presets.
+                        </h3>
+                        <p name="feat_presets_desc" class="m-0">
+                          Choose from 6 beautifully crafted visual themes to
+                          personalize your music experience.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div id="feature-youtube" class="feature-extended">
                   <div class="feature-extended-image">
                     <div class="mockup-bg">
                       <img src="./images/feature-bg-01.svg" alt="background" />
                     </div>
                     <img
                       class="device-mockup is-revealing up"
-                      src="./images/Screenshots/6.webp"
-                      alt="Artist screenshot"
+                      src="./images/Screenshots/youtube.webp"
+                      alt="YouTube Integration"
                       loading="lazy"
                       decoding="async"
                     />
@@ -452,14 +685,230 @@
                   <div class="feature-extended-body">
                     <div class="is-revealing down flex">
                       <div>
+                        <h3 tabindex="0" name="feat_youtube" class="mt-0 mb-16">
+                          YouTube Integration.
+                        </h3>
+                        <p name="feat_youtube_desc" class="m-0">
+                          Recommendations and profile-related content are
+                          synchronized directly from your YouTube account.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div id="feature-stats" class="feature-extended">
+                  <div class="feature-extended-image">
+                    <div class="mockup-bg">
+                      <img src="./images/feature-bg-01.svg" alt="background" />
+                    </div>
+                    <img
+                      class="device-mockup is-revealing up"
+                      src="./images/Screenshots/stats.webp"
+                      alt="Listening Statistics"
+                      loading="lazy"
+                      decoding="async"
+                    />
+                  </div>
+                  <div class="feature-extended-body">
+                    <div class="is-revealing down flex">
+                      <div>
+                        <h3 tabindex="0" name="feat_stats" class="mt-0 mb-16">
+                          Listening Statistics.
+                        </h3>
+                        <p name="feat_stats_desc" class="m-0">
+                          Track your listening habits, favorite artists, and
+                          playback trends over time.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div id="feature-caching" class="feature-extended">
+                  <div class="feature-extended-image">
+                    <div class="mockup-bg">
+                      <img src="./images/feature-bg-02.svg" alt="background" />
+                    </div>
+                    <div
+                      class="video-mockup-wrapper device-mockup is-revealing up"
+                    >
+                      <video
+                        class="video-element"
+                        src="./videos/songs.mp4"
+                        autoplay
+                        loop
+                        muted
+                        playsinline
+                      ></video>
+                      <img
+                        class="frame-overlay"
+                        src="./images/X17Ultra Frame.png"
+                        alt="Phone Frame"
+                      />
+                    </div>
+                  </div>
+                  <div class="feature-extended-body">
+                    <div class="is-revealing down flex">
+                      <div>
+                        <h3 tabindex="0" name="feat_caching" class="mt-0 mb-16">
+                          Smart Offline Caching.
+                        </h3>
+                        <p name="feat_caching_desc" class="m-0">
+                          Automatically cache songs for offline playback with
+                          customizable limits, or download tracks for permanent
+                          access.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div id="feature-search" class="feature-extended">
+                  <div class="feature-extended-image">
+                    <div class="mockup-bg">
+                      <img src="./images/feature-bg-03.svg" alt="background" />
+                    </div>
+                    <div
+                      class="video-mockup-wrapper device-mockup is-revealing up"
+                    >
+                      <video
+                        class="video-element"
+                        src="./videos/search.mp4"
+                        autoplay
+                        loop
+                        muted
+                        playsinline
+                      ></video>
+                      <img
+                        class="frame-overlay"
+                        src="./images/X17Ultra Frame.png"
+                        alt="Phone Frame"
+                      />
+                    </div>
+                  </div>
+                  <div class="feature-extended-body">
+                    <div class="is-revealing down flex">
+                      <div>
+                        <h3 tabindex="0" name="feat_search" class="mt-0 mb-16">
+                          Search & Voice Search.
+                        </h3>
+                        <p name="feat_search_desc" class="m-0">
+                          Easily find your favorite tracks, albums, and artists,
+                          even with your voice.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div id="feature-ota" class="feature-extended">
+                  <div class="feature-extended-image">
+                    <div class="mockup-bg">
+                      <img src="./images/feature-bg-01.svg" alt="background" />
+                    </div>
+                    <div
+                      class="video-mockup-wrapper device-mockup is-revealing up"
+                    >
+                      <video
+                        class="video-element"
+                        src="./videos/ota.mp4"
+                        autoplay
+                        loop
+                        muted
+                        playsinline
+                      ></video>
+                      <img
+                        class="frame-overlay"
+                        src="./images/X17Ultra Frame.png"
+                        alt="Phone Frame"
+                      />
+                    </div>
+                  </div>
+                  <div class="feature-extended-body">
+                    <div class="is-revealing down flex">
+                      <div>
+                        <h3 tabindex="0" name="feat_ota" class="mt-0 mb-16">
+                          OTA Updates.
+                        </h3>
+                        <p name="feat_ota_desc" class="m-0">
+                          Receive automatic in-app updates directly from GitHub
+                          without needing to manually download new APKs.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div id="feature-carrousel" class="feature-extended">
+                  <div class="feature-extended-image">
+                    <div class="mockup-bg">
+                      <img src="./images/feature-bg-01.svg" alt="background" />
+                    </div>
+                    <div
+                      class="video-mockup-wrapper device-mockup is-revealing up"
+                    >
+                      <video
+                        class="video-element"
+                        src="./videos/carrousel.mp4"
+                        autoplay
+                        loop
+                        muted
+                        playsinline
+                      ></video>
+                      <img
+                        class="frame-overlay"
+                        src="./images/X17Ultra Frame.png"
+                        alt="Phone Frame"
+                      />
+                    </div>
+                  </div>
+                  <div class="feature-extended-body">
+                    <div class="is-revealing down flex">
+                      <div>
                         <h3
                           tabindex="0"
-                          name="artist_page_title"
+                          name="feat_carrousel"
                           class="mt-0 mb-16"
                         >
-                          Detailed Artist Pages.
+                          Carousel Player View.
                         </h3>
-                        <p name="artist_page_desc" class="m-0">
+                        <p name="feat_carrousel_desc" class="m-0">
+                          Enjoy a unique, visually stunning 3D carousel view for
+                          your music playback.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div id="feature-artist" class="feature-extended">
+                  <div class="feature-extended-image">
+                    <div class="mockup-bg">
+                      <img src="./images/feature-bg-02.svg" alt="background" />
+                    </div>
+                    <div
+                      class="video-mockup-wrapper device-mockup is-revealing up"
+                    >
+                      <video
+                        class="video-element"
+                        src="./videos/artist.mp4"
+                        autoplay
+                        loop
+                        muted
+                        playsinline
+                      ></video>
+                      <img
+                        class="frame-overlay"
+                        src="./images/X17Ultra Frame.png"
+                        alt="Phone Frame"
+                      />
+                    </div>
+                  </div>
+                  <div class="feature-extended-body">
+                    <div class="is-revealing down flex">
+                      <div>
+                        <h3 tabindex="0" name="feat_artist" class="mt-0 mb-16">
+                          Detailed Artist Profiles.
+                        </h3>
+                        <p name="feat_artist_desc" class="m-0">
                           Explore comprehensive artist profiles with top tracks,
                           albums, and similar artists.
                         </p>
@@ -467,15 +916,58 @@
                     </div>
                   </div>
                 </div>
-                <div class="feature-extended">
+
+                <div id="feature-settings" class="feature-extended">
                   <div class="feature-extended-image">
                     <div class="mockup-bg">
-                      <img src="./images/feature-bg-02.svg" alt="background" />
+                      <img src="./images/feature-bg-03.svg" alt="background" />
+                    </div>
+                    <div
+                      class="video-mockup-wrapper device-mockup is-revealing up"
+                    >
+                      <video
+                        class="video-element"
+                        src="./videos/settings.mp4"
+                        autoplay
+                        loop
+                        muted
+                        playsinline
+                      ></video>
+                      <img
+                        class="frame-overlay"
+                        src="./images/X17Ultra Frame.png"
+                        alt="Phone Frame"
+                      />
+                    </div>
+                  </div>
+                  <div class="feature-extended-body">
+                    <div class="is-revealing down flex">
+                      <div>
+                        <h3
+                          tabindex="0"
+                          name="feat_settings"
+                          class="mt-0 mb-16"
+                        >
+                          Advanced Audio Controls.
+                        </h3>
+                        <p name="feat_settings_desc" class="m-0">
+                          Customize your experience with advanced audio
+                          controls, backup/restore features, and more.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div id="feature-playlists" class="feature-extended">
+                  <div class="feature-extended-image">
+                    <div class="mockup-bg">
+                      <img src="./images/feature-bg-01.svg" alt="background" />
                     </div>
                     <img
                       class="device-mockup is-revealing up"
-                      src="./images/Screenshots/7.webp"
-                      alt="Discord RPC screenshot"
+                      src="./images/Screenshots/playlist.webp"
+                      alt="Playlists"
                       loading="lazy"
                       decoding="async"
                     />
@@ -485,28 +977,29 @@
                       <div>
                         <h3
                           tabindex="0"
-                          name="discord_rpc_title"
+                          name="feat_playlists"
                           class="mt-0 mb-16"
                         >
-                          Discord Rich Presence.
+                          Playlists Management.
                         </h3>
-                        <p name="discord_rpc_desc" class="m-0">
-                          Share what you're listening to with your friends on
-                          Discord in real-time.
+                        <p name="feat_playlists_desc" class="m-0">
+                          Easily create, import, export, and manage your
+                          playlists in one unified interface.
                         </p>
                       </div>
                     </div>
                   </div>
                 </div>
-                <div class="feature-extended">
+
+                <div id="feature-queue" class="feature-extended">
                   <div class="feature-extended-image">
                     <div class="mockup-bg">
-                      <img src="./images/feature-bg-04.svg" alt=" background" />
+                      <img src="./images/feature-bg-02.svg" alt="background" />
                     </div>
                     <img
                       class="device-mockup is-revealing up"
-                      src="./images/Screenshots/5.webp"
-                      alt="Player screenshot"
+                      src="./images/Screenshots/queue.webp"
+                      alt="Playback Queue"
                       loading="lazy"
                       decoding="async"
                     />
@@ -514,16 +1007,40 @@
                   <div class="feature-extended-body">
                     <div class="is-revealing down flex">
                       <div>
-                        <h3 tabindex="0" name="modern" class="mt-0 mb-16">
-                          Long-term Support.
+                        <h3 tabindex="0" name="feat_queue" class="mt-0 mb-16">
+                          Playback Queue.
                         </h3>
-                        <p
-                          name="rimusic_is_multilingual_modern_powerful"
-                          class="m-0"
-                        >
-                          N-Zik is an evolving open-source project delivering
-                          frequent OTA updates and broad platform support
-                          including Android Auto.
+                        <p name="feat_queue_desc" class="m-0">
+                          Keep track of what's playing next, rearrange songs on
+                          the fly, and manage your upcoming tracks.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div id="feature-history" class="feature-extended">
+                  <div class="feature-extended-image">
+                    <div class="mockup-bg">
+                      <img src="./images/feature-bg-03.svg" alt="background" />
+                    </div>
+                    <img
+                      class="device-mockup is-revealing up"
+                      src="./images/Screenshots/history.webp"
+                      alt="History"
+                      loading="lazy"
+                      decoding="async"
+                    />
+                  </div>
+                  <div class="feature-extended-body">
+                    <div class="is-revealing down flex">
+                      <div>
+                        <h3 tabindex="0" name="feat_history" class="mt-0 mb-16">
+                          Complete History.
+                        </h3>
+                        <p name="feat_history_desc" class="m-0">
+                          Never lose a song you loved. Access your complete
+                          listening history at any time.
                         </p>
                       </div>
                     </div>
@@ -536,7 +1053,7 @@
       </main>
       <footer class="site-footer">
         <div class="site-footer-top">
-          <section class="cta section text-light">
+          <section id="download" class="cta section text-light">
             <div class="container-sm">
               <div class="cta-inner section-inner">
                 <div class="cta-header text-center is-revealing up">
