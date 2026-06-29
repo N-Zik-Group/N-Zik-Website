@@ -49,4 +49,7 @@
     <string name="feat_youtube_desc">Recommendations and profile-related content are synchronized directly from your YouTube account.</string>
     <string name="feat_presets">Theme Presets.</string>
     <string name="feat_presets_desc">Choose from 6 beautifully crafted visual themes to personalize your music experience.</string>
+    <string name="feat_nav_compatibility">Comhoiriúnacht</string>
+    <string name="feat_compatibility">Comhoiriúnacht Gléas Il.</string>
+    <string name="feat_compatibility_desc">Bain sult as do cheol i ngach áit! Tá N-Zik comhoiriúnach le Android Mobile, Android Auto, Android Automotive, agus Android TV. (Níos déanaí Caith OS).</string>
 </resources>

@@ -49,4 +49,7 @@
     <string name="feat_youtube_desc">Recommendations and profile-related content are synchronized directly from your YouTube account.</string>
     <string name="feat_presets">Theme Presets.</string>
     <string name="feat_presets_desc">Choose from 6 beautifully crafted visual themes to personalize your music experience.</string>
+    <string name="feat_nav_compatibility">അനുയോജ്യത</string>
+    <string name="feat_compatibility">ഒന്നിലധികം ഉപകരണ അനുയോജ്യത.</string>
+    <string name="feat_compatibility_desc">എല്ലായിടത്തും നിങ്ങളുടെ സംഗീതം ആസ്വദിക്കൂ! ആൻഡ്രോയിഡ് മൊബൈൽ, ആൻഡ്രോയിഡ് ഓട്ടോ, ആൻഡ്രോയിഡ് ഓട്ടോമോട്ടീവ്, ആൻഡ്രോയിഡ് ടിവി എന്നിവയുമായി N-Zik പൊരുത്തപ്പെടുന്നു. (പിന്നീട് വെയർ ഒഎസ്).</string>
 </resources>

@@ -49,4 +49,7 @@
     <string name="feat_youtube_desc">Recommendations and profile-related content are synchronized directly from your YouTube account.</string>
     <string name="feat_presets">Theme Presets.</string>
     <string name="feat_presets_desc">Choose from 6 beautifully crafted visual themes to personalize your music experience.</string>
+    <string name="feat_nav_compatibility">இணக்கத்தன்மை</string>
+    <string name="feat_compatibility">பல சாதன இணக்கத்தன்மை.</string>
+    <string name="feat_compatibility_desc">எல்லா இடங்களிலும் உங்கள் இசையை மகிழுங்கள்! N-Zik ஆனது Android Mobile, Android Auto, Android Automotive மற்றும் Android TV ஆகியவற்றுடன் இணக்கமானது. (பின்னர் Wear OS).</string>
 </resources>

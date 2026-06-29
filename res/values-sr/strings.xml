@@ -49,4 +49,7 @@
     <string name="feat_youtube_desc">Recommendations and profile-related content are synchronized directly from your YouTube account.</string>
     <string name="feat_presets">Theme Presets.</string>
     <string name="feat_presets_desc">Choose from 6 beautifully crafted visual themes to personalize your music experience.</string>
+    <string name="feat_nav_compatibility">Компатибилност</string>
+    <string name="feat_compatibility">Компатибилност више уређаја.</string>
+    <string name="feat_compatibility_desc">Уживајте у својој музици свуда! Н-Зик је компатибилан са Андроид Мобиле, Андроид Ауто, Андроид Аутомотиве и Андроид ТВ-ом. (Касније Веар ОС).</string>
 </resources>

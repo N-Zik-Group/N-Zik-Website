@@ -49,4 +49,7 @@
     <string name="feat_youtube_desc">Recommendations and profile-related content are synchronized directly from your YouTube account.</string>
     <string name="feat_presets">Theme Presets.</string>
     <string name="feat_presets_desc">Choose from 6 beautifully crafted visual themes to personalize your music experience.</string>
+    <string name="feat_nav_compatibility">अनुकूलता</string>
+    <string name="feat_compatibility">एकाधिक डिवाइस संगतता।</string>
+    <string name="feat_compatibility_desc">हर जगह अपने संगीत का आनंद लें! एन-ज़िक एंड्रॉइड मोबाइल, एंड्रॉइड ऑटो, एंड्रॉइड ऑटोमोटिव और एंड्रॉइड टीवी के साथ संगत है। (बाद में ओएस पहनें)।</string>
 </resources>

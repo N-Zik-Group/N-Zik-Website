@@ -49,4 +49,7 @@
     <string name="feat_youtube_desc">Recommendations and profile-related content are synchronized directly from your YouTube account.</string>
     <string name="feat_presets">Theme Presets.</string>
     <string name="feat_presets_desc">Choose from 6 beautifully crafted visual themes to personalize your music experience.</string>
+    <string name="feat_nav_compatibility">అనుకూలత</string>
+    <string name="feat_compatibility">బహుళ పరికర అనుకూలత.</string>
+    <string name="feat_compatibility_desc">ప్రతిచోటా మీ సంగీతాన్ని ఆస్వాదించండి! N-Zik ఆండ్రాయిడ్ మొబైల్, ఆండ్రాయిడ్ ఆటో, ఆండ్రాయిడ్ ఆటోమోటివ్ మరియు ఆండ్రాయిడ్ టీవీకి అనుకూలంగా ఉంది. (తరువాత వేర్ OS).</string>
 </resources>

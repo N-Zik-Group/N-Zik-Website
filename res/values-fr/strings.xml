@@ -53,4 +53,7 @@
     <string name="feat_youtube_desc">Les recommandations et le contenu lié au profil sont synchronisés directement depuis votre compte YouTube.</string>
     <string name="feat_presets">Thèmes Prédéfinis.</string>
     <string name="feat_presets_desc">Choisissez parmi 6 thèmes visuels soigneusement conçus pour personnaliser votre expérience musicale.</string>
+    <string name="feat_nav_compatibility">Compatibilité</string>
+    <string name="feat_compatibility">Compatibilité avec plusieurs appareils.</string>
+    <string name="feat_compatibility_desc">Profitez de votre musique partout ! N-Zik est compatible avec Android Mobile, Android Auto, Android Automotive et Android TV. (Plus tard, Wear OS).</string>
 </resources>

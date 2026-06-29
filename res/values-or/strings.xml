@@ -49,4 +49,7 @@
     <string name="feat_youtube_desc">Recommendations and profile-related content are synchronized directly from your YouTube account.</string>
     <string name="feat_presets">Theme Presets.</string>
     <string name="feat_presets_desc">Choose from 6 beautifully crafted visual themes to personalize your music experience.</string>
+    <string name="feat_nav_compatibility">ସୁସଙ୍ଗତତା |</string>
+    <string name="feat_compatibility">ଏକାଧିକ ଉପକରଣ ସୁସଙ୍ଗତତା |</string>
+    <string name="feat_compatibility_desc">ତୁମର ସଙ୍ଗୀତକୁ ସର୍ବତ୍ର ଉପଭୋଗ କର! N-Zik ଆଣ୍ଡ୍ରଏଡ୍ ମୋବାଇଲ୍, ଆଣ୍ଡ୍ରଏଡ୍ ଅଟୋ, ଆଣ୍ଡ୍ରଏଡ୍ ଅଟୋମୋବାଇଲ୍ ଏବଂ ଆଣ୍ଡ୍ରଏଡ୍ ଟିଭି ସହିତ ସୁସଙ୍ଗତ | (ପରେ OS ପିନ୍ଧନ୍ତୁ)</string>
 </resources>

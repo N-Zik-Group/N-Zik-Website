@@ -49,4 +49,7 @@
     <string name="feat_youtube_desc">Recommendations and profile-related content are synchronized directly from your YouTube account.</string>
     <string name="feat_presets">Theme Presets.</string>
     <string name="feat_presets_desc">Choose from 6 beautifully crafted visual themes to personalize your music experience.</string>
+    <string name="feat_nav_compatibility">Verenigbaarheid</string>
+    <string name="feat_compatibility">Verenigbaarheid met verskeie toestelle.</string>
+    <string name="feat_compatibility_desc">Geniet jou musiek oral! N-Zik is versoenbaar met Android Mobile, Android Auto, Android Automotive en Android TV. (Later Wear OS).</string>
 </resources>
