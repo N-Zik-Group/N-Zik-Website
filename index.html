@@ -84,8 +84,11 @@
         <div class="container">
           <div class="site-header-inner">
             <div class="brand header-brand">
-              <h1 class="m-0" style="display: flex; align-items: center; gap: 12px;">
-                <a href="#" tabindex="0" style="display: flex;">
+              <h1
+                class="m-0"
+                style="display: flex; align-items: center; gap: 12px"
+              >
+                <a href="#" tabindex="0" style="display: flex">
                   <img
                     class="header-logo-image"
                     src="images/n-zik.svg"
@@ -93,42 +96,201 @@
                     alt="Logo"
                   />
                 </a>
-                <span id="headerTitle" style="font-size: 24px; font-weight: bold; color: var(--color);">N-Zik</span>
+                <span
+                  id="headerTitle"
+                  style="
+                    font-size: 24px;
+                    font-weight: bold;
+                    color: var(--color);
+                  "
+                  >N-Zik</span
+                >
               </h1>
             </div>
-            <nav class="header-nav" style="display: flex; gap: 32px; align-items: center; justify-content: center; flex: 1;">
-              <a href="#hero" id="homeLink" style="color: var(--color); text-decoration: none; font-weight: 600; font-size: 16px; transition: opacity 0.2s; display: flex; align-items: center; gap: 4px;">
-                <img class="home-icon" src="images/n-zik.svg" width="16" height="16" style="display: none;" alt="N-Zik Home" />
+            <nav
+              class="header-nav"
+              style="
+                display: flex;
+                gap: 32px;
+                align-items: center;
+                justify-content: center;
+                flex: 1;
+              "
+            >
+              <a
+                href="#hero"
+                id="homeLink"
+                style="
+                  color: var(--color);
+                  text-decoration: none;
+                  font-weight: 600;
+                  font-size: 16px;
+                  transition: opacity 0.2s;
+                  display: flex;
+                  align-items: center;
+                  gap: 4px;
+                "
+              >
+                <img
+                  class="home-icon"
+                  src="images/n-zik.svg"
+                  width="16"
+                  height="16"
+                  style="display: none"
+                  alt="N-Zik Home"
+                />
                 <span class="home-text">Home</span>
               </a>
-              <div style="position: relative;" class="nav-dropdown-container">
-                <div id="featuresDropdownTrigger" style="cursor: pointer; color: var(--color); font-weight: 600; font-size: 16px; display: flex; align-items: center; gap: 4px;" onclick="document.getElementById('featuresDropdown').classList.toggle('show')">
+              <div style="position: relative" class="nav-dropdown-container">
+                <div
+                  id="featuresDropdownTrigger"
+                  style="
+                    cursor: pointer;
+                    color: var(--color);
+                    font-weight: 600;
+                    font-size: 16px;
+                    display: flex;
+                    align-items: center;
+                    gap: 4px;
+                  "
+                  onclick="
+                    document
+                      .getElementById('featuresDropdown')
+                      .classList.toggle('show')
+                  "
+                >
                   <div id="featuresNavTextWrapper" class="nav-text-slider">
                     <span id="featuresNavText">Features</span>
                   </div>
-                  <svg width="10" height="6" viewBox="0 0 12 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="2 2 6 6 10 2"></polyline></svg>
+                  <svg
+                    width="10"
+                    height="6"
+                    viewBox="0 0 12 8"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <polyline points="2 2 6 6 10 2"></polyline>
+                  </svg>
                 </div>
                 <div id="featuresDropdown" class="section-dropdown">
-                  <a href="#feature-modern_ui" class="feature-link" data-name="Modern UI">Modern UI</a>
-                  <a href="#feature-lyrics" class="feature-link" data-name="Lyrics">Lyrics</a>
-                  <a href="#feature-visualizer" class="feature-link" data-name="Visualizer">Visualizer</a>
-                  <a href="#feature-discord" class="feature-link" data-name="Discord RPC">Discord RPC</a>
-                  <a href="#feature-presets" class="feature-link" data-name="Theme Presets">Theme Presets</a>
-                  <a href="#feature-youtube" class="feature-link" data-name="YouTube">YouTube Integration</a>
-                  <a href="#feature-stats" class="feature-link" data-name="Statistics">Listening Stats</a>
-                  <a href="#feature-caching" class="feature-link" data-name="Offline Caching">Offline Caching</a>
-                  <a href="#feature-search" class="feature-link" data-name="Search">Smart Search</a>
-                  <a href="#feature-ota" class="feature-link" data-name="OTA Updates">OTA Updates</a>
-                  <a href="#feature-carrousel" class="feature-link" data-name="Carousel Player">Carousel Player</a>
-                  <a href="#feature-artist" class="feature-link" data-name="Artist Profiles">Artist Profiles</a>
-                  <a href="#feature-settings" class="feature-link" data-name="Audio Controls">Audio Controls</a>
-                  <a href="#feature-playlists" class="feature-link" data-name="Playlists">Playlists</a>
-                  <a href="#feature-queue" class="feature-link" data-name="Playback Queue">Playback Queue</a>
-                  <a href="#feature-history" class="feature-link" data-name="History">History</a>
-                  <a href="#feature-compatibility" class="feature-link" data-name="Compatibility">Compatibility</a>
+                  <a
+                    href="#feature-modern_ui"
+                    class="feature-link"
+                    data-name="Modern UI"
+                    >Modern UI</a
+                  >
+                  <a
+                    href="#feature-lyrics"
+                    class="feature-link"
+                    data-name="Lyrics"
+                    >Lyrics</a
+                  >
+                  <a
+                    href="#feature-visualizer"
+                    class="feature-link"
+                    data-name="Visualizer"
+                    >Visualizer</a
+                  >
+                  <a
+                    href="#feature-discord"
+                    class="feature-link"
+                    data-name="Discord RPC"
+                    >Discord RPC</a
+                  >
+                  <a
+                    href="#feature-presets"
+                    class="feature-link"
+                    data-name="Theme Presets"
+                    >Theme Presets</a
+                  >
+                  <a
+                    href="#feature-youtube"
+                    class="feature-link"
+                    data-name="YouTube"
+                    >YouTube Integration</a
+                  >
+                  <a
+                    href="#feature-stats"
+                    class="feature-link"
+                    data-name="Statistics"
+                    >Listening Stats</a
+                  >
+                  <a
+                    href="#feature-caching"
+                    class="feature-link"
+                    data-name="Offline Caching"
+                    >Offline Caching</a
+                  >
+                  <a
+                    href="#feature-search"
+                    class="feature-link"
+                    data-name="Search"
+                    >Smart Search</a
+                  >
+                  <a
+                    href="#feature-ota"
+                    class="feature-link"
+                    data-name="OTA Updates"
+                    >OTA Updates</a
+                  >
+                  <a
+                    href="#feature-carrousel"
+                    class="feature-link"
+                    data-name="Carousel Player"
+                    >Carousel Player</a
+                  >
+                  <a
+                    href="#feature-artist"
+                    class="feature-link"
+                    data-name="Artist Profiles"
+                    >Artist Profiles</a
+                  >
+                  <a
+                    href="#feature-settings"
+                    class="feature-link"
+                    data-name="Audio Controls"
+                    >Audio Controls</a
+                  >
+                  <a
+                    href="#feature-playlists"
+                    class="feature-link"
+                    data-name="Playlists"
+                    >Playlists</a
+                  >
+                  <a
+                    href="#feature-queue"
+                    class="feature-link"
+                    data-name="Playback Queue"
+                    >Playback Queue</a
+                  >
+                  <a
+                    href="#feature-history"
+                    class="feature-link"
+                    data-name="History"
+                    >History</a
+                  >
+                  <a
+                    href="#feature-compatibility"
+                    class="feature-link"
+                    data-name="Compatibility"
+                    >Compatibility</a
+                  >
                 </div>
               </div>
-              <a href="#download" style="color: var(--color); text-decoration: none; font-weight: 600; font-size: 16px; transition: opacity 0.2s;">Download</a>
+              <a
+                href="#download"
+                style="
+                  color: var(--color);
+                  text-decoration: none;
+                  font-weight: 600;
+                  font-size: 16px;
+                  transition: opacity 0.2s;
+                "
+                >Download</a
+              >
             </nav>
             <div
               style="
@@ -322,6 +484,53 @@
           </div>
         </div>
       </header>
+      <style>
+        #kao-banner-wrapper {
+          position: fixed;
+          top: 110px;
+          left: 50%;
+          transform: translateX(-50%);
+          width: 60%;
+          max-width: 1200px;
+          z-index: 5000;
+          display: flex;
+          justify-content: center;
+        }
+        #keep-android-open-banner {
+          width: 100%;
+          border-radius: 12px;
+        }
+        #keep-android-open-banner > * {
+          border-radius: 12px !important;
+        }
+        @media (max-width: 768px) {
+          #kao-banner-wrapper {
+            top: 120px;
+            font-size: smaller;
+            width: 100%;
+          }
+          #keep-android-open-banner {
+            transform: scale(0.85);
+            transform-origin: top center;
+          }
+        }
+      </style>
+      <div id="kao-banner-wrapper">
+        <div id="keep-android-open-banner"></div>
+      </div>
+      <script>
+        (function () {
+          var siteLang =
+            localStorage.getItem('language') ||
+            (navigator.language || navigator.userLanguage).split('-')[0] ||
+            'en';
+          var script = document.createElement('script');
+          script.src =
+            'https://keepandroidopen.org/banner.js?id=keep-android-open-banner&size=minimal&link=https://keepandroidopen.org&animation=on&lang=' +
+            siteLang;
+          document.head.appendChild(script);
+        })();
+      </script>
       <main>
         <section id="hero" class="hero text-center text-light">
           <div class="hero-bg"></div>
@@ -1053,14 +1262,17 @@
                     <div class="mockup-bg">
                       <img src="./images/feature-bg-04.svg" alt="background" />
                     </div>
-                    <div class="mockup-container two-phones is-revealing up" style="min-height: 350px;">
+                    <div
+                      class="mockup-container two-phones is-revealing up"
+                      style="min-height: 350px"
+                    >
                       <img
                         class="device-mockup phone-left"
                         src="./images/Screenshots/AndroidAuto.png"
                         alt="Android Auto"
                         loading="lazy"
                         decoding="async"
-                        style="width: 55%; height: auto; max-width: none;"
+                        style="width: 55%; height: auto; max-width: none"
                       />
                       <img
                         class="device-mockup phone-right"
@@ -1068,7 +1280,7 @@
                         alt="Android Automotive"
                         loading="lazy"
                         decoding="async"
-                        style="width: 55%; height: auto; max-width: none;"
+                        style="width: 55%; height: auto; max-width: none"
                       />
                       <img
                         class="device-mockup phone-center"
@@ -1076,7 +1288,7 @@
                         alt="Android TV"
                         loading="lazy"
                         decoding="async"
-                        style="width: 65%; height: auto; max-width: none;"
+                        style="width: 65%; height: auto; max-width: none"
                       />
                       <img
                         class="device-mockup"
@@ -1084,9 +1296,28 @@
                         alt="Android Mobile"
                         loading="lazy"
                         decoding="async"
-                        style="position: absolute; right: 15%; bottom: 5%; width: 22%; height: auto; max-width: none; z-index: 4; border-radius: 8px; box-shadow: 0 10px 20px rgba(0,0,0,0.5); transition: transform 0.3s ease, z-index 0s;"
-                        onmouseover="this.style.transform='scale(1.1) translateY(-10px)'; this.style.zIndex='5'"
-                        onmouseout="this.style.transform='scale(1) translateY(0)'; this.style.zIndex='4'"
+                        style="
+                          position: absolute;
+                          right: 15%;
+                          bottom: 5%;
+                          width: 22%;
+                          height: auto;
+                          max-width: none;
+                          z-index: 4;
+                          border-radius: 8px;
+                          box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+                          transition:
+                            transform 0.3s ease,
+                            z-index 0s;
+                        "
+                        onmouseover="
+                          this.style.transform = 'scale(1.1) translateY(-10px)';
+                          this.style.zIndex = '5';
+                        "
+                        onmouseout="
+                          this.style.transform = 'scale(1) translateY(0)';
+                          this.style.zIndex = '4';
+                        "
                       />
                     </div>
                   </div>
