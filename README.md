@@ -11,12 +11,12 @@ with performance improvements, UI/UX refinement, bug fixes, and new features.
 
 ## Tech Stack
 
-- HTML / CSS / JavaScript (vanilla — no framework, no build step)
+- HTML / CSS / JavaScript (vanilla - no framework, no build step)
 - Multilingual support via `res/values-*/strings.xml` (46 translated locales + English default)
 
 ## Run It Locally
 
-This is a zero-build static site — no `npm install` needed. Serve the folder with any
+This is a zero-build static site - no `npm install` needed. Serve the folder with any
 static HTTP server, then open the page:
 
 ```
@@ -24,7 +24,7 @@ python -m http.server 8080
 ```
 
 > ⚠️ The i18n loader uses `fetch()`, so opening `index.html` directly via `file://`
-> breaks language loading — a local HTTP server is required.
+> breaks language loading - a local HTTP server is required.
 
 ## Structure
 
@@ -41,7 +41,7 @@ N-Zik-Website/
 ```
 
 To add a translation: create `res/values-xx/strings.xml` **and** add the language to the
-footer language selector in `index.html` (the selector currently lags behind `res/` —
+footer language selector in `index.html` (the selector currently lags behind `res/` -
 11 translated locales are present in `res/` but not yet selectable in the UI).
 
 ## Links
