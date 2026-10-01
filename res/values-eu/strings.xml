@@ -51,9 +51,9 @@
     <string name="feat_presets_desc">Choose from 6 beautifully crafted visual themes to personalize your music experience.</string>
     <string name="feat_nav_compatibility">Bateragarritasuna</string>
     <string name="feat_compatibility">Hainbat gailu bateragarritasuna.</string>
-    <string name="feat_compatibility_desc">Gozatu zure musika nonahi! N-Zik Android Mobile, Android Auto, Android Automotive eta Android TV-ekin bateragarria da. (Geroago Wear OS).</string>
-    <string name="feat_profiles">Multiple Profiles.</string>
-    <string name="feat_profiles_desc">Switch between different profiles, each with its own name, avatar, database and settings, while sharing your downloads and media cache.</string>
+    <string name="feat_compatibility_desc">Goza zure musika nonahi! N-Zik konpatibila da Android Mobile, Android Tablet, Android Auto, Android Automotive eta Android TV-rekin. (Geroago Wear OS).</string>
+    <string name="feat_profiles">Profil anitz.</string>
+    <string name="feat_profiles_desc">Konektatu zure kontuak eta pertsonalizatu aplikazioa: sinkronizatu YouTube Music-ekin, gaitu Discord Rich Presence eta Last.fm scrobbling-a, eta aldatu aplikazioko profil anitz artean — bakoitzak bere izena, avatarra, datu-basea eta ezarpenak ditu.</string>
     <string name="feat_rewind">N-Zik Rewind.</string>
-    <string name="feat_rewind_desc">Relive your listening with personalized recaps. Every year, every month, all yours.</string>
+    <string name="feat_rewind_desc">Bizi berriro zure entzunak laburpen pertsonalizatuak dituzulako. Urtero, hilabetero, guztia zuena.</string>
 </resources>

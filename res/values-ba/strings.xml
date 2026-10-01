@@ -51,9 +51,9 @@
     <string name="feat_presets_desc">Choose from 6 beautifully crafted visual themes to personalize your music experience.</string>
     <string name="feat_nav_compatibility">Уйнашлыҡ</string>
     <string name="feat_compatibility">Күп ҡоролма совместимость.</string>
-    <string name="feat_compatibility_desc">Бөтә ерҙә лә музыкағыҙҙан ләззәтләнегеҙ! N-Zik Android Mobile, Android Авто, Android Автомобиль һәм Android ТВ менән яраша. (Һуңыраҡ кейергә ОС).</string>
-    <string name="feat_profiles">Multiple Profiles.</string>
-    <string name="feat_profiles_desc">Switch between different profiles, each with its own name, avatar, database and settings, while sharing your downloads and media cache.</string>
+    <string name="feat_compatibility_desc">Музыканы һәр ерҙә ишетегеҙ! N-Zik Android Mobile, Android Tablet, Android Auto, Android Automotive һәм Android TV менән туранан-тура.</string>
+    <string name="feat_profiles">Күп профильҙар.</string>
+    <string name="feat_profiles_desc">YouTube Music менән синхронлағыҙ, Discord Rich Presence һәм Last.fm скробблингын ҡушығыҙ, һәм эс профильҙарҙың араһында күсегеҙ — һәр береһенең үҙ исеме, аватары, мәғлүмәт базасы һәм уҡлауҙары бар.</string>
     <string name="feat_rewind">N-Zik Rewind.</string>
-    <string name="feat_rewind_desc">Relive your listening with personalized recaps. Every year, every month, all yours.</string>
+    <string name="feat_rewind_desc">Шәхси йомғаҡтары менән тыңлауыңҙы яңынан йәшәгеҙ. Һәр йыл, һәр ай, барыһы ла һеҙҙең.</string>
 </resources>

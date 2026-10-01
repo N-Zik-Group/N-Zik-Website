@@ -51,9 +51,9 @@
     <string name="feat_presets_desc">Choose from 6 beautifully crafted visual themes to personalize your music experience.</string>
     <string name="feat_nav_compatibility">Compatibilidade</string>
     <string name="feat_compatibility">Compatibilidade com vários dispositivos.</string>
-    <string name="feat_compatibility_desc">Aproveite sua música em qualquer lugar! N-Zik é compatível com Android Mobile, Android Auto, Android Automotive e Android TV. (mais tarde Wear OS).</string>
-    <string name="feat_profiles">Multiple Profiles.</string>
-    <string name="feat_profiles_desc">Switch between different profiles, each with its own name, avatar, database and settings, while sharing your downloads and media cache.</string>
+    <string name="feat_compatibility_desc">Desfrute da sua música em qualquer lugar! O N-Zik é compatível com Android Mobile, Android Tablet, Android Auto, Android Automotive e Android TV. (Mais tarde, Wear OS).</string>
+    <string name="feat_profiles">Perfis múltiplos.</string>
+    <string name="feat_profiles_desc">Ligue as suas contas e personalize a app: sincronize com o YouTube Music, ative o Discord Rich Presence e o scrobbling do Last.fm e mude entre vários perfis na app — cada um com o seu próprio nome, avatar, base de dados e definições.</string>
     <string name="feat_rewind">N-Zik Rewind.</string>
-    <string name="feat_rewind_desc">Relive your listening with personalized recaps. Every year, every month, all yours.</string>
+    <string name="feat_rewind_desc">Reviva o seu listening com resumos personalizados. Cada ano, cada mês, tudo seu.</string>
 </resources>

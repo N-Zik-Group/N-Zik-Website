@@ -221,16 +221,16 @@
                     >Profiles</a
                   >
                   <a
-                    href="#feature-stats"
-                    class="feature-link"
-                    data-name="Statistics"
-                    >Listening Stats</a
-                  >
-                  <a
                     href="#feature-rewind"
                     class="feature-link"
                     data-name="Rewind"
                     >N-Zik Rewind</a
+                  >
+                  <a
+                    href="#feature-stats"
+                    class="feature-link"
+                    data-name="Statistics"
+                    >Listening Stats</a
                   >
                   <a
                     href="#feature-caching"
@@ -553,7 +553,7 @@
               <div class="hero-copy">
                 <h2 class="m-0">
                   <img
-                    src="images/ic_banner2.png"
+                    src="images/ic_banner.svg"
                     alt="N-Zik Banner"
                     width="400"
                     style="display: inline-block"
@@ -652,20 +652,31 @@
                     </div>
 
                     <div
-                      class="video-mockup-wrapper device-mockup is-revealing up"
+                      class="mockup-container two-phones is-revealing up"
                     >
-                      <video
-                        class="video-element"
-                        src="./videos/home.mp4"
-                        autoplay
-                        loop
-                        muted
-                        playsinline
-                      ></video>
+                      <div
+                        class="video-mockup-wrapper device-mockup phone-left"
+                      >
+                        <video
+                          class="video-element"
+                          src="./videos/home.mp4"
+                          autoplay
+                          loop
+                          muted
+                          playsinline
+                        ></video>
+                        <img
+                          class="frame-overlay"
+                          src="./images/X17Ultra Frame.png"
+                          alt="Phone Frame"
+                        />
+                      </div>
                       <img
-                        class="frame-overlay"
-                        src="./images/X17Ultra Frame.png"
-                        alt="Phone Frame"
+                        class="device-mockup phone-right"
+                        src="./images/Screenshots/player.webp"
+                        alt="Player"
+                        loading="lazy"
+                        decoding="async"
                       />
                     </div>
                   </div>
@@ -926,9 +937,42 @@
                           Multiple Profiles.
                         </h3>
                         <p name="feat_profiles_desc" class="m-0">
-                          Switch between different profiles, each with its own
-                          name, avatar, database and settings, while sharing
-                          your downloads and media cache.
+                          Connect your accounts and customize the app: sync with
+                          YouTube Music, enable Discord Rich Presence and
+                          Last.fm scrobbling, and switch between multiple
+                          in-app profiles, each with its own name, avatar,
+                          database and settings.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div id="feature-rewind" class="feature-extended">
+                  <div class="feature-extended-image">
+                    <div class="mockup-bg">
+                      <img src="./images/feature-bg-02.svg" alt="background" />
+                    </div>
+                    <img
+                      class="device-mockup is-revealing up"
+                      src="./images/Screenshots/rewind.webp"
+                      alt="N-Zik Rewind"
+                      loading="lazy"
+                      decoding="async"
+                    />
+                  </div>
+                  <div class="feature-extended-body">
+                    <div class="is-revealing down flex">
+                      <div>
+                        <h3
+                          tabindex="0"
+                          name="feat_rewind"
+                          class="mt-0 mb-16"
+                        >
+                          N-Zik Rewind.
+                        </h3>
+                        <p name="feat_rewind_desc" class="m-0">
+                          Relive your listening with personalized recaps. Every
+                          year, every month, all yours.
                         </p>
                       </div>
                     </div>
@@ -956,37 +1000,6 @@
                         <p name="feat_stats_desc" class="m-0">
                           Track your listening habits, favorite artists, and
                           playback trends over time.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div id="feature-rewind" class="feature-extended">
-                  <div class="feature-extended-image">
-                    <div class="mockup-bg">
-                      <img src="./images/feature-bg-03.svg" alt="background" />
-                    </div>
-                    <img
-                      class="device-mockup is-revealing up"
-                      src="./images/Screenshots/rewind.webp"
-                      alt="N-Zik Rewind"
-                      loading="lazy"
-                      decoding="async"
-                    />
-                  </div>
-                  <div class="feature-extended-body">
-                    <div class="is-revealing down flex">
-                      <div>
-                        <h3
-                          tabindex="0"
-                          name="feat_rewind"
-                          class="mt-0 mb-16"
-                        >
-                          N-Zik Rewind.
-                        </h3>
-                        <p name="feat_rewind_desc" class="m-0">
-                          Relive your listening with personalized recaps. Every
-                          year, every month, all yours.
                         </p>
                       </div>
                     </div>
@@ -1112,20 +1125,31 @@
                       <img src="./images/feature-bg-01.svg" alt="background" />
                     </div>
                     <div
-                      class="video-mockup-wrapper device-mockup is-revealing up"
+                      class="mockup-container two-phones is-revealing up"
                     >
-                      <video
-                        class="video-element"
-                        src="./videos/carrousel.mp4"
-                        autoplay
-                        loop
-                        muted
-                        playsinline
-                      ></video>
+                      <div
+                        class="video-mockup-wrapper device-mockup phone-left"
+                      >
+                        <video
+                          class="video-element"
+                          src="./videos/carrousel.mp4"
+                          autoplay
+                          loop
+                          muted
+                          playsinline
+                        ></video>
+                        <img
+                          class="frame-overlay"
+                          src="./images/X17Ultra Frame.png"
+                          alt="Phone Frame"
+                        />
+                      </div>
                       <img
-                        class="frame-overlay"
-                        src="./images/X17Ultra Frame.png"
-                        alt="Phone Frame"
+                        class="device-mockup phone-right"
+                        src="./images/Screenshots/carrousel.webp"
+                        alt="Carousel Player View"
+                        loading="lazy"
+                        decoding="async"
                       />
                     </div>
                   </div>

@@ -51,9 +51,9 @@
     <string name="feat_presets_desc">Choose from 6 beautifully crafted visual themes to personalize your music experience.</string>
     <string name="feat_nav_compatibility">Compatibilitate</string>
     <string name="feat_compatibility">Compatibilitate cu mai multe dispozitive.</string>
-    <string name="feat_compatibility_desc">Bucurați-vă de muzica dvs. peste tot! N-Zik este compatibil cu Android Mobile, Android Auto, Android Automotive și Android TV. (Mai târziu Wear OS).</string>
-    <string name="feat_profiles">Multiple Profiles.</string>
-    <string name="feat_profiles_desc">Switch between different profiles, each with its own name, avatar, database and settings, while sharing your downloads and media cache.</string>
+    <string name="feat_compatibility_desc">Bucură-te de muzica ta oriunde! N-Zik este compatibil cu Android Mobile, Android Tablet, Android Auto, Android Automotive și Android TV. (Mai târziu, Wear OS).</string>
+    <string name="feat_profiles">Profiluri multiple.</string>
+    <string name="feat_profiles_desc">Conectează-ți conturile și personalizează aplicația: sincronizează cu YouTube Music, activează Discord Rich Presence și scrobbling-ul Last.fm și comută între mai multe profiluri în aplicație — fiecare cu nume, avatar, bază de date și setări proprii.</string>
     <string name="feat_rewind">N-Zik Rewind.</string>
-    <string name="feat_rewind_desc">Relive your listening with personalized recaps. Every year, every month, all yours.</string>
+    <string name="feat_rewind_desc">Revieți-vă ascultarea cu rezumate personalizate. An de an, lună de lună, totul al tău.</string>
 </resources>

@@ -51,9 +51,9 @@
     <string name="feat_presets_desc">Choose from 6 beautifully crafted visual themes to personalize your music experience.</string>
     <string name="feat_nav_compatibility">Компатибилност</string>
     <string name="feat_compatibility">Компатибилност више уређаја.</string>
-    <string name="feat_compatibility_desc">Уживајте у својој музици свуда! Н-Зик је компатибилан са Андроид Мобиле, Андроид Ауто, Андроид Аутомотиве и Андроид ТВ-ом. (Касније Веар ОС).</string>
-    <string name="feat_profiles">Multiple Profiles.</string>
-    <string name="feat_profiles_desc">Switch between different profiles, each with its own name, avatar, database and settings, while sharing your downloads and media cache.</string>
+    <string name="feat_compatibility_desc">Уживајте у музици било где! N-Zik је компатибилан са Android Mobile, Android Tablet, Android Auto, Android Automotive и Android TV. (Касније, Wear OS).</string>
+    <string name="feat_profiles">Више профила.</string>
+    <string name="feat_profiles_desc">Повежите своје налоге и прилагодите апликацију: синхронизујте са YouTube Music, омогућите Discord Rich Presence и Last.fm скробблирање и пребацујте се између више профила у апликацији — сваки са својим именом, аватаром, базом података и подешавањима.</string>
     <string name="feat_rewind">N-Zik Rewind.</string>
-    <string name="feat_rewind_desc">Relive your listening with personalized recaps. Every year, every month, all yours.</string>
+    <string name="feat_rewind_desc">Поново доживите слух своје песме са персонализованим резимеима. Сваке године, сваког месеца, све ваше.</string>
 </resources>
