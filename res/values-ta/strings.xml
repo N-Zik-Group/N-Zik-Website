@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+﻿﻿<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="opensource_multilingual_application">திறந்த மூல மற்றும் பல மொழிகளை ஆதரிக்கும் YouTube Music-ல் இருந்து இசை ஸ்ட்ரீமிங் செய்யக்கூடிய Android செயலி</string>
     <string name="your_library">உங்கள் இசை தொகுப்பு.</string>
@@ -52,4 +52,8 @@
     <string name="feat_nav_compatibility">இணக்கத்தன்மை</string>
     <string name="feat_compatibility">பல சாதன இணக்கத்தன்மை.</string>
     <string name="feat_compatibility_desc">எல்லா இடங்களிலும் உங்கள் இசையை மகிழுங்கள்! N-Zik ஆனது Android Mobile, Android Auto, Android Automotive மற்றும் Android TV ஆகியவற்றுடன் இணக்கமானது. (பின்னர் Wear OS).</string>
+    <string name="feat_profiles">Multiple Profiles.</string>
+    <string name="feat_profiles_desc">Switch between different profiles, each with its own name, avatar, database and settings, while sharing your downloads and media cache.</string>
+    <string name="feat_rewind">N-Zik Rewind.</string>
+    <string name="feat_rewind_desc">Relive your listening with personalized recaps. Every year, every month, all yours.</string>
 </resources>

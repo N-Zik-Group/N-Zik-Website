@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+﻿﻿<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="opensource_multilingual_application">Nyílt forráskódú és többnyelvű Android alkalmazás a YouTube Music zenei streamingjéhez</string>
     <string name="your_library">Könyvtárad.</string>
@@ -52,4 +52,8 @@
     <string name="feat_nav_compatibility">Kompatibilitás</string>
     <string name="feat_compatibility">Több eszköz kompatibilitás.</string>
     <string name="feat_compatibility_desc">Élvezze a zenét mindenhol! Az N-Zik kompatibilis az Android Mobile, Android Auto, Android Automotive és Android TV készülékekkel. (Később Wear OS).</string>
+    <string name="feat_profiles">Multiple Profiles.</string>
+    <string name="feat_profiles_desc">Switch between different profiles, each with its own name, avatar, database and settings, while sharing your downloads and media cache.</string>
+    <string name="feat_rewind">N-Zik Rewind.</string>
+    <string name="feat_rewind_desc">Relive your listening with personalized recaps. Every year, every month, all yours.</string>
 </resources>

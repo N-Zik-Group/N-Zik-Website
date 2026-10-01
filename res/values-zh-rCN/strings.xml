@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+﻿﻿<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="opensource_multilingual_application">一个以YouTube音乐为歌源的开源多语言安卓音乐播放器</string>
     <string name="your_library">您的音乐库</string>
@@ -52,4 +52,8 @@
     <string name="feat_nav_compatibility">兼容性</string>
     <string name="feat_compatibility">多设备兼容性。</string>
     <string name="feat_compatibility_desc">随时随地享受音乐！ N-Zik 与 Android Mobile、Android Auto、Android Automotive 和 Android TV 兼容。 （后来穿操作系统）。</string>
+    <string name="feat_profiles">Multiple Profiles.</string>
+    <string name="feat_profiles_desc">Switch between different profiles, each with its own name, avatar, database and settings, while sharing your downloads and media cache.</string>
+    <string name="feat_rewind">N-Zik Rewind.</string>
+    <string name="feat_rewind_desc">Relive your listening with personalized recaps. Every year, every month, all yours.</string>
 </resources>

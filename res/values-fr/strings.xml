@@ -56,4 +56,8 @@
     <string name="feat_nav_compatibility">Compatibilité</string>
     <string name="feat_compatibility">Compatibilité avec plusieurs appareils.</string>
     <string name="feat_compatibility_desc">Profitez de votre musique partout ! N-Zik est compatible avec Android Mobile, Android Auto, Android Automotive et Android TV. (Plus tard, Wear OS).</string>
+    <string name="feat_profiles">Multiple Profiles.</string>
+    <string name="feat_profiles_desc">Switch between different profiles, each with its own name, avatar, database and settings, while sharing your downloads and media cache.</string>
+    <string name="feat_rewind">N-Zik Rewind.</string>
+    <string name="feat_rewind_desc">Relive your listening with personalized recaps. Every year, every month, all yours.</string>
 </resources>
