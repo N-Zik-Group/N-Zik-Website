@@ -492,6 +492,20 @@ body.dark .section-dropdown {
   }
 }
 
+/* Center and align the download store badges */
+.cta-cta {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+
+.cta-cta a img {
+  display: block;
+  margin-left: 0 !important;
+}
+
 /* Make background shapes responsive to full width */
 .hero::before,
 .hero::after,
@@ -545,7 +559,7 @@ body.dark .section-dropdown {
 
 /* More vertical space between feature sections */
 .features-extended .feature-extended {
-  padding: 200px 0;
+  padding: 240px 0;
 }
 
 /* Mobile: sections closer together */
