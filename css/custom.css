@@ -651,12 +651,6 @@ body.dark .section-dropdown {
   }
 }
 
-/* More breathing room between feature sections */
-.features-extended .feature-extended {
-  padding-top: 48px;
-  padding-bottom: 48px;
-}
-
 @media (max-width: 600px) {
   .mockup-container.three-phones .device-mockup {
     width: 40%;
