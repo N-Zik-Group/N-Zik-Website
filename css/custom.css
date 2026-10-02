@@ -891,6 +891,15 @@ a > img:hover {
   z-index: 2;
 }
 
+/* Feature sections: both mockups same home size (hero keeps its own scales) */
+.features-extended .two-phones .phone-left {
+  transform: scale(1) rotate(-12deg);
+}
+
+.features-extended .two-phones .phone-right {
+  transform: scale(1) rotate(12deg);
+}
+
 .two-phones .phone-center {
   left: 50%;
   transform: translateX(-50%) scale(1.1);
@@ -920,5 +929,13 @@ a > img:hover {
   .two-phones .phone-right {
     right: 0;
     transform: scale(0.9) rotate(3deg);
+  }
+
+  /* Feature sections: both mockups same size */
+  .features-extended .two-phones .phone-left {
+    transform: scale(0.85) rotate(-3deg);
+  }
+  .features-extended .two-phones .phone-right {
+    transform: scale(0.85) rotate(3deg);
   }
 }
