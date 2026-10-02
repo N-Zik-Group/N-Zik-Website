@@ -535,6 +535,7 @@ body.dark .section-dropdown {
 @media (min-width: 641px) {
   .hero {
     padding-top: 200px;
+    padding-bottom: 200px;
   }
 
   .features-extended-inner.section-inner {
