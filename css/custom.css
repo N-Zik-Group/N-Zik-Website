@@ -531,6 +531,11 @@ body.dark .section-dropdown {
   margin-top: 70px !important;
 }
 
+/* More vertical space between feature sections */
+.features-extended .feature-extended {
+  padding: 200px 0;
+}
+
 /* 3 Phones Side-by-Side Layout — same approach as two-phones */
 .mockup-container.three-phones {
   position: relative;
