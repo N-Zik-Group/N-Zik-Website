@@ -553,7 +553,7 @@ body.dark .section-dropdown {
 
 .three-phones .phone-left {
   left: -8%;
-  transform: scale(0.9) rotate(-12deg);
+  transform: scale(0.85) rotate(-12deg);
   z-index: 1;
 }
 
@@ -565,7 +565,7 @@ body.dark .section-dropdown {
 
 .three-phones .phone-right {
   right: -8%;
-  transform: scale(0.9) rotate(12deg);
+  transform: scale(0.85) rotate(12deg);
   z-index: 2;
 }
 
@@ -602,19 +602,19 @@ body.dark .section-dropdown {
 
 .four-phones .phone-1 {
   left: -10%;
-  transform: rotate(-9deg);
+  transform: scale(0.86) rotate(-9deg);
   z-index: 1;
 }
 
 .four-phones .phone-2 {
   left: 10%;
-  transform: rotate(-3deg);
+  transform: scale(0.9) rotate(-3deg);
   z-index: 2;
 }
 
 .four-phones .phone-3 {
   left: 30%;
-  transform: rotate(3deg);
+  transform: scale(0.94) rotate(3deg);
   z-index: 3;
 }
 
@@ -635,20 +635,26 @@ body.dark .section-dropdown {
   }
   .four-phones .phone-1 {
     left: -8%;
-    transform: rotate(-7deg);
+    transform: scale(0.86) rotate(-7deg);
   }
   .four-phones .phone-2 {
     left: 12%;
-    transform: rotate(-2deg);
+    transform: scale(0.9) rotate(-2deg);
   }
   .four-phones .phone-3 {
     left: 30%;
-    transform: rotate(2deg);
+    transform: scale(0.94) rotate(2deg);
   }
   .four-phones .phone-4 {
     left: 48%;
     transform: rotate(7deg);
   }
+}
+
+/* More breathing room between feature sections */
+.features-extended .feature-extended {
+  padding-top: 48px;
+  padding-bottom: 48px;
 }
 
 @media (max-width: 600px) {
@@ -865,13 +871,13 @@ a > img:hover {
 
 .two-phones .phone-left {
   left: -8%;
-  transform: scale(0.9) rotate(-12deg);
+  transform: scale(0.88) rotate(-12deg);
   z-index: 1;
 }
 
 .two-phones .phone-right {
   right: -8%;
-  transform: scale(0.9) rotate(12deg);
+  transform: scale(1) rotate(12deg);
   z-index: 2;
 }
 
@@ -899,10 +905,10 @@ a > img:hover {
 @media (max-width: 600px) {
   .two-phones .phone-left {
     left: 0;
-    transform: scale(0.85) rotate(-3deg);
+    transform: scale(0.8) rotate(-3deg);
   }
   .two-phones .phone-right {
     right: 0;
-    transform: scale(0.85) rotate(3deg);
+    transform: scale(0.9) rotate(3deg);
   }
 }
