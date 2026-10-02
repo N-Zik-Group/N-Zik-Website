@@ -492,8 +492,9 @@ body.dark .section-dropdown {
   }
 }
 
-/* Center and align the download store badges */
-.cta-cta {
+/* Center and align the store badges (hero + download sections) */
+.cta-cta,
+.hero-cta- {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -501,9 +502,20 @@ body.dark .section-dropdown {
   gap: 16px;
 }
 
-.cta-cta a img {
+.cta-cta a img,
+.hero-cta- a img {
   display: block;
   margin-left: 0 !important;
+}
+
+/* Hero: keep the DevGlobe badge on its own line */
+.hero-cta- br {
+  display: none;
+}
+
+.hero-cta- a:last-of-type {
+  flex-basis: 100%;
+  margin-top: 8px;
 }
 
 /* Make background shapes responsive to full width */
