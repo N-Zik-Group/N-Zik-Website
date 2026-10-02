@@ -531,6 +531,13 @@ body.dark .section-dropdown {
   margin-top: 70px !important;
 }
 
+/* Hero top padding on desktop */
+@media (min-width: 641px) {
+  .hero {
+    padding-top: 200px;
+  }
+}
+
 /* More vertical space between feature sections */
 .features-extended .feature-extended {
   padding: 200px 0;
