@@ -544,7 +544,7 @@ body.dark .section-dropdown {
 
 .mockup-container.three-phones .device-mockup {
   position: absolute;
-  width: 35%;
+  width: 60%;
   height: auto;
   border-radius: 12px;
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
@@ -552,20 +552,20 @@ body.dark .section-dropdown {
 }
 
 .three-phones .phone-left {
-  left: 5%;
-  transform: scale(0.9) rotate(-3deg);
+  left: -8%;
+  transform: scale(0.9) rotate(-12deg);
   z-index: 1;
 }
 
 .three-phones .phone-center {
   left: 50%;
-  transform: translateX(-50%);
+  transform: translateX(-50%) scale(1.1);
   z-index: 3;
 }
 
 .three-phones .phone-right {
-  right: 5%;
-  transform: scale(0.9) rotate(3deg);
+  right: -8%;
+  transform: scale(0.9) rotate(12deg);
   z-index: 2;
 }
 
@@ -576,8 +576,79 @@ body.dark .section-dropdown {
 }
 
 .three-phones .phone-center:hover {
-  transform: translateX(-50%) scale(1.02);
+  transform: translateX(-50%) scale(1.12);
   z-index: 5;
+}
+
+/* 4 Mockups Fan Layout — home size, no reduction */
+.mockup-container.four-phones {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  min-height: 400px;
+}
+
+.mockup-container.four-phones .device-mockup {
+  position: absolute;
+  width: 60%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.four-phones .phone-1 {
+  left: -10%;
+  transform: rotate(-9deg);
+  z-index: 1;
+}
+
+.four-phones .phone-2 {
+  left: 10%;
+  transform: rotate(-3deg);
+  z-index: 2;
+}
+
+.four-phones .phone-3 {
+  left: 30%;
+  transform: rotate(3deg);
+  z-index: 3;
+}
+
+.four-phones .phone-4 {
+  left: 50%;
+  transform: rotate(9deg);
+  z-index: 4;
+}
+
+.four-phones .device-mockup:hover {
+  transform: rotate(0deg) scale(1.02);
+  z-index: 5;
+}
+
+@media (max-width: 600px) {
+  .mockup-container.four-phones .device-mockup {
+    width: 44%;
+  }
+  .four-phones .phone-1 {
+    left: -8%;
+    transform: rotate(-7deg);
+  }
+  .four-phones .phone-2 {
+    left: 12%;
+    transform: rotate(-2deg);
+  }
+  .four-phones .phone-3 {
+    left: 30%;
+    transform: rotate(2deg);
+  }
+  .four-phones .phone-4 {
+    left: 48%;
+    transform: rotate(7deg);
+  }
 }
 
 @media (max-width: 600px) {
@@ -785,7 +856,7 @@ a > img:hover {
 
 .mockup-container.two-phones .device-mockup {
   position: absolute;
-  width: 55%;
+  width: 60%;
   height: auto;
   border-radius: 12px;
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
