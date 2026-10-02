@@ -548,6 +548,13 @@ body.dark .section-dropdown {
   padding: 200px 0;
 }
 
+/* Mobile: sections closer together */
+@media (max-width: 600px) {
+  .features-extended .feature-extended {
+    padding: 64px 0;
+  }
+}
+
 /* 3 Phones Side-by-Side Layout — same approach as two-phones */
 .mockup-container.three-phones {
   position: relative;
