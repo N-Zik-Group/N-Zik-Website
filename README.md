@@ -14,6 +14,8 @@ with performance improvements, UI/UX refinement, bug fixes, and new features.
 - HTML / CSS / JavaScript (vanilla - no framework, no build step)
 - Multilingual support via `res/values-*/strings.xml` (46 translated locales + English default)
 
+[![CodeFactor](https://www.codefactor.io/repository/github/n-zik-group/n-zik-website/badge)](https://www.codefactor.io/repository/github/n-zik-group/n-zik-website)
+
 ## Run It Locally
 
 This is a zero-build static site - no `npm install` needed. Serve the folder with any
