@@ -286,6 +286,9 @@ body.dark {
   .site-footer p {
     color: #abbad0 !important;
   }
+  .hero-paragraph {
+    color: #fff !important;
+  }
   .feature-extended p {
     color: #abbad0;
   }
