@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="opensource_multilingual_application">A multilingual fork of Kreate, built with performance improvements, UI/UX refinement, and new features.</string>
+    <string name="opensource_multilingual_application">N-Zik is a multilingual, open-source Android app for streaming music from YouTube Music. N-Zik Desktop Compagnon, its desktop companion, brings your library and playback to Windows and Linux.</string>
     <string name="your_library">Smart Offline Caching.</string>
     <string name="organized_in_one_place">Automatically cache songs for offline playback with customizable cache limits. Download tracks for permanent access.</string>
     <string name="beautiful_player">Modern and Intuitive UI.</string>

@@ -518,6 +518,13 @@ body.dark .section-dropdown {
   margin-top: 8px;
 }
 
+/* Download section: desktop companion (PC) block */
+.pc-companion {
+  margin-top: 40px;
+  padding-top: 32px;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
 /* Make background shapes responsive to full width */
 .hero::before,
 .hero::after,

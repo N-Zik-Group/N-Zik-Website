@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="opensource_multilingual_application">A Open source multilingual Android application for streaming music from YouTube Music</string>
+    <string name="opensource_multilingual_application">N-Zik is a multilingual, open-source Android app for streaming music from YouTube Music. N-Zik Desktop Compagnon, its desktop companion, brings your library and playback to Windows and Linux.</string>
     <string name="your_library">Your library.</string>
     <string name="organized_in_one_place">Everything organized in one place: favorite songs, downloaded songs, listened songs and all your playlists.</string>
     <string name="beautiful_player">A beautiful player.</string>
