@@ -515,7 +515,38 @@ body.dark .section-dropdown {
 
 .hero-cta- a.devglobe-badge {
   flex-basis: 100%;
-  margin-top: 8px;
+  margin-top: 16px;
+}
+
+/* Hero: desktop companion (PC) block after the DevGlobe badge, copy of the download section block */
+.hero-cta- .pc-companion {
+  flex-basis: 100%;
+}
+
+/* White text for the hero PC block in dark mode */
+body.dark {
+  .hero-cta- .pc-companion .section-title,
+  .hero-cta- .pc-companion .section-paragraph,
+  .hero-cta- .pc-companion .devglobe-caption {
+    color: #fff;
+  }
+}
+
+/* Caption under the companion DevGlobe badge (PC mention) */
+.devglobe-caption {
+  margin: 0;
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+/* Download section: companion DevGlobe badge under the PC block */
+.pc-companion a.devglobe-badge {
+  display: block;
+  margin-top: 24px;
+}
+
+.pc-companion .devglobe-caption {
+  margin-top: 4px;
 }
 
 /* Download section: desktop companion (PC) block */
