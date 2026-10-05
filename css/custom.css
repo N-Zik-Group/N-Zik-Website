@@ -508,12 +508,12 @@ body.dark .section-dropdown {
   margin-left: 0 !important;
 }
 
-/* Hero: keep the DevGlobe badge on its own line */
+/* Hero: keep the DevGlobe badges on their own line, below the store badges */
 .hero-cta- br {
   display: none;
 }
 
-.hero-cta- a:last-of-type {
+.hero-cta- a.devglobe-badge {
   flex-basis: 100%;
   margin-top: 8px;
 }
