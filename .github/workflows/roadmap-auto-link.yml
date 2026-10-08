@@ -1,0 +1,49 @@
+# Automatically attaches every issue tagged "roadmap" to the shared
+# N-Zik RoadMap board (https://github.com/orgs/N-Zik-Group/projects/1),
+# so the "Project" field of the issue is filled without any manual step.
+
+name: Roadmap — auto-link to N-Zik RoadMap board
+
+on:
+  issues:
+    types: [opened, labeled]
+
+permissions:
+  issues: read
+  projects: write
+
+jobs:
+  link-to-roadmap-board:
+    if: contains(github.event.issue.labels.*.name, 'roadmap')
+    runs-on: ubuntu-latest
+    steps:
+      - name: Add issue to the N-Zik RoadMap board
+        uses: actions/github-script@v7
+        env:
+          ISSUE_NODE_ID: ${{ github.event.issue.node_id }}
+        with:
+          script: |
+            const { data: project } = await github.graphql(
+              `query($org: String!, $number: Int!) {
+                 organization(login: $org) { projectV2(number: $number) { id } }
+               }`,
+              { org: 'N-Zik-Group', number: 1 }
+            );
+            const projectId = project.organization.projectV2.id;
+            try {
+              await github.graphql(
+                `mutation($projectId: ID!, $contentId: String!) {
+                   createProjectV2Item(input: { projectId: $projectId, contentId: $contentId }) {
+                     projectItem { id }
+                   }
+                 }`,
+                { projectId, contentId: process.env.ISSUE_NODE_ID }
+              );
+              core.info(`Issue #${context.issue.number} added to the N-Zik RoadMap board.`);
+            } catch (e) {
+              if (String(e.message).toLowerCase().includes('already exists')) {
+                core.info(`Issue #${context.issue.number} is already on the board — nothing to do.`);
+              } else {
+                throw e;
+              }
+            }

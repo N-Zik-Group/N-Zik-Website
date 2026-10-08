@@ -12,9 +12,9 @@ body:
         ****
         ### 🗺️ READ BEFORE SUBMITTING 🗺️
 
-        Roadmap proposals are reviewed regularly and tied to the **N-Zik** project.
-        If your idea depends on something from the N-Zik mobile app (or should ship in sync with it),
-        link the related N-Zik issue below — it makes prioritization much easier.
+        Roadmap proposals are tracked on the shared
+        [N-Zik RoadMap](https://github.com/orgs/N-Zik-Group/projects/1) board —
+        every issue tagged **roadmap** is added to the board automatically.
         ****
 
   - type: checkboxes
@@ -25,15 +25,6 @@ body:
       options:
         - label: I have checked for already existing roadmap entries and feature requests.
           required: true
-
-  - type: input
-    id: related-nzik
-    attributes:
-      label: 🔗 Related N-Zik Issue (Optional)
-      description: If this item depends on or complements something in the N-Zik mobile app, link the related N-Zik issue here.
-      placeholder: "e.g. https://github.com/N-Zik-Group/N-Zik/issues/123 — leave empty if not applicable"
-    validations:
-      required: false
 
   - type: dropdown
     id: priority
