@@ -14,7 +14,7 @@ with performance improvements, UI/UX refinement, bug fixes, and new features.
 - HTML / CSS / JavaScript (vanilla - no framework, no build step)
 - Multilingual support via `res/values-*/strings.xml` (46 translated locales + English default)
 
-[![License: GPL v3](https://img.shields.io/github/license/N-Zik-Group/n-zik-website?color=blue)](https://www.gnu.org/licenses/gpl-3.0) [![CodeFactor](https://www.codefactor.io/repository/github/n-zik-group/n-zik-website/badge)](https://www.codefactor.io/repository/github/n-zik-group/n-zik-website)
+[![License: GPL v3](https://img.shields.io/github/license/N-Zik-Group/n-zik-website?color=blue)](https://www.gnu.org/licenses/gpl-3.0) [![CodeFactor](https://www.codefactor.io/repository/github/n-zik-group/n-zik-website/badge)](https://www.codefactor.io/repository/github/n-zik-group/n-zik-website) [![Crowdin](https://badges.crowdin.net/N-Zik/localized.svg)](https://crowdin.com/project/N-Zik)
 
 ## Run It Locally
 
