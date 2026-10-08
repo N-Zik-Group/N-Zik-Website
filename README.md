@@ -9,7 +9,11 @@
   </p>
   <p>
     A desktop companion is available: <a href="https://github.com/N-Zik-Group/N-Zik-Desktop-Compagnon">N-Zik Desktop Compagnon</a>
-    controls your library and playback from a Windows or Linux PC.
+    for Windows and Linux - pair it with your phone over local Wi-Fi (QR code or manual code),
+    then browse your library, manage the queue and listen on a large screen while your phone
+    streams the audio through an embedded VLC, no VLC install needed. The phone stays the
+    single source of truth, and the companion is a transitional product on the way to the
+    standalone N-Zik desktop app.
   </p>
   <p>
     <strong>Note:</strong> This project is based on the website from
