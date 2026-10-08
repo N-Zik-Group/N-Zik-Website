@@ -1,23 +1,36 @@
 <div align="center">
   <img alt="project's banner" src="./images/ic_banner2.png" width="1080" />
 
-  <h3>📱 <a href="https://github.com/N-Zik-Group/N-Zik">N-Zik App</a> · 🖥️ <a href="https://github.com/N-Zik-Group/N-Zik-Desktop-Compagnon">N-Zik Desktop Compagnon</a></h3>
+  <h3>📱 <a href="https://github.com/N-Zik-Group/N-Zik">N-Zik App</a></h3>
   <p>
     <b>N-Zik Website</b> is the official website for <a href="https://github.com/N-Zik-Group/N-Zik">N-Zik</a>,
-    the multilingual YouTube Music streaming app.
+    the multilingual YouTube Music streaming app, hosted at
+    <a href="https://n-zik.vercel.app/">n-zik.vercel.app</a>.
   </p>
   <p>
-    Hosted at <a href="https://n-zik.vercel.app/">n-zik.vercel.app</a> - a zero-build static site:
-    vanilla HTML, CSS and JavaScript, no framework, no build step.
-    Multilingual via <code>res/values-*/strings.xml</code> (46 translated locales + English default).
+    A desktop companion is available: <a href="https://github.com/N-Zik-Group/N-Zik-Desktop-Compagnon">N-Zik Desktop Compagnon</a>
+    controls your library and playback from a Windows or Linux PC.
   </p>
   <p>
     <strong>Note:</strong> This project is based on the website from
     <a href="https://github.com/fast4x/RiMusic">RiMusic</a>.
   </p>
+  <p>
+    <strong>N-Zik</strong> is a side project I originally built for myself and friends, not chasing glory.
+    It's grown a bit since then, which is cool.
+  </p>
+  <p>
+    I use generative AI to assist with code, structured with the
+    <a href="https://github.com/bmad-code-org/BMAD-METHOD">BMAD Method</a>,
+    but everything gets reviewed and tested before it's pushed. I'm not shipping blind.
+  </p>
+  <p>
+    If AI-assisted development isn't your thing, no hard feelings,
+    there are plenty of great alternatives.
+  </p>
 </div>
 
-<br>
+  <br>
 
 <div align="center">
   [![Launched on DevGlobe](./images/devglobe.svg)](https://devglobe.app/projects/n-zik?utm_source=badge&utm_medium=embed)
@@ -31,34 +44,14 @@
 
 # 📲 Installation
 
-## 🚀 Run It Locally
-
-This is a zero-build static site - no `npm install` needed. Serve the folder with any
-static HTTP server, then open the page:
-
-```
-python -m http.server 8080
-```
-
-> ⚠️ The i18n loader uses `fetch()`, so opening `index.html` directly via `file://`
-> breaks language loading - a local HTTP server is required.
-
-## 📁 Structure
-
-```
-N-Zik-Website/
-├── index.html          # The whole site (single page)
-├── css/                # style.css, custom.css, fonts.css
-├── js/                 # multilingual.js (i18n), additional.js, reveal.js, scrollreveal.min.js, main.min.js
-├── res/                # One strings.xml per locale (values/ = English default, values-*/ = translations)
-├── images/             # SVG/PNG assets, download badges, screenshots
-├── videos/             # Feature demo videos
-├── crowdin.yml         # Crowdin file configuration
-├── robots.txt · sitemap.xml · favicon.png
-└── LICENSE             # GPLv3
-```
-
----
+[![GitHub](./images/get-it-on/GitHub.png)](https://github.com/N-Zik-Group/N-Zik/releases/latest)
+[![BetaVersions](./images/get-it-on/GitHubBeta.png)](https://github.com/N-Zik-Group/N-Zik/releases?q=&type=prerelease)
+[![F-Droid](./images/get-it-on/F-Droid.png)](https://f-droid.org/packages/com.nevar.nzik.foss/)
+[![IzzyOnDroid](./images/get-it-on/IzzyOnDroid.png)](https://apt.izzysoft.de/fdroid/index/apk/com.nevar.nzik.foss?repo=main)
+[![OpenAPK](./images/get-it-on/OpenAPK.png)](https://www.openapk.net/n-zik/com.nevar.nzik.foss/)
+[![AndroidFreeware](./images/get-it-on/AndroidFreeware.png)](https://www.androidfreeware.net/download-n-zik-apk.html)
+[![Obtainium](./images/get-it-on/Obtainium.png)](<https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22com.nevar.nzik.foss%22%2C%22url%22%3A%22https%3A%2F%2Fgithub.com%2FN-Zik-Group%2FN-Zik%22%2C%22author%22%3A%22N-Zik-Group%22%2C%22name%22%3A%22N-Zik%20(FOSS)%22%2C%22preferredApkIndex%22%3A0%2C%22additionalSettings%22%3A%22%7B%5C%22includePrereleases%5C%22%3Afalse%2C%5C%22fallbackToOlderReleases%5C%22%3Atrue%2C%5C%22filterReleaseTitlesByRegEx%5C%22%3A%5C%22%5C%22%2C%5C%22filterReleaseNotesByRegEx%5C%22%3A%5C%22%5C%22%2C%5C%22verifyLatestTag%5C%22%3Afalse%2C%5C%22sortMethodChoice%5C%22%3A%5C%22date%5C%22%2C%5C%22useLatestAssetDateAsReleaseDate%5C%22%3Afalse%2C%5C%22releaseTitleAsVersion%5C%22%3Afalse%2C%5C%22trackOnly%5C%22%3Afalse%2C%5C%22versionExtractionRegEx%5C%22%3A%5C%22%5C%22%2C%5C%22matchGroupToUse%5C%22%3A%5C%22%5C%22%2C%5C%22versionDetection%5C%22%3Atrue%2C%5C%22releaseDateAsVersion%5C%22%3Afalse%2C%5C%22useVersionCodeAsOSVersion%5C%22%3Afalse%2C%5C%22apkFilterRegEx%5C%22%3A%5C%22N-Zik-foss%5C%5C%5C%5C.apk%5C%22%2C%5C%22invertAPKFilter%5C%22%3Afalse%2C%5C%22autoApkFilterByArch%5C%22%3Atrue%2C%5C%22appName%5C%22%3A%5C%22N-Zik%20(FOSS)%5C%22%2C%5C%22appAuthor%5C%22%3A%5C%22N-Zik-Group%5C%22%2C%5C%22shizukuPretendToBeGooglePlay%5C%22%3Afalse%2C%5C%22allowInsecure%5C%22%3Afalse%2C%5C%22exemptFromBackgroundUpdates%5C%22%3Afalse%2C%5C%22skipUpdateNotifications%5C%22%3Afalse%2C%5C%22about%5C%22%3A%5C%22N-Zik%20is%20a%20multilingual%20YouTube%20Music%20client%20built%20with%20performance%20improvements%2C%20UI%2FUX%20refinement%2C%20and%20new%20features.%5C%22%2C%5C%22refreshBeforeDownload%5C%22%3Afalse%2C%5C%22includeZips%5C%22%3Afalse%2C%5C%22zippedApkFilterRegEx%5C%22%3A%5C%22%5C%22%2C%5C%22includeTarballs%5C%22%3Afalse%2C%5C%22tarballedApkFilterRegEx%5C%22%3A%5C%22%5C%22%7D%22%2C%22overrideSource%22%3Anull%7D>)
+[![Appteka](./images/get-it-on/Appteka.png)](https://appteka.store/search?q=N-Zik)
 
 <div align="center">
 
@@ -82,10 +75,10 @@ Join the N-Zik Discord:
 
 # 🎧 Features
 
-- 🌍 **Multilingual Support**: 46 translated locales in `res/` + English default - 35 are selectable in the footer language selector.
+- 🌍 **Multilingual Support**: 46 languages - 45 translated locales in `res/` + English default, 35 are selectable in the footer language selector.
 - 📥 **Download Hub**: Store badges for GitHub, F-Droid, IzzyOnDroid, OpenAPK, AndroidFreeware, Obtainium and Appteka, plus a dedicated N-Zik Desktop Compagnon section.
-- 🎬 **Feature Showcase**: Demo videos walking through the app's main features - lyrics, Discord Rich Presence, offline caching, search, OTA updates, artist pages, playback queue, history and more.
-- 🎨 **Theme Presets Gallery**: Preview every visual theme the app ships with.
+- 🎬 **Feature Showcase**: 10 demo videos - home, lyrics, audio visualizer, rewind, songs, search, OTA updates, carrousel, artist pages and settings.
+- 🎨 **Theme Presets**: Previews of the 6 visual themes the app ships with.
 - ⚡ **Zero Build**: Vanilla HTML/CSS/JavaScript - no framework, no build step, no dependencies.
 - 📱 **Fully Responsive**: From phone to widescreen.
 - 🔎 **SEO Ready**: `robots.txt`, `sitemap.xml` and semantic single-page markup.
@@ -98,49 +91,49 @@ Here are the languages currently supported:
 - 🇿🇦 **Afrikaans**
 - 🇸🇦 **Arabic**
 - 🇦🇿 **Azerbaijani**
+- 🇪🇸 **Basque**
 - 🇷🇺 **Bashkir**
 - 🇧🇩 **Bangla**
 - 🇪🇸 **Catalan**
+- 🇨🇳 **Chinese (Simplified)**
+- 🇹🇼 **Chinese (Traditional)**
 - 🇨🇿 **Czech**
 - 🇩🇰 **Danish**
-- 🇩🇪 **German**
+- 🇳🇱 **Dutch**
 - 🇬🇧 **English**
 - 🌍 **Esperanto**
-- 🇪🇸 **Spanish**
 - 🇪🇪 **Estonian**
-- 🇪🇸 **Basque**
-- 🇫🇮 **Finnish**
 - 🇵🇭 **Filipino**
+- 🇫🇮 **Finnish**
 - 🇫🇷 **French**
-- 🇮🇪 **Irish**
 - 🇪🇸 **Galician**
+- 🇩🇪 **German**
 - 🇮🇱 **Hebrew**
 - 🇮🇳 **Hindi**
 - 🇭🇺 **Hungarian**
-- 🌐 **Interlingua**
 - 🇮🇩 **Indonesian**
+- 🌐 **Interlingua**
+- 🇮🇪 **Irish**
 - 🇮🇹 **Italian**
 - 🇯🇵 **Japanese**
 - 🇰🇷 **Korean**
 - 🇮🇳 **Malayalam**
-- 🇳🇱 **Dutch**
 - 🇳🇴 **Norwegian**
 - 🇮🇳 **Odia**
 - 🇵🇱 **Polish**
-- 🇵🇹 **Portuguese (Portugal)**
 - 🇧🇷 **Portuguese (Brazil)**
+- 🇵🇹 **Portuguese (Portugal)**
 - 🇷🇴 **Romanian**
 - 🇷🇺 **Russian**
-- 🇱🇰 **Sinhala**
-- 🇷🇸 **Serbian (Latin)**
 - 🇷🇸 **Serbian (Cyrillic)**
+- 🇷🇸 **Serbian (Latin)**
+- 🇱🇰 **Sinhala**
+- 🇪🇸 **Spanish**
 - 🇸🇪 **Swedish**
 - 🇮🇳 **Tamil**
 - 🇮🇳 **Telugu**
 - 🇹🇷 **Turkish**
 - 🇺🇦 **Ukrainian**
-- 🇨🇳 **Chinese (Simplified)**
-- 🇹🇼 **Chinese (Traditional)**
 
 ## 🌍 Help Translate
 
@@ -165,7 +158,7 @@ Join us on Crowdin!
 Pull requests are welcome!
 Feel free to fix bugs, enhance features, or suggest new ideas.
 
-## 📜 Clone the repo
+# 📜 Clone the repo
 
 Use this command to clone the repo
 
@@ -173,12 +166,8 @@ Use this command to clone the repo
 git clone -b main --single-branch https://github.com/N-Zik-Group/N-Zik-Website.git
 ```
 
-## 🌍 Translations
-
-Translations are managed on [Crowdin](https://crowdin.com/project/N-Zik) (see
-[Help Translate](#-help-translate) above).
-To add a translation manually: create `res/values-xx/strings.xml` **and** add the language to
-the footer language selector in `index.html` (the selector currently lags behind `res/` -
+Don't forget: to add a translation, create `res/values-xx/strings.xml` **and** add the language to the
+footer language selector in `index.html` (the selector currently lags behind `res/` -
 11 translated locales are present in `res/` but not yet selectable in the UI).
 
 # 🫂 Acknowledgements
@@ -188,15 +177,14 @@ the footer language selector in `index.html` (the selector currently lags behind
 - [**RiMusic**](https://github.com/fast4x/RiMusic): The website this project is based on.
 - [**ViMusic**](https://github.com/vfsfitvnm/ViMusic)
 
-### 🔗 Related projects:
+### 🎨 Design & UI Contributions:
 
-- [**N-Zik**](https://github.com/N-Zik-Group/N-Zik): The app this site promotes.
-- [**N-Zik Desktop Compagnon**](https://github.com/N-Zik-Group/N-Zik-Desktop-Compagnon)
+- Current banner and logo [**OrangeZXZ**](https://github.com/OrangeZXZ), [**NEVARLeVrai**](https://github.com/NEVARLeVrai)
 
 ### 🌍 Platform & Ecosystem:
 
-- [**Crowdin**](https://crowdin.com/): Community translation platform powering 46+ languages.
-- [**Vercel**](https://vercel.com/): Hosting and deployments.
+- [**Crowdin**](https://crowdin.com/): Community translation platform powering 46 languages.
+- [**Vercel**](https://vercel.com/): Hosting.
 
 # ⚠️ Disclaimer
 
