@@ -34,11 +34,6 @@
   </p>
 </div>
 
-  <br>
-
-<div align="center">
-  [![Launched on DevGlobe](./images/devglobe.svg)](https://devglobe.app/projects/n-zik?utm_source=badge&utm_medium=embed)
-
   <br><br>
 
   [![Localization Progress](https://badges.crowdin.net/N-Zik/localized.svg)](https://crowdin.com/project/N-Zik) [![License: GPL v3](https://img.shields.io/github/license/N-Zik-Group/n-zik-website?color=blue)](https://www.gnu.org/licenses/gpl-3.0)
