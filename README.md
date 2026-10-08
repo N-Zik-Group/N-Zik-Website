@@ -76,7 +76,8 @@ Join the N-Zik Discord:
 # 🎧 Features
 
 - 🌍 **Multilingual Support**: 46 languages - 45 translated locales in `res/` + English default, 35 are selectable in the footer language selector.
-- 📥 **Download Hub**: Store badges for GitHub, F-Droid, IzzyOnDroid, OpenAPK, AndroidFreeware, Obtainium and Appteka, plus a dedicated N-Zik Desktop Compagnon section.
+- 📥 **Download Hub**: Store badges for GitHub, F-Droid, IzzyOnDroid, OpenAPK, AndroidFreeware, Obtainium and Appteka.
+- 🖥️ **N-Zik Desktop Compagnon** (Windows & Linux): Pair it with your phone over local Wi-Fi (QR code or manual code), then browse your library, manage the queue and listen on a large screen while your phone streams the audio through an embedded VLC, no VLC install needed. The phone stays the single source of truth.
 - 🎬 **Feature Showcase**: 10 demo videos - home, lyrics, audio visualizer, rewind, songs, search, OTA updates, carrousel, artist pages and settings.
 - 🎨 **Theme Presets**: Previews of the 6 visual themes the app ships with.
 - ⚡ **Zero Build**: Vanilla HTML/CSS/JavaScript - no framework, no build step, no dependencies.
