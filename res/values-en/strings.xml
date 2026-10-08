@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="opensource_multilingual_application">N-Zik is a multilingual, open-source Android app for streaming music from YouTube Music. N-Zik Desktop Compagnon, its desktop companion, brings your library and playback to Windows and Linux.</string>
     <string name="your_library">Your library.</string>
@@ -7,6 +7,10 @@
     <string name="listen_songs_sing_lyrics">Listen to songs, sing with lyrics, translate words with built-in translator.</string>
     <string name="many_effects">Lots of effects.</string>
     <string name="visualizer_preview_timeline">Visualizer, preview, timeline, play button; apply the effects you prefer.</string>
+    <string name="artist_page_title">Detailed Artist Pages.</string>
+    <string name="artist_page_desc">Explore comprehensive artist profiles with top tracks, albums, and similar artists.</string>
+    <string name="discord_rpc_title">Discord Rich Presence.</string>
+    <string name="discord_rpc_desc">Share what you\'re listening to with your friends on Discord in real-time.</string>
     <string name="modern">Modern.</string>
     <string name="rimusic_is_multilingual_modern_powerful">N-Zik is multilingual, modern, powerful, beautiful app translated into various languages by project collaborators.</string>
     <string name="listen_to_your_favourite_music">Listen to your favorite music</string>
@@ -25,7 +29,7 @@
     <string name="feat_discord_desc">Show off your current musical vibe by displaying your playing track directly on your Discord profile.</string>
     <string name="feat_stats">Listening Statistics.</string>
     <string name="feat_stats_desc">Track your listening habits, favorite artists, and playback trends over time.</string>
-    <string name="feat_caching">Smart Offline Caching.</string>
+    <string name="feat_caching">Your library.</string>
     <string name="feat_caching_desc">Automatically cache songs for offline playback with customizable limits, or download tracks for permanent access.</string>
     <string name="feat_search">Search &amp; Voice Search.</string>
     <string name="feat_search_desc">Easily find your favorite tracks, albums, and artists, even with your voice.</string>
@@ -42,7 +46,7 @@
     <string name="feat_playlists">Playlists Management.</string>
     <string name="feat_playlists_desc">Easily create, import, export, and manage your playlists in one unified interface.</string>
     <string name="feat_queue">Playback Queue.</string>
-    <string name="feat_queue_desc">Keep track of what's playing next, rearrange songs on the fly, and manage your upcoming tracks.</string>
+    <string name="feat_queue_desc">Keep track of what\'s playing next, rearrange songs on the fly, and manage your upcoming tracks.</string>
     <string name="feat_history">Complete History.</string>
     <string name="feat_history_desc">Never lose a song you loved. Access your complete listening history at any time.</string>
     <string name="feat_youtube">YouTube Integration.</string>

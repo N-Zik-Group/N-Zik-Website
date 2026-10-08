@@ -1,14 +1,18 @@
-﻿﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="opensource_multilingual_application">A Open source and multilingual Android application for streaming music from YouTube Music</string>
-    <string name="your_library">Your library.</string>
-    <string name="organized_in_one_place">All organized in one place, favorite songs, downloaded songs, listened songs and all your playlists.</string>
-    <string name="beautiful_player">A beautiful player.</string>
-    <string name="listen_songs_sing_lyrics">Listen to songs, sing with lyrics, translate words with built-in translator.</string>
-    <string name="many_effects">Many effects.</string>
-    <string name="visualizer_preview_timeline">Visualizer, preview, timeline, play button, apply the effects you prefer..</string>
-    <string name="modern">Modern.</string>
-    <string name="rimusic_is_multilingual_modern_powerful">N-Zik is multilingual, modern, powerful, attractive, beautiful and is translated into various languages by project collaborators.</string>
+    <string name="opensource_multilingual_application">N-Zik is a multilingual, open-source Android app for streaming music from YouTube Music. N-Zik Desktop Compagnon, its desktop companion, brings your library and playback to Windows and Linux.</string>
+    <string name="your_library">Smart Offline Caching.</string>
+    <string name="organized_in_one_place">Automatically cache songs for offline playback with customizable cache limits. Download tracks for permanent access.</string>
+    <string name="beautiful_player">Modern and Intuitive UI.</string>
+    <string name="listen_songs_sing_lyrics">Enjoy a refined user experience with a beautiful interface, custom themes, and word-by-word synced lyrics.</string>
+    <string name="many_effects">Advanced Features.</string>
+    <string name="visualizer_preview_timeline">Audio visualizer, sleep timer, advanced audio controls, and many more features.</string>
+    <string name="artist_page_title">Detailed Artist Pages.</string>
+    <string name="artist_page_desc">Explore comprehensive artist profiles with top tracks, albums, and similar artists.</string>
+    <string name="discord_rpc_title">Discord Rich Presence.</string>
+    <string name="discord_rpc_desc">Share what you\'re listening to with your friends on Discord in real-time.</string>
+    <string name="modern">Long-term Support.</string>
+    <string name="rimusic_is_multilingual_modern_powerful">N-Zik is an evolving open-source project delivering frequent OTA updates and broad platform support including Android Auto.</string>
     <string name="listen_to_your_favourite_music">Listen to your favorite music</string>
     <string name="download_rimusic_now">Download N-Zik Now.</string>
     <string name="repository">Repository</string>
@@ -42,18 +46,18 @@
     <string name="feat_playlists">Playlists Management.</string>
     <string name="feat_playlists_desc">Easily create, import, export, and manage your playlists in one unified interface.</string>
     <string name="feat_queue">Playback Queue.</string>
-    <string name="feat_queue_desc">Keep track of what's playing next, rearrange songs on the fly, and manage your upcoming tracks.</string>
+    <string name="feat_queue_desc">Keep track of what\'s playing next, rearrange songs on the fly, and manage your upcoming tracks.</string>
     <string name="feat_history">Complete History.</string>
     <string name="feat_history_desc">Never lose a song you loved. Access your complete listening history at any time.</string>
     <string name="feat_youtube">YouTube Integration.</string>
     <string name="feat_youtube_desc">Recommendations and profile-related content are synchronized directly from your YouTube account.</string>
     <string name="feat_presets">Theme Presets.</string>
     <string name="feat_presets_desc">Choose from 6 beautifully crafted visual themes to personalize your music experience.</string>
-    <string name="feat_nav_compatibility">అనుకూలత</string>
-    <string name="feat_compatibility">బహుళ పరికర అనుకూలత.</string>
-    <string name="feat_compatibility_desc">ఎక్కడైనా మీ సంగీతాన్ని ఆస్వాదిస్తూ ఉండండి! N-Zik Android Mobile, Android Tablet, Android Auto, Android Automotive మరియు Android TV తో అనుకూలంగా ఉంది. (తర్వాత, Wear OS).</string>
-    <string name="feat_profiles">బహుళ ప్రొఫైళ్లు.</string>
-    <string name="feat_profiles_desc">మీ ఖాతాలను కలిపి యాప్‌ను అనుకూలంగా చేసుకోండి: YouTube Music తో సహకరించండి, Discord Rich Presence మరియు Last.fm స్క్రాబ్లింగ్‌ను సక్రియం చేయండి, మరియు యాప్‌లో బహుళ ప్రొఫైళ్లు మధ్య మారండి — ప్రతి ఒక్కదానికి స్వంత పేరు, అవతార్, డేటాబేస్, సెట్టింగ్లు.</string>
+    <string name="feat_nav_compatibility">Compatibility</string>
+    <string name="feat_compatibility">Multiple Device Compatibility.</string>
+    <string name="feat_compatibility_desc">Enjoy your music everywhere! N-Zik is compatible with Android Mobile, Android Tablet, Android Auto, Android Automotive, and Android TV. (Later Wear OS).</string>
+    <string name="feat_profiles">Multiple Profiles.</string>
+    <string name="feat_profiles_desc">Connect your accounts and customize the app: sync with YouTube Music, enable Discord Rich Presence and Last.fm scrobbling, and switch between multiple in-app profiles, each with its own name, avatar, database and settings.</string>
     <string name="feat_rewind">N-Zik Rewind.</string>
-    <string name="feat_rewind_desc">వ్యక్తిగత సారాంశాలతో మీ ప్రతిధ్వనాన్ని మళ్లీ అనుభవించండి. ప్రతి సంవత్సరం, ప్రతి నెల, అన్నీ మీవి.</string>
+    <string name="feat_rewind_desc">Relive your listening with personalized recaps. Every year, every month, all yours.</string>
 </resources>
