@@ -1,0 +1,86 @@
+name: 🗺️ Roadmap
+description: Propose an idea for the N-Zik Website roadmap
+title: "[Roadmap]: "
+labels: ["roadmap"]
+assignees:
+  - NEVARLeVrai
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ****
+        ### 🗺️ READ BEFORE SUBMITTING 🗺️
+
+        Roadmap proposals are reviewed regularly and tied to the **N-Zik** project.
+        If your idea depends on something from the N-Zik mobile app (or should ship in sync with it),
+        link the related N-Zik issue below — it makes prioritization much easier.
+        ****
+
+  - type: checkboxes
+    id: prerequisites
+    attributes:
+      label: 📝 Before submitting
+      description: Please verify the following step before submitting your proposal.
+      options:
+        - label: I have checked for already existing roadmap entries and feature requests.
+          required: true
+
+  - type: input
+    id: related-nzik
+    attributes:
+      label: 🔗 Related N-Zik Issue (Optional)
+      description: If this item depends on or complements something in the N-Zik mobile app, link the related N-Zik issue here.
+      placeholder: "e.g. https://github.com/N-Zik-Group/N-Zik/issues/123 — leave empty if not applicable"
+    validations:
+      required: false
+
+  - type: dropdown
+    id: priority
+    attributes:
+      label: 🎯 Suggested Priority
+      description: How important is this for you? (We may re-prioritize.)
+      options:
+        - Low
+        - Medium
+        - High
+    validations:
+      required: true
+
+  - type: markdown
+    attributes:
+      value: |
+        ****
+
+  - type: textarea
+    id: description
+    attributes:
+      label: 🗺️ Roadmap Item
+      description: Describe the idea you would like to see on the roadmap. What is it, and what would it look like on the site?
+      placeholder: |
+        Add a '...' section to the homepage that shows '...'
+    validations:
+      required: true
+
+  - type: textarea
+    id: why
+    attributes:
+      label: 💡 Why is this worth it?
+      description: What problem does it solve? What is the expected impact on visitors?
+      placeholder: |
+        Visitors currently '...', which means '...'
+    validations:
+      required: true
+
+  - type: textarea
+    id: implementation
+    attributes:
+      label: 🛠️ Implementation Notes (Optional)
+      description: If you have thoughts on how this could be implemented (design ideas, sections involved, languages affected), share them here.
+    validations:
+      required: false
+
+  - type: markdown
+    attributes:
+      value: |
+        ****
