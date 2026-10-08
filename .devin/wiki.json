@@ -1,0 +1,105 @@
+{
+  "repo_notes": [
+    "N-Zik Website is the official website for the N-Zik app, hosted on Vercel at n-zik.vercel.app.",
+    "Zero-build static site: vanilla HTML/CSS/JavaScript, no framework, no build step, no dependencies.",
+    "The entire site lives in index.html (single page); styles in css/ (style.css, custom.css, fonts.css), scripts in js/.",
+    "Localization: one res/values-<locale>/strings.xml per locale (values/ = English default, 46 locales total); 35 are selectable in the footer language selector, the selector lags behind res/ by 11 locales.",
+    "The i18n loader (js/multilingual.js) fetches strings via fetch(), so the site requires an HTTP server (file:// breaks language loading).",
+    "Translations are coordinated on Crowdin (N-Zik project); the footer selector in index.html is updated manually per locale.",
+    "The project is based on the website from RiMusic.",
+    "Tone: concise, developer-friendly; this is a marketing/landing site, not an application."
+  ],
+  "pages": [
+    {
+      "title": "Overview",
+      "page_notes": [
+        {
+          "content": "Introduction to N-Zik Website as the official landing site for the N-Zik app (n-zik.vercel.app)."
+        },
+        {
+          "content": "Summary of what the site offers: hero + downloads, feature showcase, desktop companion section, language selector."
+        }
+      ]
+    },
+    {
+      "title": "Page Structure",
+      "page_notes": [
+        {
+          "content": "Walkthrough of index.html as a single page: section order and how each section is composed."
+        }
+      ]
+    },
+    {
+      "title": "Hero & Downloads",
+      "parent": "Page Structure",
+      "page_notes": [
+        {
+          "content": "Hero section, store download badges (GitHub, F-Droid, IzzyOnDroid, OpenAPK, AndroidFreeware, Obtainium, Appteka) and their target links."
+        }
+      ]
+    },
+    {
+      "title": "Desktop Compagnon Section",
+      "parent": "Page Structure",
+      "page_notes": [
+        {
+          "content": "The dedicated N-Zik Desktop Compagnon (Windows & Linux) section: pairing with the phone over local Wi-Fi, download badges."
+        }
+      ]
+    },
+    {
+      "title": "Feature Showcase",
+      "parent": "Page Structure",
+      "page_notes": [
+        {
+          "content": "Feature sections (lyrics, Discord Rich Presence, offline caching, search, OTA, artist pages, queue, history...) with their demo videos from videos/."
+        }
+      ]
+    },
+    {
+      "title": "Technology Stack",
+      "page_notes": [
+        {
+          "content": "Vanilla HTML/CSS/JavaScript, ScrollReveal (scrollreveal.min.js), no framework, no build step."
+        }
+      ]
+    },
+    {
+      "title": "i18n System",
+      "parent": "Technology Stack",
+      "page_notes": [
+        {
+          "content": "How strings are loaded: res/values-<locale>/strings.xml, js/multilingual.js fetch flow, footer language selector in index.html."
+        },
+        {
+          "content": "Locale coverage: 46 locales in res/ vs the 35 selectable in the UI, and the 11-locale gap."
+        }
+      ]
+    },
+    {
+      "title": "Assets",
+      "parent": "Technology Stack",
+      "page_notes": [
+        {
+          "content": "images/ (banners, get-it-on badges, Screenshots/*.webp, DevGlobe/Discord badges), videos/ (feature demo MP4s)."
+        }
+      ]
+    },
+    {
+      "title": "Deployment & SEO",
+      "page_notes": [
+        {
+          "content": "Vercel hosting (n-zik.vercel.app), robots.txt, sitemap.xml, favicon."
+        }
+      ]
+    },
+    {
+      "title": "Contributing",
+      "page_notes": [
+        {
+          "content": "How to add a translation: create res/values-xx/strings.xml and add the language to the footer selector in index.html; pull request process."
+        }
+      ]
+    }
+  ]
+}
