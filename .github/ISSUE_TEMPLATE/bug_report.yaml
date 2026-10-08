@@ -1,0 +1,145 @@
+name: 👾 Bug report
+description: Make a bug report to help us improve N-Zik Website
+title: "[BUG]: "
+labels: ["bug"]
+assignees:
+  - NEVARLeVrai
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ****
+        ### ❗ READ BEFORE SUBMITTING ❗
+
+        * **Language not loading / missing strings:**
+        The i18n loader uses `fetch()` — the site must be served over HTTP. If you opened `index.html` directly via `file://`, language loading is broken by design: test with a local HTTP server (`python -m http.server`) before opening a ticket.
+        * **Styling / layout differences:**
+        The site is fully responsive — some layout differences between phone, tablet and desktop are intentional.
+        ****
+
+  - type: checkboxes
+    id: prerequisites
+    attributes:
+      label: 📝 Before submitting
+      description: Please verify the following steps before submitting your issue. Completing these steps may fix problems!
+      options:
+        - label: I have tested on the live site (n-zik.vercel.app) and/or with a local HTTP server.
+          required: true
+        - label: I have checked for already existing issues.
+          required: true
+        - label: I have cleared my browser cache / done a hard refresh.
+          required: true
+
+  - type: input
+    id: version-number
+    attributes:
+      label: 🏷️ Commit
+      description: Please specify the commit of N-Zik-Website affected.
+      placeholder: "e.g. commit a1b2c3d — or 'latest main'"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: browser
+    attributes:
+      label: 🌐 Browser
+      description: Which browser are you using?
+      options:
+        - Chrome
+        - Firefox
+        - Safari
+        - Edge
+        - Other
+    validations:
+      required: true
+
+  - type: dropdown
+    id: device
+    attributes:
+      label: 📱 Device
+      description: On which device does the issue occur?
+      options:
+        - Desktop
+        - Tablet
+        - Phone
+        - Other
+    validations:
+      required: true
+
+  - type: input
+    id: site-language
+    attributes:
+      label: 🌍 Site Language
+      description: Which language was the site set to when the bug occurred?
+      placeholder: "e.g. English, Français, default..."
+    validations:
+      required: false
+
+  - type: markdown
+    attributes:
+      value: |
+        ****
+
+  - type: textarea
+    id: description
+    attributes:
+      label: 👾 Bug description
+      description: Clearly describe the bug you are experiencing.
+      placeholder: |
+        I want to use the '...' section but '...'
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: 🔄 How to reproduce
+      description: Provide step-by-step instructions on how to trigger the bug.
+      placeholder: |
+        1. Go to n-zik.vercel.app
+        2. Click on '...'
+        3. Scroll down to '...'
+        4. Boom! Error happens
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected-behavior
+    attributes:
+      label: ✨ Expected Behavior
+      description: What do you expect to happen instead?
+      placeholder: |
+        I expected that the '...' section would '...'
+    validations:
+      required: true
+
+  - type: textarea
+    id: media
+    attributes:
+      label: 📸 Media (Optional)
+      description: Add screenshots or screen recordings to help us see the bug in action.
+    validations:
+      required: false
+
+  - type: markdown
+    attributes:
+      value: |
+        ****
+
+  - type: textarea
+    id: console
+    attributes:
+      label: 📜 Console Errors (Optional)
+      description: |
+        Open your browser devtools (F12) > Console tab and reproduce the issue.
+        Paste any errors/warnings shown there here — they often pinpoint the problem directly.
+      placeholder: |
+        Paste the console output here, or leave empty if nothing was logged
+    validations:
+      required: false
+
+  - type: markdown
+    attributes:
+      value: |
+        ****
