@@ -20,7 +20,7 @@
     <string name="issue_tracker">Issue tracker</string>
     <string name="custom_version">Custom version</string>
     <string name="feat_modern_ui">Modern &amp; Intuitive UI.</string>
-    <string name="feat_modern_ui_desc">Enjoy a refined user experience with a beautiful interface, seamless navigation, and YouTube integration.</string>
+    <string name="feat_modern_ui_desc">A customizable interface with YouTube integration. The optional Glass effect (BETA) is off on fresh installs. Choose native, contour-only or Glass presentation by category and adjust quality in Settings. Glass may increase rendering work and battery use; lower its quality or disable it to suit your device.</string>
     <string name="feat_lyrics">Advanced Lyrics Support.</string>
     <string name="feat_lyrics_desc">Fetch, display, edit, and translate lyrics in real-time with precise word-by-word synchronization.</string>
     <string name="feat_visualizer">Immersive Audio Visualizer.</string>
