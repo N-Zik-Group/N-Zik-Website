@@ -20,7 +20,7 @@
     <string name="issue_tracker">Sorun izleyici</string>
     <string name="custom_version">Özel sürüm</string>
     <string name="feat_modern_ui">Modern &amp; Sezgisel Kullanıcı Arayüzü.</string>
-    <string name="feat_modern_ui_desc">A customizable interface with YouTube integration. The optional Glass effect (BETA) is off on fresh installs. Choose native, contour-only or Glass presentation by category and adjust quality in Settings. Glass may increase rendering work and battery use; lower its quality or disable it to suit your device.</string>
+    <string name="feat_modern_ui_desc">YouTube entegrasyonuna sahip kişiselleştirilebilir bir arayüz. İsteğe bağlı Glass efekti (BETA), yeni kurulumlarda kapalıdır. Kategoriye göre yerel, sadece kontur veya Glass sunumunu seçin ve Ayarlar’dan kaliteyi ayarlayın. Glass, görüntü işleme yükünü ve pil tüketimini artırabilir; cihazınıza uygun şekilde kalitesini düşürün veya devre dışı bırakın.</string>
     <string name="feat_lyrics">Gelişmiş Şarkı Sözü Desteği.</string>
     <string name="feat_lyrics_desc">Şarkı sözlerini gerçek zamanlı olarak alın, görüntüleyin, düzenleyin ve kelime kelime kusursuz senkronizasyon ile çevirin.</string>
     <string name="feat_visualizer">Sürükleyici Ses Görselleştirici.</string>
