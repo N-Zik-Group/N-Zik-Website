@@ -69,6 +69,7 @@ Join the N-Zik Discord:
 - 🖥️ **N-Zik Desktop Compagnon** (Windows & Linux): Pair it with your phone over local Wi-Fi (QR code or manual code), then browse your library, manage the queue and listen on a large screen while your phone streams the audio through an embedded VLC, no VLC install needed. The phone stays the single source of truth.
 - 🎬 **Feature Showcase**: 10 demo videos - home, lyrics, audio visualizer, rewind, songs, search, OTA updates, carrousel, artist pages and settings.
 - 🎨 **Theme Presets**: Previews of the 6 visual themes the app ships with.
+- 🫧 **Optional Glass Effect (BETA)**: The app keeps Glass off on fresh installations. Settings let you choose native, contour-only or Glass presentation by category and adjust rendering quality. Glass may increase rendering work and battery use; it can be lowered or disabled to suit your device.
 - ⚡ **Zero Build**: Vanilla HTML/CSS/JavaScript - no framework, no build step, no dependencies.
 - 📱 **Fully Responsive**: From phone to widescreen.
 - 🔎 **SEO Ready**: `robots.txt`, `sitemap.xml` and semantic single-page markup.
@@ -169,6 +170,7 @@ footer language selector in `index.html` (the selector currently lags behind `re
 
 ### 🎨 Design & UI Contributions:
 
+- The app's Glass adaptations draw on [**Square / Convx Project**](https://github.com/Lelonio/Square), licensed under GPL-3.0, and [**Kyant0 / AndroidLiquidGlass (Backdrop)**](https://github.com/Kyant0/AndroidLiquidGlass), whose backdrop sources are separately licensed under Apache-2.0. These credits describe the Android app's implementation, not the website's rendering.
 - Current banner and logo [**OrangeZXZ**](https://github.com/OrangeZXZ), [**NEVARLeVrai**](https://github.com/NEVARLeVrai)
 
 ### 🌍 Platform & Ecosystem:
