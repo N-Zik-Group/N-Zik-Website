@@ -20,7 +20,7 @@
     <string name="issue_tracker">Suivi des problèmes</string>
     <string name="custom_version">Version personnalisée</string>
     <string name="feat_modern_ui">Interface Utilisateur Moderne &amp; Intuitive.</string>
-    <string name="feat_modern_ui_desc">A customizable interface with YouTube integration. The optional Glass effect (BETA) is off on fresh installs. Choose native, contour-only or Glass presentation by category and adjust quality in Settings. Glass may increase rendering work and battery use; lower its quality or disable it to suit your device.</string>
+    <string name="feat_modern_ui_desc">Une interface personnalisable avec intégration de YouTube. L\'effet « Glass » (BÊTA), disponible en option, est désactivé par défaut lors d\'une nouvelle installation. Choisissez entre l\'affichage « natif », « contours uniquement » ou « Glass » par catégorie et réglez la qualité dans les paramètres. L\'effet « Glass » peut augmenter la charge de rendu et la consommation de la batterie ; réduisez sa qualité ou désactivez-le en fonction de votre appareil.</string>
     <string name="feat_lyrics">Prise en charge avancée des paroles.</string>
     <string name="feat_lyrics_desc">Récupérez, affichez, modifiez et traduisez des paroles en temps réel grâce à une synchronisation précise, mot à mot.</string>
     <string name="feat_visualizer">Visualiseur Audio Immersif.</string>
