@@ -10,6 +10,18 @@
   opacity: 1;
   transition: ease 0.4s opacity;
 }
+
+.glass-credits {
+  font-size: 14px;
+}
+.media-preview-carousel {
+  align-items: flex-start;
+}
+.media-preview-carousel > .device-mockup {
+  min-width: 0;
+  aspect-ratio: 287 / 600;
+  object-fit: contain;
+}
 .loader {
   width: 100px;
   aspect-ratio: 1;

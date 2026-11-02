@@ -185,11 +185,12 @@
                 </div>
                 <div id="featuresDropdown" class="section-dropdown">
                   <a
-                    href="#feature-modern_ui"
+                    href="#feature-ui"
                     class="feature-link"
                     data-name="Modern UI"
                     >Modern UI</a
                   >
+                  <a href="#feature-glass" class="feature-link" data-name="Glass" name="feat_glass_nav">Glass</a>
                   <a
                     href="#feature-lyrics"
                     class="feature-link"
@@ -719,11 +720,93 @@
                           Modern & Intuitive UI.
                         </h3>
                         <p name="feat_modern_ui_desc" class="m-0">
-                          A customizable interface with YouTube integration.
-                          The optional Glass effect (BETA) is off on fresh installs.
-                          Choose native, contour-only or Glass presentation by category
-                          and adjust quality in Settings. Glass may increase rendering
-                          work and battery use; lower its quality or disable it to suit your device.
+                          Enjoy a refined user experience with a beautiful
+                          interface, seamless navigation, and YouTube
+                          integration.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div id="feature-glass" class="feature-extended">
+                  <div class="feature-extended-image">
+                    <div class="mockup-bg">
+                      <img src="./images/feature-bg-02.svg" alt="background" />
+                    </div>
+                    <div class="preset-carousel-wrapper" style="position: relative">
+                      <button
+                        type="button"
+                        class="carousel-btn prev"
+                        aria-label="Previous Glass preview"
+                        onclick="this.parentElement.querySelector('.preset-carousel').scrollBy({ left: -220, behavior: 'smooth' })"
+                      >❮</button>
+                      <button
+                        type="button"
+                        class="carousel-btn next"
+                        aria-label="Next Glass preview"
+                        onclick="this.parentElement.querySelector('.preset-carousel').scrollBy({ left: 220, behavior: 'smooth' })"
+                      >❯</button>
+                      <div class="preset-carousel media-preview-carousel is-revealing up" tabindex="0" aria-label="Glass previews">
+                        <video
+                          class="device-mockup"
+                          src="./videos/glass-demo.mp4"
+                          poster="./images/glass-settings.webp"
+                          width="574"
+                          height="1200"
+                          autoplay
+                          loop
+                          muted
+                          playsinline
+                          aria-label="Glass effect demonstration"
+                        ></video>
+                        <img
+                          class="device-mockup"
+                          src="./images/glass-settings.webp"
+                          width="1282"
+                          height="2681"
+                          alt="Glass settings and quality controls"
+                          loading="lazy"
+                          decoding="async"
+                        />
+                        <img
+                          class="device-mockup"
+                          src="./images/glass-home.webp"
+                          width="1282"
+                          height="2681"
+                          alt="Home with Glass enabled"
+                          loading="lazy"
+                          decoding="async"
+                        />
+                        <img
+                          class="device-mockup"
+                          src="./images/glass-player.webp"
+                          width="1282"
+                          height="2681"
+                          alt="Player with Glass enabled"
+                          loading="lazy"
+                          decoding="async"
+                        />
+                        <img
+                          class="device-mockup"
+                          src="./images/glass-carousel.webp"
+                          width="1282"
+                          height="2681"
+                          alt="Carousel player with Glass enabled"
+                          loading="lazy"
+                          decoding="async"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="feature-extended-body">
+                    <div class="is-revealing down flex">
+                      <div>
+                        <h3 tabindex="0" name="feat_glass" class="mt-0 mb-16">Optional Glass Effect (BETA).</h3>
+                        <p name="feat_glass_desc" class="m-0">Glass is off on fresh installs. In Settings, choose native, contour-only or Glass presentation by category and adjust rendering quality. Glass may increase rendering work and battery use; lower its quality or disable it to suit your device.</p>
+                        <p class="glass-credits">
+                          <span name="feat_glass_credits">Android app Glass credits:</span>
+                          <a href="https://github.com/Lelonio/Square">Square / Convx Project</a> (GPL-3.0);
+                          <a href="https://github.com/Kyant0/AndroidLiquidGlass">Kyant0 AndroidLiquidGlass / Backdrop</a> (Apache-2.0).
                         </p>
                       </div>
                     </div>
@@ -1105,45 +1188,55 @@
                     <div class="mockup-bg">
                       <img src="./images/feature-bg-03.svg" alt="background" />
                     </div>
-                    <div
-                      class="mockup-container four-phones is-revealing up"
-                    >
-                      <img
-                        class="device-mockup phone-1"
-                        src="./images/Screenshots/12.webp"
-                        alt="Search"
-                        loading="lazy"
-                        decoding="async"
-                      />
-                      <img
-                        class="device-mockup phone-2"
-                        src="./images/Screenshots/16.webp"
-                        alt="Voice Search"
-                        loading="lazy"
-                        decoding="async"
-                      />
-                      <img
-                        class="device-mockup phone-3"
-                        src="./images/Screenshots/17.webp"
-                        alt="Song Recognition"
-                        loading="lazy"
-                        decoding="async"
-                      />
-                      <div
-                        class="video-mockup-wrapper device-mockup phone-4"
-                      >
-                        <video
-                          class="video-element"
-                          src="./videos/search.mp4"
-                          autoplay
-                          loop
-                          muted
-                          playsinline
-                        ></video>
+                    <div class="preset-carousel-wrapper" style="position: relative">
+                      <button
+                        type="button"
+                        class="carousel-btn prev"
+                        aria-label="Previous search preview"
+                        onclick="this.parentElement.querySelector('.preset-carousel').scrollBy({ left: -220, behavior: 'smooth' })"
+                      >❮</button>
+                      <button
+                        type="button"
+                        class="carousel-btn next"
+                        aria-label="Next search preview"
+                        onclick="this.parentElement.querySelector('.preset-carousel').scrollBy({ left: 220, behavior: 'smooth' })"
+                      >❯</button>
+                      <div class="preset-carousel media-preview-carousel is-revealing up" tabindex="0" aria-label="Search previews">
+                        <div class="video-mockup-wrapper device-mockup">
+                          <video
+                            class="video-element"
+                            src="./videos/search.mp4"
+                            autoplay
+                            loop
+                            muted
+                            playsinline
+                          ></video>
+                          <img
+                            class="frame-overlay"
+                            src="./images/X17Ultra Frame.png"
+                            alt="Phone Frame"
+                          />
+                        </div>
                         <img
-                          class="frame-overlay"
-                          src="./images/X17Ultra Frame.png"
-                          alt="Phone Frame"
+                          class="device-mockup"
+                          src="./images/Screenshots/12.webp"
+                          alt="Search"
+                          loading="lazy"
+                          decoding="async"
+                        />
+                        <img
+                          class="device-mockup"
+                          src="./images/Screenshots/16.webp"
+                          alt="Voice Search"
+                          loading="lazy"
+                          decoding="async"
+                        />
+                        <img
+                          class="device-mockup"
+                          src="./images/Screenshots/17.webp"
+                          alt="Song Recognition"
+                          loading="lazy"
+                          decoding="async"
                         />
                       </div>
                     </div>
@@ -1773,12 +1866,6 @@
                 </li>
               </ul>
               <div id="footer" class="footer-copyright">2025/2026 N-Zik</div>
-              <p class="footer-copyright">
-                <span>Android app Glass credits:
-                  <a href="https://github.com/Lelonio/Square">Square / Convx Project</a> (GPL-3.0);
-                  <a href="https://github.com/Kyant0/AndroidLiquidGlass">Kyant0 AndroidLiquidGlass / Backdrop</a> (Apache-2.0).
-                </span>
-              </p>
             </div>
           </div>
         </div>

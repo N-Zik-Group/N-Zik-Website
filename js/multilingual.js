@@ -2,6 +2,7 @@ class Multilingual {
   language;
   defaultValues = {};
   selectedValues = {};
+  loadVersion = 0;
   constructor(supported) {
     const user = (navigator.language || navigator.userLanguage).split("-")[0];
     if (supported.includes(user)) {
@@ -20,24 +21,34 @@ class Multilingual {
       .replaceAll("\\t", "\t");
   }
   async loadStrings(lang) {
-    var language = this.language
-    if (lang) language = lang;
-    const selectedValuesResponse = await fetch(
-      `res/values-${language}/strings.xml`,
-    );
-    var selectedValues = await selectedValuesResponse.text();
-
-    const parserSelected = new DOMParser();
-    const xmlDocSelected = parserSelected.parseFromString(
-      selectedValues,
-      "text/xml",
-    );
-    const stringsSelected = xmlDocSelected.getElementsByTagName("string");
-    for (const string of stringsSelected) {
-      const name = string.getAttribute("name");
-      const value = this._decode(string.textContent);
-      this.selectedValues[name] = value;
-    }
+    const language = lang || this.language;
+    const version = ++this.loadVersion;
+    this.language = language;
+    const readValues = async (path) => {
+      const response = await fetch(path);
+      if (!response.ok) throw new Error(`Unable to load ${path}`);
+      const xml = new DOMParser().parseFromString(await response.text(), "text/xml");
+      if (xml.querySelector("parsererror")) throw new Error(`Invalid XML: ${path}`);
+      const values = {};
+      for (const string of xml.getElementsByTagName("string")) {
+        values[string.getAttribute("name")] = this._decode(string.textContent);
+      }
+      return values;
+    };
+    const defaults = Object.keys(this.defaultValues).length
+      ? Promise.resolve(this.defaultValues)
+      : readValues("res/values/strings.xml").catch((error) => {
+          console.warn(error);
+          return this.defaultValues;
+        });
+    const selected = readValues(`res/values-${language}/strings.xml`).catch((error) => {
+      console.warn(error);
+      return {};
+    });
+    const [defaultValues, selectedValues] = await Promise.all([defaults, selected]);
+    if (version !== this.loadVersion) return;
+    this.defaultValues = defaultValues;
+    this.selectedValues = selectedValues;
     if (lang)
       this.updateDom();
   }
@@ -51,8 +62,8 @@ class Multilingual {
     allElements.forEach((el) => {
       const name = el.getAttribute("name");
       if (name) {
-        const value = this.getString(name) || "";
-        el.innerHTML = value.replaceAll("\n", "<br>")
+        const value = this.getString(name);
+        if (value) el.innerHTML = value.replaceAll("\n", "<br>");
       }
     });
   }

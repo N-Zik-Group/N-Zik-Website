@@ -67,12 +67,27 @@ Join the N-Zik Discord:
 - 🌍 **Multilingual Support**: 46 languages - 45 translated locales in `res/` + English default, 35 are selectable in the footer language selector.
 - 📥 **Download Hub**: Store badges for GitHub, F-Droid, IzzyOnDroid, OpenAPK, AndroidFreeware, Obtainium and Appteka.
 - 🖥️ **N-Zik Desktop Compagnon** (Windows & Linux): Pair it with your phone over local Wi-Fi (QR code or manual code), then browse your library, manage the queue and listen on a large screen while your phone streams the audio through an embedded VLC, no VLC install needed. The phone stays the single source of truth.
-- 🎬 **Feature Showcase**: 10 demo videos - home, lyrics, audio visualizer, rewind, songs, search, OTA updates, carrousel, artist pages and settings.
+- 🎬 **Feature Showcase**: 11 demo videos - home, Glass, lyrics, audio visualizer, rewind, songs, search, OTA updates, carrousel, artist pages and settings.
 - 🎨 **Theme Presets**: Previews of the 6 visual themes the app ships with.
 - 🫧 **Optional Glass Effect (BETA)**: The app keeps Glass off on fresh installations. Settings let you choose native, contour-only or Glass presentation by category and adjust rendering quality. Glass may increase rendering work and battery use; it can be lowered or disabled to suit your device.
 - ⚡ **Zero Build**: Vanilla HTML/CSS/JavaScript - no framework, no build step, no dependencies.
 - 📱 **Fully Responsive**: From phone to widescreen.
 - 🔎 **SEO Ready**: `robots.txt`, `sitemap.xml` and semantic single-page markup.
+
+# 🫧 Glass Effect (BETA)
+
+Glass is optional and disabled on fresh installations. Enable it in Settings, choose native, contour-only or Glass presentation by category and adjust quality. It may increase rendering work and battery use; reduce quality or disable it if needed.
+
+<div align="center">
+  <img alt="Glass settings" src="images/glass-settings.webp" height="300px" />
+  <img alt="Home with Glass enabled" src="images/glass-home.webp" height="300px" />
+  <img alt="Player with Glass enabled" src="images/glass-player.webp" height="300px" />
+  <img alt="Carousel with Glass enabled" src="images/glass-carousel.webp" height="300px" />
+  <br><br>
+  <a href="videos/glass-demo.mp4">🎬 Watch the Glass demo</a>
+</div>
+
+Glass credits: [Square / Convx Project](https://github.com/Lelonio/Square) (GPL-3.0) and [Kyant0 AndroidLiquidGlass / Backdrop](https://github.com/Kyant0/AndroidLiquidGlass) (Apache-2.0).
 
 # 🌐 Supported Languages
 
