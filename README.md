@@ -1,5 +1,5 @@
 <div align="center">
-  <img alt="project's banner" src="./images/ic_banner2.png" width="1080" />
+  <img alt="project's banner" src="./images/ic_banner.webp" width="1080" />
 
   <h3>📱 <a href="https://github.com/N-Zik-Group/N-Zik">N-Zik App</a></h3>
   <p>
