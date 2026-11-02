@@ -20,7 +20,11 @@
     <string name="issue_tracker">Suivi des problèmes</string>
     <string name="custom_version">Version personnalisée</string>
     <string name="feat_modern_ui">Interface Utilisateur Moderne &amp; Intuitive.</string>
-    <string name="feat_modern_ui_desc">Profitez d\'une expérience utilisateur raffinée grâce à une interface élégante, une navigation fluide et l\'intégration de YouTube.</string>
+    <string name="feat_modern_ui_desc">Une interface personnalisable avec intégration de YouTube. L\'effet « Glass » (BÊTA), disponible en option, est désactivé par défaut lors d\'une nouvelle installation. Choisissez entre l\'affichage « natif », « contours uniquement » ou « Glass » par catégorie et réglez la qualité dans les paramètres. L\'effet « Glass » peut augmenter la charge de rendu et la consommation de la batterie ; réduisez sa qualité ou désactivez-le en fonction de votre appareil.</string>
+    <string name="feat_glass_nav">Glass</string>
+    <string name="feat_glass">Effet « Glass » en option (BÊTA).</string>
+    <string name="feat_glass_desc">L\'effet Glass est désactivé par défaut lors des nouvelles installations. Dans les Paramètres, choisissez entre l\'affichage natif, « contour uniquement » ou « Glass » par catégorie, puis réglez la qualité de rendu. L\'effet Glass peut augmenter la charge de travail liée au rendu et la consommation de la batterie ; réduisez sa qualité ou désactivez-le en fonction de votre appareil.</string>
+    <string name="feat_glass_credits">Crédits de l\'application Android Glass :</string>
     <string name="feat_lyrics">Prise en charge avancée des paroles.</string>
     <string name="feat_lyrics_desc">Récupérez, affichez, modifiez et traduisez des paroles en temps réel grâce à une synchronisation précise, mot à mot.</string>
     <string name="feat_visualizer">Visualiseur Audio Immersif.</string>
