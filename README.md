@@ -79,10 +79,10 @@ Join the N-Zik Discord:
 Glass is optional and disabled on fresh installations. Enable it in Settings, choose native, contour-only or Glass presentation by category and adjust quality. It may increase rendering work and battery use; reduce quality or disable it if needed.
 
 <div align="center">
-  <img alt="Glass settings" src="images/glass-settings.webp" height="300px" />
-  <img alt="Home with Glass enabled" src="images/glass-home.webp" height="300px" />
-  <img alt="Player with Glass enabled" src="images/glass-player.webp" height="300px" />
-  <img alt="Carousel with Glass enabled" src="images/glass-carousel.webp" height="300px" />
+  <img alt="Glass settings" src="images/Screenshots/25.webp" height="300px" />
+  <img alt="Home with Glass enabled" src="images/Screenshots/26.webp" height="300px" />
+  <img alt="Player with Glass enabled" src="images/Screenshots/27.webp" height="300px" />
+  <img alt="Carousel with Glass enabled" src="images/Screenshots/28.webp" height="300px" />
   <br><br>
   <a href="videos/glass-demo.mp4">🎬 Watch the Glass demo</a>
 </div>
