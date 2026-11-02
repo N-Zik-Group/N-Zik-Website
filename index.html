@@ -36,10 +36,14 @@
     <meta name="theme-color" content="#8a2be2" />
 
     <link rel="icon" type="image/png" href="favicon.png" />
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
     <link href="css/fonts.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/style.css" />
     <script src="js/reveal.js"></script>
     <script name="lang" src="js/multilingual.js"></script>
+    <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/4.0.0/uicons-bold-straight/css/uicons-bold-straight.css" />
+    <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/4.0.0/uicons-bold-rounded/css/uicons-bold-rounded.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@iconscout/unicons@4.0.8/css/line.css" />
     <link rel="stylesheet" href="css/custom.css" />
     <script src="js/additional.js" defer></script>
     <script>
@@ -303,116 +307,14 @@
             </nav>
             <div
               style="
-                align-items: right;
+                align-items: center;
                 text-align: right;
                 display: flex;
                 flex-direction: row;
+                gap: 12px;
               "
             >
-              <svg
-                tabindex="0"
-                class="focustoggle"
-                onclick="toggleDark()"
-                width="36px"
-                height="36px"
-                viewBox="0 0 13.261058 13.427273"
-                version="1.1"
-                id="toggledark"
-                xml:space="preserve"
-                xmlns="http://www.w3.org/2000/svg"
-                xmlns:svg="http://www.w3.org/2000/svg"
-              >
-                <title>Toggle Dark/Light</title>
-                <defs id="defs1" />
-                <g id="layer1" transform="translate(-107.01,-171.72)">
-                  <path
-                    id="rect19"
-                    style="
-                      fill: none;
-                      stroke: var(--color);
-                      stroke-width: 0.85;
-                      stroke-opacity: 0.7;
-                    "
-                    d="m 117.2,173.32 -9.89,9.89 z"
-                  />
-                  <path
-                    id="path19"
-                    style="
-                      fill: none;
-                      stroke: var(--color);
-                      stroke-width: 0.8;
-                      stroke-linecap: butt;
-                      stroke-linejoin: miter;
-                      stroke-opacity: var(--moon);
-                    "
-                    d="m 112.85098,172.27247 c -4.3922,0.18726 -4.60114,5.76063 -2.44418,7.85042 l 2.83261,-2.83473 c -1.08989,-0.96811 -1.39424,-3.05427 -0.38843,-5.01569 z"
-                  />
-                  <path
-                    id="rect20-6"
-                    style="
-                      fill: none;
-                      stroke: var(--color);
-                      stroke-width: 0.8;
-                      stroke-opacity: var(--sun);
-                    "
-                    d="m 111.88267,181.89664 -1.35482,1.35483 z"
-                  />
-                  <ellipse
-                    style="
-                      fill: none;
-                      fill-opacity: 1;
-                      stroke: var(--color);
-                      stroke-width: 0.9;
-                      stroke-opacity: var(--sun);
-                    "
-                    id="path14"
-                    cx="114.46501"
-                    cy="179.3551"
-                    rx="2.17"
-                    ry="2.17"
-                  />
-                  <path
-                    id="rect20"
-                    style="
-                      fill: none;
-                      stroke: var(--color);
-                      stroke-width: 0.8;
-                      stroke-opacity: var(--sun);
-                    "
-                    d="m 114.45497,182.95789 v 2.15254 z"
-                  />
-                  <path
-                    id="rect20-2"
-                    style="
-                      fill: none;
-                      stroke: var(--color);
-                      stroke-width: 0.8;
-                      stroke-opacity: var(--sun);
-                    "
-                    d="m 120.27499,179.32535 h -2.15254 z"
-                  />
-                  <path
-                    id="rect20-6-5"
-                    style="
-                      fill: none;
-                      stroke: var(--color);
-                      stroke-width: 0.8;
-                      stroke-opacity: var(--sun);
-                    "
-                    d="m 118.37937,175.39995 -1.35482,1.35483 z"
-                  />
-                  <path
-                    id="rect20-6-3"
-                    style="
-                      fill: none;
-                      stroke: var(--color);
-                      stroke-width: 0.8;
-                      stroke-opacity: var(--sun);
-                    "
-                    d="m 118.37937,183.25147 -1.35484,-1.35483 z"
-                  />
-                </g>
-              </svg>
+              <i id="toggledark" class="fi fi-br-moon-stars focustoggle" tabindex="0" role="button" aria-label="Switch to dark theme" onclick="toggleDark()"></i>
               <li
                 style="
                   display: flex;
@@ -422,63 +324,7 @@
                 "
                 id="globe-container"
               >
-                <svg
-                  tabindex="0"
-                  class="focustoggle"
-                  id="globe"
-                  width="36px"
-                  height="36px"
-                  viewBox="0 0 13.3 13.4"
-                  version="1.1"
-                  xml:space="preserve"
-                  xmlns="http://www.w3.org/2000/svg"
-                  xmlns:svg="http://www.w3.org/2000/svg"
-                >
-                  <title>Change Language</title>
-                  <defs id="defs1" />
-                  <circle
-                    style="
-                      fill: none;
-                      stroke: var(--color);
-                      stroke-opacity: 1;
-                      stroke-width: 0.75454;
-                    "
-                    id="path2"
-                    cx="6.648"
-                    cy="6.717"
-                    r="5.519"
-                  />
-                  <path
-                    id="rect2"
-                    style="
-                      fill: none;
-                      stroke: var(--color);
-                      stroke-opacity: 1;
-                      stroke-width: 0.75454;
-                    "
-                    d="M 1.413,4.95 H 11.87 Z"
-                  />
-                  <path
-                    id="rect2-7"
-                    style="
-                      fill: none;
-                      stroke: var(--color);
-                      stroke-opacity: 1;
-                      stroke-width: 0.75454;
-                    "
-                    d="M 1.419,8.489 H 11.86 Z"
-                  />
-                  <path
-                    id="rect3"
-                    style="
-                      fill: none;
-                      stroke: var(--color);
-                      stroke-opacity: 1;
-                      stroke-width: 0.75454;
-                    "
-                    d="m 6.638,1.218 c 0,0 -2.482,2.441 -2.482,5.503 0,3.061 2.482,5.503 2.482,5.503 0,0 2.482,-2.442 2.482,-5.503 0,-3.062 -2.482,-5.503 -2.482,-5.503 z"
-                  />
-                </svg>
+                <i id="globe" class="fi fi-bs-globe focustoggle" tabindex="0" role="button" aria-label="Change language"></i>
                 <span
                   id="headerLangText"
                   style="
@@ -1797,7 +1643,7 @@
                   >
                 </li>
                 <li id="languageSelect" value="">
-                  <div tabindex="0" id="langSelect">
+                  <div tabindex="0" id="langSelect" class="fi-bs-globe">
                     language
                     <div id="langBorder">
                       <div id="langOption">
@@ -1845,27 +1691,24 @@
               </ul>
               <ul class="footer-social-links list-reset">
                 <li>
-                  <a tabindex="0" href="https://github.com/N-Zik-Group/N-Zik">
-                    <img
-                      src="./images/github-mark-white.png"
-                      alt="GitHub"
-                      width="24"
-                      height="24"
-                    />
+                  <a tabindex="0" href="https://github.com/N-Zik-Group/N-Zik" aria-label="GitHub">
+                    <i class="uil uil-github" aria-hidden="true"></i>
                   </a>
                 </li>
                 <li>
-                  <a tabindex="0" href="https://discord.gg/bneHC7QRje">
-                    <img
-                      src="./images/discord.svg"
-                      alt="Discord"
-                      width="24"
-                      height="24"
-                    />
+                  <a tabindex="0" href="https://discord.gg/bneHC7QRje" aria-label="Discord">
+                    <svg width="24" height="24" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M13.545 2.907a13.227 13.227 0 0 0-3.257-1.011a.05.05 0 0 0-.052.025c-.141.25-.297.577-.406.833a12.19 12.19 0 0 0-3.658 0a8.258 8.258 0 0 0-.412-.833a.051.051 0 0 0-.052-.025c-1.125.194-2.22.534-3.257 1.011a.041.041 0 0 0-.021.018C.356 6.024-.213 9.047.066 12.032c.001.014.01.028.021.037a13.276 13.276 0 0 0 3.995 2.02a.05.05 0 0 0 .056-.019c.308-.42.582-.863.818-1.329a.05.05 0 0 0-.01-.059a.051.051 0 0 0-.018-.011a8.875 8.875 0 0 1-1.248-.595a.05.05 0 0 1-.02-.066a.051.051 0 0 1 .015-.019c.084-.063.168-.129.248-.195a.05.05 0 0 1 .051-.007c2.619 1.196 5.454 1.196 8.041 0a.052.052 0 0 1 .053.007c.08.066.164.132.248.195a.051.051 0 0 1-.004.085a8.254 8.254 0 0 1-1.249.594a.05.05 0 0 0-.03.03a.052.052 0 0 0 .003.041c.24.465.515.909.817 1.329a.05.05 0 0 0 .056.019a13.235 13.235 0 0 0 4.001-2.02a.049.049 0 0 0 .021-.037c.334-3.451-.559-6.449-2.366-9.106a.034.034 0 0 0-.02-.019Zm-8.198 7.307c-.789 0-1.438-.724-1.438-1.612c0-.889.637-1.613 1.438-1.613c.807 0 1.45.73 1.438 1.613c0 .888-.637 1.612-1.438 1.612Zm5.316 0c-.788 0-1.438-.724-1.438-1.612c0-.889.637-1.613 1.438-1.613c.807 0 1.451.73 1.438 1.613c0 .888-.631 1.612-1.438 1.612Z" /></svg>
                   </a>
                 </li>
               </ul>
               <div id="footer" class="footer-copyright">2025/2026 N-Zik</div>
+              <p class="footer-font-credit">
+                <strong>MiSans Font</strong> - Used under the
+                <a href="https://hyperos.mi.com/font-download/MiSans%E5%AD%97%E4%BD%93%E7%9F%A5%E8%AF%86%E4%BA%A7%E6%9D%83%E8%AE%B8%E5%8F%AF%E5%8D%8F%E8%AE%AE.pdf">MiSans Fonts Intellectual Property License Agreement</a>
+                from Xiaomi Inc.
+                <br />Icons: Uicons by <a href="https://www.flaticon.com/uicons">Flaticon</a>;
+                Unicons by <a href="https://iconscout.com/unicons">IconScout</a>.
+              </p>
             </div>
           </div>
         </div>

@@ -12,12 +12,30 @@ class LoadingScreen {
     loadingScreen.style.display = "flex";
   }
 }
+function updateThemeIcon() {
+  const icon = document.getElementById("toggledark");
+  const dark = document.body.classList.contains("dark");
+  icon.classList.toggle("fi-br-sun", dark);
+  icon.classList.toggle("fi-br-moon-stars", !dark);
+  const label = dark ? "Switch to light theme" : "Switch to dark theme";
+  icon.setAttribute("aria-label", label);
+  icon.setAttribute("title", label);
+}
+updateThemeIcon();
+
 // Dark Mode (Initialization moved to index.html inline script to prevent flash)
 function toggleDark() {
   const dark = document.body.classList.contains("dark");
   document.body.classList.toggle("dark");
   localStorage.setItem("dark", !dark);
+  updateThemeIcon();
 }
+document.getElementById("toggledark").addEventListener("keydown", (event) => {
+  if (event.key === "Enter" || event.key === " ") {
+    event.preventDefault();
+    toggleDark();
+  }
+});
 // Detect Touch to prevent colouring Dark/Light Button
 function detecttouch() {
   document.getElementById("toggledark").classList.remove("focustoggle");

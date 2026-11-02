@@ -1,3 +1,17 @@
+:root {
+  --site-font: "MiSansLatin VF", "MiSans VF", "MiSansArabicUI VF", system-ui, sans-serif;
+}
+body, button, input, select, textarea,
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+  font-family: var(--site-font);
+}
+.footer-font-credit {
+  flex: 0 0 100%;
+  margin: 16px 0 0;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
 .loadingScreen {
   position: fixed;
   width: 100vw;
@@ -70,7 +84,7 @@ ul {
   }
 }
 #globe {
-  margin-left: 8px;
+  margin-left: 0;
   cursor: pointer;
   --color: #abbad0;
   opacity: 0.6;
@@ -87,7 +101,7 @@ ul {
   padding-left: 25px;
   width: fit-content;
   z-index: 5000;
-  background-image: url(../images/lang.svg) !important;
+  background: none !important;
   background-position: 0px 0px;
   background-repeat: no-repeat;
   background-size: auto 21px;
@@ -1025,4 +1039,40 @@ a > img:hover {
   .features-extended .two-phones .phone-right {
     transform: scale(0.85) rotate(3deg);
   }
+}
+
+/* Icon fonts keep their own families instead of inheriting the text font. */
+#globe, #toggledark {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  line-height: 1;
+  color: var(--color, #abbad0);
+}
+#langSelect::before {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 21px;
+}
+.footer-social-links a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #abbad0;
+}
+.footer-social-links a:hover {
+  color: #8a2be2;
+}
+.footer-social-links i, .footer-social-links svg {
+  display: block;
+  width: 24px;
+  height: 24px;
+  font-size: 24px;
+  line-height: 1;
+}
+@media (max-width: 768px) {
+  #globe, #toggledark { font-size: 24px; }
 }
