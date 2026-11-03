@@ -1,59 +1,51 @@
-﻿﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="opensource_multilingual_application">一个以YouTube音乐为歌源的开源多语言安卓音乐播放器</string>
-    <string name="your_library">您的音乐库</string>
-    <string name="organized_in_one_place">全都整理在一个地方，收藏的，已下载的，听过的，还有您所有的歌单。</string>
-    <string name="beautiful_player">精美的播放器</string>
-    <string name="listen_songs_sing_lyrics">听着动听的歌曲，或跟着歌词一起唱，配上内置翻译。</string>
-    <string name="many_effects">各种效果。</string>
-    <string name="visualizer_preview_timeline">可视化器、预览、进度、播放按钮，都可以选择您喜欢的效果...</string>
-    <string name="modern">现代的。</string>
-    <string name="rimusic_is_multilingual_modern_powerful">多语言的、现代化的、强大的、精美的N-Zik是一个由多人合作翻译到各种语言的播放器。</string>
-    <string name="listen_to_your_favourite_music">聆听您最喜欢的音乐</string>
-    <string name="download_rimusic_now">立即下载N-Zik。</string>
-    <string name="repository">源代码</string>
-    <string name="releases">版本发布</string>
-    <string name="issue_tracker">问题反馈</string>
-    <string name="custom_version">自定义版本</string>
-    <string name="feat_modern_ui">Modern &amp; Intuitive UI.</string>
-    <string name="feat_modern_ui_desc">Enjoy a refined user experience with a beautiful interface, seamless navigation, and YouTube integration.</string>
-    <string name="feat_lyrics">Advanced Lyrics Support.</string>
-    <string name="feat_lyrics_desc">Fetch, display, edit, and translate lyrics in real-time with precise word-by-word synchronization.</string>
-    <string name="feat_visualizer">Immersive Audio Visualizer.</string>
-    <string name="feat_visualizer_desc">Enjoy real-time visual effects synchronized perfectly with your music.</string>
-    <string name="feat_discord">Discord Rich Presence.</string>
-    <string name="feat_discord_desc">Show off your current musical vibe by displaying your playing track directly on your Discord profile.</string>
-    <string name="feat_stats">Listening Statistics.</string>
-    <string name="feat_stats_desc">Track your listening habits, favorite artists, and playback trends over time.</string>
-    <string name="feat_caching">Smart Offline Caching.</string>
-    <string name="feat_caching_desc">Automatically cache songs for offline playback with customizable limits, or download tracks for permanent access.</string>
-    <string name="feat_search">Search &amp; Voice Search.</string>
-    <string name="feat_search_desc">Easily find your favorite tracks, albums, and artists, even with your voice.</string>
-    <string name="feat_ota">OTA Updates.</string>
-    <string name="feat_ota_desc">Receive automatic in-app updates directly from GitHub without needing to manually download new APKs.</string>
-    <string name="feat_carrousel">Carousel Player View.</string>
-    <string name="feat_carrousel_desc">Enjoy a unique, visually stunning 3D carousel view for your music playback.</string>
-    <string name="feat_artist">Detailed Artist Profiles.</string>
-    <string name="feat_artist_desc">Explore comprehensive artist profiles with top tracks, albums, and similar artists.</string>
-    <string name="feat_settings">Advanced Audio Controls.</string>
-    <string name="feat_settings_desc">Customize your experience with advanced audio controls, backup/restore features, and more.</string>
-    <string name="feat_voice">Hands-free Voice Search.</string>
-    <string name="feat_voice_desc">Find music quickly without typing by using the built-in voice search functionality.</string>
-    <string name="feat_playlists">Playlists Management.</string>
-    <string name="feat_playlists_desc">Easily create, import, export, and manage your playlists in one unified interface.</string>
-    <string name="feat_queue">Playback Queue.</string>
-    <string name="feat_queue_desc">Keep track of what's playing next, rearrange songs on the fly, and manage your upcoming tracks.</string>
-    <string name="feat_history">Complete History.</string>
-    <string name="feat_history_desc">Never lose a song you loved. Access your complete listening history at any time.</string>
-    <string name="feat_youtube">YouTube Integration.</string>
-    <string name="feat_youtube_desc">Recommendations and profile-related content are synchronized directly from your YouTube account.</string>
-    <string name="feat_presets">Theme Presets.</string>
-    <string name="feat_presets_desc">Choose from 6 beautifully crafted visual themes to personalize your music experience.</string>
-    <string name="feat_nav_compatibility">兼容性</string>
-    <string name="feat_compatibility">多设备兼容性。</string>
-    <string name="feat_compatibility_desc">随时随地畅享音乐！N-Zik 支持 Android Mobile、Android Tablet、Android Auto、Android Automotive 和 Android TV。（之后将支持 Wear OS）</string>
-    <string name="feat_profiles">多个配置文件</string>
-    <string name="feat_profiles_desc">关联账号并自定义应用：与 YouTube Music 同步，启用 Discord Rich Presence 和 Last.fm 打点，并在应用内多个配置文件之间切换——每个配置文件都有独立的名称、头像、数据库和设置。</string>
-    <string name="feat_rewind">N-Zik Rewind</string>
-    <string name="feat_rewind_desc">用个性化的回顾重温你的听歌历程。每年、每月，全部属于你。</string>
+
+    <!-- Accueil -->
+    <string name="hero_description">一个以YouTube音乐为歌源的开源多语言安卓音乐播放器</string>
+
+    <!-- Fonctionnalités -->
+    <string name="feature_artists_description">Explore comprehensive artist profiles with top tracks, albums, and similar artists.</string>
+    <string name="feature_artists_title">Detailed Artist Profiles.</string>
+    <string name="feature_audio_controls_description">Customize your experience with advanced audio controls, backup/restore features, and more.</string>
+    <string name="feature_audio_controls_title">Advanced Audio Controls.</string>
+    <string name="feature_carousel_description">Enjoy a unique, visually stunning 3D carousel view for your music playback.</string>
+    <string name="feature_carousel_title">Carousel Player View.</string>
+    <string name="feature_compatibility_description">随时随地畅享音乐！N-Zik 支持 Android Mobile、Android Tablet、Android Auto、Android Automotive 和 Android TV。（之后将支持 Wear OS）</string>
+    <string name="feature_compatibility_title">多设备兼容性。</string>
+    <string name="feature_discord_description">Show off your current musical vibe by displaying your playing track directly on your Discord profile.</string>
+    <string name="feature_discord_title">Discord Rich Presence.</string>
+    <string name="feature_history_description">Never lose a song you loved. Access your complete listening history at any time.</string>
+    <string name="feature_history_title">Complete History.</string>
+    <string name="feature_lyrics_description">Fetch, display, edit, and translate lyrics in real-time with precise word-by-word synchronization.</string>
+    <string name="feature_lyrics_title">Advanced Lyrics Support.</string>
+    <string name="feature_modern_ui_description">Enjoy a refined user experience with a beautiful interface, seamless navigation, and YouTube integration.</string>
+    <string name="feature_modern_ui_title">Modern &amp; Intuitive UI.</string>
+    <string name="feature_offline_caching_description">Automatically cache songs for offline playback with customizable limits, or download tracks for permanent access.</string>
+    <string name="feature_offline_caching_title">Smart Offline Caching.</string>
+    <string name="feature_playlists_description">Easily create, import, export, and manage your playlists in one unified interface.</string>
+    <string name="feature_playlists_title">Playlists Management.</string>
+    <string name="feature_profiles_description">关联账号并自定义应用：与 YouTube Music 同步，启用 Discord Rich Presence 和 Last.fm 打点，并在应用内多个配置文件之间切换——每个配置文件都有独立的名称、头像、数据库和设置。</string>
+    <string name="feature_profiles_title">多个配置文件</string>
+    <string name="feature_queue_description">Keep track of what's playing next, rearrange songs on the fly, and manage your upcoming tracks.</string>
+    <string name="feature_queue_title">Playback Queue.</string>
+    <string name="feature_rewind_description">用个性化的回顾重温你的听歌历程。每年、每月，全部属于你。</string>
+    <string name="feature_rewind_title">N-Zik Rewind</string>
+    <string name="feature_search_description">Easily find your favorite tracks, albums, and artists, even with your voice.</string>
+    <string name="feature_search_title">Search &amp; Voice Search.</string>
+    <string name="feature_theme_presets_description">Choose from 6 beautifully crafted visual themes to personalize your music experience.</string>
+    <string name="feature_theme_presets_title">Theme Presets.</string>
+    <string name="feature_updates_description">Receive automatic in-app updates directly from GitHub without needing to manually download new APKs.</string>
+    <string name="feature_updates_title">OTA Updates.</string>
+    <string name="feature_visualizer_description">Enjoy real-time visual effects synchronized perfectly with your music.</string>
+    <string name="feature_visualizer_title">Immersive Audio Visualizer.</string>
+
+    <!-- Téléchargement -->
+    <string name="download_description">立即下载N-Zik。</string>
+    <string name="download_title">聆听您最喜欢的音乐</string>
+
+    <!-- Pied de page -->
+    <string name="footer_issue_tracker">问题反馈</string>
+    <string name="footer_releases">版本发布</string>
+    <string name="footer_repository">源代码</string>
 </resources>

@@ -1,59 +1,51 @@
-﻿﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="opensource_multilingual_application">Sebuah aplikasi open source dan multi-bahasa untuk memutar lagu dari YouTube Music di platform Android</string>
-    <string name="your_library">Perpustakaan Kamu.</string>
-    <string name="organized_in_one_place">Semua terorganisir di satu tempat, lagu favorit, lagu yang diunduh, lagu yang didengarkan, dan semua daftar putar kamu.</string>
-    <string name="beautiful_player">Pemutar yang Indah.</string>
-    <string name="listen_songs_sing_lyrics">Dengarkan lagu-lagu, menyanyi dengan lirik, atau menerjemahkan lirik dengan fitur bawaan.</string>
-    <string name="many_effects">Banyak Efek.</string>
-    <string name="visualizer_preview_timeline">Visualisator, pratinjau, garis waktu, tombol putar, terapkan efek yang kamu sukai..</string>
-    <string name="modern">Modern.</string>
-    <string name="rimusic_is_multilingual_modern_powerful">N-Zik bersifat multibahasa, modern, kuat, menarik, indah, dan diterjemahkan ke dalam berbagai bahasa oleh para kolaborator proyek.</string>
-    <string name="listen_to_your_favourite_music">Dengarkan lagu favoritmu</string>
-    <string name="download_rimusic_now">Unduh N-Zik Sekarang!</string>
-    <string name="repository">Repositori</string>
-    <string name="releases">Rilisan</string>
-    <string name="issue_tracker">Pelacak masalah</string>
-    <string name="custom_version">Versi kustom</string>
-    <string name="feat_modern_ui">Modern &amp; Intuitive UI.</string>
-    <string name="feat_modern_ui_desc">Enjoy a refined user experience with a beautiful interface, seamless navigation, and YouTube integration.</string>
-    <string name="feat_lyrics">Advanced Lyrics Support.</string>
-    <string name="feat_lyrics_desc">Fetch, display, edit, and translate lyrics in real-time with precise word-by-word synchronization.</string>
-    <string name="feat_visualizer">Immersive Audio Visualizer.</string>
-    <string name="feat_visualizer_desc">Enjoy real-time visual effects synchronized perfectly with your music.</string>
-    <string name="feat_discord">Discord Rich Presence.</string>
-    <string name="feat_discord_desc">Show off your current musical vibe by displaying your playing track directly on your Discord profile.</string>
-    <string name="feat_stats">Listening Statistics.</string>
-    <string name="feat_stats_desc">Track your listening habits, favorite artists, and playback trends over time.</string>
-    <string name="feat_caching">Smart Offline Caching.</string>
-    <string name="feat_caching_desc">Automatically cache songs for offline playback with customizable limits, or download tracks for permanent access.</string>
-    <string name="feat_search">Search &amp; Voice Search.</string>
-    <string name="feat_search_desc">Easily find your favorite tracks, albums, and artists, even with your voice.</string>
-    <string name="feat_ota">OTA Updates.</string>
-    <string name="feat_ota_desc">Receive automatic in-app updates directly from GitHub without needing to manually download new APKs.</string>
-    <string name="feat_carrousel">Carousel Player View.</string>
-    <string name="feat_carrousel_desc">Enjoy a unique, visually stunning 3D carousel view for your music playback.</string>
-    <string name="feat_artist">Detailed Artist Profiles.</string>
-    <string name="feat_artist_desc">Explore comprehensive artist profiles with top tracks, albums, and similar artists.</string>
-    <string name="feat_settings">Advanced Audio Controls.</string>
-    <string name="feat_settings_desc">Customize your experience with advanced audio controls, backup/restore features, and more.</string>
-    <string name="feat_voice">Hands-free Voice Search.</string>
-    <string name="feat_voice_desc">Find music quickly without typing by using the built-in voice search functionality.</string>
-    <string name="feat_playlists">Playlists Management.</string>
-    <string name="feat_playlists_desc">Easily create, import, export, and manage your playlists in one unified interface.</string>
-    <string name="feat_queue">Playback Queue.</string>
-    <string name="feat_queue_desc">Keep track of what's playing next, rearrange songs on the fly, and manage your upcoming tracks.</string>
-    <string name="feat_history">Complete History.</string>
-    <string name="feat_history_desc">Never lose a song you loved. Access your complete listening history at any time.</string>
-    <string name="feat_youtube">YouTube Integration.</string>
-    <string name="feat_youtube_desc">Recommendations and profile-related content are synchronized directly from your YouTube account.</string>
-    <string name="feat_presets">Theme Presets.</string>
-    <string name="feat_presets_desc">Choose from 6 beautifully crafted visual themes to personalize your music experience.</string>
-    <string name="feat_nav_compatibility">Kesesuaian</string>
-    <string name="feat_compatibility">Kompatibilitas Beberapa Perangkat.</string>
-    <string name="feat_compatibility_desc">Nikmati musik Anda di mana saja! N-Zik kompatibel dengan Android Mobile, Android Tablet, Android Auto, Android Automotive, dan Android TV. (Nantinya, Wear OS).</string>
-    <string name="feat_profiles">Profil berganda.</string>
-    <string name="feat_profiles_desc">Hubungkan akun Anda dan sesuaikan aplikasi: sinkronkan dengan YouTube Music, aktifkan Discord Rich Presence dan scrobbling Last.fm, dan beralih antara beberapa profil di dalam aplikasi — masing-masing dengan nama, avatar, basis data, dan pengaturan sendiri.</string>
-    <string name="feat_rewind">N-Zik Rewind.</string>
-    <string name="feat_rewind_desc">Rasakan kembali musik Anda dengan ringkasan personal. Setiap tahun, setiap bulan, semua milik Anda.</string>
+
+    <!-- Accueil -->
+    <string name="hero_description">Sebuah aplikasi open source dan multi-bahasa untuk memutar lagu dari YouTube Music di platform Android</string>
+
+    <!-- Fonctionnalités -->
+    <string name="feature_artists_description">Explore comprehensive artist profiles with top tracks, albums, and similar artists.</string>
+    <string name="feature_artists_title">Detailed Artist Profiles.</string>
+    <string name="feature_audio_controls_description">Customize your experience with advanced audio controls, backup/restore features, and more.</string>
+    <string name="feature_audio_controls_title">Advanced Audio Controls.</string>
+    <string name="feature_carousel_description">Enjoy a unique, visually stunning 3D carousel view for your music playback.</string>
+    <string name="feature_carousel_title">Carousel Player View.</string>
+    <string name="feature_compatibility_description">Nikmati musik Anda di mana saja! N-Zik kompatibel dengan Android Mobile, Android Tablet, Android Auto, Android Automotive, dan Android TV. (Nantinya, Wear OS).</string>
+    <string name="feature_compatibility_title">Kompatibilitas Beberapa Perangkat.</string>
+    <string name="feature_discord_description">Show off your current musical vibe by displaying your playing track directly on your Discord profile.</string>
+    <string name="feature_discord_title">Discord Rich Presence.</string>
+    <string name="feature_history_description">Never lose a song you loved. Access your complete listening history at any time.</string>
+    <string name="feature_history_title">Complete History.</string>
+    <string name="feature_lyrics_description">Fetch, display, edit, and translate lyrics in real-time with precise word-by-word synchronization.</string>
+    <string name="feature_lyrics_title">Advanced Lyrics Support.</string>
+    <string name="feature_modern_ui_description">Enjoy a refined user experience with a beautiful interface, seamless navigation, and YouTube integration.</string>
+    <string name="feature_modern_ui_title">Modern &amp; Intuitive UI.</string>
+    <string name="feature_offline_caching_description">Automatically cache songs for offline playback with customizable limits, or download tracks for permanent access.</string>
+    <string name="feature_offline_caching_title">Smart Offline Caching.</string>
+    <string name="feature_playlists_description">Easily create, import, export, and manage your playlists in one unified interface.</string>
+    <string name="feature_playlists_title">Playlists Management.</string>
+    <string name="feature_profiles_description">Hubungkan akun Anda dan sesuaikan aplikasi: sinkronkan dengan YouTube Music, aktifkan Discord Rich Presence dan scrobbling Last.fm, dan beralih antara beberapa profil di dalam aplikasi — masing-masing dengan nama, avatar, basis data, dan pengaturan sendiri.</string>
+    <string name="feature_profiles_title">Profil berganda.</string>
+    <string name="feature_queue_description">Keep track of what's playing next, rearrange songs on the fly, and manage your upcoming tracks.</string>
+    <string name="feature_queue_title">Playback Queue.</string>
+    <string name="feature_rewind_description">Rasakan kembali musik Anda dengan ringkasan personal. Setiap tahun, setiap bulan, semua milik Anda.</string>
+    <string name="feature_rewind_title">N-Zik Rewind.</string>
+    <string name="feature_search_description">Easily find your favorite tracks, albums, and artists, even with your voice.</string>
+    <string name="feature_search_title">Search &amp; Voice Search.</string>
+    <string name="feature_theme_presets_description">Choose from 6 beautifully crafted visual themes to personalize your music experience.</string>
+    <string name="feature_theme_presets_title">Theme Presets.</string>
+    <string name="feature_updates_description">Receive automatic in-app updates directly from GitHub without needing to manually download new APKs.</string>
+    <string name="feature_updates_title">OTA Updates.</string>
+    <string name="feature_visualizer_description">Enjoy real-time visual effects synchronized perfectly with your music.</string>
+    <string name="feature_visualizer_title">Immersive Audio Visualizer.</string>
+
+    <!-- Téléchargement -->
+    <string name="download_description">Unduh N-Zik Sekarang!</string>
+    <string name="download_title">Dengarkan lagu favoritmu</string>
+
+    <!-- Pied de page -->
+    <string name="footer_issue_tracker">Pelacak masalah</string>
+    <string name="footer_releases">Rilisan</string>
+    <string name="footer_repository">Repositori</string>
 </resources>

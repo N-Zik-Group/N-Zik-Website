@@ -176,6 +176,15 @@ Don't forget: to add a translation, create `res/values-xx/strings.xml` **and** a
 footer language selector in `index.html` (the selector currently lags behind `res/` -
 11 translated locales are present in `res/` but not yet selectable in the UI).
 
+Les clés de traduction sont regroupées par domaine (`hero_`, `navigation_`, `feature_`,
+`download_`, `footer_`) et référencées par les attributs `name` dans `index.html`.
+Conservez les traductions partielles : les clés absentes utilisent la source anglaise.
+Pour vérifier les ressources et leurs références sans dépendance supplémentaire :
+
+```sh
+python -B -m unittest discover -s tests -v
+```
+
 # 🫂 Acknowledgements
 
 ### 🛠 Based on / Inspired by:

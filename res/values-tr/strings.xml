@@ -1,67 +1,57 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="opensource_multilingual_application">N-Zik, YouTube Music’ten müzik dinlemek için tasarlanmış çok dilli, açık kaynaklı bir Android uygulamasıdır. Masaüstü versiyonu olan N-Zik Masaüstü Yardımcısı ise müzik arşivinizi ve çalma işlevlerini Windows ve Linux işletim sistemlerine taşır.</string>
-    <string name="your_library">Akıllı Çevrimdışı Önbellekleme.</string>
-    <string name="organized_in_one_place">Özelleştirilebilir önbellek sınırları sayesinde şarkıları çevrimdışı dinlemek için otomatik olarak önbelleğe alın. Kalıcı erişim için şarkıları indirin.</string>
-    <string name="beautiful_player">Modern ve Sezgisel Kullanıcı Arayüzü.</string>
-    <string name="listen_songs_sing_lyrics">Güzel bir arayüz, özelleştirilebilir temalar ve kelime kelime senkronize edilmiş şarkı sözleri ile zarif bir kullanıcı deneyiminin tadını çıkarın.</string>
-    <string name="many_effects">Gelişmiş Özellikler.</string>
-    <string name="visualizer_preview_timeline">Ses görselleştirici, uyku zamanlayıcı, gelişmiş ses kontrolleri ve daha pek çok özellik.</string>
-    <string name="artist_page_title">Ayrıntılı Sanatçı Sayfaları.</string>
-    <string name="artist_page_desc">En popüler şarkıları, albümleri ve benzer sanatçıları içeren kapsamlı sanatçı profillerini keşfedin.</string>
-    <string name="discord_rpc_title">Discord Zengin Varlık.</string>
-    <string name="discord_rpc_desc">Dinlediğin müziği Discord\'daki arkadaşlarınla gerçek zamanlı olarak paylaş.</string>
-    <string name="modern">Uzun Vadeli Destek.</string>
-    <string name="rimusic_is_multilingual_modern_powerful">N-Zik, sık sık OTA güncellemeleri sunan ve Android Auto dahil olmak üzere geniş bir platform desteği sağlayan, sürekli gelişen bir açık kaynak projesidir.</string>
-    <string name="listen_to_your_favourite_music">En sevdiğiniz müzikleri dinleyin</string>
-    <string name="download_rimusic_now">N-Zik’i şimdi indirin.</string>
-    <string name="repository">Depo</string>
-    <string name="releases">Sürümler</string>
-    <string name="issue_tracker">Sorun izleyici</string>
-    <string name="custom_version">Özel sürüm</string>
-    <string name="feat_modern_ui">Modern &amp; Sezgisel Kullanıcı Arayüzü.</string>
-    <string name="feat_modern_ui_desc">YouTube entegrasyonuna sahip kişiselleştirilebilir bir arayüz. İsteğe bağlı Glass efekti (BETA), yeni kurulumlarda kapalıdır. Kategoriye göre yerel, sadece kontur veya Glass sunumunu seçin ve Ayarlar’dan kaliteyi ayarlayın. Glass, görüntü işleme yükünü ve pil tüketimini artırabilir; cihazınıza uygun şekilde kalitesini düşürün veya devre dışı bırakın.</string>
-    <string name="feat_glass_nav">Glass</string>
-    <string name="feat_glass">Optional Glass Effect (BETA).</string>
-    <string name="feat_glass_desc">Glass is off on fresh installs. In Settings, choose native, contour-only or Glass presentation by category and adjust rendering quality. Glass may increase rendering work and battery use; lower its quality or disable it to suit your device.</string>
-    <string name="feat_glass_credits">Android app Glass credits:</string>
-    <string name="feat_lyrics">Gelişmiş Şarkı Sözü Desteği.</string>
-    <string name="feat_lyrics_desc">Şarkı sözlerini gerçek zamanlı olarak alın, görüntüleyin, düzenleyin ve kelime kelime kusursuz senkronizasyon ile çevirin.</string>
-    <string name="feat_visualizer">Sürükleyici Ses Görselleştirici.</string>
-    <string name="feat_visualizer_desc">Müziğinizle mükemmel bir şekilde senkronize edilmiş gerçek zamanlı görsel efektlerin keyfini çıkarın.</string>
-    <string name="feat_discord">Discord Zengin Varlık.</string>
-    <string name="feat_discord_desc">Çalmakta olduğun parçayı doğrudan Discord profilinde göstererek şu anki müzik ruh halini sergile.</string>
-    <string name="feat_stats">Dinleme İstatistikleri.</string>
-    <string name="feat_stats_desc">Zaman içinde dinleme alışkanlıklarınızı, favori sanatçılarınızı ve çalma istatistiklerinizi takip edin.</string>
-    <string name="feat_caching">Akıllı Çevrimdışı Önbellekleme.</string>
-    <string name="feat_caching_desc">Özelleştirilebilir sınırlarla şarkıları çevrimdışı dinlemek için otomatik olarak önbelleğe alın veya kalıcı erişim için parçaları indirin.</string>
-    <string name="feat_search">Arama &amp; Sesli Arama.</string>
-    <string name="feat_search_desc">En sevdiğiniz şarkıları, albümleri ve sanatçıları, sesinizle bile kolayca bulun.</string>
-    <string name="feat_ota">OTA Güncellemeleri.</string>
-    <string name="feat_ota_desc">Yeni APK’ları manuel olarak indirmenize gerek kalmadan, GitHub’dan doğrudan uygulama içi otomatik güncellemeleri alın.</string>
-    <string name="feat_carrousel">Karusel Oynatıcı Görünümü.</string>
-    <string name="feat_carrousel_desc">Müzik dinlerken benzersiz ve görsel açıdan büyüleyici bir 3D karusel görünümünün keyfini çıkarın.</string>
-    <string name="feat_artist">Ayrıntılı Sanatçı Profilleri.</string>
-    <string name="feat_artist_desc">En popüler şarkılar, albümler ve benzer sanatçılarla birlikte kapsamlı sanatçı profillerini keşfedin.</string>
-    <string name="feat_settings">Gelişmiş Ses Kontrolleri.</string>
-    <string name="feat_settings_desc">Gelişmiş ses kontrolleri, yedekleme/geri yükleme özellikleri ve daha fazlasıyla deneyiminizi kişiselleştirin.</string>
-    <string name="feat_voice">Eller Serbest Sesli Arama.</string>
-    <string name="feat_voice_desc">Yerleşik sesli arama özelliğini kullanarak, klavyeye bir şey yazmadan müzikleri hızla bulun.</string>
-    <string name="feat_playlists">Çalma Listeleri Yönetimi.</string>
-    <string name="feat_playlists_desc">Tek bir entegre arayüzde çalma listelerinizi kolayca oluşturun, içe aktarın, dışa aktarın ve yönetin.</string>
-    <string name="feat_queue">Oynatma Sırası.</string>
-    <string name="feat_queue_desc">Sıradaki parçayı takip edin, şarkıları anında yeniden sıralayın ve çalınacak parçalarınızı yönetin.</string>
-    <string name="feat_history">Tam Geçmiş.</string>
-    <string name="feat_history_desc">Sevdiğiniz şarkıları asla kaybetmeyin. Dinleme geçmişinizin tamamına istediğiniz zaman erişin.</string>
-    <string name="feat_youtube">YouTube Entegrasyonu.</string>
-    <string name="feat_youtube_desc">Öneriler ve profille ilgili içerikler, YouTube hesabınızdan doğrudan senkronize edilir.</string>
-    <string name="feat_presets">Tema Ön Ayarları.</string>
-    <string name="feat_presets_desc">Müzik deneyiminizi kişiselleştirmek için özenle tasarlanmış 6 görsel tema arasından seçim yapın.</string>
-    <string name="feat_nav_compatibility">Uyumluluk</string>
-    <string name="feat_compatibility">Çoklu Cihaz Uyumluluğu.</string>
-    <string name="feat_compatibility_desc">Müziğinizi her yerde dinleyin! N-Zik, Android cep telefonları, Android tabletler, Android Auto, Android Automotive ve Android TV ile uyumludur. (Daha sonra Wear OS ile de uyumlu olacaktır).</string>
-    <string name="feat_profiles">Çoklu Profiller.</string>
-    <string name="feat_profiles_desc">Hesaplarınızı bağlayın ve uygulamayı kişiselleştirin: YouTube Music ile senkronize edin, Discord Zengin Varlık ve Last.fm kaydetme özelliklerini etkinleştirin ve her biri kendi adı, avatarı, veritabanı ve ayarlarına sahip olan çoklu uygulama içi profiller arasında geçiş yapın.</string>
-    <string name="feat_rewind">N-Zik Geri Sarma.</string>
-    <string name="feat_rewind_desc">Kişiselleştirilmiş özetlerle dinleme deneyiminizi yeniden yaşayın. Her yıl, her ay, size özel.</string>
+
+    <!-- Accueil -->
+    <string name="hero_description">N-Zik, YouTube Music’ten müzik dinlemek için tasarlanmış çok dilli, açık kaynaklı bir Android uygulamasıdır. Masaüstü versiyonu olan N-Zik Masaüstü Yardımcısı ise müzik arşivinizi ve çalma işlevlerini Windows ve Linux işletim sistemlerine taşır.</string>
+
+    <!-- Navigation -->
+    <string name="navigation_glass_label">Glass</string>
+
+    <!-- Fonctionnalités -->
+    <string name="feature_artists_description">En popüler şarkılar, albümler ve benzer sanatçılarla birlikte kapsamlı sanatçı profillerini keşfedin.</string>
+    <string name="feature_artists_title">Ayrıntılı Sanatçı Profilleri.</string>
+    <string name="feature_audio_controls_description">Gelişmiş ses kontrolleri, yedekleme/geri yükleme özellikleri ve daha fazlasıyla deneyiminizi kişiselleştirin.</string>
+    <string name="feature_audio_controls_title">Gelişmiş Ses Kontrolleri.</string>
+    <string name="feature_carousel_description">Müzik dinlerken benzersiz ve görsel açıdan büyüleyici bir 3D karusel görünümünün keyfini çıkarın.</string>
+    <string name="feature_carousel_title">Karusel Oynatıcı Görünümü.</string>
+    <string name="feature_compatibility_description">Müziğinizi her yerde dinleyin! N-Zik, Android cep telefonları, Android tabletler, Android Auto, Android Automotive ve Android TV ile uyumludur. (Daha sonra Wear OS ile de uyumlu olacaktır).</string>
+    <string name="feature_compatibility_title">Çoklu Cihaz Uyumluluğu.</string>
+    <string name="feature_discord_description">Çalmakta olduğun parçayı doğrudan Discord profilinde göstererek şu anki müzik ruh halini sergile.</string>
+    <string name="feature_discord_title">Discord Zengin Varlık.</string>
+    <string name="feature_glass_credits">Android app Glass credits:</string>
+    <string name="feature_glass_description">Glass is off on fresh installs. In Settings, choose native, contour-only or Glass presentation by category and adjust rendering quality. Glass may increase rendering work and battery use; lower its quality or disable it to suit your device.</string>
+    <string name="feature_glass_title">Optional Glass Effect (BETA).</string>
+    <string name="feature_history_description">Sevdiğiniz şarkıları asla kaybetmeyin. Dinleme geçmişinizin tamamına istediğiniz zaman erişin.</string>
+    <string name="feature_history_title">Tam Geçmiş.</string>
+    <string name="feature_lyrics_description">Şarkı sözlerini gerçek zamanlı olarak alın, görüntüleyin, düzenleyin ve kelime kelime kusursuz senkronizasyon ile çevirin.</string>
+    <string name="feature_lyrics_title">Gelişmiş Şarkı Sözü Desteği.</string>
+    <string name="feature_modern_ui_description">YouTube entegrasyonuna sahip kişiselleştirilebilir bir arayüz. İsteğe bağlı Glass efekti (BETA), yeni kurulumlarda kapalıdır. Kategoriye göre yerel, sadece kontur veya Glass sunumunu seçin ve Ayarlar’dan kaliteyi ayarlayın. Glass, görüntü işleme yükünü ve pil tüketimini artırabilir; cihazınıza uygun şekilde kalitesini düşürün veya devre dışı bırakın.</string>
+    <string name="feature_modern_ui_title">Modern &amp; Sezgisel Kullanıcı Arayüzü.</string>
+    <string name="feature_offline_caching_description">Özelleştirilebilir sınırlarla şarkıları çevrimdışı dinlemek için otomatik olarak önbelleğe alın veya kalıcı erişim için parçaları indirin.</string>
+    <string name="feature_offline_caching_title">Akıllı Çevrimdışı Önbellekleme.</string>
+    <string name="feature_playlists_description">Tek bir entegre arayüzde çalma listelerinizi kolayca oluşturun, içe aktarın, dışa aktarın ve yönetin.</string>
+    <string name="feature_playlists_title">Çalma Listeleri Yönetimi.</string>
+    <string name="feature_profiles_description">Hesaplarınızı bağlayın ve uygulamayı kişiselleştirin: YouTube Music ile senkronize edin, Discord Zengin Varlık ve Last.fm kaydetme özelliklerini etkinleştirin ve her biri kendi adı, avatarı, veritabanı ve ayarlarına sahip olan çoklu uygulama içi profiller arasında geçiş yapın.</string>
+    <string name="feature_profiles_title">Çoklu Profiller.</string>
+    <string name="feature_queue_description">Sıradaki parçayı takip edin, şarkıları anında yeniden sıralayın ve çalınacak parçalarınızı yönetin.</string>
+    <string name="feature_queue_title">Oynatma Sırası.</string>
+    <string name="feature_rewind_description">Kişiselleştirilmiş özetlerle dinleme deneyiminizi yeniden yaşayın. Her yıl, her ay, size özel.</string>
+    <string name="feature_rewind_title">N-Zik Geri Sarma.</string>
+    <string name="feature_search_description">En sevdiğiniz şarkıları, albümleri ve sanatçıları, sesinizle bile kolayca bulun.</string>
+    <string name="feature_search_title">Arama &amp; Sesli Arama.</string>
+    <string name="feature_theme_presets_description">Müzik deneyiminizi kişiselleştirmek için özenle tasarlanmış 6 görsel tema arasından seçim yapın.</string>
+    <string name="feature_theme_presets_title">Tema Ön Ayarları.</string>
+    <string name="feature_updates_description">Yeni APK’ları manuel olarak indirmenize gerek kalmadan, GitHub’dan doğrudan uygulama içi otomatik güncellemeleri alın.</string>
+    <string name="feature_updates_title">OTA Güncellemeleri.</string>
+    <string name="feature_visualizer_description">Müziğinizle mükemmel bir şekilde senkronize edilmiş gerçek zamanlı görsel efektlerin keyfini çıkarın.</string>
+    <string name="feature_visualizer_title">Sürükleyici Ses Görselleştirici.</string>
+
+    <!-- Téléchargement -->
+    <string name="download_description">N-Zik’i şimdi indirin.</string>
+    <string name="download_title">En sevdiğiniz müzikleri dinleyin</string>
+
+    <!-- Pied de page -->
+    <string name="footer_issue_tracker">Sorun izleyici</string>
+    <string name="footer_releases">Sürümler</string>
+    <string name="footer_repository">Depo</string>
 </resources>
