@@ -4,12 +4,34 @@ class Multilingual {
   selectedValues = {};
   loadVersion = 0;
   constructor(supported) {
-    const user = (navigator.language || navigator.userLanguage).split("-")[0];
-    if (supported.includes(user)) {
-      this.language = localStorage.getItem("language") || user || "en";
-    } else {
-      this.language = localStorage.getItem("language") || "en";
+    this.supported = supported;
+    const saved = localStorage.getItem("language");
+    this.language = this.resolveLanguage(saved || navigator.language || navigator.userLanguage || "en");
+    if (saved && saved !== this.language) {
+      localStorage.setItem("language", this.language);
     }
+  }
+
+  resolveLanguage(language) {
+    const code = language.toLowerCase().replaceAll("_", "-");
+    const find = (candidate) => this.supported.find((value) => value.toLowerCase() === candidate);
+    const exact = find(code);
+    if (exact) return exact;
+    const base = code.split("-")[0];
+    let candidate = base;
+    if (base === "zh") {
+      const parts = code.split("-");
+      const traditional = parts.includes("hant") ||
+        (!parts.includes("hans") && parts.some((part) => ["tw", "hk", "mo"].includes(part)));
+      candidate = traditional ? "zh-rtw" : "zh-rcn";
+    } else if (base === "sr" && /(?:^|-)(latn|cs)(?:-|$)/.test(code)) {
+      candidate = "sr-rcs";
+    } else if (code === "pt-br") {
+      candidate = "pt-rbr";
+    } else if (base === "in" || base === "iw") {
+      candidate = base === "in" ? "id" : "he";
+    }
+    return find(candidate) || find(base) || "en";
   }
 
   _decode(string) {
@@ -21,7 +43,7 @@ class Multilingual {
       .replaceAll("\\t", "\t");
   }
   async loadStrings(lang) {
-    const language = lang || this.language;
+    const language = this.resolveLanguage(lang || this.language);
     const version = ++this.loadVersion;
     this.language = language;
     const readValues = async (path) => {

@@ -14,12 +14,15 @@ class TranslationReferences(HTMLParser):
         super().__init__()
         self.in_body = False
         self.keys = set()
+        self.locales = []
 
     def handle_starttag(self, tag, attrs):
         if tag == "body":
             self.in_body = True
         if self.in_body:
             self.keys.update(value for name, value in attrs if name == "name")
+            if tag == "div":
+                self.locales.extend(value for name, value in attrs if name == "lang")
 
     def handle_endtag(self, tag):
         if tag == "body":
@@ -62,6 +65,14 @@ class StringResourcesTest(unittest.TestCase):
         for key in self.source_keys:
             with self.subTest(key=key):
                 self.assertRegex(key, r"^(hero|navigation|feature|download|footer)_[a-z_]+$")
+
+    def test_selector_matches_all_locale_catalogs(self):
+        references = TranslationReferences()
+        references.feed((ROOT / "index.html").read_text(encoding="utf-8"))
+        locales = {path.parent.name.removeprefix("values-") for path in self.files if path.parent.name != "values"}
+        self.assertEqual(set(references.locales), locales)
+        self.assertEqual(len(references.locales), len(locales))
+        self.assertEqual(len(locales), 48)
 
     def test_resources_are_sorted_within_each_domain(self):
         for path in self.files:

@@ -37,7 +37,7 @@
   <br><br>
 <div align="center">
   
-  [![Localization Progress](https://badges.crowdin.net/N-Zik/localized.svg)](https://crowdin.com/project/N-Zik) [![License: GPL v3](https://img.shields.io/github/license/N-Zik-Group/n-zik-website?color=blue)](https://www.gnu.org/licenses/gpl-3.0)
+  [![License: GPL v3](https://img.shields.io/github/license/N-Zik-Group/n-zik-website?color=blue)](https://www.gnu.org/licenses/gpl-3.0)
   [![CodeFactor](https://www.codefactor.io/repository/github/n-zik-group/n-zik-website/badge)](https://www.codefactor.io/repository/github/n-zik-group/n-zik-website)
 
 </div>
@@ -64,7 +64,7 @@ Join the N-Zik Discord:
 
 # 🎧 Features
 
-- 🌍 **Multilingual Support**: 46 languages - 45 translated locales in `res/` + English default, 35 are selectable in the footer language selector.
+- 🌍 **Multilingual Support**: Choose your language in the footer; resource catalogs live in `res/` with an English default source.
 - 📥 **Download Hub**: Store badges for GitHub, F-Droid, IzzyOnDroid, OpenAPK, AndroidFreeware, Obtainium and Appteka.
 - 🖥️ **N-Zik Desktop Compagnon** (Windows & Linux): Pair it with your phone over local Wi-Fi (QR code or manual code), then browse your library, manage the queue and listen on a large screen while your phone streams the audio through an embedded VLC, no VLC install needed. The phone stays the single source of truth.
 - 🎬 **Feature Showcase**: 11 demo videos - home, Glass, lyrics, audio visualizer, rewind, songs, search, OTA updates, carrousel, artist pages and settings.
@@ -89,57 +89,19 @@ Glass is optional and disabled on fresh installations. Enable it in Settings, ch
 
 Glass credits: [Square / Convx Project](https://github.com/Lelonio/Square) (GPL-3.0) and [Kyant0 AndroidLiquidGlass / Backdrop](https://github.com/Kyant0/AndroidLiquidGlass) (Apache-2.0).
 
-# 🌐 Supported Languages
+# 🌐 Translations
 
-Thanks to all our amazing contributors!
-Here are the languages currently supported:
+## Overall
 
-- 🇿🇦 **Afrikaans**
-- 🇸🇦 **Arabic**
-- 🇦🇿 **Azerbaijani**
-- 🇪🇸 **Basque**
-- 🇷🇺 **Bashkir**
-- 🇧🇩 **Bangla**
-- 🇪🇸 **Catalan**
-- 🇨🇳 **Chinese (Simplified)**
-- 🇹🇼 **Chinese (Traditional)**
-- 🇨🇿 **Czech**
-- 🇩🇰 **Danish**
-- 🇳🇱 **Dutch**
-- 🇬🇧 **English**
-- 🌍 **Esperanto**
-- 🇪🇪 **Estonian**
-- 🇵🇭 **Filipino**
-- 🇫🇮 **Finnish**
-- 🇫🇷 **French**
-- 🇪🇸 **Galician**
-- 🇩🇪 **German**
-- 🇮🇱 **Hebrew**
-- 🇮🇳 **Hindi**
-- 🇭🇺 **Hungarian**
-- 🇮🇩 **Indonesian**
-- 🌐 **Interlingua**
-- 🇮🇪 **Irish**
-- 🇮🇹 **Italian**
-- 🇯🇵 **Japanese**
-- 🇰🇷 **Korean**
-- 🇮🇳 **Malayalam**
-- 🇳🇴 **Norwegian**
-- 🇮🇳 **Odia**
-- 🇵🇱 **Polish**
-- 🇧🇷 **Portuguese (Brazil)**
-- 🇵🇹 **Portuguese (Portugal)**
-- 🇷🇴 **Romanian**
-- 🇷🇺 **Russian**
-- 🇷🇸 **Serbian (Cyrillic)**
-- 🇷🇸 **Serbian (Latin)**
-- 🇱🇰 **Sinhala**
-- 🇪🇸 **Spanish**
-- 🇸🇪 **Swedish**
-- 🇮🇳 **Tamil**
-- 🇮🇳 **Telugu**
-- 🇹🇷 **Turkish**
-- 🇺🇦 **Ukrainian**
+[![Overall](https://crowdin-stats.rewake.org/embed/29f72ed2-fc01-4570-8c8f-3e6e9acbaf0c/overall.svg?unit=strings&theme=dark&bg=transparent&text=f4efff&muted=b8a9ca&accent=8d5cff&border=transparent)](https://crowdin.com/project/N-Zik)
+
+## Translation Progress
+
+[![Translation Progress](https://crowdin-stats.rewake.org/embed/29f72ed2-fc01-4570-8c8f-3e6e9acbaf0c/table.svg?theme=dark&bg=transparent&text=f4efff&muted=b8a9ca&accent=8d5cff&border=transparent)](https://crowdin.com/project/N-Zik)
+
+## Contributors
+
+[![Contributors](https://crowdin-stats.rewake.org/embed/29f72ed2-fc01-4570-8c8f-3e6e9acbaf0c/contributors.svg?limit=100&unit=strings&avatarSize=35&theme=dark&bg=transparent&text=f4efff&muted=b8a9ca&accent=8d5cff&border=transparent)](https://crowdin.com/project/N-Zik)
 
 ## 🌍 Help Translate
 
@@ -154,6 +116,7 @@ Join us on Crowdin!
 > ❓ Don't see your language?
 
 [![Translated with Crowdin](https://badges.crowdin.net/badge/light/crowdin-on-dark.png)](https://crowdin.com/project/N-Zik)
+
 
 ---
 
@@ -173,8 +136,7 @@ git clone -b main --single-branch https://github.com/N-Zik-Group/N-Zik-Website.g
 ```
 
 Don't forget: to add a translation, create `res/values-xx/strings.xml` **and** add the language to the
-footer language selector in `index.html` (the selector currently lags behind `res/` -
-11 translated locales are present in `res/` but not yet selectable in the UI).
+footer language selector in `index.html`. The selector and resource catalogs must contain the same locale codes.
 
 Les clés de traduction sont regroupées par domaine (`hero_`, `navigation_`, `feature_`,
 `download_`, `footer_`) et référencées par les attributs `name` dans `index.html`.
@@ -183,6 +145,7 @@ Pour vérifier les ressources et leurs références sans dépendance supplément
 
 ```sh
 python -B -m unittest discover -s tests -v
+node --test tests/*.test.cjs
 ```
 
 # 🫂 Acknowledgements
@@ -199,7 +162,7 @@ python -B -m unittest discover -s tests -v
 
 ### 🌍 Platform & Ecosystem:
 
-- [**Crowdin**](https://crowdin.com/): Community translation platform powering 46 languages.
+- [**Crowdin**](https://crowdin.com/): Community translation platform.
 - [**Vercel**](https://vercel.com/): Hosting.
 
 # ⚠️ Disclaimer
