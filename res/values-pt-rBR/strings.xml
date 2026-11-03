@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-
     <!-- Accueil -->
     <string name="hero_description">Um aplicativo Android de código aberto e multilíngue para streaming de músicas do YouTube Music</string>
-
+    <!-- Navigation -->
+    <string name="navigation_glass_label">Glass</string>
     <!-- Fonctionnalités -->
     <string name="feature_artists_description">Explore comprehensive artist profiles with top tracks, albums, and similar artists.</string>
     <string name="feature_artists_title">Detailed Artist Profiles.</string>
@@ -15,6 +15,9 @@
     <string name="feature_compatibility_title">Compatibilidade com vários dispositivos.</string>
     <string name="feature_discord_description">Show off your current musical vibe by displaying your playing track directly on your Discord profile.</string>
     <string name="feature_discord_title">Discord Rich Presence.</string>
+    <string name="feature_glass_credits">Android app Glass credits:</string>
+    <string name="feature_glass_description">Glass is off on fresh installs. In Settings, choose native, contour-only or Glass presentation by category and adjust rendering quality. Glass may increase rendering work and battery use; lower its quality or disable it to suit your device.</string>
+    <string name="feature_glass_title">Optional Glass Effect (BETA).</string>
     <string name="feature_history_description">Never lose a song you loved. Access your complete listening history at any time.</string>
     <string name="feature_history_title">Complete History.</string>
     <string name="feature_lyrics_description">Fetch, display, edit, and translate lyrics in real-time with precise word-by-word synchronization.</string>
@@ -27,7 +30,7 @@
     <string name="feature_playlists_title">Playlists Management.</string>
     <string name="feature_profiles_description">Conecte suas contas e personalize o app: sincronize com o YouTube Music, ative o Discord Rich Presence e o scrobbling do Last.fm e alterne entre vários perfis no app — cada um com seu próprio nome, avatar, banco de dados e configurações.</string>
     <string name="feature_profiles_title">Perfis múltiplos.</string>
-    <string name="feature_queue_description">Keep track of what's playing next, rearrange songs on the fly, and manage your upcoming tracks.</string>
+    <string name="feature_queue_description">Keep track of what\'s playing next, rearrange songs on the fly, and manage your upcoming tracks.</string>
     <string name="feature_queue_title">Playback Queue.</string>
     <string name="feature_rewind_description">Reviva sua música com resumos personalizados. A cada ano, a cada mês, tudo seu.</string>
     <string name="feature_rewind_title">N-Zik Rewind.</string>
@@ -39,11 +42,9 @@
     <string name="feature_updates_title">OTA Updates.</string>
     <string name="feature_visualizer_description">Enjoy real-time visual effects synchronized perfectly with your music.</string>
     <string name="feature_visualizer_title">Immersive Audio Visualizer.</string>
-
     <!-- Téléchargement -->
     <string name="download_description">Baixe o N-Zik agora.</string>
     <string name="download_title">Ouça sua música favorita</string>
-
     <!-- Pied de page -->
     <string name="footer_issue_tracker">Rastreador de bugs</string>
     <string name="footer_releases">Versões</string>
