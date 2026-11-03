@@ -25,7 +25,7 @@
     <string name="feature_modern_ui_description">Enjoy a refined user experience with a beautiful interface, seamless navigation, and YouTube integration.</string>
     <string name="feature_modern_ui_title">Modern &amp; Intuitive UI.</string>
     <string name="feature_offline_caching_description">Automatically cache songs for offline playback with customizable limits, or download tracks for permanent access.</string>
-    <string name="feature_offline_caching_title">Your library.</string>
+    <string name="feature_offline_caching_title">Smart Offline Caching.</string>
     <string name="feature_playlists_description">Easily create, import, export, and manage your playlists in one unified interface.</string>
     <string name="feature_playlists_title">Playlists Management.</string>
     <string name="feature_profiles_description">Connect your accounts and customize the app: sync with YouTube Music, enable Discord Rich Presence and Last.fm scrobbling, and switch between multiple in-app profiles, each with its own name, avatar, database and settings.</string>
