@@ -3,7 +3,7 @@
     <!-- Accueil -->
     <string name="hero_description">N-Zik, YouTube Music’ten müzik dinlemek için tasarlanmış çok dilli, açık kaynaklı bir Android uygulamasıdır. Masaüstü versiyonu olan N-Zik Masaüstü Yardımcısı ise müzik arşivinizi ve çalma işlevlerini Windows ve Linux işletim sistemlerine taşır.</string>
     <!-- Navigation -->
-    <string name="navigation_glass_label">Glass</string>
+    <string name="navigation_glass_label">Cam</string>
     <!-- Fonctionnalités -->
     <string name="feature_artists_description">En popüler şarkılar, albümler ve benzer sanatçılarla birlikte kapsamlı sanatçı profillerini keşfedin.</string>
     <string name="feature_artists_title">Ayrıntılı Sanatçı Profilleri.</string>
@@ -15,9 +15,9 @@
     <string name="feature_compatibility_title">Çoklu Cihaz Uyumluluğu.</string>
     <string name="feature_discord_description">Çalmakta olduğun parçayı doğrudan Discord profilinde göstererek şu anki müzik ruh halini sergile.</string>
     <string name="feature_discord_title">Discord Zengin Varlık.</string>
-    <string name="feature_glass_credits">Android app Glass credits:</string>
-    <string name="feature_glass_description">Glass is off on fresh installs. In Settings, choose native, contour-only or Glass presentation by category and adjust rendering quality. Glass may increase rendering work and battery use; lower its quality or disable it to suit your device.</string>
-    <string name="feature_glass_title">Optional Glass Effect (BETA).</string>
+    <string name="feature_glass_credits">Android uygulaması Cam’ın kaynakları:</string>
+    <string name="feature_glass_description">Cam, yeni kurulumlarda devre dışıdır. Ayarlarda, kategoriye göre yerel, sadece kenar veya Cam görünümünü seçin ve görüntüleme kalitesini ayarlayın. Cam görüntüleme yükünü ve pil tüketimini artırabilir; cihazınıza uygun şekilde kalitesini düşürün veya devre dışı bırakın.</string>
+    <string name="feature_glass_title">İsteğe Bağlı Cam Efekti (BETA).</string>
     <string name="feature_history_description">Sevdiğiniz şarkıları asla kaybetmeyin. Dinleme geçmişinizin tamamına istediğiniz zaman erişin.</string>
     <string name="feature_history_title">Tam Geçmiş.</string>
     <string name="feature_lyrics_description">Şarkı sözlerini gerçek zamanlı olarak alın, görüntüleyin, düzenleyin ve kelime kelime kusursuz senkronizasyon ile çevirin.</string>
