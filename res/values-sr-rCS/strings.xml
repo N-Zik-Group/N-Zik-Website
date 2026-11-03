@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-
     <!-- Accueil -->
     <string name="hero_description">Višejezična Android aplikacija otvorenog koda za strimovanje muzike sa YouTube Music</string>
-
+    <!-- Navigation -->
+    <string name="navigation_glass_label">Glass</string>
     <!-- Fonctionnalités -->
     <string name="feature_artists_description">Explore comprehensive artist profiles with top tracks, albums, and similar artists.</string>
     <string name="feature_artists_title">Detailed Artist Profiles.</string>
@@ -15,6 +15,9 @@
     <string name="feature_compatibility_title">Компатибилност више уређаја.</string>
     <string name="feature_discord_description">Show off your current musical vibe by displaying your playing track directly on your Discord profile.</string>
     <string name="feature_discord_title">Discord Rich Presence.</string>
+    <string name="feature_glass_credits">Android app Glass credits:</string>
+    <string name="feature_glass_description">Glass is off on fresh installs. In Settings, choose native, contour-only or Glass presentation by category and adjust rendering quality. Glass may increase rendering work and battery use; lower its quality or disable it to suit your device.</string>
+    <string name="feature_glass_title">Optional Glass Effect (BETA).</string>
     <string name="feature_history_description">Never lose a song you loved. Access your complete listening history at any time.</string>
     <string name="feature_history_title">Complete History.</string>
     <string name="feature_lyrics_description">Fetch, display, edit, and translate lyrics in real-time with precise word-by-word synchronization.</string>
@@ -27,7 +30,7 @@
     <string name="feature_playlists_title">Playlists Management.</string>
     <string name="feature_profiles_description">Повежите своје налоге и прилагодите апликацију: синхронизујте са YouTube Music, омогућите Discord Rich Presence и Last.fm скробблирање и пребацујте се између више профила у апликацији — сваки са својим именом, аватаром, базом података и подешавањима.</string>
     <string name="feature_profiles_title">Више профила.</string>
-    <string name="feature_queue_description">Keep track of what's playing next, rearrange songs on the fly, and manage your upcoming tracks.</string>
+    <string name="feature_queue_description">Keep track of what\'s playing next, rearrange songs on the fly, and manage your upcoming tracks.</string>
     <string name="feature_queue_title">Playback Queue.</string>
     <string name="feature_rewind_description">Поново доживите слух своје песме са персонализованим резимеима. Сваке године, сваког месеца, све ваше.</string>
     <string name="feature_rewind_title">N-Zik Rewind.</string>
@@ -39,11 +42,9 @@
     <string name="feature_updates_title">OTA Updates.</string>
     <string name="feature_visualizer_description">Enjoy real-time visual effects synchronized perfectly with your music.</string>
     <string name="feature_visualizer_title">Immersive Audio Visualizer.</string>
-
     <!-- Téléchargement -->
     <string name="download_description">Preuzmite N-Zik Odmah.</string>
     <string name="download_title">Slušajte svoju omiljenu muziku</string>
-
     <!-- Pied de page -->
     <string name="footer_issue_tracker">Praćenje problema </string>
     <string name="footer_releases">Izdanja</string>
