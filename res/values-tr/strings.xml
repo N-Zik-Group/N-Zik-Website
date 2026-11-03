@@ -22,7 +22,7 @@
     <string name="feature_history_title">Tam Geçmiş.</string>
     <string name="feature_lyrics_description">Şarkı sözlerini gerçek zamanlı olarak alın, görüntüleyin, düzenleyin ve kelime kelime kusursuz senkronizasyon ile çevirin.</string>
     <string name="feature_lyrics_title">Gelişmiş Şarkı Sözü Desteği.</string>
-    <string name="feature_modern_ui_description">YouTube entegrasyonuna sahip kişiselleştirilebilir bir arayüz. İsteğe bağlı Glass efekti (BETA), yeni kurulumlarda kapalıdır. Kategoriye göre yerel, sadece kontur veya Glass sunumunu seçin ve Ayarlar’dan kaliteyi ayarlayın. Glass, görüntü işleme yükünü ve pil tüketimini artırabilir; cihazınıza uygun şekilde kalitesini düşürün veya devre dışı bırakın.</string>
+    <string name="feature_modern_ui_description">Akıcı gezinme, YouTube entegrasyonu ve isteğe bağlı Glass oynatıcı sunan kişiselleştirilebilir bir arayüz.</string>
     <string name="feature_modern_ui_title">Modern &amp; Sezgisel Kullanıcı Arayüzü.</string>
     <string name="feature_offline_caching_description">Özelleştirilebilir sınırlarla şarkıları çevrimdışı dinlemek için otomatik olarak önbelleğe alın veya kalıcı erişim için parçaları indirin.</string>
     <string name="feature_offline_caching_title">Akıllı Çevrimdışı Önbellekleme.</string>

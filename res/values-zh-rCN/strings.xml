@@ -22,7 +22,7 @@
     <string name="feature_history_title">Complete History.</string>
     <string name="feature_lyrics_description">Fetch, display, edit, and translate lyrics in real-time with precise word-by-word synchronization.</string>
     <string name="feature_lyrics_title">Advanced Lyrics Support.</string>
-    <string name="feature_modern_ui_description">Enjoy a refined user experience with a beautiful interface, seamless navigation, and YouTube integration.</string>
+    <string name="feature_modern_ui_description">A customizable interface with seamless navigation, YouTube integration, and an optional Glass player.</string>
     <string name="feature_modern_ui_title">Modern &amp; Intuitive UI.</string>
     <string name="feature_offline_caching_description">Automatically cache songs for offline playback with customizable limits, or download tracks for permanent access.</string>
     <string name="feature_offline_caching_title">Smart Offline Caching.</string>

@@ -697,6 +697,18 @@ body.dark {
   z-index: 5;
 }
 
+/* Réserver la hauteur des trois aperçus Modern UI, y compris entre les breakpoints. */
+#feature-ui .mockup-container.three-phones {
+  min-height: 0;
+  aspect-ratio: 2 / 3;
+}
+
+@media (max-width: 600px) {
+  #feature-ui .three-phones .device-mockup {
+    width: 52%;
+  }
+}
+
 /* 4 Mockups Fan Layout — home size, no reduction */
 .mockup-container.four-phones {
   position: relative;

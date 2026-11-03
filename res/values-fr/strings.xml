@@ -22,7 +22,7 @@
     <string name="feature_history_title">Historique complet.</string>
     <string name="feature_lyrics_description">Récupérez, affichez, modifiez et traduisez des paroles en temps réel grâce à une synchronisation précise, mot à mot.</string>
     <string name="feature_lyrics_title">Prise en charge avancée des paroles.</string>
-    <string name="feature_modern_ui_description">Une interface personnalisable avec intégration de YouTube. L\'effet « Glass » (BÊTA), disponible en option, est désactivé par défaut lors d\'une nouvelle installation. Choisissez entre l\'affichage « natif », « contours uniquement » ou « Glass » par catégorie et réglez la qualité dans les paramètres. L\'effet « Glass » peut augmenter la charge de rendu et la consommation de la batterie ; réduisez sa qualité ou désactivez-le en fonction de votre appareil.</string>
+    <string name="feature_modern_ui_description">Une interface personnalisable avec une navigation fluide, l\'intégration de YouTube et un lecteur Glass en option.</string>
     <string name="feature_modern_ui_title">Interface Utilisateur Moderne &amp; Intuitive.</string>
     <string name="feature_offline_caching_description">Mettez automatiquement des morceaux en cache pour les écouter hors ligne, avec des limites personnalisables, ou téléchargez-les pour y accéder à tout moment.</string>
     <string name="feature_offline_caching_title">Mise en cache hors ligne intelligente.</string>
