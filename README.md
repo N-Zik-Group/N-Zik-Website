@@ -46,7 +46,7 @@
 
 ## 📚 Wiki
 
-[![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/N-Zik-Group/N-Zik-Website)
+[![Ask DeepWiki](https://img.shields.io/badge/Ask-DeepWiki-8d5cff?style=for-the-badge)](https://deepwiki.com/N-Zik-Group/N-Zik-Website)
 
 <br>
 
