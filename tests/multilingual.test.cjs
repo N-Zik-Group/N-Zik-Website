@@ -15,7 +15,7 @@ function create(browserLanguage = "en", savedLanguage = null, elements = [], env
     window: {},
     navigator: { language: browserLanguage },
     localStorage: { getItem: (key) => storage.get(key) || null, setItem: (key, value) => storage.set(key, value) },
-    document: { body: { getElementsByTagName: () => elements } },
+    document: { createElement: (tagName) => ({ tagName }), body: { getElementsByTagName: () => elements } },
     ...environment,
   });
   return { loader: new Multilingual(supported), storage };
@@ -55,14 +55,15 @@ test("chaque choix du sélecteur conserve sa variante régionale", () => {
 
 test("les noms renommés remplissent le DOM avec repli anglais pour une traduction partielle", () => {
   const elements = ["feature_glass_title", "feature_modern_ui_title"].map((key) => ({
-    getAttribute: (attribute) => attribute === "name" ? key : null, innerHTML: "ancienne langue",
+    getAttribute: (attribute) => attribute === "name" ? key : null,
+    replaceChildren(...nodes) { this.nodes = nodes; },
   }));
   const { loader } = create("fr", null, elements);
   loader.defaultValues = { feature_glass_title: "Glass\nBETA", feature_modern_ui_title: "Modern UI" };
-  loader.selectedValues = { feature_modern_ui_title: "Interface moderne" };
+  loader.selectedValues = { feature_modern_ui_title: "<img src=x onerror=alert(1)>Interface moderne" };
   loader.updateDom();
-  assert.equal(elements[0].innerHTML, "Glass<br>BETA");
-  assert.equal(elements[1].innerHTML, "Interface moderne");
+  assert.deepEqual(elements[0].nodes, ["Glass", { tagName: "br" }, "BETA"]);
+  assert.deepEqual(elements[1].nodes, ["<img src=x onerror=alert(1)>Interface moderne"]);
 });
 
 test("le chargement par catalogue conserve les traductions partielles et le repli anglais", async () => {

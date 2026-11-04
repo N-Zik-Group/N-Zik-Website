@@ -108,7 +108,12 @@ class Multilingual {
       const name = el.getAttribute("name");
       if (name) {
         const value = this.getString(name);
-        if (value) el.innerHTML = value.replaceAll("\n", "<br>");
+        if (value) {
+          const lines = value.split("\n");
+          el.replaceChildren(...lines.flatMap((line, index) =>
+            index ? [document.createElement("br"), line] : [line],
+          ));
+        }
       }
       for (const attribute of ["alt", "aria-label"]) {
         const key = el.getAttribute("data-i18n-" + attribute);
@@ -122,8 +127,8 @@ class Multilingual {
     const lang = el.attributes.lang.value;
     localStorage.setItem("language", lang);
   }
-  loadLanguageSelectInput(el) {
-    const element = el.children[0].children[0].children[0];
+  loadLanguageSelectInput() {
+    const element = document.getElementById("langOption");
     for (const option of element.children) {
       if (option.attributes.lang.value == this.language) {
         langSelect.childNodes[0].textContent = option.innerText;
@@ -158,7 +163,7 @@ class Multilingual {
       id: "campaign", size: "minimal", link: "https://keepandroidopen.org", animation: "on",
       lang: locale,
     });
-    frame.srcdoc = '<!doctype html><html dir="' + direction + '"><body style="margin:0">' +
+    frame.srcdoc = '<!doctype html><html lang="' + locale + '" dir="' + direction + '"><body style="margin:0">' +
       '<div id="campaign"></div><script src="' + url.href.replaceAll("&", "&amp;") + '"></script></body></html>';
   }
   changeLang(a) {
@@ -171,16 +176,20 @@ class Multilingual {
     langSel.setAttribute("value", lang);
     this.updateLanguage(a.target);
     this.loadStrings(lang);
-    if (document.activeElement) document.activeElement.blur();
+    this.closeLanguageMenu(true);
     setTimeout(() => {
       LoadingScreen.loaded();
     }, 400);
   }
+  closeLanguageMenu(restoreFocus = false) {
+    document.body.classList.remove("visible");
+    this.languageMenuTrigger?.setAttribute("aria-expanded", "false");
+    if (restoreFocus) this.languageMenuTrigger?.focus();
+    this.languageMenuTrigger = null;
+  }
   langEvent(e) {
     if (e.target.closest('#langOption')) {
-      if (e.target.tagName.toLowerCase() === 'div') {
-        this.changeLang(e);
-      }
+      if (e.target.matches('#langOption > div[lang]')) this.changeLang(e);
       return;
     }
     
@@ -200,17 +209,23 @@ class Multilingual {
         langOption.style.top = "auto";
       }
       
-      document.body.classList.toggle("visible");
+      const trigger = isGlobe ? document.getElementById("globe") : langSelect;
+      if (this.languageMenuTrigger === trigger) {
+        this.closeLanguageMenu();
+      } else {
+        this.closeLanguageMenu();
+        this.languageMenuTrigger = trigger;
+        trigger.setAttribute("aria-expanded", "true");
+        document.body.classList.add("visible");
+      }
       return;
     }
-    if (document.body.classList.contains("visible")){
-      document.body.classList.remove("visible");
-    }
+    this.closeLanguageMenu();
   };
-  onwheel = window.onwheel = function (e) {
-    if (e.target.id == langSelect.id || e.target.attributes.lang) {
+  onwheel = window.onwheel = (e) => {
+    if (e.target.closest("#langSelect, #langOption")) {
       return;
     }
-    document.body.classList.remove("visible");
+    this.closeLanguageMenu();
   }
 }

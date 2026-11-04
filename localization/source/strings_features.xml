@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="feature_amoled_theme_alt">AMOLED Theme</string>
+    <string name="feature_android_mobile_alt">Android phone</string>
+    <string name="feature_android_tablet_alt">Android tablet</string>
     <string name="feature_artist_profile_alt">Artist Profile</string>
     <string name="feature_artists_description">Explore comprehensive artist profiles with top tracks, albums, and similar artists.</string>
     <string name="feature_artists_title">Detailed Artist Profiles.</string>

@@ -64,7 +64,7 @@ Join the N-Zik Discord:
 
 # 🎧 Features
 
-- 🌍 **Multilingual Support**: Choose your language in the footer; resource catalogs live in `res/` with an English default source.
+- 🌍 **Multilingual Support**: Choose your language from the language menu. English catalogs live in `localization/source/`.
 - 📥 **Download Hub**: Store badges for GitHub, F-Droid, IzzyOnDroid, OpenAPK, AndroidFreeware, Obtainium and Appteka.
 - 🖥️ **N-Zik Desktop Compagnon** (Windows & Linux): Pair it with your phone over local Wi-Fi (QR code or manual code), then browse your library, manage the queue and listen on a large screen while your phone streams the audio through an embedded VLC, no VLC install needed. The phone stays the single source of truth.
 - 🎬 **Feature Showcase**: 11 demo videos - home, Glass, lyrics, audio visualizer, rewind, songs, search, OTA updates, carrousel, artist pages and settings.
@@ -140,7 +140,7 @@ dans `localization/translations/<locale>/`. Le sélecteur de langue dans `index.
 les dossiers d'export utilisent les mêmes codes.
 
 Les catalogues couvrent l'accueil et la navigation, les fonctionnalités, le téléchargement
-et le pied de page. Les attributs `name` dans `index.html` référencent leurs clés.
+et le pied de page. Dans `index.html`, `name` référence le texte et `data-i18n-alt` ou `data-i18n-aria-label` référence les libellés accessibles.
 Le chargeur utilise la source anglaise pour les clés et catalogues manquants.
 Pour vérifier les ressources et leurs références sans dépendance supplémentaire :
 

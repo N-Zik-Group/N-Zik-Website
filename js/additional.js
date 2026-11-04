@@ -51,15 +51,19 @@ function detecttouch() {
 document.onmousedown = function (e) {
   multilingual.langEvent(e)
 }
-document.onkeyup = function (e) {
-  if (e.target.parentElement.id != "langOption" || e.keyCode == 27){
-    document.body.classList.remove("visible")
+document.addEventListener("keydown", (event) => {
+  const option = event.target.closest("#langOption > div");
+  const trigger = event.target.closest("#globe, #langSelect");
+  if (event.key === "Escape" && document.body.classList.contains("visible")) {
+    multilingual.closeLanguageMenu(true);
+  } else if ((option || trigger) && (event.key === "Enter" || event.key === " ")) {
+    event.preventDefault();
+    multilingual.langEvent(event);
+    if (!option && document.body.classList.contains("visible")) {
+      document.getElementById("langOption").firstElementChild.focus();
+    }
   }
-  if (e.keyCode == 13){
-    multilingual.langEvent(e)
-    document.getElementById("langOption").firstElementChild.focus() 
-  }
-}
+});
 
 // Feature Section Observer for Navigation
 document.addEventListener("DOMContentLoaded", function() {

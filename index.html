@@ -325,7 +325,7 @@
                 "
                 id="globe-container"
               >
-                <i id="globe" class="fi fi-bs-globe focustoggle" tabindex="0" role="button" aria-label="Change language" data-i18n-aria-label="navigation_change_language"></i>
+                <i id="globe" aria-expanded="false" aria-controls="langOption" class="fi fi-bs-globe focustoggle" tabindex="0" role="button" aria-label="Change language" data-i18n-aria-label="navigation_change_language"></i>
                 <span
                   id="headerLangText"
                   style="
@@ -394,8 +394,7 @@
                   name="hero_description"
                   class="hero-paragraph"
                 >
-                  A multilingual fork of Kreate, built with performance
-                  improvements, UI/UX refinement, and new features.
+                  N-Zik is a multilingual, open-source Android app for streaming music from YouTube Music. N-Zik Desktop Compagnon, its desktop companion, brings your library and playback to Windows and Linux.
                 </p>
                 <div class="hero-cta-">
                   <a tabindex="0" href="https://github.com/N-Zik-Group/N-Zik/releases/latest">
@@ -1443,7 +1442,7 @@
                       <img
                         class="device-mockup"
                         src="./images/Screenshots/AndroidTablet.webp"
-                        alt="Android Tablet"
+                        alt="Android Tablet" data-i18n-alt="feature_android_tablet_alt"
                         loading="lazy"
                         decoding="async"
                         style="
@@ -1472,7 +1471,7 @@
                       <img
                         class="device-mockup"
                         src="./images/Screenshots/2.webp"
-                        alt="Android Mobile"
+                        alt="Android Mobile" data-i18n-alt="feature_android_mobile_alt"
                         loading="lazy"
                         decoding="async"
                         style="
@@ -1634,7 +1633,7 @@
                   >
                 </li>
                 <li id="languageSelect" value="">
-                  <div tabindex="0" id="langSelect" class="fi-bs-globe">
+                  <div tabindex="0" id="langSelect" role="button" aria-expanded="false" aria-controls="langOption" class="fi-bs-globe">
                     language
                     <div id="langBorder">
                       <div id="langOption">
@@ -1653,8 +1652,8 @@
                         <div tabindex="0" lang="es">Español</div>
                         <div tabindex="0" lang="et">Eesti</div>
                         <div tabindex="0" lang="fa">فارسی</div>
-                        <div tabindex="0" lang="fi">Finnish</div>
-                        <div tabindex="0" lang="fil">Tagalog</div>
+                        <div tabindex="0" lang="fi">Suomi</div>
+                        <div tabindex="0" lang="fil">Filipino</div>
                         <div tabindex="0" lang="fr">Français</div>
                         <div tabindex="0" lang="ga">Gaeilge</div>
                         <div tabindex="0" lang="gl">Galego</div>
@@ -1731,9 +1730,7 @@
       (async () => {
         await multilingual.loadStrings();
         multilingual.updateDom();
-        multilingual.loadLanguageSelectInput(
-          document.querySelector('#languageSelect'),
-        );
+        multilingual.loadLanguageSelectInput();
         multilingual.setAttribute(document.documentElement);
       })();
       reveal();
