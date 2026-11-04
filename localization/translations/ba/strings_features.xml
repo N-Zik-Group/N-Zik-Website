@@ -1,6 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="feature_discord_title">Discord Rich Presence.</string>
     <string name="feature_queue_description">Keep track of what\'s playing next, rearrange songs on the fly, and manage your upcoming tracks.</string>
-    <string name="feature_rewind_title">N-Zik Rewind.</string>
 </resources>

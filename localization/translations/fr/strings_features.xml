@@ -9,7 +9,6 @@
     <string name="feature_compatibility_description">Profitez de votre musique partout ! N-Zik est compatible avec les smartphones Android, les tablettes Android, Android Auto, Android Automotive et Android TV. (Bientôt compatible avec Wear OS).</string>
     <string name="feature_compatibility_title">Compatibilité avec plusieurs appareils.</string>
     <string name="feature_discord_description">Mettez en avant vos goûts musicaux du moment en affichant le morceau que vous écoutez directement sur votre profil Discord.</string>
-    <string name="feature_discord_title">Discord Rich Presence.</string>
     <string name="feature_glass_credits">Crédits de l\'application Android Glass :</string>
     <string name="feature_glass_description">L\'effet Glass est désactivé par défaut lors des nouvelles installations. Dans les Paramètres, choisissez entre l\'affichage natif, « contour uniquement » ou « Glass » par catégorie, puis réglez la qualité de rendu. L\'effet Glass peut augmenter la charge de travail liée au rendu et la consommation de la batterie ; réduisez sa qualité ou désactivez-le en fonction de votre appareil.</string>
     <string name="feature_glass_title">Effet « Glass » en option (BÊTA).</string>
@@ -28,7 +27,6 @@
     <string name="feature_queue_description">Suivez le programme des morceaux à venir, réorganisez-les à la volée et gérez vos prochains morceaux.</string>
     <string name="feature_queue_title">File d\'attente de lecture.</string>
     <string name="feature_rewind_description">Revivez vos écoutes grâce à des résumés personnalisés. Chaque année, chaque mois, rien que pour vous.</string>
-    <string name="feature_rewind_title">Rétrospective de N-Zik.</string>
     <string name="feature_search_description">Retrouvez facilement vos morceaux, albums et artistes préférés, même à l\'aide de votre voix.</string>
     <string name="feature_search_title">Recherche Vocale &amp; Textuelle.</string>
     <string name="feature_theme_presets_description">Choisissez parmi 6 thèmes visuels magnifiquement conçus pour personnaliser votre expérience musicale.</string>

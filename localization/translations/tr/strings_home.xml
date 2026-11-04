@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="hero_description">N-Zik, YouTube Music’ten müzik dinlemek için tasarlanmış çok dilli, açık kaynaklı bir Android uygulamasıdır. Masaüstü versiyonu olan N-Zik Masaüstü Yardımcısı ise müzik arşivinizi ve çalma işlevlerini Windows ve Linux işletim sistemlerine taşır.</string>
-    <string name="navigation_glass_label">Cam</string>
 </resources>

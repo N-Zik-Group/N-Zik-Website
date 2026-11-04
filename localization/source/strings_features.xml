@@ -18,7 +18,7 @@
     <string name="feature_discord_description">Show off your current musical vibe by displaying your playing track directly on your Discord profile.</string>
     <string name="feature_discord_rich_presence_live_alt">Discord Rich Presence Live</string>
     <string name="feature_discord_rich_presence_settings_alt">Discord Rich Presence Settings</string>
-    <string name="feature_discord_title">Discord Rich Presence.</string>
+    <string name="feature_discord_title" translatable="false">Discord Rich Presence.</string>
     <string name="feature_glass_credits">Android app Glass credits:</string>
     <string name="feature_glass_description">Glass is off on fresh installs. In Settings, choose native, contour-only or Glass presentation by category and adjust rendering quality. Glass may increase rendering work and battery use; lower its quality or disable it to suit your device.</string>
     <string name="feature_glass_effect_demonstration_label">Glass effect demonstration</string>
@@ -36,7 +36,7 @@
     <string name="feature_lyrics_title">Advanced Lyrics Support.</string>
     <string name="feature_modern_ui_description">A customizable interface with seamless navigation, YouTube integration, and an optional Glass player.</string>
     <string name="feature_modern_ui_title">Modern &amp; Intuitive UI.</string>
-    <string name="feature_n_zik_rewind_alt">N-Zik Rewind</string>
+    <string name="feature_n_zik_rewind_alt" translatable="false">N-Zik Rewind</string>
     <string name="feature_n_zik_rewind_intro_alt">N-Zik Rewind Intro</string>
     <string name="feature_next_glass_preview_label">Next Glass preview</string>
     <string name="feature_next_search_preview_label">Next search preview</string>
@@ -61,7 +61,7 @@
     <string name="feature_queue_title">Playback Queue.</string>
     <string name="feature_queue_with_mini_player_alt">Queue with Mini Player</string>
     <string name="feature_rewind_description">Relive your listening with personalized recaps. Every year, every month, all yours.</string>
-    <string name="feature_rewind_title">N-Zik Rewind.</string>
+    <string name="feature_rewind_title" translatable="false">N-Zik Rewind.</string>
     <string name="feature_search_alt">Search</string>
     <string name="feature_search_description">Easily find your favorite tracks, albums, and artists, even with your voice.</string>
     <string name="feature_search_previews_label">Search previews</string>

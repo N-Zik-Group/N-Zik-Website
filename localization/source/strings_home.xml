@@ -10,10 +10,10 @@
     <string name="navigation_carousel_player_label">Carousel Player</string>
     <string name="navigation_change_language">Change language</string>
     <string name="navigation_compatibility_label">Compatibility</string>
-    <string name="navigation_discord_rpc_label">Discord RPC</string>
+    <string name="navigation_discord_rpc_label" translatable="false">Discord RPC</string>
     <string name="navigation_download_label">Download</string>
     <string name="navigation_features_label">Features</string>
-    <string name="navigation_glass_label">Glass</string>
+    <string name="navigation_glass_label" translatable="false">Glass</string>
     <string name="navigation_history_label">History</string>
     <string name="navigation_home_label">Home</string>
     <string name="navigation_lyrics_label">Lyrics</string>

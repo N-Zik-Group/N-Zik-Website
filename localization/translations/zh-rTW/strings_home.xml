@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="hero_description">一個開源、支援多語言的 Android 應用程式，用來收聽 YouTube Music上的串流音樂</string>
-    <string name="navigation_glass_label">Glass</string>
 </resources>

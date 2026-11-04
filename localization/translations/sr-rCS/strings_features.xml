@@ -2,10 +2,8 @@
 <resources>
     <string name="feature_compatibility_description">Уживајте у музици било где! N-Zik је компатибилан са Android Mobile, Android Tablet, Android Auto, Android Automotive и Android TV. (Касније, Wear OS).</string>
     <string name="feature_compatibility_title">Компатибилност више уређаја.</string>
-    <string name="feature_discord_title">Discord Rich Presence.</string>
-    <string name="feature_profiles_description">Повежите своје налоге и прилагодите апликацију: синхронизујте са YouTube Music, омогућите Discord Rich Presence и Last.fm скробблирање и пребацујте се између више профила у апликацији — сваки са својим именом, аватаром, базом података и подешавањима.</string>
+    <string name="feature_profiles_description">Повежите своје налоге и прилагодите апликацију: синхронизујте са YouTube Music, омогућите Discord Rich Presence и Last.fm скробблирање и пребацујте се између више профила у апликацији - сваки са својим именом, аватаром, базом података и подешавањима.</string>
     <string name="feature_profiles_title">Више профила.</string>
     <string name="feature_queue_description">Keep track of what\'s playing next, rearrange songs on the fly, and manage your upcoming tracks.</string>
     <string name="feature_rewind_description">Поново доживите слух своје песме са персонализованим резимеима. Сваке године, сваког месеца, све ваше.</string>
-    <string name="feature_rewind_title">N-Zik Rewind.</string>
 </resources>

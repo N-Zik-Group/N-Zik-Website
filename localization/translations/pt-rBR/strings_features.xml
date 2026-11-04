@@ -2,10 +2,8 @@
 <resources>
     <string name="feature_compatibility_description">Aproveite sua música em qualquer lugar! O N-Zik é compatível com Android Mobile, Android Tablet, Android Auto, Android Automotive e Android TV. (Mais tarde, Wear OS).</string>
     <string name="feature_compatibility_title">Compatibilidade com vários dispositivos.</string>
-    <string name="feature_discord_title">Discord Rich Presence.</string>
-    <string name="feature_profiles_description">Conecte suas contas e personalize o app: sincronize com o YouTube Music, ative o Discord Rich Presence e o scrobbling do Last.fm e alterne entre vários perfis no app — cada um com seu próprio nome, avatar, banco de dados e configurações.</string>
+    <string name="feature_profiles_description">Conecte suas contas e personalize o app: sincronize com o YouTube Music, ative o Discord Rich Presence e o scrobbling do Last.fm e alterne entre vários perfis no app - cada um com seu próprio nome, avatar, banco de dados e configurações.</string>
     <string name="feature_profiles_title">Perfis múltiplos.</string>
     <string name="feature_queue_description">Keep track of what\'s playing next, rearrange songs on the fly, and manage your upcoming tracks.</string>
     <string name="feature_rewind_description">Reviva sua música com resumos personalizados. A cada ano, a cada mês, tudo seu.</string>
-    <string name="feature_rewind_title">N-Zik Rewind.</string>
 </resources>

@@ -9,7 +9,6 @@
     <string name="feature_compatibility_description">Müziğinizi her yerde dinleyin! N-Zik, Android cep telefonları, Android tabletler, Android Auto, Android Automotive ve Android TV ile uyumludur. (Daha sonra Wear OS ile de uyumlu olacaktır).</string>
     <string name="feature_compatibility_title">Çoklu Cihaz Uyumluluğu.</string>
     <string name="feature_discord_description">Çalmakta olduğun parçayı doğrudan Discord profilinde göstererek şu anki müzik ruh halini sergile.</string>
-    <string name="feature_discord_title">Discord Zengin Varlık.</string>
     <string name="feature_glass_credits">Android uygulaması Cam’ın kaynakları:</string>
     <string name="feature_glass_description">Cam, yeni kurulumlarda devre dışıdır. Ayarlarda, kategoriye göre yerel, sadece kenar veya Cam görünümünü seçin ve görüntüleme kalitesini ayarlayın. Cam görüntüleme yükünü ve pil tüketimini artırabilir; cihazınıza uygun şekilde kalitesini düşürün veya devre dışı bırakın.</string>
     <string name="feature_glass_title">İsteğe Bağlı Cam Efekti (BETA).</string>
@@ -28,7 +27,6 @@
     <string name="feature_queue_description">Sıradaki parçayı takip edin, şarkıları anında yeniden sıralayın ve çalınacak parçalarınızı yönetin.</string>
     <string name="feature_queue_title">Oynatma Sırası.</string>
     <string name="feature_rewind_description">Kişiselleştirilmiş özetlerle dinleme deneyiminizi yeniden yaşayın. Her yıl, her ay, size özel.</string>
-    <string name="feature_rewind_title">N-Zik Geri Sarma.</string>
     <string name="feature_search_description">En sevdiğiniz şarkıları, albümleri ve sanatçıları, sesinizle bile kolayca bulun.</string>
     <string name="feature_search_title">Arama &amp; Sesli Arama.</string>
     <string name="feature_theme_presets_description">Müzik deneyiminizi kişiselleştirmek için özenle tasarlanmış 6 görsel tema arasından seçim yapın.</string>
