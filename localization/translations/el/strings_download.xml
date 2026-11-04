@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="download_companion_description">The desktop companion for Windows and Linux: pair it with your phone over local Wi-Fi (QR code or manual code), then browse your library, manage the queue and listen on a large screen while your phone streams the audio through an embedded VLC, no VLC install needed. The phone stays the single source of truth, and the companion is a transitional product on the way to the standalone N-Zik desktop app.</string>
-    <string name="download_companion_platforms">N-Zik Desktop Compagnon · Windows &amp; Linux</string>
-    <string name="download_description">Download N-Zik Now.</string>
-    <string name="download_get_it_on_androidfreeware">Get it on AndroidFreeware</string>
-    <string name="download_get_it_on_appteka">Get it on Appteka</string>
-    <string name="download_get_it_on_f_droid">Get it on F-Droid</string>
-    <string name="download_get_it_on_github">Get it on GitHub</string>
-    <string name="download_get_it_on_github_beta">Get it on GitHub (Beta)</string>
-    <string name="download_get_it_on_izzyondroid">Get it on IzzyOnDroid</string>
-    <string name="download_get_it_on_obtainium">Get it on Obtainium</string>
-    <string name="download_get_it_on_openapk">Get it on OpenAPK</string>
-    <string name="download_get_the_desktop_companion_beta_on_github">Get the desktop companion (Beta) on GitHub</string>
-    <string name="download_get_the_desktop_companion_on_github">Get the desktop companion on GitHub</string>
-    <string name="download_launched_on_devglobe">Launched on DevGlobe</string>
-    <string name="download_title">Listen to your favorite music</string>
+    <string name="download_companion_description">Ο σύντροφος του υπολογιστή γραφείου για Windows και Linux: συνδέστε το με το τηλέφωνό σας μέσω τοπικού Wi-Fi (QR code ή χειροκίνητος κώδικας) και στη συνέχεια περιηγηθείτε στη βιβλιοθήκη σας, διαχειρίζεται την ουρά και να ακούσετε σε μια μεγάλη οθόνη, ενώ το τηλέφωνό σας μεταδίδει τον ήχο μέσω ενός ενσωματωμένου VLC, δεν χρειάζεται εγκατάσταση VLC. Το τηλέφωνο παραμένει η ενιαία πηγή της αλήθειας, και ο σύντροφος είναι ένα μεταβατικό προϊόν στο δρόμο προς την αυτόνομη N-Zik desktop app.</string>
+    <string name="download_companion_platforms">N-Zik Υπολογιστής Γραφείου Compagnon · Windows &amp; Linux</string>
+    <string name="download_description">Κατεβάστε Το N-Zik Τώρα.</string>
+    <string name="download_get_it_on_androidfreeware">Αποκτήστε το στο AndroidFreeware</string>
+    <string name="download_get_it_on_appteka">Αποκτήστε το στο Appteka</string>
+    <string name="download_get_it_on_f_droid">Αποκτήστε το στο F-Droid</string>
+    <string name="download_get_it_on_github">Αποκτήστε το στο GitHub</string>
+    <string name="download_get_it_on_github_beta">Αποκτήστε το στο GitHub (Beta)</string>
+    <string name="download_get_it_on_izzyondroid">Αποκτήστε το στο IzzyOnDroid</string>
+    <string name="download_get_it_on_obtainium">Αποκτήστε το στο Obtainium</string>
+    <string name="download_get_it_on_openapk">Αποκτήστε το στο OpenAPK</string>
+    <string name="download_get_the_desktop_companion_beta_on_github">Αποκτήστε τον σύντροφο επιφάνειας εργασίας (Beta) στο GitHub</string>
+    <string name="download_get_the_desktop_companion_on_github">Αποκτήστε τον σύντροφο της επιφάνειας εργασίας στο GitHub</string>
+    <string name="download_launched_on_devglobe">Ξεκίνησε στο DevGlobe</string>
+    <string name="download_title">Ακούστε την αγαπημένη σας μουσική</string>
 </resources>
