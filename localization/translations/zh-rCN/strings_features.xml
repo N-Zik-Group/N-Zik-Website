@@ -2,7 +2,7 @@
 <resources>
     <string name="feature_compatibility_description">随时随地畅享音乐！N-Zik 支持 Android Mobile、Android Tablet、Android Auto、Android Automotive 和 Android TV。（之后将支持 Wear OS）</string>
     <string name="feature_compatibility_title">多设备兼容性。</string>
-    <string name="feature_profiles_description">关联账号并自定义应用：与 YouTube Music 同步，启用 Discord Rich Presence 和 Last.fm 打点，并在应用内多个配置文件之间切换--每个配置文件都有独立的名称、头像、数据库和设置。</string>
+    <string name="feature_profiles_description">关联账号并自定义应用：与 YouTube Music 同步，启用 Discord RPC 和 Last.fm 打点，并在应用内多个配置文件之间切换--每个配置文件都有独立的名称、头像、数据库和设置。</string>
     <string name="feature_profiles_title">多个配置文件</string>
     <string name="feature_queue_description">Keep track of what\'s playing next, rearrange songs on the fly, and manage your upcoming tracks.</string>
     <string name="feature_rewind_description">用个性化的回顾重温你的听歌历程。每年、每月，全部属于你。</string>

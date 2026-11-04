@@ -76,6 +76,7 @@ test("le chargement par catalogue conserve les traductions partielles et le repl
     "localization/source/strings_download.xml": { download_title: "English download" },
     "localization/source/strings_footer.xml": { footer_repository: "English repository" },
     "localization/translations/fr/strings_home.xml": { hero_description: "Accueil français" },
+    "localization/translations/fr/strings_features.xml": { feature_glass_title: "Verre" },
     "localization/translations/fr/strings_download.xml": { download_title: "Téléchargement français" },
   };
   const { loader } = create("fr", null, [image], {
@@ -89,7 +90,10 @@ test("le chargement par catalogue conserve les traductions partielles et le repl
         return {
           querySelector: () => null,
           getElementsByTagName: () => Object.entries(catalogues[file]).map(([key, value]) => ({
-            getAttribute: () => key,
+            getAttribute: (name) => {
+              if (name === "name") return key;
+              return name === "translatable" && file.startsWith("localization/source/") && key === "feature_glass_title" ? "false" : null;
+            },
             textContent: value,
           })),
         };
@@ -105,5 +109,6 @@ test("le chargement par catalogue conserve les traductions partielles et le repl
   assert.equal(rootAttrs.get("lang"), "fr");
   assert.equal(imgAttrs.get("alt"), "English Glass");
   await loader.loadStrings("fr");
+  assert.equal(loader.getString("feature_glass_title"), "English Glass");
   assert.equal(requested.filter((file) => file.startsWith("localization/source/")).length, 4);
 });

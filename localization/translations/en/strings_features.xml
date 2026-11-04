@@ -11,7 +11,6 @@
     <string name="feature_discord_description">Show off your current musical vibe by displaying your playing track directly on your Discord profile.</string>
     <string name="feature_glass_credits">Android app Glass credits:</string>
     <string name="feature_glass_description">Glass is off on fresh installs. In Settings, choose native, contour-only or Glass presentation by category and adjust rendering quality. Glass may increase rendering work and battery use; lower its quality or disable it to suit your device.</string>
-    <string name="feature_glass_title">Optional Glass Effect (BETA).</string>
     <string name="feature_history_description">Never lose a song you loved. Access your complete listening history at any time.</string>
     <string name="feature_history_title">Complete History.</string>
     <string name="feature_lyrics_description">Fetch, display, edit, and translate lyrics in real-time with precise word-by-word synchronization.</string>
@@ -22,7 +21,7 @@
     <string name="feature_offline_caching_title">Smart Offline Caching.</string>
     <string name="feature_playlists_description">Easily create, import, export, and manage your playlists in one unified interface.</string>
     <string name="feature_playlists_title">Playlists Management.</string>
-    <string name="feature_profiles_description">Connect your accounts and customize the app: sync with YouTube Music, enable Discord Rich Presence and Last.fm scrobbling, and switch between multiple in-app profiles, each with its own name, avatar, database and settings.</string>
+    <string name="feature_profiles_description">Connect your accounts and customize the app: sync with YouTube Music, enable Discord RPC and Last.fm scrobbling, and switch between multiple in-app profiles, each with its own name, avatar, database and settings.</string>
     <string name="feature_profiles_title">Multiple Profiles.</string>
     <string name="feature_queue_description">Keep track of what\'s playing next, rearrange songs on the fly, and manage your upcoming tracks.</string>
     <string name="feature_queue_title">Playback Queue.</string>

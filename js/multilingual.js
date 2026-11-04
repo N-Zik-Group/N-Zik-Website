@@ -8,6 +8,7 @@ class Multilingual {
 
   language;
   defaultValues = {};
+  fixedNames = new Set();
   defaultCatalogComplete = false;
   selectedValues = {};
   loadVersion = 0;
@@ -54,7 +55,7 @@ class Multilingual {
     const language = this.resolveLanguage(lang || this.language);
     const version = ++this.loadVersion;
     this.language = language;
-    const readValues = async (path, optional) => {
+    const readValues = async (path, optional, fixedNames) => {
       const response = await fetch(path);
       if (optional && response.status === 404) return {};
       if (!response.ok) throw new Error(`Unable to load ${path}`);
@@ -62,28 +63,32 @@ class Multilingual {
       if (xml.querySelector("parsererror")) throw new Error(`Invalid XML: ${path}`);
       const values = {};
       for (const string of xml.getElementsByTagName("string")) {
-        values[string.getAttribute("name")] = this._decode(string.textContent);
+        const name = string.getAttribute("name");
+        values[name] = this._decode(string.textContent);
+        if (!optional && string.getAttribute("translatable") === "false") fixedNames.add(name);
       }
       return values;
     };
     const readCatalog = async (directory, optional = false) => {
+      const fixedNames = new Set();
       const results = await Promise.allSettled(Multilingual.catalogFiles.map(
-        (file) => readValues(`${directory}/${file}`, optional),
+        (file) => readValues(`${directory}/${file}`, optional, fixedNames),
       ));
       const values = {};
       for (const result of results) {
         if (result.status === "fulfilled") Object.assign(values, result.value);
         else console.warn(result.reason);
       }
-      return { values, complete: results.every((result) => result.status === "fulfilled") };
+      return { values, fixedNames, complete: results.every((result) => result.status === "fulfilled") };
     };
     const defaults = this.defaultCatalogComplete
-      ? Promise.resolve({ values: this.defaultValues, complete: true })
+      ? Promise.resolve({ values: this.defaultValues, fixedNames: this.fixedNames, complete: true })
       : readCatalog("localization/source");
     const selected = readCatalog(`localization/translations/${language}`, true);
     const [defaultCatalog, { values: selectedValues }] = await Promise.all([defaults, selected]);
     if (version !== this.loadVersion) return;
     this.defaultValues = { ...this.defaultValues, ...defaultCatalog.values };
+    for (const name of defaultCatalog.fixedNames) this.fixedNames.add(name);
     this.defaultCatalogComplete = defaultCatalog.complete;
     this.selectedValues = selectedValues;
     if (lang) {
@@ -92,6 +97,7 @@ class Multilingual {
     }
   }
   getString(name) {
+    if (this.fixedNames.has(name)) return this.defaultValues[name];
     return this.selectedValues[name] || this.defaultValues[name];
   }
   updateDom() {
