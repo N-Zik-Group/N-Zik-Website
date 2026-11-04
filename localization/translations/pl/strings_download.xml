@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="download_companion_description">The desktop companion for Windows and Linux: pair it with your phone over local Wi-Fi (QR code or manual code), then browse your library, manage the queue and listen on a large screen while your phone streams the audio through an embedded VLC, no VLC install needed. The phone stays the single source of truth, and the companion is a transitional product on the way to the standalone N-Zik desktop app.</string>
+    <string name="download_companion_description">Kompanor stacjonarny dla Windows i Linux: sparowuj go z telefonem przez lokalne Wi-Fi (kod QR lub ręczny kod), a następnie przeglądaj bibliotekę, zarządzaj kolejką i słuchaj na dużym ekranie, podczas gdy telefon streamuje dźwięk przez osadzony VLC, instalacja VLC nie jest potrzebna. Telefon pozostaje pojedynczym źródłem prawdy, a towarzysz jest produktem przejściowym w drodze do samodzielnej aplikacji desktopowej N-Zik.</string>
     <string name="download_companion_platforms">N-Zik Desktop Compagnon · Windows &amp; Linux</string>
-    <string name="download_description">Download N-Zik Now.</string>
-    <string name="download_get_it_on_androidfreeware">Get it on AndroidFreeware</string>
-    <string name="download_get_it_on_appteka">Get it on Appteka</string>
-    <string name="download_get_it_on_f_droid">Get it on F-Droid</string>
-    <string name="download_get_it_on_github">Get it on GitHub</string>
-    <string name="download_get_it_on_github_beta">Get it on GitHub (Beta)</string>
-    <string name="download_get_it_on_izzyondroid">Get it on IzzyOnDroid</string>
-    <string name="download_get_it_on_obtainium">Get it on Obtainium</string>
-    <string name="download_get_it_on_openapk">Get it on OpenAPK</string>
-    <string name="download_get_the_desktop_companion_beta_on_github">Get the desktop companion (Beta) on GitHub</string>
-    <string name="download_get_the_desktop_companion_on_github">Get the desktop companion on GitHub</string>
-    <string name="download_launched_on_devglobe">Launched on DevGlobe</string>
-    <string name="download_title">Listen to your favorite music</string>
+    <string name="download_description">Pobierz N-Zik teraz.</string>
+    <string name="download_get_it_on_androidfreeware">Pobierz na AndroidFreeware</string>
+    <string name="download_get_it_on_appteka">Pobierz na Appteka</string>
+    <string name="download_get_it_on_f_droid">Pobierz na F-Droid</string>
+    <string name="download_get_it_on_github">Pobierz na GitHub</string>
+    <string name="download_get_it_on_github_beta">Pobierz na GitHub (Beta)</string>
+    <string name="download_get_it_on_izzyondroid">Pobierz na IzzyOnDroid</string>
+    <string name="download_get_it_on_obtainium">Zdobądź go na Obtainium</string>
+    <string name="download_get_it_on_openapk">Pobierz na OpenAPK</string>
+    <string name="download_get_the_desktop_companion_beta_on_github">Pobierz kompanora (Beta) na GitHub</string>
+    <string name="download_get_the_desktop_companion_on_github">Pobierz kompanora na GitHub</string>
+    <string name="download_launched_on_devglobe">Uruchomiono na DevGlobe</string>
+    <string name="download_title">Słuchaj swojej ulubionej muzyki</string>
 </resources>
