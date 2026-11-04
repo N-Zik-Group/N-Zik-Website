@@ -1,52 +1,52 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <!-- Accueil -->
-    <string name="hero_description">N-Zik is a multilingual, open-source Android app for streaming music from YouTube Music. N-Zik Desktop Compagnon, its desktop companion, brings your library and playback to Windows and Linux.</string>
+    <string name="hero_description">N-Zik är en flerspråkig, öppen källkod Android-app för strömmande musik från YouTube Music. N-Zik Desktop Compagnon, dess skrivbordsföljeslagare, tar ditt bibliotek och uppspelning till Windows och Linux.</string>
     <!-- Navigation -->
-    <string name="navigation_glass_label">Glass</string>
+    <string name="navigation_glass_label">Glas</string>
     <!-- Fonctionnalités -->
-    <string name="feature_artists_description">Explore comprehensive artist profiles with top tracks, albums, and similar artists.</string>
-    <string name="feature_artists_title">Detailed Artist Profiles.</string>
-    <string name="feature_audio_controls_description">Customize your experience with advanced audio controls, backup/restore features, and more.</string>
-    <string name="feature_audio_controls_title">Advanced Audio Controls.</string>
-    <string name="feature_carousel_description">Enjoy a unique, visually stunning 3D carousel view for your music playback.</string>
-    <string name="feature_carousel_title">Carousel Player View.</string>
-    <string name="feature_compatibility_description">Enjoy your music everywhere! N-Zik is compatible with Android Mobile, Android Tablet, Android Auto, Android Automotive, and Android TV. (Later Wear OS).</string>
-    <string name="feature_compatibility_title">Multiple Device Compatibility.</string>
-    <string name="feature_discord_description">Show off your current musical vibe by displaying your playing track directly on your Discord profile.</string>
+    <string name="feature_artists_description">Utforska omfattande artistprofiler med topplåtar, album och liknande artister.</string>
+    <string name="feature_artists_title">Detaljerade Artist Profiler.</string>
+    <string name="feature_audio_controls_description">Anpassa din upplevelse med avancerade ljudkontroller, säkerhetskopiering/återställningsfunktioner och mycket mer.</string>
+    <string name="feature_audio_controls_title">Avancerade ljudkontroller.</string>
+    <string name="feature_carousel_description">Njut av en unik, visuellt fantastisk 3D-karusellvy för din musikuppspelning.</string>
+    <string name="feature_carousel_title">Karusell spelare vy.</string>
+    <string name="feature_compatibility_description">Njut av din musik överallt! N-Zik är kompatibel med Android Mobile, Android Tablet, Android Auto, Android Automotive, och Android TV. (Senare Wear OS).</string>
+    <string name="feature_compatibility_title">Flera enhetskompatibilitet.</string>
+    <string name="feature_discord_description">Visa upp din nuvarande musikkänsla genom att visa ditt spelspår direkt på din Discord-profil.</string>
     <string name="feature_discord_title">Discord Rich Presence.</string>
-    <string name="feature_glass_credits">Android app Glass credits:</string>
-    <string name="feature_glass_description">Glass is off on fresh installs. In Settings, choose native, contour-only or Glass presentation by category and adjust rendering quality. Glass may increase rendering work and battery use; lower its quality or disable it to suit your device.</string>
-    <string name="feature_glass_title">Optional Glass Effect (BETA).</string>
-    <string name="feature_history_description">Never lose a song you loved. Access your complete listening history at any time.</string>
-    <string name="feature_history_title">Complete History.</string>
-    <string name="feature_lyrics_description">Fetch, display, edit, and translate lyrics in real-time with precise word-by-word synchronization.</string>
-    <string name="feature_lyrics_title">Advanced Lyrics Support.</string>
-    <string name="feature_modern_ui_description">A customizable interface with seamless navigation, YouTube integration, and an optional Glass player.</string>
-    <string name="feature_modern_ui_title">Modern &amp; Intuitive UI.</string>
-    <string name="feature_offline_caching_description">Automatically cache songs for offline playback with customizable limits, or download tracks for permanent access.</string>
+    <string name="feature_glass_credits">Appen för Android Glas krediter:</string>
+    <string name="feature_glass_description">Glas är avstängt på färska installationer. I Inställningar, välj inföding, contour-only eller Glas presentation per kategori och justera renderingskvalitet. Glas kan öka rendering arbete och batterianvändning; sänka dess kvalitet eller inaktivera det för att passa din enhet.</string>
+    <string name="feature_glass_title">Valfri glaseffekt (BETA).</string>
+    <string name="feature_history_description">Förlora aldrig en låt som du älskade. Få tillgång till din kompletta lyssningshistorik när som helst.</string>
+    <string name="feature_history_title">Fullständig historik.</string>
+    <string name="feature_lyrics_description">Hämta, visa, redigera och översätta låttexter i realtid med exakt synkronisering från ord till ord.</string>
+    <string name="feature_lyrics_title">Avancerade låttexter stöd.</string>
+    <string name="feature_modern_ui_description">Ett anpassningsbart gränssnitt med sömlös navigering, YouTube-integration och en valfri glasspelare.</string>
+    <string name="feature_modern_ui_title">Modern &amp; intuitivt användargränssnitt.</string>
+    <string name="feature_offline_caching_description">Cacha automatiskt låtar för offline-uppspelning med anpassningsbara gränser, eller ladda ner låtar för permanent åtkomst.</string>
     <string name="feature_offline_caching_title">Smart Offline Caching.</string>
-    <string name="feature_playlists_description">Easily create, import, export, and manage your playlists in one unified interface.</string>
-    <string name="feature_playlists_title">Playlists Management.</string>
-    <string name="feature_profiles_description">Connect your accounts and customize the app: sync with YouTube Music, enable Discord Rich Presence and Last.fm scrobbling, and switch between multiple in-app profiles, each with its own name, avatar, database and settings.</string>
-    <string name="feature_profiles_title">Multiple Profiles.</string>
-    <string name="feature_queue_description">Keep track of what\'s playing next, rearrange songs on the fly, and manage your upcoming tracks.</string>
-    <string name="feature_queue_title">Playback Queue.</string>
-    <string name="feature_rewind_description">Relive your listening with personalized recaps. Every year, every month, all yours.</string>
+    <string name="feature_playlists_description">Skapa, importera, exportera och hantera dina spellistor i ett enhetligt gränssnitt.</string>
+    <string name="feature_playlists_title">Hantering av spellistor.</string>
+    <string name="feature_profiles_description">Anslut dina konton och anpassa appen: synkronisera med YouTube Music, aktivera Discord Rich Presence och Sast. m scrobbling, och växla mellan flera i-app-profiler, var och en med sitt eget namn, avatar, databas och inställningar.</string>
+    <string name="feature_profiles_title">Flera profiler.</string>
+    <string name="feature_queue_description">Håll koll på vad som spelar härnäst, arrangera om låtar i farten och hantera dina kommande låtar.</string>
+    <string name="feature_queue_title">Uppspelningskön.</string>
+    <string name="feature_rewind_description">Återupplev ditt lyssnande med personliga recaps. Varje år, varje månad, alla din.</string>
     <string name="feature_rewind_title">N-Zik Rewind.</string>
-    <string name="feature_search_description">Easily find your favorite tracks, albums, and artists, even with your voice.</string>
-    <string name="feature_search_title">Search &amp; Voice Search.</string>
-    <string name="feature_theme_presets_description">Choose from 6 beautifully crafted visual themes to personalize your music experience.</string>
-    <string name="feature_theme_presets_title">Theme Presets.</string>
-    <string name="feature_updates_description">Receive automatic in-app updates directly from GitHub without needing to manually download new APKs.</string>
-    <string name="feature_updates_title">OTA Updates.</string>
-    <string name="feature_visualizer_description">Enjoy real-time visual effects synchronized perfectly with your music.</string>
-    <string name="feature_visualizer_title">Immersive Audio Visualizer.</string>
+    <string name="feature_search_description">Hitta enkelt dina favoritlåtar, album och artister, även med din röst.</string>
+    <string name="feature_search_title">Sök &amp; Röstsökning.</string>
+    <string name="feature_theme_presets_description">Välj mellan 6 vackert skapade visuella teman för att anpassa din musikupplevelse.</string>
+    <string name="feature_theme_presets_title">Förinställda teman.</string>
+    <string name="feature_updates_description">Få automatiska in-app uppdateringar direkt från GitHub utan att behöva manuellt ladda ner nya APKs.</string>
+    <string name="feature_updates_title">OTA uppdateringar.</string>
+    <string name="feature_visualizer_description">Njut av visuella effekter i realtid synkroniserade perfekt med din musik.</string>
+    <string name="feature_visualizer_title">Omslutande Audio Visualizer.</string>
     <!-- Téléchargement -->
-    <string name="download_description">Download N-Zik Now.</string>
-    <string name="download_title">Listen to your favorite music</string>
+    <string name="download_description">Ladda ner N-Zik nu.</string>
+    <string name="download_title">Lyssna på din favoritmusik</string>
     <!-- Pied de page -->
-    <string name="footer_issue_tracker">Issue tracker</string>
-    <string name="footer_releases">Releases</string>
-    <string name="footer_repository">Repository</string>
+    <string name="footer_issue_tracker">Ärendespårare</string>
+    <string name="footer_releases">Släpp</string>
+    <string name="footer_repository">Utveckling</string>
 </resources>
