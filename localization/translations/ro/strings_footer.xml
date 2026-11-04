@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="footer_issue_tracker">Issue tracker</string>
-    <string name="footer_releases">Releases</string>
-    <string name="footer_repository">Repository</string>
+    <string name="footer_font_credit">Font de Xiaomi Inc.</string>
+    <string name="footer_font_license">Licență font MiSans</string>
+    <string name="footer_icon_credits">Credite pictograme</string>
+    <string name="footer_issue_tracker">Monitorizare probleme</string>
+    <string name="footer_releases">Lansări</string>
+    <string name="footer_repository">Depozit</string>
 </resources>
