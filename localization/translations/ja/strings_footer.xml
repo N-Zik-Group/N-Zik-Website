@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="footer_issue_tracker">Issue tracker</string>
-    <string name="footer_releases">Releases</string>
-    <string name="footer_repository">Repository</string>
+    <string name="footer_font_credit">Xiaomi Inc. によるフォント</string>
+    <string name="footer_font_license">MiSans フォントライセンス</string>
+    <string name="footer_icon_credits">アイコンクレジット</string>
+    <string name="footer_issue_tracker">課題トラッカー</string>
+    <string name="footer_releases">リリース</string>
+    <string name="footer_repository">リポジトリ</string>
 </resources>
