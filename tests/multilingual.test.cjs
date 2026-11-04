@@ -107,8 +107,13 @@ test("le chargement par catalogue conserve les traductions partielles et le repl
   assert.equal(loader.getString("footer_repository"), "English repository");
   assert.equal(requested.length, 8);
   assert.equal(rootAttrs.get("lang"), "fr");
+  assert.equal(rootAttrs.get("dir"), "ltr");
   assert.equal(imgAttrs.get("alt"), "English Glass");
   await loader.loadStrings("fr");
   assert.equal(loader.getString("feature_glass_title"), "English Glass");
   assert.equal(requested.filter((file) => file.startsWith("localization/source/")).length, 4);
+  await loader.loadStrings("ar");
+  assert.equal(rootAttrs.get("dir"), "rtl");
+  await loader.loadStrings("fr");
+  assert.equal(rootAttrs.get("dir"), "ltr");
 });

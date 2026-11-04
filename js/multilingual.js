@@ -136,6 +136,7 @@ class Multilingual {
   setAttribute(el) {
     const locale = this.language === "sr-rCS" ? "sr-Latn" : this.language.replace(/-r([A-Z]{2})$/, "-$1");
     el.setAttribute("lang", locale);
+    el.setAttribute("dir", /^(ar|fa|he)(-|$)/.test(locale) ? "rtl" : "ltr");
   }
   changeLang(a) {
     const lang = a.target.attributes.lang.value
