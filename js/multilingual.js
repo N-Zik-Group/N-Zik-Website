@@ -117,7 +117,9 @@ class Multilingual {
       if (name) {
         const value = this.getString(name);
         if (value) {
-          el.setAttribute("lang", this.stringLanguage(name));
+          const language = this.stringLanguage(name);
+          el.setAttribute("lang", language);
+          el.setAttribute("dir", this.directionFor(language));
           const lines = value.split("\n");
           el.replaceChildren(...lines.flatMap((line, index) =>
             index ? [document.createElement("br"), line] : [line],
@@ -133,6 +135,10 @@ class Multilingual {
         }
       }
     });
+    for (const video of document.body.querySelectorAll?.("video[aria-labelledby]") ?? []) {
+      const heading = document.getElementById(video.getAttribute("aria-labelledby"));
+      if (heading) video.setAttribute("lang", heading.getAttribute("lang") || "en");
+    }
     if (typeof updateThemeIcon === "function") updateThemeIcon();
   }
   updateLanguageLabels() {
@@ -145,10 +151,13 @@ class Multilingual {
       label.lang = option.lang;
     }
   }
+  directionFor(language) {
+    return /^(ar|fa|he)(-|$)/.test(language) ? "rtl" : "ltr";
+  }
   setAttribute(el) {
     const locale = this.catalogLocale();
     el.setAttribute("lang", locale);
-    const direction = /^(ar|fa|he)(-|$)/.test(locale) ? "rtl" : "ltr";
+    const direction = this.directionFor(locale);
     el.setAttribute("dir", direction);
     this.updateCampaignBanner(locale, direction);
   }

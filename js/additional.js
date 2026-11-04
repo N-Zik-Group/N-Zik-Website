@@ -117,6 +117,7 @@ document.addEventListener("DOMContentLoaded", function() {
     newSpan.setAttribute("name", key);
     newSpan.textContent = multilingual.getString(key) || fallback;
     newSpan.lang = multilingual.stringLanguage(key);
+    newSpan.dir = multilingual.directionFor(newSpan.lang);
     newSpan.style.transform = 'translateY(100%)';
     newSpan.style.opacity = '0';
     

@@ -66,6 +66,7 @@ test("les noms renommés remplissent le DOM avec repli anglais pour une traducti
   assert.deepEqual(elements[0].nodes, ["Glass", { tagName: "br" }, "BETA"]);
   assert.deepEqual(elements[1].nodes, ["<img src=x onerror=alert(1)>Interface moderne"]);
   assert.equal(elements[0].lang, "en");
+  assert.equal(elements[0].dir, "ltr");
   assert.equal(elements[1].lang, "fr");
   loader.selectedValues = { feature_glass_title: "   ", feature_modern_ui_title: "  " };
   loader.updateDom();
@@ -127,28 +128,42 @@ test("le chargement par catalogue conserve les traductions partielles et le repl
   assert.equal(rootAttrs.get("dir"), "ltr");
 });
 
-test("le nom accessible du sélecteur garde sa langue distincte de l’autonyme", () => {
-  const attrs = new Map([["data-i18n-aria-label", "navigation_change_language"]]);
-  const button = { getAttribute: (key) => attrs.get(key), setAttribute: (key, value) => attrs.set(key, value) };
+test("les textes de repli gardent leur langue et leur direction dans les noms accessibles", () => {
+  function element(attrs) {
+    return {
+      getAttribute: (key) => attrs[key],
+      setAttribute: (key, value) => { attrs[key] = value; },
+      replaceChildren(...nodes) { this.textContent = nodes.join(""); },
+    };
+  }
+  const action = element({ name: "navigation_change_language" });
+  const heading = element({ name: "feature_lyrics_title" });
+  const video = element({ "aria-labelledby": "demo-lyrics-title" });
   const footer = {};
   const header = {};
   const elements = {
-    langOption: { children: [{ dataset: { locale: "fr" }, textContent: "Français", lang: "fr" }] },
+    langOption: { children: [{ dataset: { locale: "ar" }, textContent: "العربية", lang: "ar" }] },
     footerLangText: footer,
     headerLangText: header,
+    "demo-lyrics-title": heading,
   };
-  const { loader } = create("fr", null, [], {
+  const { loader } = create("ar", null, [], {
     document: {
       getElementById: (id) => elements[id],
-      body: { getElementsByTagName: () => [button] },
+      body: { getElementsByTagName: () => [action, video, heading], querySelectorAll: () => [video] },
     },
   });
-  loader.defaultValues = { navigation_change_language: "Change language" };
+  loader.defaultValues = {
+    navigation_change_language: "Change language",
+    feature_lyrics_title: "Advanced Lyrics Support.",
+  };
   loader.updateDom();
   loader.updateLanguageLabels();
-  assert.equal(attrs.get("aria-label"), "Change language");
-  assert.equal(attrs.get("lang"), "en");
-  assert.equal(footer.textContent, "Français");
-  assert.equal(footer.lang, "fr");
-  assert.equal(header.lang, "fr");
+  assert.equal(action.textContent, "Change language");
+  assert.equal(action.getAttribute("lang"), "en");
+  assert.equal(heading.getAttribute("dir"), "ltr");
+  assert.equal(video.getAttribute("lang"), "en");
+  assert.equal(footer.textContent, "العربية");
+  assert.equal(footer.lang, "ar");
+  assert.equal(header.lang, "ar");
 });

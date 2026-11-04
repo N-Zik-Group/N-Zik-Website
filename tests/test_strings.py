@@ -111,6 +111,12 @@ class StringResourcesTest(unittest.TestCase):
             self.assertEqual(tag, "button")
             self.assertEqual(attrs["aria-expanded"], "false")
             self.assertIn(attrs["aria-controls"], page.elements_by_id)
+        for trigger, current_language in (("globe", "headerLangText"), ("langSelect", "footerLangText")):
+            _, attrs = page.elements_by_id[trigger]
+            self.assertEqual(attrs["aria-labelledby"].split(), [current_language, "changeLanguageAction"])
+            self.assertNotIn("aria-label", attrs)
+        _, action = page.elements_by_id["changeLanguageAction"]
+        self.assertEqual(action["name"], "navigation_change_language")
 
     def test_videos_allow_pause_and_campaign_has_an_opaque_origin(self):
         page = TranslationReferences()

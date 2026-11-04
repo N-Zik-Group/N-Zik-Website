@@ -324,10 +324,10 @@
                 "
                 id="globe-container"
               >
-                <button type="button" id="globe" aria-expanded="false" aria-controls="langOption" class="focustoggle" aria-label="Change language" data-i18n-aria-label="navigation_change_language">
+                <button type="button" id="globe" aria-expanded="false" aria-controls="langOption" class="focustoggle" aria-labelledby="headerLangText changeLanguageAction">
                   <i class="fi fi-bs-globe" aria-hidden="true"></i>
                 <span
-                  id="headerLangText"
+                  id="headerLangText" lang="en" dir="auto"
                   style="
                     margin-inline-start: 8px;
                     color: var(--color);
@@ -1655,7 +1655,8 @@
                   >
                 </li>
                 <li id="languageSelect">
-                  <button type="button" id="langSelect" aria-expanded="false" aria-controls="langOption" class="fi-bs-globe" aria-label="Change language" data-i18n-aria-label="navigation_change_language"><span id="footerLangText" lang="en">English</span></button>
+                  <button type="button" id="langSelect" aria-expanded="false" aria-controls="langOption" class="fi-bs-globe" aria-labelledby="footerLangText changeLanguageAction"><span id="footerLangText" lang="en" dir="auto">English</span></button>
+                  <span id="changeLanguageAction" name="navigation_change_language" lang="en" class="screen-reader-text">Change language</span>
                     <div id="langBorder">
                       <div id="langOption">
                         <button type="button" data-locale="af" lang="af">Afrikaans</button>
