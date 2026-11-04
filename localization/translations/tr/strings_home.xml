@@ -1,5 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="hero_description">N-Zik, YouTube Music’ten müzik dinlemek için tasarlanmış çok dilli, açık kaynaklı bir Android uygulamasıdır. Masaüstü versiyonu olan N-Zik Masaüstü Yardımcısı ise müzik arşivinizi ve çalma işlevlerini Windows ve Linux işletim sistemlerine taşır.</string>
-    <string name="navigation_glass_label">Cam</string>
+    <string name="hero_description">N-Zik is a multilingual, open-source Android app for streaming music from YouTube Music. N-Zik Desktop Compagnon, its desktop companion, brings your library and playback to Windows and Linux.</string>
+    <string name="hero_logo_alt">Logo</string>
+    <string name="hero_n_zik_banner_alt">N-Zik Banner</string>
+    <string name="hero_n_zik_home_alt">N-Zik Home</string>
+    <string name="hero_n_zik_logo_alt">N-Zik logo</string>
+    <string name="navigation_artist_profiles_label">Artist Profiles</string>
+    <string name="navigation_audio_controls_label">Audio Controls</string>
+    <string name="navigation_carousel_player_label">Carousel Player</string>
+    <string name="navigation_change_language">Change language</string>
+    <string name="navigation_compatibility_label">Compatibility</string>
+    <string name="navigation_discord_rpc_label">Discord RPC</string>
+    <string name="navigation_download_label">Download</string>
+    <string name="navigation_features_label">Features</string>
+    <string name="navigation_glass_label">Glass</string>
+    <string name="navigation_history_label">History</string>
+    <string name="navigation_home_label">Home</string>
+    <string name="navigation_lyrics_label">Lyrics</string>
+    <string name="navigation_modern_ui_label">Modern UI</string>
+    <string name="navigation_offline_caching_label">Offline Caching</string>
+    <string name="navigation_ota_updates_label">OTA Updates</string>
+    <string name="navigation_playback_queue_label">Playback Queue</string>
+    <string name="navigation_playlists_label">Playlists</string>
+    <string name="navigation_profiles_label">Profiles</string>
+    <string name="navigation_rewind_label">Rewind</string>
+    <string name="navigation_search_label">Search</string>
+    <string name="navigation_switch_to_dark_theme">Switch to dark theme</string>
+    <string name="navigation_switch_to_light_theme">Switch to light theme</string>
+    <string name="navigation_theme_presets_label">Theme Presets</string>
+    <string name="navigation_visualizer_label">Visualizer</string>
 </resources>
