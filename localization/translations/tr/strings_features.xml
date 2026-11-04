@@ -51,7 +51,7 @@
     <string name="feature_playlists_title">Çalma Listeleri Yönetimi.</string>
     <string name="feature_previous_glass_preview_label">Previous Glass preview</string>
     <string name="feature_previous_search_preview_label">Previous search preview</string>
-    <string name="feature_profiles_alt">Profiles</string>
+    <string name="feature_profiles_alt">Profiller</string>
     <string name="feature_profiles_description">Hesaplarınızı bağlayın ve uygulamayı kişiselleştirin: YouTube Music ile senkronize edin, Discord Zengin Varlık ve Last.fm kaydetme özelliklerini etkinleştirin ve her biri kendi adı, avatarı, veritabanı ve ayarlarına sahip olan çoklu uygulama içi profiller arasında geçiş yapın.</string>
     <string name="feature_profiles_title">Çoklu Profiller.</string>
     <string name="feature_queue_description">Sıradaki parçayı takip edin, şarkıları anında yeniden sıralayın ve çalınacak parçalarınızı yönetin.</string>
