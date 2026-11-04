@@ -1,7 +1,7 @@
 function scrollPreview(button, step) {
   const carousel = button.parentElement.querySelector(".preset-carousel");
   const direction = getComputedStyle(carousel).direction === "rtl" ? -1 : 1;
-  carousel.scrollBy({ left: direction * step * 220, behavior: "smooth" });
+  carousel.scrollBy({ left: direction * step * 220, behavior: matchMedia("(prefers-reduced-motion: reduce)").matches ? "instant" : "smooth" });
 }
 
 class LoadingScreen {
@@ -48,28 +48,39 @@ function detecttouch() {
   document.getElementById("toggledark").classList.remove("focustoggle");
 }
 
-document.onmousedown = function (e) {
-  multilingual.langEvent(e)
-}
+document.addEventListener("click", (event) => multilingual.langEvent(event));
 document.addEventListener("keydown", (event) => {
-  const option = event.target.closest("#langOption > div");
-  const trigger = event.target.closest("#globe, #langSelect");
-  if (event.key === "Escape" && document.body.classList.contains("visible")) {
-    multilingual.closeLanguageMenu(true);
-  } else if ((option || trigger) && (event.key === "Enter" || event.key === " ")) {
+  if (event.key === "Escape" && multilingual.languageMenuTrigger) {
     event.preventDefault();
-    multilingual.langEvent(event);
-    if (!option && document.body.classList.contains("visible")) {
-      document.getElementById("langOption").firstElementChild.focus();
-    }
+    multilingual.closeLanguageMenu(true);
   }
 });
+document.addEventListener("focusin", (event) => {
+  if (multilingual.languageMenuTrigger && !event.target.closest("#globe, #langSelect, #langOption")) {
+    multilingual.closeLanguageMenu();
+  }
+});
+window.addEventListener("wheel", (event) => {
+  if (!event.target.closest("#globe, #langSelect, #langOption")) multilingual.closeLanguageMenu();
+}, { passive: true });
+
+const motionPreference = matchMedia("(prefers-reduced-motion: reduce)");
+const previews = document.querySelectorAll("video");
+function updatePreviewMotion() {
+  for (const preview of previews) {
+    preview.autoplay = !motionPreference.matches;
+    if (motionPreference.matches) preview.pause();
+  }
+}
+updatePreviewMotion();
+motionPreference.addEventListener("change", updatePreviewMotion);
 
 // Feature Section Observer for Navigation
 document.addEventListener("DOMContentLoaded", function() {
   const featureSections = document.querySelectorAll('.feature-extended[id]');
   const featuresNavTextWrapper = document.getElementById('featuresNavTextWrapper');
   const featuresDropdown = document.getElementById('featuresDropdown');
+  const featuresTrigger = document.getElementById('featuresDropdownTrigger');
   const featureLinks = document.querySelectorAll('.feature-link');
 
   if (!featuresNavTextWrapper || !featureSections.length) return;
@@ -92,6 +103,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const oldSpan = currentSpan;
     if (oldSpan) {
       oldSpan.classList.add('leaving');
+      oldSpan.setAttribute('aria-hidden', 'true');
       oldSpan.style.transform = 'translateY(-100%)';
       oldSpan.style.opacity = '0';
       setTimeout(() => {
@@ -159,19 +171,27 @@ document.addEventListener("DOMContentLoaded", function() {
 
   featureSections.forEach(sec => observer.observe(sec));
 
-  // Close dropdown when clicking outside
-  document.addEventListener('click', (e) => {
-    if (!e.target.closest('.nav-dropdown-container')) {
-      if (featuresDropdown && featuresDropdown.classList.contains('show')) {
-        featuresDropdown.classList.remove('show');
-      }
+  function setFeaturesOpen(open) {
+    featuresDropdown.classList.toggle("show", open);
+    featuresTrigger.setAttribute("aria-expanded", String(open));
+  }
+
+  featuresTrigger.addEventListener("click", () => {
+    setFeaturesOpen(featuresTrigger.getAttribute("aria-expanded") !== "true");
+  });
+  document.addEventListener("click", (event) => {
+    if (!event.target.closest(".nav-dropdown-container")) setFeaturesOpen(false);
+  });
+  document.addEventListener("keydown", (event) => {
+    if (event.key === "Escape" && event.target.closest(".nav-dropdown-container") &&
+        featuresTrigger.getAttribute("aria-expanded") === "true") {
+      event.preventDefault();
+      setFeaturesOpen(false);
+      featuresTrigger.focus();
     }
   });
-
-  // Close dropdown when clicking a link
-  featureLinks.forEach(link => {
-    link.addEventListener('click', () => {
-      if (featuresDropdown) featuresDropdown.classList.remove('show');
-    });
+  document.addEventListener("focusin", (event) => {
+    if (!event.target.closest(".nav-dropdown-container")) setFeaturesOpen(false);
   });
+  featureLinks.forEach((link) => link.addEventListener("click", () => setFeaturesOpen(false)));
 });

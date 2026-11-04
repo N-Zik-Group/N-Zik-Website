@@ -22,14 +22,25 @@ class TranslationReferences(HTMLParser):
         self.in_body = False
         self.keys = set()
         self.locales = []
+        self.elements_by_id = {}
+        self.fragments = []
+        self.videos = []
 
     def handle_starttag(self, tag, attrs):
         if tag == "body":
             self.in_body = True
         if self.in_body:
+            attributes = dict(attrs)
+            if "id" in attributes:
+                self.elements_by_id[attributes["id"]] = (tag, attributes)
+            href = attributes.get("href", "")
+            if href.startswith("#") and len(href) > 1:
+                self.fragments.append(href[1:])
+            if tag == "video":
+                self.videos.append(attributes)
             self.keys.update(value for name, value in attrs if name == "name" or name.startswith("data-i18n-"))
-            if tag == "div":
-                self.locales.extend(value for name, value in attrs if name == "lang")
+            if tag == "button":
+                self.locales.extend(value for name, value in attrs if name == "data-locale")
 
     def handle_endtag(self, tag):
         if tag == "body":
@@ -90,6 +101,32 @@ class StringResourcesTest(unittest.TestCase):
         self.assertEqual(set(references.locales), locales)
         self.assertEqual(len(references.locales), len(locales))
         self.assertEqual(len(locales), 48)
+
+    def test_navigation_triggers_and_fragments(self):
+        page = TranslationReferences()
+        page.feed((ROOT / "index.html").read_text(encoding="utf-8"))
+        self.assertFalse(set(page.fragments) - set(page.elements_by_id))
+        for trigger in ("featuresDropdownTrigger", "globe", "langSelect"):
+            tag, attrs = page.elements_by_id[trigger]
+            self.assertEqual(tag, "button")
+            self.assertEqual(attrs["aria-expanded"], "false")
+            self.assertIn(attrs["aria-controls"], page.elements_by_id)
+
+    def test_videos_allow_pause_and_campaign_has_an_opaque_origin(self):
+        page = TranslationReferences()
+        page.feed((ROOT / "index.html").read_text(encoding="utf-8"))
+        self.assertTrue(page.videos)
+        for attrs in page.videos:
+            self.assertIn("controls", attrs)
+            self.assertIn("loop", attrs)
+            self.assertNotIn("autoplay", attrs)
+            self.assertEqual(attrs["preload"], "none")
+            self.assertTrue((ROOT / attrs["poster"]).is_file())
+        tag, attrs = page.elements_by_id["keep-android-open-banner"]
+        self.assertEqual(tag, "iframe")
+        sandbox = attrs["sandbox"].split()
+        self.assertIn("allow-scripts", sandbox)
+        self.assertNotIn("allow-same-origin", sandbox)
 
     def test_resources_are_sorted_within_each_domain(self):
         for path in self.files:

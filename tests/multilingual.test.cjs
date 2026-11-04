@@ -7,7 +7,7 @@ const vm = require("node:vm");
 const root = path.resolve(__dirname, "..");
 const script = fs.readFileSync(path.join(root, "js/multilingual.js"), "utf8");
 const html = fs.readFileSync(path.join(root, "index.html"), "utf8");
-const supported = [...html.matchAll(/<div\b[^>]*\blang="([^"]+)"/g)].map((match) => match[1]);
+const supported = [...html.matchAll(/<button\b[^>]*\bdata-locale="([^"]+)"/g)].map((match) => match[1]);
 
 function create(browserLanguage = "en", savedLanguage = null, elements = [], environment = {}) {
   const storage = new Map(savedLanguage ? [["language", savedLanguage]] : []);

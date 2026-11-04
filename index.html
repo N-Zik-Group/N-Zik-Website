@@ -154,8 +154,11 @@
                 <span class="home-text" name="navigation_home_label">Home</span>
               </a>
               <div style="position: relative" class="nav-dropdown-container">
-                <div
+                <button
                   id="featuresDropdownTrigger"
+                  type="button"
+                  aria-controls="featuresDropdown"
+                  aria-expanded="false"
                   style="
                     cursor: pointer;
                     color: var(--color);
@@ -165,16 +168,12 @@
                     align-items: center;
                     gap: 4px;
                   "
-                  onclick="
-                    document
-                      .getElementById('featuresDropdown')
-                      .classList.toggle('show')
-                  "
                 >
-                  <div id="featuresNavTextWrapper" class="nav-text-slider">
+                  <span id="featuresNavTextWrapper" class="nav-text-slider">
                     <span id="featuresNavText" name="navigation_features_label">Features</span>
-                  </div>
+                  </span>
                   <svg
+                    aria-hidden="true"
                     width="10"
                     height="6"
                     viewBox="0 0 12 8"
@@ -186,7 +185,7 @@
                   >
                     <polyline points="2 2 6 6 10 2"></polyline>
                   </svg>
-                </div>
+                </button>
                 <div id="featuresDropdown" class="section-dropdown">
                   <a
                     href="#feature-ui"
@@ -214,7 +213,7 @@
                     >Discord RPC</a
                   >
                   <a
-                    href="#feature-presets"
+                    href="#feature-themes"
                     class="feature-link"
                     name="navigation_theme_presets_label"
                     >Theme Presets</a
@@ -325,16 +324,18 @@
                 "
                 id="globe-container"
               >
-                <i id="globe" aria-expanded="false" aria-controls="langOption" class="fi fi-bs-globe focustoggle" tabindex="0" role="button" aria-label="Change language" data-i18n-aria-label="navigation_change_language"></i>
+                <button type="button" id="globe" aria-expanded="false" aria-controls="langOption" class="focustoggle" aria-label="Change language" data-i18n-aria-label="navigation_change_language">
+                  <i class="fi fi-bs-globe" aria-hidden="true"></i>
                 <span
                   id="headerLangText"
                   style="
-                    margin-left: 8px;
+                    margin-inline-start: 8px;
                     color: var(--color);
                     font-weight: 600;
                   "
                   >English</span
                 >
+                </button>
               </li>
             </div>
           </div>
@@ -374,7 +375,7 @@
         }
       </style>
       <div id="kao-banner-wrapper">
-        <iframe id="keep-android-open-banner" title="Keep Android Open"></iframe>
+        <iframe id="keep-android-open-banner" sandbox="allow-scripts allow-popups allow-popups-to-escape-sandbox" title="Keep Android Open"></iframe>
       </div>
       <main>
         <section id="hero" class="hero text-center text-light">
@@ -523,9 +524,10 @@
                       >
                         <video
                           class="video-element"
-                          src="./videos/home.mp4"
-                          autoplay
+                          src="./videos/home.mp4" poster="./images/Screenshots/27.webp"
+                          controls
                           loop
+                          preload="none"
                           muted
                           playsinline
                         ></video>
@@ -595,8 +597,9 @@
                           poster="./images/Screenshots/25.webp"
                           width="574"
                           height="1200"
-                          autoplay
+                          controls
                           loop
+                          preload="none"
                           muted
                           playsinline
                           aria-label="Glass effect demonstration" data-i18n-aria-label="feature_glass_effect_demonstration_label"
@@ -667,9 +670,10 @@
                       >
                         <video
                           class="video-element"
-                          src="./videos/lyrics.mp4"
-                          autoplay
+                          src="./videos/lyrics.mp4" poster="./images/Screenshots/7.webp"
+                          controls
                           loop
+                          preload="none"
                           muted
                           playsinline
                         ></video>
@@ -715,9 +719,10 @@
                       >
                         <video
                           class="video-element"
-                          src="./videos/vz.mp4"
-                          autoplay
+                          src="./videos/vz.mp4" poster="./images/Screenshots/6.webp"
+                          controls
                           loop
+                          preload="none"
                           muted
                           playsinline
                         ></video>
@@ -942,9 +947,10 @@
                       >
                         <video
                           class="video-element"
-                          src="./videos/rewind.mp4"
-                          autoplay
+                          src="./videos/rewind.mp4" poster="./images/Screenshots/24.webp"
+                          controls
                           loop
+                          preload="none"
                           muted
                           playsinline
                         ></video>
@@ -991,9 +997,10 @@
                     >
                       <video
                         class="video-element"
-                        src="./videos/songs.mp4"
-                        autoplay
+                        src="./videos/songs.mp4" poster="./images/Screenshots/songs-preview.webp"
+                        controls
                         loop
+                        preload="none"
                         muted
                         playsinline
                       ></video>
@@ -1041,9 +1048,10 @@
                         <div class="video-mockup-wrapper device-mockup">
                           <video
                             class="video-element"
-                            src="./videos/search.mp4"
-                            autoplay
+                            src="./videos/search.mp4" poster="./images/Screenshots/12.webp"
+                            controls
                             loop
+                            preload="none"
                             muted
                             playsinline
                           ></video>
@@ -1105,9 +1113,10 @@
                       >
                         <video
                           class="video-element"
-                          src="./videos/ota.mp4"
-                          autoplay
+                          src="./videos/ota.mp4" poster="./images/Screenshots/22.webp"
+                          controls
                           loop
+                          preload="none"
                           muted
                           playsinline
                         ></video>
@@ -1154,9 +1163,10 @@
                       >
                         <video
                           class="video-element"
-                          src="./videos/carrousel.mp4"
-                          autoplay
+                          src="./videos/carrousel.mp4" poster="./images/Screenshots/5.webp"
+                          controls
                           loop
+                          preload="none"
                           muted
                           playsinline
                         ></video>
@@ -1207,9 +1217,10 @@
                       >
                         <video
                           class="video-element"
-                          src="./videos/artist.mp4"
-                          autoplay
+                          src="./videos/artist.mp4" poster="./images/Screenshots/11.webp"
+                          controls
                           loop
+                          preload="none"
                           muted
                           playsinline
                         ></video>
@@ -1256,9 +1267,10 @@
                       >
                         <video
                           class="video-element"
-                          src="./videos/settings.mp4"
-                          autoplay
+                          src="./videos/settings.mp4" poster="./images/Screenshots/15.webp"
+                          controls
                           loop
+                          preload="none"
                           muted
                           playsinline
                         ></video>
@@ -1632,62 +1644,60 @@
                     >Issue tracker</a
                   >
                 </li>
-                <li id="languageSelect" value="">
-                  <div tabindex="0" id="langSelect" role="button" aria-expanded="false" aria-controls="langOption" class="fi-bs-globe">
-                    language
+                <li id="languageSelect">
+                  <button type="button" id="langSelect" aria-expanded="false" aria-controls="langOption" class="fi-bs-globe" aria-label="Change language" data-i18n-aria-label="navigation_change_language">English</button>
                     <div id="langBorder">
                       <div id="langOption">
-                        <div tabindex="0" lang="af">Afrikaans</div>
-                        <div tabindex="0" lang="ar">العربية</div>
-                        <div tabindex="0" lang="az">Azərbaycan</div>
-                        <div tabindex="0" lang="ba">Башҡортса</div>
-                        <div tabindex="0" lang="bn">বাংলা</div>
-                        <div tabindex="0" lang="ca">Català</div>
-                        <div tabindex="0" lang="cs">Čeština</div>
-                        <div tabindex="0" lang="da">Dansk</div>
-                        <div tabindex="0" lang="de">Deutsch</div>
-                        <div tabindex="0" lang="el">Ελληνικά</div>
-                        <div tabindex="0" lang="en">English</div>
-                        <div tabindex="0" lang="eo">Esperanto</div>
-                        <div tabindex="0" lang="es">Español</div>
-                        <div tabindex="0" lang="et">Eesti</div>
-                        <div tabindex="0" lang="fa">فارسی</div>
-                        <div tabindex="0" lang="fi">Suomi</div>
-                        <div tabindex="0" lang="fil">Filipino</div>
-                        <div tabindex="0" lang="fr">Français</div>
-                        <div tabindex="0" lang="ga">Gaeilge</div>
-                        <div tabindex="0" lang="gl">Galego</div>
-                        <div tabindex="0" lang="he">עִבְרִית</div>
-                        <div tabindex="0" lang="hi">हिन्दी</div>
-                        <div tabindex="0" lang="hu">Magyar</div>
-                        <div tabindex="0" lang="ia">Interlingua</div>
-                        <div tabindex="0" lang="id">Bahasa Indonesia</div>
-                        <div tabindex="0" lang="it">Italiano</div>
-                        <div tabindex="0" lang="ja">日本語</div>
-                        <div tabindex="0" lang="ko">한국어</div>
-                        <div tabindex="0" lang="ml">മലയാളം</div>
-                        <div tabindex="0" lang="nl">Nederlands</div>
-                        <div tabindex="0" lang="no">Norsk</div>
-                        <div tabindex="0" lang="or">ଓଡ଼ିଆ</div>
-                        <div tabindex="0" lang="pl">język polski</div>
-                        <div tabindex="0" lang="pt">Português</div>
-                        <div tabindex="0" lang="pt-rBR">Português Brasileiro</div>
-                        <div tabindex="0" lang="ro">Română</div>
-                        <div tabindex="0" lang="ru">Русский</div>
-                        <div tabindex="0" lang="si">සිංහල</div>
-                        <div tabindex="0" lang="sr">српски</div>
-                        <div tabindex="0" lang="sr-rCS">Srpski</div>
-                        <div tabindex="0" lang="sv">Svenska</div>
-                        <div tabindex="0" lang="ta">தமிழ்</div>
-                        <div tabindex="0" lang="te">తెలుగు</div>
-                        <div tabindex="0" lang="tr">Türkçe</div>
-                        <div tabindex="0" lang="uk">Українська</div>
-                        <div tabindex="0" lang="vi">Tiếng Việt</div>
-                        <div tabindex="0" lang="zh-rCN">简体中文</div>
-                        <div tabindex="0" lang="zh-rTW">繁體中文</div>
+                        <button type="button" data-locale="af" lang="af">Afrikaans</button>
+                        <button type="button" data-locale="ar" lang="ar">العربية</button>
+                        <button type="button" data-locale="az" lang="az">Azərbaycan</button>
+                        <button type="button" data-locale="ba" lang="ba">Башҡортса</button>
+                        <button type="button" data-locale="bn" lang="bn">বাংলা</button>
+                        <button type="button" data-locale="ca" lang="ca">Català</button>
+                        <button type="button" data-locale="cs" lang="cs">Čeština</button>
+                        <button type="button" data-locale="da" lang="da">Dansk</button>
+                        <button type="button" data-locale="de" lang="de">Deutsch</button>
+                        <button type="button" data-locale="el" lang="el">Ελληνικά</button>
+                        <button type="button" data-locale="en" lang="en">English</button>
+                        <button type="button" data-locale="eo" lang="eo">Esperanto</button>
+                        <button type="button" data-locale="es" lang="es">Español</button>
+                        <button type="button" data-locale="et" lang="et">Eesti</button>
+                        <button type="button" data-locale="fa" lang="fa">فارسی</button>
+                        <button type="button" data-locale="fi" lang="fi">Suomi</button>
+                        <button type="button" data-locale="fil" lang="fil">Filipino</button>
+                        <button type="button" data-locale="fr" lang="fr">Français</button>
+                        <button type="button" data-locale="ga" lang="ga">Gaeilge</button>
+                        <button type="button" data-locale="gl" lang="gl">Galego</button>
+                        <button type="button" data-locale="he" lang="he">עִבְרִית</button>
+                        <button type="button" data-locale="hi" lang="hi">हिन्दी</button>
+                        <button type="button" data-locale="hu" lang="hu">Magyar</button>
+                        <button type="button" data-locale="ia" lang="ia">Interlingua</button>
+                        <button type="button" data-locale="id" lang="id">Bahasa Indonesia</button>
+                        <button type="button" data-locale="it" lang="it">Italiano</button>
+                        <button type="button" data-locale="ja" lang="ja">日本語</button>
+                        <button type="button" data-locale="ko" lang="ko">한국어</button>
+                        <button type="button" data-locale="ml" lang="ml">മലയാളം</button>
+                        <button type="button" data-locale="nl" lang="nl">Nederlands</button>
+                        <button type="button" data-locale="no" lang="no">Norsk</button>
+                        <button type="button" data-locale="or" lang="or">ଓଡ଼ିଆ</button>
+                        <button type="button" data-locale="pl" lang="pl">język polski</button>
+                        <button type="button" data-locale="pt" lang="pt">Português</button>
+                        <button type="button" data-locale="pt-rBR" lang="pt-BR">Português Brasileiro</button>
+                        <button type="button" data-locale="ro" lang="ro">Română</button>
+                        <button type="button" data-locale="ru" lang="ru">Русский</button>
+                        <button type="button" data-locale="si" lang="si">සිංහල</button>
+                        <button type="button" data-locale="sr" lang="sr-Cyrl">српски</button>
+                        <button type="button" data-locale="sr-rCS" lang="sr-Latn">Srpski</button>
+                        <button type="button" data-locale="sv" lang="sv">Svenska</button>
+                        <button type="button" data-locale="ta" lang="ta">தமிழ்</button>
+                        <button type="button" data-locale="te" lang="te">తెలుగు</button>
+                        <button type="button" data-locale="tr" lang="tr">Türkçe</button>
+                        <button type="button" data-locale="uk" lang="uk">Українська</button>
+                        <button type="button" data-locale="vi" lang="vi">Tiếng Việt</button>
+                        <button type="button" data-locale="zh-rCN" lang="zh-Hans">简体中文</button>
+                        <button type="button" data-locale="zh-rTW" lang="zh-Hant">繁體中文</button>
                       </div>
                     </div>
-                  </div>
                 </li>
               </ul>
               <ul class="footer-social-links list-reset">
@@ -1717,20 +1727,16 @@
     <script src="js/main.min.js"></script>
 
     <script type="text/javascript">
-      var languages = [];
-      var langSel = document.getElementById('languageSelect');
-      var langSelect = langSel.firstElementChild;
-      var langOption = document.getElementById('langOption');
-      for (let x = 0; x < langOption.children.length; x++) {
-        languages[x] = langOption.children[x].getAttribute('lang');
-      }
-      // Load the locales
+      const languages = Array.from(
+        document.querySelectorAll("#langOption button"),
+        (option) => option.dataset.locale,
+      );
       const multilingual = new Multilingual(languages);
 
       (async () => {
         await multilingual.loadStrings();
         multilingual.updateDom();
-        multilingual.loadLanguageSelectInput();
+        multilingual.updateLanguageLabels();
         multilingual.setAttribute(document.documentElement);
       })();
       reveal();

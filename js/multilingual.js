@@ -123,19 +123,14 @@ class Multilingual {
     });
     if (typeof updateThemeIcon === "function") updateThemeIcon();
   }
-  updateLanguage(el) {
-    const lang = el.attributes.lang.value;
-    localStorage.setItem("language", lang);
-  }
-  loadLanguageSelectInput() {
-    const element = document.getElementById("langOption");
-    for (const option of element.children) {
-      if (option.attributes.lang.value == this.language) {
-        langSelect.childNodes[0].textContent = option.innerText;
-        const headerText = document.getElementById('headerLangText');
-        if (headerText) headerText.textContent = option.innerText;
-        break;
-      }
+  updateLanguageLabels() {
+    const option = Array.from(document.getElementById("langOption").children)
+      .find((button) => button.dataset.locale === this.language);
+    if (!option) return;
+    for (const id of ["langSelect", "headerLangText"]) {
+      const label = document.getElementById(id);
+      label.textContent = option.textContent;
+      label.lang = option.lang;
     }
   }
   setAttribute(el) {
@@ -148,38 +143,47 @@ class Multilingual {
   updateCampaignBanner(locale, direction) {
     const frame = document.getElementById?.("keep-android-open-banner");
     if (!frame || frame.dataset.locale === locale) return;
+    const dismissKey = "kao-banner-hidden";
+    const dismissedAt = Number(localStorage.getItem(dismissKey));
+    if (Date.now() - dismissedAt < 30 * 24 * 60 * 60 * 1000) return;
     frame.dataset.locale = locale;
+    frame.hidden = false;
     frame.style.height = "0px";
-    frame.onload = () => {
-      const body = frame.contentDocument?.body;
-      if (!body) return;
-      const resize = () => { frame.style.height = Math.ceil(body.getBoundingClientRect().height) + "px"; };
-      resize();
-      const observer = new frame.contentWindow.ResizeObserver(resize);
-      observer.observe(body);
-    };
+    if (!frame.dataset.resizeListener) {
+      window.addEventListener("message", (event) => {
+        if (frame.hidden || event.source !== frame.contentWindow || event.origin !== "null") return;
+        if (event.data?.type === "campaign-banner-dismissed") {
+          localStorage.setItem(dismissKey, String(Date.now()));
+          frame.hidden = true;
+          frame.removeAttribute("srcdoc");
+        } else if (event.data?.type === "campaign-banner-height" && Number.isFinite(event.data.height)) {
+          frame.style.height = Math.min(500, Math.max(0, Math.ceil(event.data.height))) + "px";
+        }
+      });
+      frame.dataset.resizeListener = "true";
+    }
     const url = new URL("https://keepandroidopen.org/banner.js");
     url.search = new URLSearchParams({
-      id: "campaign", size: "minimal", link: "https://keepandroidopen.org", animation: "on",
+      id: "campaign", size: "minimal", link: "https://keepandroidopen.org", animation: "off",
       lang: locale,
     });
     frame.srcdoc = '<!doctype html><html lang="' + locale + '" dir="' + direction + '"><body style="margin:0">' +
-      '<div id="campaign"></div><script src="' + url.href.replaceAll("&", "&amp;") + '"></script></body></html>';
+      '<div id="campaign"></div><script>' +
+      'new ResizeObserver(() => parent.postMessage({type:"campaign-banner-height",height:document.body.getBoundingClientRect().height},"*")).observe(document.body);' +
+      'document.addEventListener("click", (event) => { if (event.target.closest(".kao-banner-close")) parent.postMessage({type:"campaign-banner-dismissed"},"*"); });' +
+      '</script><script src="' + url.href.replaceAll("&", "&amp;") + '"></script></body></html>';
   }
-  changeLang(a) {
-    const lang = a.target.attributes.lang.value
-    console.log("Language change to: " + lang)
-    LoadingScreen.unload();
-    langSelect.childNodes[0].textContent = a.target.innerText;
-    const headerText = document.getElementById('headerLangText');
-    if (headerText) headerText.textContent = a.target.innerText;
-    langSel.setAttribute("value", lang);
-    this.updateLanguage(a.target);
-    this.loadStrings(lang);
+  async changeLang(option) {
+    const lang = option.dataset.locale;
     this.closeLanguageMenu(true);
-    setTimeout(() => {
+    localStorage.setItem("language", lang);
+    LoadingScreen.unload();
+    try {
+      await this.loadStrings(lang);
+      this.updateLanguageLabels();
+    } finally {
       LoadingScreen.loaded();
-    }, 400);
+    }
   }
   closeLanguageMenu(restoreFocus = false) {
     document.body.classList.remove("visible");
@@ -187,45 +191,31 @@ class Multilingual {
     if (restoreFocus) this.languageMenuTrigger?.focus();
     this.languageMenuTrigger = null;
   }
-  langEvent(e) {
-    if (e.target.closest('#langOption')) {
-      if (e.target.matches('#langOption > div[lang]')) this.changeLang(e);
+  langEvent(event) {
+    const option = event.target.closest("#langOption button[data-locale]");
+    if (option) {
+      this.changeLang(option);
       return;
     }
-    
-    const isLangSelect = e.target.closest('#langSelect') !== null;
-    const isGlobe = e.target.closest('#globe-container') !== null || e.target.closest('#globe') !== null;
-    
-    if (isLangSelect || isGlobe) {
-      const langBorder = document.getElementById("langBorder");
-      const langOption = document.getElementById("langOption");
-      if (isGlobe) {
-        document.getElementById("globe-container").appendChild(langBorder);
-        langOption.style.top = "calc(100% + 5px)";
-        langOption.style.bottom = "auto";
-      } else {
-        langSelect.appendChild(langBorder);
-        langOption.style.bottom = "calc(100% + 5px)";
-        langOption.style.top = "auto";
-      }
-      
-      const trigger = isGlobe ? document.getElementById("globe") : langSelect;
-      if (this.languageMenuTrigger === trigger) {
-        this.closeLanguageMenu();
-      } else {
-        this.closeLanguageMenu();
-        this.languageMenuTrigger = trigger;
-        trigger.setAttribute("aria-expanded", "true");
-        document.body.classList.add("visible");
-      }
+    if (event.target.closest("#langOption")) return;
+
+    const trigger = event.target.closest("#globe, #langSelect");
+    if (!trigger || this.languageMenuTrigger === trigger) {
+      this.closeLanguageMenu();
       return;
     }
+
     this.closeLanguageMenu();
-  };
-  onwheel = window.onwheel = (e) => {
-    if (e.target.closest("#langSelect, #langOption")) {
-      return;
-    }
-    this.closeLanguageMenu();
+    const header = trigger.id === "globe";
+    const border = document.getElementById("langBorder");
+    const options = document.getElementById("langOption");
+    trigger.parentElement.appendChild(border);
+    options.style.top = header ? "calc(100% + 5px)" : "auto";
+    options.style.bottom = header ? "auto" : "calc(100% + 5px)";
+    this.languageMenuTrigger = trigger;
+    trigger.setAttribute("aria-expanded", "true");
+    document.body.classList.add("visible");
+    const selected = Array.from(options.children).find((option) => option.dataset.locale === this.language);
+    (selected || options.firstElementChild).focus();
   }
 }

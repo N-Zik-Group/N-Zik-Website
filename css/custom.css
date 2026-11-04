@@ -93,6 +93,9 @@ ul {
     opacity: 0.95 !important;
   }
 }
+#languageSelect {
+  position: relative;
+}
 #langSelect {
   cursor: pointer;
   position: relative;
@@ -113,7 +116,7 @@ ul {
   position: absolute;
   max-height: calc(72vh - 24px);
   width: fit-content;
-  right: 0px;
+  inset-inline-end: 0;
   bottom: calc(100% + 5px);
   border-radius: 5px;
   overflow-y: scroll;
@@ -128,17 +131,20 @@ ul {
   scrollbar-width: thin;
   scrollbar-gutter: stable;
   /* --- */
-  div {
+  button {
+    display: block;
+    width: 100%;
+    color: inherit;
     border-bottom: 1px dotted rgba(80, 80, 80, 1);
     padding: 7px;
-    text-align: left;
+    text-align: start;
     text-wrap: nowrap;
     cursor: pointer;
   }
-  div:hover {
+  button:hover {
     background-color: rgba(0, 0, 0, 0.2);
   }
-  div:last-child {
+  button:last-child {
     border-bottom: none;
   }
 }
@@ -211,7 +217,7 @@ body.visible #langBorder {
     max-height: 90vh;
     height: fit-content;
     width: 65vw;
-    div {
+    button {
       padding-top: 10px;
       padding-bottom: 10px;
     }
@@ -1058,6 +1064,18 @@ a > img:hover {
 }
 
 /* Icon fonts keep their own families instead of inheriting the text font. */
+#featuresDropdownTrigger, #globe, #langSelect, #langOption button {
+  font-family: inherit;
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+}
+#langOption button:not(:last-child) {
+  border-bottom: 1px dotted rgba(80, 80, 80, 1);
+}
+#featuresDropdownTrigger, #globe {
+  padding: 0;
+}
 #globe, #toggledark {
   display: inline-flex;
   align-items: center;
@@ -1065,6 +1083,9 @@ a > img:hover {
   font-size: 30px;
   line-height: 1;
   color: var(--color, #abbad0);
+}
+#headerLangText {
+  font-size: 16px;
 }
 #langSelect::before {
   position: absolute;
@@ -1091,4 +1112,15 @@ a > img:hover {
 }
 @media (max-width: 768px) {
   #globe, #toggledark { font-size: 24px; }
+}
+
+
+@media (prefers-reduced-motion: reduce) {
+  .has-animations *,
+  .has-animations *::before,
+  .has-animations *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
 }

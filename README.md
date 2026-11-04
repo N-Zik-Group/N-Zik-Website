@@ -70,7 +70,7 @@ Join the N-Zik Discord:
 - 🎬 **Feature Showcase**: 11 demo videos - home, Glass, lyrics, audio visualizer, rewind, songs, search, OTA updates, carrousel, artist pages and settings.
 - 🎨 **Theme Presets**: Previews of the 6 visual themes the app ships with.
 - 🫧 **Optional Glass Effect (BETA)**: The app keeps Glass off on fresh installations. Settings let you choose native, contour-only or Glass presentation by category and adjust rendering quality. Glass may increase rendering work and battery use; it can be lowered or disabled to suit your device.
-- ⚡ **Zero Build**: Vanilla HTML/CSS/JavaScript - no framework, no build step, no dependencies.
+- ⚡ **Zero Build**: Static HTML, CSS and JavaScript with no framework, package installation, or build step. The site loads icons from public CDNs, Vercel analytics on the deployed site, and the Keep Android Open banner in an isolated frame. Video previews autoplay in a loop by default, with playback controls. They start paused when reduced motion is enabled.
 - 📱 **Fully Responsive**: From phone to widescreen.
 - 🔎 **SEO Ready**: `robots.txt`, `sitemap.xml` and semantic single-page markup.
 

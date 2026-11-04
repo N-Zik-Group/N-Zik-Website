@@ -1,5 +1,8 @@
 blank_issues_enabled: false
 contact_links:
+  - name: Report a security vulnerability privately
+    url: https://github.com/N-Zik-Group/N-Zik-Website/security/advisories/new
+    about: Share reproduction steps and sensitive details directly with maintainers.
   - name: 💬 Join the Community (Discord)
     url: https://discord.gg/bneHC7QRje
     about: Ask questions, chat with developers, or report issues that don't fit the templates above.
