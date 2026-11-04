@@ -1,3 +1,9 @@
+function scrollPreview(button, step) {
+  const carousel = button.parentElement.querySelector(".preset-carousel");
+  const direction = getComputedStyle(carousel).direction === "rtl" ? -1 : 1;
+  carousel.scrollBy({ left: direction * step * 220, behavior: "smooth" });
+}
+
 class LoadingScreen {
   static loaded() {
     const loadingScreen = document.querySelector(".loadingScreen");

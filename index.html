@@ -592,13 +592,13 @@
                         type="button"
                         class="carousel-btn prev"
                         aria-label="Previous Glass preview" data-i18n-aria-label="feature_previous_glass_preview_label"
-                        onclick="this.parentElement.querySelector('.preset-carousel').scrollBy({ left: -220, behavior: 'smooth' })"
+                        onclick="scrollPreview(this, -1)"
                       >❮</button>
                       <button
                         type="button"
                         class="carousel-btn next"
                         aria-label="Next Glass preview" data-i18n-aria-label="feature_next_glass_preview_label"
-                        onclick="this.parentElement.querySelector('.preset-carousel').scrollBy({ left: 220, behavior: 'smooth' })"
+                        onclick="scrollPreview(this, 1)"
                       >❯</button>
                       <div class="preset-carousel media-preview-carousel is-revealing up" tabindex="0" aria-label="Glass previews" data-i18n-aria-label="feature_glass_previews_label">
                         <video
@@ -816,21 +816,13 @@
                     >
                       <button
                         class="carousel-btn prev"
-                        onclick="
-                          this.parentElement
-                            .querySelector('.preset-carousel')
-                            .scrollBy({ left: -220, behavior: 'smooth' })
-                        "
+                        onclick="scrollPreview(this, -1)"
                       >
                         ❮
                       </button>
                       <button
                         class="carousel-btn next"
-                        onclick="
-                          this.parentElement
-                            .querySelector('.preset-carousel')
-                            .scrollBy({ left: 220, behavior: 'smooth' })
-                        "
+                        onclick="scrollPreview(this, 1)"
                       >
                         ❯
                       </button>
@@ -1047,13 +1039,13 @@
                         type="button"
                         class="carousel-btn prev"
                         aria-label="Previous search preview" data-i18n-aria-label="feature_previous_search_preview_label"
-                        onclick="this.parentElement.querySelector('.preset-carousel').scrollBy({ left: -220, behavior: 'smooth' })"
+                        onclick="scrollPreview(this, -1)"
                       >❮</button>
                       <button
                         type="button"
                         class="carousel-btn next"
                         aria-label="Next search preview" data-i18n-aria-label="feature_next_search_preview_label"
-                        onclick="this.parentElement.querySelector('.preset-carousel').scrollBy({ left: 220, behavior: 'smooth' })"
+                        onclick="scrollPreview(this, 1)"
                       >❯</button>
                       <div class="preset-carousel media-preview-carousel is-revealing up" tabindex="0" aria-label="Search previews" data-i18n-aria-label="feature_search_previews_label">
                         <div class="video-mockup-wrapper device-mockup">
