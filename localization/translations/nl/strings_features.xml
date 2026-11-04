@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="feature_amoled_theme_alt">AMOLED Thema</string>
+    <string name="feature_android_mobile_alt">Android telefoon</string>
+    <string name="feature_android_tablet_alt">Android tablet</string>
     <string name="feature_artist_profile_alt">Kunstenaar profiel</string>
     <string name="feature_artists_description">Ontdek uitgebreide artiest profielen met topnummers, albums en soortgelijke artiesten.</string>
     <string name="feature_artists_title">Gedetailleerde artiest profielen.</string>
@@ -37,6 +39,7 @@
     <string name="feature_n_zik_rewind_intro_alt">N-Zik terugspoelen Intro</string>
     <string name="feature_next_glass_preview_label">Volgende glasvoorvertoning</string>
     <string name="feature_next_search_preview_label">Volgende zoekvoorbeeld</string>
+    <string name="feature_next_theme_preview_label">Voorbeeld volgende thema</string>
     <string name="feature_offline_caching_description">Automatisch nummers cachen voor offline afspelen met aanpasbare limieten, of nummers downloaden voor permanente toegang.</string>
     <string name="feature_offline_caching_title">Smart Offline caching.</string>
     <string name="feature_optional_glass_player_alt">Optionele glazen speler</string>
@@ -51,6 +54,7 @@
     <string name="feature_playlists_title">Beheer afspeellijsten.</string>
     <string name="feature_previous_glass_preview_label">Vorig glas voorbeeld</string>
     <string name="feature_previous_search_preview_label">Vorige zoekvoorbeeld</string>
+    <string name="feature_previous_theme_preview_label">Voorvertoning vorig thema</string>
     <string name="feature_profiles_alt">Profiles</string>
     <string name="feature_profiles_description">Verbind je accounts en pas de app aan: synchroniseer met YouTube Music, schakel Discord RPC en Last in. m scrobbleren en schakelen tussen meerdere in-app profielen, elk met zijn eigen naam, avatar, database en instellingen.</string>
     <string name="feature_profiles_title">Meerdere profielen</string>
