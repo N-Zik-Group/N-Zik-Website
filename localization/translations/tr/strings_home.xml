@@ -20,7 +20,7 @@
     <string name="navigation_ota_updates_label">OTA Updates</string>
     <string name="navigation_playback_queue_label">Playback Queue</string>
     <string name="navigation_playlists_label">Playlists</string>
-    <string name="navigation_profiles_label">Profiles</string>
+    <string name="navigation_profiles_label">Profiller</string>
     <string name="navigation_rewind_label">Rewind</string>
     <string name="navigation_search_label">Search</string>
     <string name="navigation_switch_to_dark_theme">Switch to dark theme</string>
