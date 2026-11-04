@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="footer_issue_tracker">Issue tracker</string>
-    <string name="footer_releases">Releases</string>
-    <string name="footer_repository">Repository</string>
+    <string name="footer_font_credit">Fuente de Xiaomi Inc.</string>
+    <string name="footer_font_license">Licencia de fuente MiSans</string>
+    <string name="footer_icon_credits">Créditos de icono</string>
+    <string name="footer_issue_tracker">Rastreador de incidencias</string>
+    <string name="footer_releases">Publicaciones</string>
+    <string name="footer_repository">Repositorio</string>
 </resources>
