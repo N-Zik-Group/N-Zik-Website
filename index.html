@@ -105,7 +105,7 @@
                     class="header-logo-image"
                     src="images/n-zik.svg"
                     width="50"
-                    alt="Logo"
+                    alt="Logo" data-i18n-alt="hero_logo_alt"
                   />
                 </a>
                 <span
@@ -149,9 +149,9 @@
                   width="16"
                   height="16"
                   style="display: none"
-                  alt="N-Zik Home"
+                  alt="N-Zik Home" data-i18n-alt="hero_n_zik_home_alt"
                 />
-                <span class="home-text">Home</span>
+                <span class="home-text" name="navigation_home_label">Home</span>
               </a>
               <div style="position: relative" class="nav-dropdown-container">
                 <div
@@ -172,7 +172,7 @@
                   "
                 >
                   <div id="featuresNavTextWrapper" class="nav-text-slider">
-                    <span id="featuresNavText">Features</span>
+                    <span id="featuresNavText" name="navigation_features_label">Features</span>
                   </div>
                   <svg
                     width="10"
@@ -191,104 +191,104 @@
                   <a
                     href="#feature-ui"
                     class="feature-link"
-                    data-name="Modern UI"
+                    name="navigation_modern_ui_label"
                     >Modern UI</a
                   >
-                  <a href="#feature-glass" class="feature-link" data-name="Glass" name="navigation_glass_label">Glass</a>
+                  <a href="#feature-glass" class="feature-link" name="navigation_glass_label">Glass</a>
                   <a
                     href="#feature-lyrics"
                     class="feature-link"
-                    data-name="Lyrics"
+                    name="navigation_lyrics_label"
                     >Lyrics</a
                   >
                   <a
                     href="#feature-visualizer"
                     class="feature-link"
-                    data-name="Visualizer"
+                    name="navigation_visualizer_label"
                     >Visualizer</a
                   >
                   <a
                     href="#feature-discord"
                     class="feature-link"
-                    data-name="Discord RPC"
+                    name="navigation_discord_rpc_label"
                     >Discord RPC</a
                   >
                   <a
                     href="#feature-presets"
                     class="feature-link"
-                    data-name="Theme Presets"
+                    name="navigation_theme_presets_label"
                     >Theme Presets</a
                   >
                   <a
                     href="#feature-profiles"
                     class="feature-link"
-                    data-name="Profiles"
+                    name="navigation_profiles_label"
                     >Profiles</a
                   >
                   <a
                     href="#feature-rewind"
                     class="feature-link"
-                    data-name="Rewind"
+                    name="navigation_rewind_label"
                     >N-Zik Rewind</a
                   >
                   <a
                     href="#feature-caching"
                     class="feature-link"
-                    data-name="Offline Caching"
+                    name="navigation_offline_caching_label"
                     >Offline Caching</a
                   >
                   <a
                     href="#feature-search"
                     class="feature-link"
-                    data-name="Search"
+                    name="navigation_search_label"
                     >Smart Search</a
                   >
                   <a
                     href="#feature-ota"
                     class="feature-link"
-                    data-name="OTA Updates"
+                    name="navigation_ota_updates_label"
                     >OTA Updates</a
                   >
                   <a
                     href="#feature-carrousel"
                     class="feature-link"
-                    data-name="Carousel Player"
+                    name="navigation_carousel_player_label"
                     >Carousel Player</a
                   >
                   <a
                     href="#feature-artist"
                     class="feature-link"
-                    data-name="Artist Profiles"
+                    name="navigation_artist_profiles_label"
                     >Artist Profiles</a
                   >
                   <a
                     href="#feature-settings"
                     class="feature-link"
-                    data-name="Audio Controls"
+                    name="navigation_audio_controls_label"
                     >Audio Controls</a
                   >
                   <a
                     href="#feature-playlists"
                     class="feature-link"
-                    data-name="Playlists"
+                    name="navigation_playlists_label"
                     >Playlists</a
                   >
                   <a
                     href="#feature-queue"
                     class="feature-link"
-                    data-name="Playback Queue"
+                    name="navigation_playback_queue_label"
                     >Playback Queue</a
                   >
                   <a
                     href="#feature-history"
                     class="feature-link"
-                    data-name="History"
+                    name="navigation_history_label"
                     >History</a
                   >
                   <a
                     href="#feature-compatibility"
                     class="feature-link"
-                    data-name="Compatibility"
+                    name="navigation_compatibility_label"
                     >Compatibility</a
                   >
                 </div>
@@ -302,6 +302,7 @@
                   font-size: 16px;
                   transition: opacity 0.2s;
                 "
+                  name="navigation_download_label"
                 >Download</a
               >
             </nav>
@@ -314,7 +315,7 @@
                 gap: 12px;
               "
             >
-              <i id="toggledark" class="fi fi-br-moon-stars focustoggle" tabindex="0" role="button" aria-label="Switch to dark theme" onclick="toggleDark()"></i>
+              <i id="toggledark" class="fi fi-br-moon-stars focustoggle" tabindex="0" role="button" aria-label="Switch to dark theme" data-i18n-dark-theme="navigation_switch_to_dark_theme" data-i18n-light-theme="navigation_switch_to_light_theme" onclick="toggleDark()"></i>
               <li
                 style="
                   display: flex;
@@ -324,7 +325,7 @@
                 "
                 id="globe-container"
               >
-                <i id="globe" class="fi fi-bs-globe focustoggle" tabindex="0" role="button" aria-label="Change language"></i>
+                <i id="globe" class="fi fi-bs-globe focustoggle" tabindex="0" role="button" aria-label="Change language" data-i18n-aria-label="navigation_change_language"></i>
                 <span
                   id="headerLangText"
                   style="
@@ -395,7 +396,7 @@
                 <h2 class="m-0">
                   <img
                     src="images/ic_banner.webp"
-                    alt="N-Zik Banner"
+                    alt="N-Zik Banner" data-i18n-alt="hero_n_zik_banner_alt"
                     width="400"
                     style="display: inline-block"
                   />
@@ -409,28 +410,28 @@
                 </p>
                 <div class="hero-cta-">
                   <a tabindex="0" href="https://github.com/N-Zik-Group/N-Zik/releases/latest">
-                    <img src="images/get-it-on/GitHub.png" width="200" style="display: inline-block; vertical-align: middle" alt="Get it on GitHub" />
+                    <img src="images/get-it-on/GitHub.png" width="200" style="display: inline-block; vertical-align: middle" alt="Get it on GitHub" data-i18n-alt="download_get_it_on_github" />
                   </a>
                   <a tabindex="0" href="https://github.com/N-Zik-Group/N-Zik/releases?q=&type=prerelease">
-                    <img src="images/get-it-on/GitHubBeta.png" width="200" style="display: inline-block; vertical-align: middle; margin-left: 10px;" alt="Get it on GitHub (Beta)" />
+                    <img src="images/get-it-on/GitHubBeta.png" width="200" style="display: inline-block; vertical-align: middle; margin-left: 10px;" alt="Get it on GitHub (Beta)" data-i18n-alt="download_get_it_on_github_beta" />
                   </a>
                   <a tabindex="0" href="https://f-droid.org/packages/com.nevar.nzik.foss/">
-                    <img src="images/get-it-on/F-Droid.png" width="200" style="display: inline-block; vertical-align: middle; margin-left: 10px;" alt="Get it on F-Droid" />
+                    <img src="images/get-it-on/F-Droid.png" width="200" style="display: inline-block; vertical-align: middle; margin-left: 10px;" alt="Get it on F-Droid" data-i18n-alt="download_get_it_on_f_droid" />
                   </a>
                   <a tabindex="0" href="https://apt.izzysoft.de/fdroid/index/apk/com.nevar.nzik.foss?repo=main">
-                    <img src="images/get-it-on/IzzyOnDroid.png" width="200" style="display: inline-block; vertical-align: middle; margin-left: 10px;" alt="Get it on IzzyOnDroid" />
+                    <img src="images/get-it-on/IzzyOnDroid.png" width="200" style="display: inline-block; vertical-align: middle; margin-left: 10px;" alt="Get it on IzzyOnDroid" data-i18n-alt="download_get_it_on_izzyondroid" />
                   </a>
                   <a tabindex="0" href="https://www.openapk.net/n-zik/com.nevar.nzik.foss/">
-                    <img src="images/get-it-on/OpenAPK.png" width="200" style="display: inline-block; vertical-align: middle; margin-left: 10px;" alt="Get it on OpenAPK" />
+                    <img src="images/get-it-on/OpenAPK.png" width="200" style="display: inline-block; vertical-align: middle; margin-left: 10px;" alt="Get it on OpenAPK" data-i18n-alt="download_get_it_on_openapk" />
                   </a>
                   <a tabindex="0" href="https://www.androidfreeware.net/download-n-zik-apk.html">
-                    <img src="images/get-it-on/AndroidFreeware.png" width="200" style="display: inline-block; vertical-align: middle; margin-left: 10px;" alt="Get it on AndroidFreeware" />
+                    <img src="images/get-it-on/AndroidFreeware.png" width="200" style="display: inline-block; vertical-align: middle; margin-left: 10px;" alt="Get it on AndroidFreeware" data-i18n-alt="download_get_it_on_androidfreeware" />
                   </a>
                   <a tabindex="0" href="https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22com.nevar.nzik.foss%22%2C%22url%22%3A%22https%3A%2F%2Fgithub.com%2FN-Zik-Group%2FN-Zik%22%2C%22author%22%3A%22N-Zik-Group%22%2C%22name%22%3A%22N-Zik%20(FOSS)%22%2C%22preferredApkIndex%22%3A0%2C%22additionalSettings%22%3A%22%7B%5C%22includePrereleases%5C%22%3Afalse%2C%5C%22fallbackToOlderReleases%5C%22%3Atrue%2C%5C%22filterReleaseTitlesByRegEx%5C%22%3A%5C%22%5C%22%2C%5C%22filterReleaseNotesByRegEx%5C%22%3A%5C%22%5C%22%2C%5C%22verifyLatestTag%5C%22%3Afalse%2C%5C%22sortMethodChoice%5C%22%3A%5C%22date%5C%22%2C%5C%22useLatestAssetDateAsReleaseDate%5C%22%3Afalse%2C%5C%22releaseTitleAsVersion%5C%22%3Afalse%2C%5C%22trackOnly%5C%22%3Afalse%2C%5C%22versionExtractionRegEx%5C%22%3A%5C%22%5C%22%2C%5C%22matchGroupToUse%5C%22%3A%5C%22%5C%22%2C%5C%22versionDetection%5C%22%3Atrue%2C%5C%22releaseDateAsVersion%5C%22%3Afalse%2C%5C%22useVersionCodeAsOSVersion%5C%22%3Afalse%2C%5C%22apkFilterRegEx%5C%22%3A%5C%22N-Zik-foss%5C%5C%5C%5C.apk%5C%22%2C%5C%22invertAPKFilter%5C%22%3Afalse%2C%5C%22autoApkFilterByArch%5C%22%3Atrue%2C%5C%22appName%5C%22%3A%5C%22N-Zik%20(FOSS)%5C%22%2C%5C%22appAuthor%5C%22%3A%5C%22N-Zik-Group%5C%22%2C%5C%22shizukuPretendToBeGooglePlay%5C%22%3Afalse%2C%5C%22allowInsecure%5C%22%3Afalse%2C%5C%22exemptFromBackgroundUpdates%5C%22%3Afalse%2C%5C%22skipUpdateNotifications%5C%22%3Afalse%2C%5C%22about%5C%22%3A%5C%22N-Zik%20is%20a%20multilingual%20YouTube%20Music%20client%20built%20with%20performance%20improvements%2C%20UI%2FUX%20refinement%2C%20and%20new%20features.%5C%22%2C%5C%22refreshBeforeDownload%5C%22%3Afalse%2C%5C%22includeZips%5C%22%3Afalse%2C%5C%22zippedApkFilterRegEx%5C%22%3A%5C%22%5C%22%2C%5C%22includeTarballs%5C%22%3Afalse%2C%5C%22tarballedApkFilterRegEx%5C%22%3A%5C%22%5C%22%7D%22%2C%22overrideSource%22%3Anull%7D">
-                    <img src="images/get-it-on/Obtainium.png" width="200" style="display: inline-block; vertical-align: middle; margin-left: 10px;" alt="Get it on Obtainium" />
+                    <img src="images/get-it-on/Obtainium.png" width="200" style="display: inline-block; vertical-align: middle; margin-left: 10px;" alt="Get it on Obtainium" data-i18n-alt="download_get_it_on_obtainium" />
                   </a>
                   <a tabindex="0" href="https://appteka.store/search?q=N-Zik">
-                    <img src="images/get-it-on/Appteka.png" width="200" style="display: inline-block; vertical-align: middle; margin-left: 10px;" alt="Get it on Appteka" />
+                    <img src="images/get-it-on/Appteka.png" width="200" style="display: inline-block; vertical-align: middle; margin-left: 10px;" alt="Get it on Appteka" data-i18n-alt="download_get_it_on_appteka" />
                   </a>
                   <br /><br />
                   <a
@@ -441,13 +442,13 @@
                   >
                     <img
                       src="images/devglobe.svg"
-                      alt="Launched on DevGlobe"
+                      alt="Launched on DevGlobe" data-i18n-alt="download_launched_on_devglobe"
                       style="display: inline-block; vertical-align: middle"
                     />
                   </a>
                   <div class="pc-companion">
                     <h3 class="section-title">N-Zik Desktop Compagnon</h3>
-                    <p class="section-paragraph">
+                    <p class="section-paragraph" name="download_companion_description">
                       The desktop companion for Windows and Linux: pair it with your
                       phone over local Wi-Fi (QR code or manual code), then browse
                       your library, manage the queue and listen on a large screen
@@ -458,10 +459,10 @@
                     </p>
                     <div class="cta-cta">
                       <a tabindex="0" href="https://github.com/N-Zik-Group/N-Zik-Desktop-Compagnon/releases/latest">
-                        <img src="images/get-it-on/GitHub.png" width="200" style="display: inline-block; vertical-align: middle" alt="Get the desktop companion on GitHub" />
+                        <img src="images/get-it-on/GitHub.png" width="200" style="display: inline-block; vertical-align: middle" alt="Get the desktop companion on GitHub" data-i18n-alt="download_get_the_desktop_companion_on_github" />
                       </a>
                       <a tabindex="0" href="https://github.com/N-Zik-Group/N-Zik-Desktop-Compagnon/releases?q=&type=prerelease">
-                        <img src="images/get-it-on/GitHubBeta.png" width="200" style="display: inline-block; vertical-align: middle; margin-left: 10px;" alt="Get the desktop companion (Beta) on GitHub" />
+                        <img src="images/get-it-on/GitHubBeta.png" width="200" style="display: inline-block; vertical-align: middle; margin-left: 10px;" alt="Get the desktop companion (Beta) on GitHub" data-i18n-alt="download_get_the_desktop_companion_beta_on_github" />
                       </a>
                     </div>
                     <a
@@ -472,11 +473,11 @@
                     >
                       <img
                         src="images/devglobe.svg"
-                        alt="Launched on DevGlobe"
+                        alt="Launched on DevGlobe" data-i18n-alt="download_launched_on_devglobe"
                         style="display: inline-block; vertical-align: middle"
                       />
                     </a>
-                    <p class="devglobe-caption">N-Zik Desktop Compagnon · Windows &amp; Linux</p>
+                    <p class="devglobe-caption" name="download_companion_platforms">N-Zik Desktop Compagnon · Windows &amp; Linux</p>
                   </div>
                 </div>
               </div>
@@ -486,27 +487,27 @@
                   style="margin: 0 auto; flex: none"
                 >
                   <div class="mockup-bg">
-                    <img src="images/hero-bg.svg" alt="illustration" />
+                    <img src="images/hero-bg.svg" alt="illustration" data-i18n-alt="feature_illustration_alt" />
                   </div>
                   <div class="mockup-container two-phones">
                     <img
                       class="device-mockup phone-left"
                       src="./images/Screenshots/1.webp"
-                      alt="Light Theme"
+                      alt="Light Theme" data-i18n-alt="feature_light_theme_alt"
                       loading="lazy"
                       decoding="async"
                     />
                     <img
                       class="device-mockup phone-right"
                       src="./images/Screenshots/3.webp"
-                      alt="AMOLED Theme"
+                      alt="AMOLED Theme" data-i18n-alt="feature_amoled_theme_alt"
                       loading="lazy"
                       decoding="async"
                     />
                     <img
                       class="device-mockup phone-center"
                       src="./images/Screenshots/2.webp"
-                      alt="Dark Theme"
+                      alt="Dark Theme" data-i18n-alt="feature_dark_theme_alt"
                       loading="lazy"
                       decoding="async"
                     />
@@ -523,7 +524,7 @@
                 <div id="feature-ui" class="feature-extended">
                   <div class="feature-extended-image">
                     <div class="mockup-bg">
-                      <img src="./images/feature-bg-01.svg" alt="background" />
+                      <img src="./images/feature-bg-01.svg" alt="background" data-i18n-alt="feature_background_alt" />
                     </div>
 
                     <div
@@ -543,13 +544,13 @@
                         <img
                           class="frame-overlay"
                           src="./images/X17Ultra Frame.png"
-                          alt="Phone Frame"
+                          alt="Phone Frame" data-i18n-alt="feature_phone_frame_alt"
                         />
                       </div>
                       <img
                         class="device-mockup phone-right"
                         src="./images/Screenshots/4.webp"
-                        alt="Classic player"
+                        alt="Classic player" data-i18n-alt="feature_classic_player_alt"
                         loading="lazy"
                         decoding="async"
                       />
@@ -558,7 +559,7 @@
                         src="./images/Screenshots/27.webp"
                         width="1282"
                         height="2681"
-                        alt="Optional Glass player"
+                        alt="Optional Glass player" data-i18n-alt="feature_optional_glass_player_alt"
                         loading="lazy"
                         decoding="async"
                       />
@@ -584,22 +585,22 @@
                 <div id="feature-glass" class="feature-extended">
                   <div class="feature-extended-image">
                     <div class="mockup-bg">
-                      <img src="./images/feature-bg-02.svg" alt="background" />
+                      <img src="./images/feature-bg-02.svg" alt="background" data-i18n-alt="feature_background_alt" />
                     </div>
                     <div class="preset-carousel-wrapper" style="position: relative">
                       <button
                         type="button"
                         class="carousel-btn prev"
-                        aria-label="Previous Glass preview"
+                        aria-label="Previous Glass preview" data-i18n-aria-label="feature_previous_glass_preview_label"
                         onclick="this.parentElement.querySelector('.preset-carousel').scrollBy({ left: -220, behavior: 'smooth' })"
                       >❮</button>
                       <button
                         type="button"
                         class="carousel-btn next"
-                        aria-label="Next Glass preview"
+                        aria-label="Next Glass preview" data-i18n-aria-label="feature_next_glass_preview_label"
                         onclick="this.parentElement.querySelector('.preset-carousel').scrollBy({ left: 220, behavior: 'smooth' })"
                       >❯</button>
-                      <div class="preset-carousel media-preview-carousel is-revealing up" tabindex="0" aria-label="Glass previews">
+                      <div class="preset-carousel media-preview-carousel is-revealing up" tabindex="0" aria-label="Glass previews" data-i18n-aria-label="feature_glass_previews_label">
                         <video
                           class="device-mockup"
                           src="./videos/glass-demo.mp4"
@@ -610,14 +611,14 @@
                           loop
                           muted
                           playsinline
-                          aria-label="Glass effect demonstration"
+                          aria-label="Glass effect demonstration" data-i18n-aria-label="feature_glass_effect_demonstration_label"
                         ></video>
                         <img
                           class="device-mockup"
                           src="./images/Screenshots/25.webp"
                           width="1282"
                           height="2681"
-                          alt="Glass settings and quality controls"
+                          alt="Glass settings and quality controls" data-i18n-alt="feature_glass_settings_and_quality_controls_alt"
                           loading="lazy"
                           decoding="async"
                         />
@@ -626,7 +627,7 @@
                           src="./images/Screenshots/26.webp"
                           width="1282"
                           height="2681"
-                          alt="Home with Glass enabled"
+                          alt="Home with Glass enabled" data-i18n-alt="feature_home_with_glass_enabled_alt"
                           loading="lazy"
                           decoding="async"
                         />
@@ -635,7 +636,7 @@
                           src="./images/Screenshots/27.webp"
                           width="1282"
                           height="2681"
-                          alt="Player with Glass enabled"
+                          alt="Player with Glass enabled" data-i18n-alt="feature_player_with_glass_enabled_alt"
                           loading="lazy"
                           decoding="async"
                         />
@@ -644,7 +645,7 @@
                           src="./images/Screenshots/28.webp"
                           width="1282"
                           height="2681"
-                          alt="Carousel player with Glass enabled"
+                          alt="Carousel player with Glass enabled" data-i18n-alt="feature_carousel_player_with_glass_enabled_alt"
                           loading="lazy"
                           decoding="async"
                         />
@@ -668,7 +669,7 @@
                 <div id="feature-lyrics" class="feature-extended">
                   <div class="feature-extended-image">
                     <div class="mockup-bg">
-                      <img src="./images/feature-bg-02.svg" alt="background" />
+                      <img src="./images/feature-bg-02.svg" alt="background" data-i18n-alt="feature_background_alt" />
                     </div>
                     <div
                       class="mockup-container two-phones is-revealing up"
@@ -687,13 +688,13 @@
                         <img
                           class="frame-overlay"
                           src="./images/X17Ultra Frame.png"
-                          alt="Phone Frame"
+                          alt="Phone Frame" data-i18n-alt="feature_phone_frame_alt"
                         />
                       </div>
                       <img
                         class="device-mockup phone-right"
                         src="./images/Screenshots/7.webp"
-                        alt="Player Lyrics"
+                        alt="Player Lyrics" data-i18n-alt="feature_player_lyrics_alt"
                         loading="lazy"
                         decoding="async"
                       />
@@ -716,7 +717,7 @@
                 <div id="feature-visualizer" class="feature-extended">
                   <div class="feature-extended-image">
                     <div class="mockup-bg">
-                      <img src="./images/feature-bg-03.svg" alt="background" />
+                      <img src="./images/feature-bg-03.svg" alt="background" data-i18n-alt="feature_background_alt" />
                     </div>
                     <div
                       class="mockup-container two-phones is-revealing up"
@@ -735,13 +736,13 @@
                         <img
                           class="frame-overlay"
                           src="./images/X17Ultra Frame.png"
-                          alt="Phone Frame"
+                          alt="Phone Frame" data-i18n-alt="feature_phone_frame_alt"
                         />
                       </div>
                       <img
                         class="device-mockup phone-right"
                         src="./images/Screenshots/6.webp"
-                        alt="Player Audio Bar"
+                        alt="Player Audio Bar" data-i18n-alt="feature_player_audio_bar_alt"
                         loading="lazy"
                         decoding="async"
                       />
@@ -768,7 +769,7 @@
                 <div id="feature-discord" class="feature-extended">
                   <div class="feature-extended-image">
                     <div class="mockup-bg">
-                      <img src="./images/feature-bg-04.svg" alt="background" />
+                      <img src="./images/feature-bg-04.svg" alt="background" data-i18n-alt="feature_background_alt" />
                     </div>
                     <div
                       class="mockup-container two-phones is-revealing up"
@@ -776,14 +777,14 @@
                       <img
                         class="device-mockup phone-left"
                         src="./images/Screenshots/20.webp"
-                        alt="Discord Rich Presence Settings"
+                        alt="Discord Rich Presence Settings" data-i18n-alt="feature_discord_rich_presence_settings_alt"
                         loading="lazy"
                         decoding="async"
                       />
                       <img
                         class="device-mockup phone-right"
                         src="./images/Screenshots/21.webp"
-                        alt="Discord Rich Presence Live"
+                        alt="Discord Rich Presence Live" data-i18n-alt="feature_discord_rich_presence_live_alt"
                         loading="lazy"
                         decoding="async"
                       />
@@ -807,7 +808,7 @@
                 <div id="feature-themes" class="feature-extended">
                   <div class="feature-extended-image">
                     <div class="mockup-bg">
-                      <img src="./images/feature-bg-04.svg" alt="background" />
+                      <img src="./images/feature-bg-04.svg" alt="background" data-i18n-alt="feature_background_alt" />
                     </div>
                     <div
                       class="preset-carousel-wrapper"
@@ -837,42 +838,42 @@
                         <img
                           class="device-mockup"
                           src="./images/Screenshots/preset0.webp"
-                          alt="Theme Preset 1"
+                          alt="Theme Preset 1" data-i18n-alt="feature_theme_preset_one_alt"
                           loading="lazy"
                           decoding="async"
                         />
                         <img
                           class="device-mockup"
                           src="./images/Screenshots/preset1.webp"
-                          alt="Theme Preset 2"
+                          alt="Theme Preset 2" data-i18n-alt="feature_theme_preset_two_alt"
                           loading="lazy"
                           decoding="async"
                         />
                         <img
                           class="device-mockup"
                           src="./images/Screenshots/preset2.webp"
-                          alt="Theme Preset 3"
+                          alt="Theme Preset 3" data-i18n-alt="feature_theme_preset_three_alt"
                           loading="lazy"
                           decoding="async"
                         />
                         <img
                           class="device-mockup"
                           src="./images/Screenshots/preset3.webp"
-                          alt="Theme Preset 4"
+                          alt="Theme Preset 4" data-i18n-alt="feature_theme_preset_four_alt"
                           loading="lazy"
                           decoding="async"
                         />
                         <img
                           class="device-mockup"
                           src="./images/Screenshots/preset4.webp"
-                          alt="Theme Preset 5"
+                          alt="Theme Preset 5" data-i18n-alt="feature_theme_preset_five_alt"
                           loading="lazy"
                           decoding="async"
                         />
                         <img
                           class="device-mockup"
                           src="./images/Screenshots/preset5.webp"
-                          alt="Theme Preset 6"
+                          alt="Theme Preset 6" data-i18n-alt="feature_theme_preset_six_alt"
                           loading="lazy"
                           decoding="async"
                         />
@@ -897,7 +898,7 @@
                 <div id="feature-profiles" class="feature-extended">
                   <div class="feature-extended-image">
                     <div class="mockup-bg">
-                      <img src="./images/feature-bg-02.svg" alt="background" />
+                      <img src="./images/feature-bg-02.svg" alt="background" data-i18n-alt="feature_background_alt" />
                     </div>
                     <div
                       class="mockup-container two-phones is-revealing up"
@@ -905,14 +906,14 @@
                       <img
                         class="device-mockup phone-left"
                         src="./images/Screenshots/19.webp"
-                        alt="YouTube Account"
+                        alt="YouTube Account" data-i18n-alt="feature_youtube_account_alt"
                         loading="lazy"
                         decoding="async"
                       />
                       <img
                         class="device-mockup phone-right"
                         src="./images/Screenshots/18.webp"
-                        alt="Profiles"
+                        alt="Profiles" data-i18n-alt="feature_profiles_alt"
                         loading="lazy"
                         decoding="async"
                       />
@@ -942,7 +943,7 @@
                 <div id="feature-rewind" class="feature-extended">
                   <div class="feature-extended-image">
                     <div class="mockup-bg">
-                      <img src="./images/feature-bg-02.svg" alt="background" />
+                      <img src="./images/feature-bg-02.svg" alt="background" data-i18n-alt="feature_background_alt" />
                     </div>
                     <div
                       class="mockup-container three-phones is-revealing up"
@@ -950,7 +951,7 @@
                       <img
                         class="device-mockup phone-left"
                         src="./images/Screenshots/23.webp"
-                        alt="N-Zik Rewind Intro"
+                        alt="N-Zik Rewind Intro" data-i18n-alt="feature_n_zik_rewind_intro_alt"
                         loading="lazy"
                         decoding="async"
                       />
@@ -968,13 +969,13 @@
                         <img
                           class="frame-overlay"
                           src="./images/X17Ultra Frame.png"
-                          alt="Phone Frame"
+                          alt="Phone Frame" data-i18n-alt="feature_phone_frame_alt"
                         />
                       </div>
                       <img
                         class="device-mockup phone-right"
                         src="./images/Screenshots/24.webp"
-                        alt="N-Zik Rewind"
+                        alt="N-Zik Rewind" data-i18n-alt="feature_n_zik_rewind_alt"
                         loading="lazy"
                         decoding="async"
                       />
@@ -1001,7 +1002,7 @@
                 <div id="feature-caching" class="feature-extended">
                   <div class="feature-extended-image">
                     <div class="mockup-bg">
-                      <img src="./images/feature-bg-02.svg" alt="background" />
+                      <img src="./images/feature-bg-02.svg" alt="background" data-i18n-alt="feature_background_alt" />
                     </div>
                     <div
                       class="video-mockup-wrapper device-mockup is-revealing up"
@@ -1017,7 +1018,7 @@
                       <img
                         class="frame-overlay"
                         src="./images/X17Ultra Frame.png"
-                        alt="Phone Frame"
+                        alt="Phone Frame" data-i18n-alt="feature_phone_frame_alt"
                       />
                     </div>
                   </div>
@@ -1039,22 +1040,22 @@
                 <div id="feature-search" class="feature-extended">
                   <div class="feature-extended-image">
                     <div class="mockup-bg">
-                      <img src="./images/feature-bg-03.svg" alt="background" />
+                      <img src="./images/feature-bg-03.svg" alt="background" data-i18n-alt="feature_background_alt" />
                     </div>
                     <div class="preset-carousel-wrapper" style="position: relative">
                       <button
                         type="button"
                         class="carousel-btn prev"
-                        aria-label="Previous search preview"
+                        aria-label="Previous search preview" data-i18n-aria-label="feature_previous_search_preview_label"
                         onclick="this.parentElement.querySelector('.preset-carousel').scrollBy({ left: -220, behavior: 'smooth' })"
                       >❮</button>
                       <button
                         type="button"
                         class="carousel-btn next"
-                        aria-label="Next search preview"
+                        aria-label="Next search preview" data-i18n-aria-label="feature_next_search_preview_label"
                         onclick="this.parentElement.querySelector('.preset-carousel').scrollBy({ left: 220, behavior: 'smooth' })"
                       >❯</button>
-                      <div class="preset-carousel media-preview-carousel is-revealing up" tabindex="0" aria-label="Search previews">
+                      <div class="preset-carousel media-preview-carousel is-revealing up" tabindex="0" aria-label="Search previews" data-i18n-aria-label="feature_search_previews_label">
                         <div class="video-mockup-wrapper device-mockup">
                           <video
                             class="video-element"
@@ -1067,27 +1068,27 @@
                           <img
                             class="frame-overlay"
                             src="./images/X17Ultra Frame.png"
-                            alt="Phone Frame"
+                            alt="Phone Frame" data-i18n-alt="feature_phone_frame_alt"
                           />
                         </div>
                         <img
                           class="device-mockup"
                           src="./images/Screenshots/12.webp"
-                          alt="Search"
+                          alt="Search" data-i18n-alt="feature_search_alt"
                           loading="lazy"
                           decoding="async"
                         />
                         <img
                           class="device-mockup"
                           src="./images/Screenshots/16.webp"
-                          alt="Voice Search"
+                          alt="Voice Search" data-i18n-alt="feature_voice_search_alt"
                           loading="lazy"
                           decoding="async"
                         />
                         <img
                           class="device-mockup"
                           src="./images/Screenshots/17.webp"
-                          alt="Song Recognition"
+                          alt="Song Recognition" data-i18n-alt="feature_song_recognition_alt"
                           loading="lazy"
                           decoding="async"
                         />
@@ -1112,7 +1113,7 @@
                 <div id="feature-ota" class="feature-extended">
                   <div class="feature-extended-image">
                     <div class="mockup-bg">
-                      <img src="./images/feature-bg-01.svg" alt="background" />
+                      <img src="./images/feature-bg-01.svg" alt="background" data-i18n-alt="feature_background_alt" />
                     </div>
                     <div
                       class="mockup-container two-phones is-revealing up"
@@ -1131,13 +1132,13 @@
                         <img
                           class="frame-overlay"
                           src="./images/X17Ultra Frame.png"
-                          alt="Phone Frame"
+                          alt="Phone Frame" data-i18n-alt="feature_phone_frame_alt"
                         />
                       </div>
                       <img
                         class="device-mockup phone-right"
                         src="./images/Screenshots/22.webp"
-                        alt="OTA Updates"
+                        alt="OTA Updates" data-i18n-alt="feature_ota_updates_alt"
                         loading="lazy"
                         decoding="async"
                       />
@@ -1161,7 +1162,7 @@
                 <div id="feature-carrousel" class="feature-extended">
                   <div class="feature-extended-image">
                     <div class="mockup-bg">
-                      <img src="./images/feature-bg-01.svg" alt="background" />
+                      <img src="./images/feature-bg-01.svg" alt="background" data-i18n-alt="feature_background_alt" />
                     </div>
                     <div
                       class="mockup-container two-phones is-revealing up"
@@ -1180,13 +1181,13 @@
                         <img
                           class="frame-overlay"
                           src="./images/X17Ultra Frame.png"
-                          alt="Phone Frame"
+                          alt="Phone Frame" data-i18n-alt="feature_phone_frame_alt"
                         />
                       </div>
                       <img
                         class="device-mockup phone-right"
                         src="./images/Screenshots/5.webp"
-                        alt="Carousel Player View"
+                        alt="Carousel Player View" data-i18n-alt="feature_carousel_player_view_alt"
                         loading="lazy"
                         decoding="async"
                       />
@@ -1214,7 +1215,7 @@
                 <div id="feature-artist" class="feature-extended">
                   <div class="feature-extended-image">
                     <div class="mockup-bg">
-                      <img src="./images/feature-bg-02.svg" alt="background" />
+                      <img src="./images/feature-bg-02.svg" alt="background" data-i18n-alt="feature_background_alt" />
                     </div>
                     <div
                       class="mockup-container two-phones is-revealing up"
@@ -1233,13 +1234,13 @@
                         <img
                           class="frame-overlay"
                           src="./images/X17Ultra Frame.png"
-                          alt="Phone Frame"
+                          alt="Phone Frame" data-i18n-alt="feature_phone_frame_alt"
                         />
                       </div>
                       <img
                         class="device-mockup phone-right"
                         src="./images/Screenshots/11.webp"
-                        alt="Artist Profile"
+                        alt="Artist Profile" data-i18n-alt="feature_artist_profile_alt"
                         loading="lazy"
                         decoding="async"
                       />
@@ -1263,7 +1264,7 @@
                 <div id="feature-settings" class="feature-extended">
                   <div class="feature-extended-image">
                     <div class="mockup-bg">
-                      <img src="./images/feature-bg-03.svg" alt="background" />
+                      <img src="./images/feature-bg-03.svg" alt="background" data-i18n-alt="feature_background_alt" />
                     </div>
                     <div
                       class="mockup-container two-phones is-revealing up"
@@ -1282,13 +1283,13 @@
                         <img
                           class="frame-overlay"
                           src="./images/X17Ultra Frame.png"
-                          alt="Phone Frame"
+                          alt="Phone Frame" data-i18n-alt="feature_phone_frame_alt"
                         />
                       </div>
                       <img
                         class="device-mockup phone-right"
                         src="./images/Screenshots/15.webp"
-                        alt="Settings"
+                        alt="Settings" data-i18n-alt="feature_settings_alt"
                         loading="lazy"
                         decoding="async"
                       />
@@ -1316,12 +1317,12 @@
                 <div id="feature-playlists" class="feature-extended">
                   <div class="feature-extended-image">
                     <div class="mockup-bg">
-                      <img src="./images/feature-bg-01.svg" alt="background" />
+                      <img src="./images/feature-bg-01.svg" alt="background" data-i18n-alt="feature_background_alt" />
                     </div>
                     <img
                       class="device-mockup is-revealing up"
                       src="./images/Screenshots/10.webp"
-                      alt="Playlists"
+                      alt="Playlists" data-i18n-alt="feature_playlists_alt"
                       loading="lazy"
                       decoding="async"
                     />
@@ -1348,7 +1349,7 @@
                 <div id="feature-queue" class="feature-extended">
                   <div class="feature-extended-image">
                     <div class="mockup-bg">
-                      <img src="./images/feature-bg-02.svg" alt="background" />
+                      <img src="./images/feature-bg-02.svg" alt="background" data-i18n-alt="feature_background_alt" />
                     </div>
                     <div
                       class="mockup-container two-phones is-revealing up"
@@ -1356,14 +1357,14 @@
                       <img
                         class="device-mockup phone-left"
                         src="./images/Screenshots/8.webp"
-                        alt="Playback Queue"
+                        alt="Playback Queue" data-i18n-alt="feature_playback_queue_alt"
                         loading="lazy"
                         decoding="async"
                       />
                       <img
                         class="device-mockup phone-right"
                         src="./images/Screenshots/9.webp"
-                        alt="Queue with Mini Player"
+                        alt="Queue with Mini Player" data-i18n-alt="feature_queue_with_mini_player_alt"
                         loading="lazy"
                         decoding="async"
                       />
@@ -1387,7 +1388,7 @@
                 <div id="feature-history" class="feature-extended">
                   <div class="feature-extended-image">
                     <div class="mockup-bg">
-                      <img src="./images/feature-bg-03.svg" alt="background" />
+                      <img src="./images/feature-bg-03.svg" alt="background" data-i18n-alt="feature_background_alt" />
                     </div>
                     <div
                       class="mockup-container two-phones is-revealing up"
@@ -1395,14 +1396,14 @@
                       <img
                         class="device-mockup phone-left"
                         src="./images/Screenshots/13.webp"
-                        alt="History"
+                        alt="History" data-i18n-alt="feature_history_alt"
                         loading="lazy"
                         decoding="async"
                       />
                       <img
                         class="device-mockup phone-right"
                         src="./images/Screenshots/14.webp"
-                        alt="History Statistics"
+                        alt="History Statistics" data-i18n-alt="feature_history_statistics_alt"
                         loading="lazy"
                         decoding="async"
                       />
@@ -1426,7 +1427,7 @@
                 <div id="feature-compatibility" class="feature-extended">
                   <div class="feature-extended-image">
                     <div class="mockup-bg">
-                      <img src="./images/feature-bg-04.svg" alt="background" />
+                      <img src="./images/feature-bg-04.svg" alt="background" data-i18n-alt="feature_background_alt" />
                     </div>
                     <div
                       class="mockup-container two-phones is-revealing up"
@@ -1557,30 +1558,30 @@
                   </p>
                   <div class="cta-cta">
                     <a tabindex="0" href="https://github.com/N-Zik-Group/N-Zik/releases/latest">
-                      <img src="images/get-it-on/GitHub.png" width="200" style="display: inline-block; vertical-align: middle" alt="Get it on GitHub" />
+                      <img src="images/get-it-on/GitHub.png" width="200" style="display: inline-block; vertical-align: middle" alt="Get it on GitHub" data-i18n-alt="download_get_it_on_github" />
                     </a>
                     <a tabindex="0" href="https://github.com/N-Zik-Group/N-Zik/releases?q=&type=prerelease">
-                      <img src="images/get-it-on/GitHubBeta.png" width="200" style="display: inline-block; vertical-align: middle; margin-left: 10px;" alt="Get it on GitHub (Beta)" />
+                      <img src="images/get-it-on/GitHubBeta.png" width="200" style="display: inline-block; vertical-align: middle; margin-left: 10px;" alt="Get it on GitHub (Beta)" data-i18n-alt="download_get_it_on_github_beta" />
                     </a>
                     <a tabindex="0" href="https://f-droid.org/packages/com.nevar.nzik.foss/">
-                      <img src="images/get-it-on/F-Droid.png" width="200" style="display: inline-block; vertical-align: middle; margin-left: 10px;" alt="Get it on F-Droid" />
+                      <img src="images/get-it-on/F-Droid.png" width="200" style="display: inline-block; vertical-align: middle; margin-left: 10px;" alt="Get it on F-Droid" data-i18n-alt="download_get_it_on_f_droid" />
                     </a>
                     <a tabindex="0" href="https://www.openapk.net/n-zik/com.nevar.nzik.foss/">
-                      <img src="images/get-it-on/OpenAPK.png" width="200" style="display: inline-block; vertical-align: middle; margin-left: 10px;" alt="Get it on OpenAPK" />
+                      <img src="images/get-it-on/OpenAPK.png" width="200" style="display: inline-block; vertical-align: middle; margin-left: 10px;" alt="Get it on OpenAPK" data-i18n-alt="download_get_it_on_openapk" />
                     </a>
                     <a tabindex="0" href="https://www.androidfreeware.net/download-n-zik-apk.html">
-                      <img src="images/get-it-on/AndroidFreeware.png" width="200" style="display: inline-block; vertical-align: middle; margin-left: 10px;" alt="Get it on AndroidFreeware" />
+                      <img src="images/get-it-on/AndroidFreeware.png" width="200" style="display: inline-block; vertical-align: middle; margin-left: 10px;" alt="Get it on AndroidFreeware" data-i18n-alt="download_get_it_on_androidfreeware" />
                     </a>
                     <a tabindex="0" href="https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22com.nevar.nzik.foss%22%2C%22url%22%3A%22https%3A%2F%2Fgithub.com%2FN-Zik-Group%2FN-Zik%22%2C%22author%22%3A%22N-Zik-Group%22%2C%22name%22%3A%22N-Zik%20(FOSS)%22%2C%22preferredApkIndex%22%3A0%2C%22additionalSettings%22%3A%22%7B%5C%22includePrereleases%5C%22%3Afalse%2C%5C%22fallbackToOlderReleases%5C%22%3Atrue%2C%5C%22filterReleaseTitlesByRegEx%5C%22%3A%5C%22%5C%22%2C%5C%22filterReleaseNotesByRegEx%5C%22%3A%5C%22%5C%22%2C%5C%22verifyLatestTag%5C%22%3Afalse%2C%5C%22sortMethodChoice%5C%22%3A%5C%22date%5C%22%2C%5C%22useLatestAssetDateAsReleaseDate%5C%22%3Afalse%2C%5C%22releaseTitleAsVersion%5C%22%3Afalse%2C%5C%22trackOnly%5C%22%3Afalse%2C%5C%22versionExtractionRegEx%5C%22%3A%5C%22%5C%22%2C%5C%22matchGroupToUse%5C%22%3A%5C%22%5C%22%2C%5C%22versionDetection%5C%22%3Atrue%2C%5C%22releaseDateAsVersion%5C%22%3Afalse%2C%5C%22useVersionCodeAsOSVersion%5C%22%3Afalse%2C%5C%22apkFilterRegEx%5C%22%3A%5C%22N-Zik-foss%5C%5C%5C%5C.apk%5C%22%2C%5C%22invertAPKFilter%5C%22%3Afalse%2C%5C%22autoApkFilterByArch%5C%22%3Atrue%2C%5C%22appName%5C%22%3A%5C%22N-Zik%20(FOSS)%5C%22%2C%5C%22appAuthor%5C%22%3A%5C%22N-Zik-Group%5C%22%2C%5C%22shizukuPretendToBeGooglePlay%5C%22%3Afalse%2C%5C%22allowInsecure%5C%22%3Afalse%2C%5C%22exemptFromBackgroundUpdates%5C%22%3Afalse%2C%5C%22skipUpdateNotifications%5C%22%3Afalse%2C%5C%22about%5C%22%3A%5C%22N-Zik%20is%20a%20multilingual%20YouTube%20Music%20client%20built%20with%20performance%20improvements%2C%20UI%2FUX%20refinement%2C%20and%20new%20features.%5C%22%2C%5C%22refreshBeforeDownload%5C%22%3Afalse%2C%5C%22includeZips%5C%22%3Afalse%2C%5C%22zippedApkFilterRegEx%5C%22%3A%5C%22%5C%22%2C%5C%22includeTarballs%5C%22%3Afalse%2C%5C%22tarballedApkFilterRegEx%5C%22%3A%5C%22%5C%22%7D%22%2C%22overrideSource%22%3Anull%7D">
-                      <img src="images/get-it-on/Obtainium.png" width="200" style="display: inline-block; vertical-align: middle; margin-left: 10px;" alt="Get it on Obtainium" />
+                      <img src="images/get-it-on/Obtainium.png" width="200" style="display: inline-block; vertical-align: middle; margin-left: 10px;" alt="Get it on Obtainium" data-i18n-alt="download_get_it_on_obtainium" />
                     </a>
                     <a tabindex="0" href="https://appteka.store/search?q=N-Zik">
-                      <img src="images/get-it-on/Appteka.png" width="200" style="display: inline-block; vertical-align: middle; margin-left: 10px;" alt="Get it on Appteka" />
+                      <img src="images/get-it-on/Appteka.png" width="200" style="display: inline-block; vertical-align: middle; margin-left: 10px;" alt="Get it on Appteka" data-i18n-alt="download_get_it_on_appteka" />
                     </a>
                   </div>
                   <div class="pc-companion">
                     <h3 class="section-title">N-Zik Desktop Compagnon</h3>
-                    <p class="section-paragraph">
+                    <p class="section-paragraph" name="download_companion_description">
                       The desktop companion for Windows and Linux: pair it with your
                       phone over local Wi-Fi (QR code or manual code), then browse
                       your library, manage the queue and listen on a large screen
@@ -1591,10 +1592,10 @@
                     </p>
                     <div class="cta-cta">
                       <a tabindex="0" href="https://github.com/N-Zik-Group/N-Zik-Desktop-Compagnon/releases/latest">
-                        <img src="images/get-it-on/GitHub.png" width="200" style="display: inline-block; vertical-align: middle" alt="Get the desktop companion on GitHub" />
+                        <img src="images/get-it-on/GitHub.png" width="200" style="display: inline-block; vertical-align: middle" alt="Get the desktop companion on GitHub" data-i18n-alt="download_get_the_desktop_companion_on_github" />
                       </a>
                       <a tabindex="0" href="https://github.com/N-Zik-Group/N-Zik-Desktop-Compagnon/releases?q=&type=prerelease">
-                        <img src="images/get-it-on/GitHubBeta.png" width="200" style="display: inline-block; vertical-align: middle; margin-left: 10px;" alt="Get the desktop companion (Beta) on GitHub" />
+                        <img src="images/get-it-on/GitHubBeta.png" width="200" style="display: inline-block; vertical-align: middle; margin-left: 10px;" alt="Get the desktop companion (Beta) on GitHub" data-i18n-alt="download_get_the_desktop_companion_beta_on_github" />
                       </a>
                     </div>
                     <a
@@ -1605,11 +1606,11 @@
                     >
                       <img
                         src="images/devglobe.svg"
-                        alt="Launched on DevGlobe"
+                        alt="Launched on DevGlobe" data-i18n-alt="download_launched_on_devglobe"
                         style="display: inline-block; vertical-align: middle"
                       />
                     </a>
-                    <p class="devglobe-caption">N-Zik Desktop Compagnon · Windows &amp; Linux</p>
+                    <p class="devglobe-caption" name="download_companion_platforms">N-Zik Desktop Compagnon · Windows &amp; Linux</p>
                   </div>
                 </div>
               </div>
@@ -1621,7 +1622,7 @@
             <div class="site-footer-inner">
               <div class="brand footer-brand">
                 <a tabindex="0" href="#">
-                  <img src="images/n-zik.svg" width="50" alt="N-Zik logo" />
+                  <img src="images/n-zik.svg" width="50" alt="N-Zik logo" data-i18n-alt="hero_n_zik_logo_alt" />
                 </a>
               </div>
               <ul class="footer-links list-reset">

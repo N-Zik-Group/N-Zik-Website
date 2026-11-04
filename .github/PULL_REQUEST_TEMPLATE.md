@@ -46,8 +46,8 @@
   <!-- `type(scope): description` · English · imperative · under 72 chars · no final period · issue links as `issue https://...` -->
 
 ### 🌍 i18n
-- [ ] New/changed strings go in `res/values/strings.xml` (English default) only — I didn't hand-edit any `values-*/` translation file (Crowdin-managed)
-- [ ] If I added a locale: I created `res/values-xx/strings.xml` **and** added the language to the footer selector in `index.html`
+- [ ] New/changed strings go in the matching English catalog in `localization/source/` — I didn't hand-edit any `localization/translations/` file (Crowdin-managed)
+- [ ] If I added a locale: I configured the locale under `localization/translations/<locale>/` **and** added the language to the footer selector in `index.html`
 
 ### 🏗️ Code
 - [ ] No new dependencies (this is a zero-build vanilla HTML/CSS/JS site)

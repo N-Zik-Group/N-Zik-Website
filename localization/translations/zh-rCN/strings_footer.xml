@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="footer_issue_tracker">问题反馈</string>
+    <string name="footer_releases">版本发布</string>
+    <string name="footer_repository">源代码</string>
+</resources>

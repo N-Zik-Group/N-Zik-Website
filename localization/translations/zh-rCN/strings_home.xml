@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hero_description">一个以YouTube音乐为歌源的开源多语言安卓音乐播放器</string>
+    <string name="navigation_glass_label">Glass</string>
+</resources>

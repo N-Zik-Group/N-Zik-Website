@@ -17,7 +17,8 @@ function updateThemeIcon() {
   const dark = document.body.classList.contains("dark");
   icon.classList.toggle("fi-br-sun", dark);
   icon.classList.toggle("fi-br-moon-stars", !dark);
-  const label = dark ? "Switch to light theme" : "Switch to dark theme";
+  const key = icon.getAttribute(dark ? "data-i18n-light-theme" : "data-i18n-dark-theme");
+  const label = multilingual.getString(key) || (dark ? "Switch to light theme" : "Switch to dark theme");
   icon.setAttribute("aria-label", label);
   icon.setAttribute("title", label);
 }
@@ -63,21 +64,22 @@ document.addEventListener("DOMContentLoaded", function() {
 
   if (!featuresNavTextWrapper || !featureSections.length) return;
 
-  let currentText = featuresNavTextWrapper.querySelector('span:not(.leaving)')?.textContent || "Features";
+  const defaultKey = "navigation_features_label";
 
-  function updateNavText(newText) {
+  function updateNavText(key, fallback) {
     // Disable text updating on mobile entirely.
     // It will just stay as "Features".
     if (window.innerWidth <= 768) return;
 
-    if (currentText === newText) return;
+    const currentSpan = featuresNavTextWrapper.querySelector('span:not(.leaving)');
+    if (currentSpan?.getAttribute("name") === key) return;
     
     // 1. Lock the current width
     const currentWidth = featuresNavTextWrapper.offsetWidth;
     featuresNavTextWrapper.style.width = currentWidth + 'px';
     
     // 2. Prepare the old span to slide out
-    const oldSpan = featuresNavTextWrapper.querySelector('span:not(.leaving)');
+    const oldSpan = currentSpan;
     if (oldSpan) {
       oldSpan.classList.add('leaving');
       oldSpan.style.transform = 'translateY(-100%)';
@@ -89,7 +91,8 @@ document.addEventListener("DOMContentLoaded", function() {
 
     // 3. Prepare the new span to slide in
     const newSpan = document.createElement('span');
-    newSpan.textContent = newText;
+    newSpan.setAttribute("name", key);
+    newSpan.textContent = multilingual.getString(key) || fallback;
     newSpan.style.transform = 'translateY(100%)';
     newSpan.style.opacity = '0';
     
@@ -114,8 +117,6 @@ document.addEventListener("DOMContentLoaded", function() {
     newSpan.style.transform = 'translateY(0)';
     newSpan.style.opacity = '1';
 
-    currentText = newText;
-
     // 7. Clean up after transition
     setTimeout(() => {
       featuresNavTextWrapper.style.transition = '';
@@ -135,13 +136,13 @@ document.addEventListener("DOMContentLoaded", function() {
     if (activeFeature) {
       const link = document.querySelector(`.feature-link[href="#${activeFeature}"]`);
       if (link) {
-        updateNavText(link.getAttribute('data-name'));
+        updateNavText(link.getAttribute('name'), link.textContent);
       }
     } else {
       const scrollPos = window.scrollY;
       const featuresTop = document.getElementById('features')?.offsetTop || 0;
       if (scrollPos < featuresTop - 300) {
-        updateNavText("Features");
+        updateNavText(defaultKey, "Features");
       }
     }
   }, { threshold: 0.4 });

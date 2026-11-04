@@ -1,6 +1,14 @@
 class Multilingual {
+  static catalogFiles = [
+    "strings_home.xml",
+    "strings_features.xml",
+    "strings_download.xml",
+    "strings_footer.xml",
+  ];
+
   language;
   defaultValues = {};
+  defaultCatalogComplete = false;
   selectedValues = {};
   loadVersion = 0;
   constructor(supported) {
@@ -46,8 +54,9 @@ class Multilingual {
     const language = this.resolveLanguage(lang || this.language);
     const version = ++this.loadVersion;
     this.language = language;
-    const readValues = async (path) => {
+    const readValues = async (path, optional) => {
       const response = await fetch(path);
+      if (optional && response.status === 404) return {};
       if (!response.ok) throw new Error(`Unable to load ${path}`);
       const xml = new DOMParser().parseFromString(await response.text(), "text/xml");
       if (xml.querySelector("parsererror")) throw new Error(`Invalid XML: ${path}`);
@@ -57,22 +66,30 @@ class Multilingual {
       }
       return values;
     };
-    const defaults = Object.keys(this.defaultValues).length
-      ? Promise.resolve(this.defaultValues)
-      : readValues("res/values/strings.xml").catch((error) => {
-          console.warn(error);
-          return this.defaultValues;
-        });
-    const selected = readValues(`res/values-${language}/strings.xml`).catch((error) => {
-      console.warn(error);
-      return {};
-    });
-    const [defaultValues, selectedValues] = await Promise.all([defaults, selected]);
+    const readCatalog = async (directory, optional = false) => {
+      const results = await Promise.allSettled(Multilingual.catalogFiles.map(
+        (file) => readValues(`${directory}/${file}`, optional),
+      ));
+      const values = {};
+      for (const result of results) {
+        if (result.status === "fulfilled") Object.assign(values, result.value);
+        else console.warn(result.reason);
+      }
+      return { values, complete: results.every((result) => result.status === "fulfilled") };
+    };
+    const defaults = this.defaultCatalogComplete
+      ? Promise.resolve({ values: this.defaultValues, complete: true })
+      : readCatalog("localization/source");
+    const selected = readCatalog(`localization/translations/${language}`, true);
+    const [defaultCatalog, { values: selectedValues }] = await Promise.all([defaults, selected]);
     if (version !== this.loadVersion) return;
-    this.defaultValues = defaultValues;
+    this.defaultValues = { ...this.defaultValues, ...defaultCatalog.values };
+    this.defaultCatalogComplete = defaultCatalog.complete;
     this.selectedValues = selectedValues;
-    if (lang)
+    if (lang) {
       this.updateDom();
+      if (document.documentElement) this.setAttribute(document.documentElement);
+    }
   }
   getString(name) {
     return this.selectedValues[name] || this.defaultValues[name];
@@ -87,7 +104,13 @@ class Multilingual {
         const value = this.getString(name);
         if (value) el.innerHTML = value.replaceAll("\n", "<br>");
       }
+      for (const attribute of ["alt", "aria-label"]) {
+        const key = el.getAttribute("data-i18n-" + attribute);
+        const value = key && this.getString(key);
+        if (value) el.setAttribute(attribute, value);
+      }
     });
+    if (typeof updateThemeIcon === "function") updateThemeIcon();
   }
   updateLanguage(el) {
     const lang = el.attributes.lang.value;
@@ -105,7 +128,8 @@ class Multilingual {
     }
   }
   setAttribute(el) {
-    el.setAttribute("lang", this.language);
+    const locale = this.language === "sr-rCS" ? "sr-Latn" : this.language.replace(/-r([A-Z]{2})$/, "-$1");
+    el.setAttribute("lang", locale);
   }
   changeLang(a) {
     const lang = a.target.attributes.lang.value

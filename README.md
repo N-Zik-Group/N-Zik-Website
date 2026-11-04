@@ -135,12 +135,13 @@ Use this command to clone the repo
 git clone -b main --single-branch https://github.com/N-Zik-Group/N-Zik-Website.git
 ```
 
-Don't forget: to add a translation, create `res/values-xx/strings.xml` **and** add the language to the
-footer language selector in `index.html`. The selector and resource catalogs must contain the same locale codes.
+Les sources anglaises sont dans `localization/source/`. Crowdin exporte les mêmes fichiers
+dans `localization/translations/<locale>/`. Le sélecteur de langue dans `index.html` et
+les dossiers d'export utilisent les mêmes codes.
 
-Les clés de traduction sont regroupées par domaine (`hero_`, `navigation_`, `feature_`,
-`download_`, `footer_`) et référencées par les attributs `name` dans `index.html`.
-Conservez les traductions partielles : les clés absentes utilisent la source anglaise.
+Les catalogues couvrent l'accueil et la navigation, les fonctionnalités, le téléchargement
+et le pied de page. Les attributs `name` dans `index.html` référencent leurs clés.
+Le chargeur utilise la source anglaise pour les clés et catalogues manquants.
 Pour vérifier les ressources et leurs références sans dépendance supplémentaire :
 
 ```sh

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="footer_issue_tracker">Suivi des problèmes</string>
+    <string name="footer_releases">Versions</string>
+    <string name="footer_repository">Référentiel</string>
+</resources>
