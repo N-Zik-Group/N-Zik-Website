@@ -1,52 +1,52 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <!-- Accueil -->
-    <string name="hero_description">N-Zik is a multilingual, open-source Android app for streaming music from YouTube Music. N-Zik Desktop Compagnon, its desktop companion, brings your library and playback to Windows and Linux.</string>
+    <string name="hero_description">N-Zik er en flersprogede, open source Android-app til streaming af musik fra YouTube Music. N-Zik Desktop Compagnon, sin desktop følgesvend, bringer dit bibliotek og afspilning til Windows og Linux.</string>
     <!-- Navigation -->
-    <string name="navigation_glass_label">Glass</string>
+    <string name="navigation_glass_label">Glas</string>
     <!-- Fonctionnalités -->
-    <string name="feature_artists_description">Explore comprehensive artist profiles with top tracks, albums, and similar artists.</string>
-    <string name="feature_artists_title">Detailed Artist Profiles.</string>
-    <string name="feature_audio_controls_description">Customize your experience with advanced audio controls, backup/restore features, and more.</string>
-    <string name="feature_audio_controls_title">Advanced Audio Controls.</string>
-    <string name="feature_carousel_description">Enjoy a unique, visually stunning 3D carousel view for your music playback.</string>
-    <string name="feature_carousel_title">Carousel Player View.</string>
-    <string name="feature_compatibility_description">Enjoy your music everywhere! N-Zik is compatible with Android Mobile, Android Tablet, Android Auto, Android Automotive, and Android TV. (Later Wear OS).</string>
-    <string name="feature_compatibility_title">Multiple Device Compatibility.</string>
-    <string name="feature_discord_description">Show off your current musical vibe by displaying your playing track directly on your Discord profile.</string>
-    <string name="feature_discord_title">Discord Rich Presence.</string>
-    <string name="feature_glass_credits">Android app Glass credits:</string>
-    <string name="feature_glass_description">Glass is off on fresh installs. In Settings, choose native, contour-only or Glass presentation by category and adjust rendering quality. Glass may increase rendering work and battery use; lower its quality or disable it to suit your device.</string>
-    <string name="feature_glass_title">Optional Glass Effect (BETA).</string>
-    <string name="feature_history_description">Never lose a song you loved. Access your complete listening history at any time.</string>
-    <string name="feature_history_title">Complete History.</string>
-    <string name="feature_lyrics_description">Fetch, display, edit, and translate lyrics in real-time with precise word-by-word synchronization.</string>
-    <string name="feature_lyrics_title">Advanced Lyrics Support.</string>
-    <string name="feature_modern_ui_description">A customizable interface with seamless navigation, YouTube integration, and an optional Glass player.</string>
-    <string name="feature_modern_ui_title">Modern &amp; Intuitive UI.</string>
-    <string name="feature_offline_caching_description">Automatically cache songs for offline playback with customizable limits, or download tracks for permanent access.</string>
+    <string name="feature_artists_description">Udforsk omfattende kunstnerprofiler med topspor, album og lignende kunstnere.</string>
+    <string name="feature_artists_title">Detaljerede Kunstnerprofiler.</string>
+    <string name="feature_audio_controls_description">Tilpas din oplevelse med avancerede lydkontroller, backup/gendannelsesfunktioner og meget mere.</string>
+    <string name="feature_audio_controls_title">Avancerede Lyd Kontroller.</string>
+    <string name="feature_carousel_description">Nyd en unik, visuelt fantastisk 3D karrusel visning til din musikafspilning.</string>
+    <string name="feature_carousel_title">Karrusel Spillervisning.</string>
+    <string name="feature_compatibility_description">Nyd din musik overalt! N-Zik er kompatibel med Android Mobile, Android Tablet, Android Auto, Android Automotive og Android TV. (senere Wear OS).</string>
+    <string name="feature_compatibility_title">Multipel Enhedskompatibilitet.</string>
+    <string name="feature_discord_description">Vis din aktuelle musikalske vibe ved at vise dit afspilningsspor direkte på din Discord profil.</string>
+    <string name="feature_discord_title">Discord Rig Tilstedeværelse.</string>
+    <string name="feature_glass_credits">Android app Glas kreditter:</string>
+    <string name="feature_glass_description">Glas er slukket på friske installationer. I indstillinger, vælge indfødte, kontur-only eller Glas præsentation efter kategori og justere rendering kvalitet. Glas kan øge rendering arbejde og batteri brug; sænke sin kvalitet eller deaktivere det, der passer til din enhed.</string>
+    <string name="feature_glass_title">Valgfri Glaseffekt (BETA).</string>
+    <string name="feature_history_description">Taber aldrig en sang du elskede. Få adgang til din komplette lyttehistorie når som helst.</string>
+    <string name="feature_history_title">Komplet Historik.</string>
+    <string name="feature_lyrics_description">Hent visning, redigér og oversæt sangtekster i realtid med præcis ord-for-ord synkronisering.</string>
+    <string name="feature_lyrics_title">Avanceret Sangtekstunderstøttelse.</string>
+    <string name="feature_modern_ui_description">En brugerdefineret grænseflade med problemfri navigation, YouTube-integration og en valgfri glasafspiller.</string>
+    <string name="feature_modern_ui_title">Moderne &amp; Intuitiv UI.</string>
+    <string name="feature_offline_caching_description">Automatisk cache sange til offline afspilning med tilpasselige grænser, eller download spor for permanent adgang.</string>
     <string name="feature_offline_caching_title">Smart Offline Caching.</string>
-    <string name="feature_playlists_description">Easily create, import, export, and manage your playlists in one unified interface.</string>
-    <string name="feature_playlists_title">Playlists Management.</string>
-    <string name="feature_profiles_description">Connect your accounts and customize the app: sync with YouTube Music, enable Discord Rich Presence and Last.fm scrobbling, and switch between multiple in-app profiles, each with its own name, avatar, database and settings.</string>
-    <string name="feature_profiles_title">Multiple Profiles.</string>
-    <string name="feature_queue_description">Keep track of what\'s playing next, rearrange songs on the fly, and manage your upcoming tracks.</string>
-    <string name="feature_queue_title">Playback Queue.</string>
-    <string name="feature_rewind_description">Relive your listening with personalized recaps. Every year, every month, all yours.</string>
+    <string name="feature_playlists_description">Opret nemt, importere, eksportere og administrere dine afspilningslister i en samlet grænseflade.</string>
+    <string name="feature_playlists_title">Afspilningslister Management.</string>
+    <string name="feature_profiles_description">Tilslut dine konti og tilpas app\'en: synkronisering med YouTube Music, aktivér Discord Rich Presence og Last. m scrobbling, og skifte mellem flere in-app profiler, hver med sit eget navn, avatar, database og indstillinger.</string>
+    <string name="feature_profiles_title">Flere Profiler.</string>
+    <string name="feature_queue_description">Hold styr på, hvad der spiller næste, omarrangere sange i farten, og administrere dine kommende spor.</string>
+    <string name="feature_queue_title">Afspilningskø.</string>
+    <string name="feature_rewind_description">Genoplev din lytning med personlige rekaps. Hvert år, hver måned, alle din.</string>
     <string name="feature_rewind_title">N-Zik Rewind.</string>
-    <string name="feature_search_description">Easily find your favorite tracks, albums, and artists, even with your voice.</string>
-    <string name="feature_search_title">Search &amp; Voice Search.</string>
-    <string name="feature_theme_presets_description">Choose from 6 beautifully crafted visual themes to personalize your music experience.</string>
-    <string name="feature_theme_presets_title">Theme Presets.</string>
-    <string name="feature_updates_description">Receive automatic in-app updates directly from GitHub without needing to manually download new APKs.</string>
-    <string name="feature_updates_title">OTA Updates.</string>
-    <string name="feature_visualizer_description">Enjoy real-time visual effects synchronized perfectly with your music.</string>
+    <string name="feature_search_description">Nemt at finde dine yndlingsnumre, album og kunstnere, selv med din stemme.</string>
+    <string name="feature_search_title">Søg &amp; Stemmesøgning.</string>
+    <string name="feature_theme_presets_description">Vælg mellem 6 smukt udformet visuelle temaer til at tilpasse din musikoplevelse.</string>
+    <string name="feature_theme_presets_title">Tema Forudindstillinger.</string>
+    <string name="feature_updates_description">Modtag automatiske in-app opdateringer direkte fra GitHub uden at behøve manuelt at downloade nye APKs.</string>
+    <string name="feature_updates_title">OTA Opdateringer.</string>
+    <string name="feature_visualizer_description">Nyd real-time visuelle effekter synkroniseret perfekt med din musik.</string>
     <string name="feature_visualizer_title">Immersive Audio Visualizer.</string>
     <!-- Téléchargement -->
-    <string name="download_description">Download N-Zik Now.</string>
-    <string name="download_title">Listen to your favorite music</string>
+    <string name="download_description">Download N-Zik Nu.</string>
+    <string name="download_title">Lyt til din favorit musik</string>
     <!-- Pied de page -->
     <string name="footer_issue_tracker">Issue tracker</string>
-    <string name="footer_releases">Releases</string>
-    <string name="footer_repository">Repository</string>
+    <string name="footer_releases">Udgivelser</string>
+    <string name="footer_repository">Lagre</string>
 </resources>
