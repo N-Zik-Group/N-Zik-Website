@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="hero_description">Višejezična Android aplikacija otvorenog koda za strimovanje muzike sa YouTube Music</string>
+    <string name="hero_description">Višejezična Android aplikacija otvorenog koda za strimovanje muzike sa YouTube Music. N-Zik Desktop Compagnon, prateća aplikacija za računar, omogućava pristup biblioteci i reprodukciju na Windowsu i Linuxu.</string>
     <string name="hero_logo_alt">Logo</string>
     <string name="hero_n_zik_banner_alt">N-Zik Banner</string>
     <string name="hero_n_zik_home_alt">N-Zik Home</string>
