@@ -51,7 +51,7 @@
     <string name="feature_playlists_title">Gestion des Playlists.</string>
     <string name="feature_previous_glass_preview_label">Previous Glass preview</string>
     <string name="feature_previous_search_preview_label">Previous search preview</string>
-    <string name="feature_profiles_alt">Profiles</string>
+    <string name="feature_profiles_alt">Profils</string>
     <string name="feature_profiles_description">Connectez vos comptes et personnalisez l\'application : synchronisez-la avec YouTube Music, activez la fonctionnalité « Rich Presence » sur Discord et le scrobbling sur Last.fm, et passez d\'un profil à l\'autre au sein de l\'application, chacun disposant de son propre nom, avatar, base de données et paramètres.</string>
     <string name="feature_profiles_title">Profils multiples.</string>
     <string name="feature_queue_description">Suivez le programme des morceaux à venir, réorganisez-les à la volée et gérez vos prochains morceaux.</string>
