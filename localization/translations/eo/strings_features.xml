@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="feature_amoled_theme_alt">AMOLED Theme</string>
+    <string name="feature_android_mobile_alt">Android phone</string>
+    <string name="feature_android_tablet_alt">Android tablet</string>
     <string name="feature_artist_profile_alt">Artist Profile</string>
     <string name="feature_artists_description">Explore comprehensive artist profiles with top tracks, albums, and similar artists.</string>
     <string name="feature_artists_title">Detailed Artist Profiles.</string>
@@ -37,6 +39,7 @@
     <string name="feature_n_zik_rewind_intro_alt">N-Zik Rewind Intro</string>
     <string name="feature_next_glass_preview_label">Next Glass preview</string>
     <string name="feature_next_search_preview_label">Next search preview</string>
+    <string name="feature_next_theme_preview_label">Next theme preview</string>
     <string name="feature_offline_caching_description">Automatically cache songs for offline playback with customizable limits, or download tracks for permanent access.</string>
     <string name="feature_offline_caching_title">Smart Offline Caching.</string>
     <string name="feature_optional_glass_player_alt">Optional Glass player</string>
@@ -51,6 +54,7 @@
     <string name="feature_playlists_title">Playlists Management.</string>
     <string name="feature_previous_glass_preview_label">Previous Glass preview</string>
     <string name="feature_previous_search_preview_label">Previous search preview</string>
+    <string name="feature_previous_theme_preview_label">Previous theme preview</string>
     <string name="feature_profiles_alt">Profiles</string>
     <string name="feature_profiles_description">Connect your accounts and customize the app: sync with YouTube Music, enable Discord RPC and Last.fm scrobbling, and switch between multiple in-app profiles, each with its own name, avatar, database and settings.</string>
     <string name="feature_profiles_title">Multiple Profiles.</string>
