@@ -1,52 +1,52 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <!-- Accueil -->
-    <string name="hero_description">N-Zik is a multilingual, open-source Android app for streaming music from YouTube Music. N-Zik Desktop Compagnon, its desktop companion, brings your library and playback to Windows and Linux.</string>
+    <string name="hero_description">N-Zik は、YouTube Music から音楽をストリーミングするための、多言語のオープンソースの Android アプリです。 N-Zik Desktop Compagnon、そのデスクトップコンパニオンは、WindowsとLinuxにライブラリと再生をもたらします。</string>
     <!-- Navigation -->
-    <string name="navigation_glass_label">Glass</string>
+    <string name="navigation_glass_label">ガラス</string>
     <!-- Fonctionnalités -->
-    <string name="feature_artists_description">Explore comprehensive artist profiles with top tracks, albums, and similar artists.</string>
-    <string name="feature_artists_title">Detailed Artist Profiles.</string>
-    <string name="feature_audio_controls_description">Customize your experience with advanced audio controls, backup/restore features, and more.</string>
-    <string name="feature_audio_controls_title">Advanced Audio Controls.</string>
-    <string name="feature_carousel_description">Enjoy a unique, visually stunning 3D carousel view for your music playback.</string>
-    <string name="feature_carousel_title">Carousel Player View.</string>
-    <string name="feature_compatibility_description">Enjoy your music everywhere! N-Zik is compatible with Android Mobile, Android Tablet, Android Auto, Android Automotive, and Android TV. (Later Wear OS).</string>
-    <string name="feature_compatibility_title">Multiple Device Compatibility.</string>
-    <string name="feature_discord_description">Show off your current musical vibe by displaying your playing track directly on your Discord profile.</string>
+    <string name="feature_artists_description">トップトラック、アルバム、および同様のアーティストで包括的なアーティストプロフィールをご覧ください。</string>
+    <string name="feature_artists_title">詳細なアーティストプロフィール。</string>
+    <string name="feature_audio_controls_description">高度なオーディオコントロール、バックアップ/復元機能などであなたの経験をカスタマイズします。</string>
+    <string name="feature_audio_controls_title">高度なオーディオコントロール。</string>
+    <string name="feature_carousel_description">ユニークな視覚的に素晴らしい3Dカルーセルビューをお楽しみください。</string>
+    <string name="feature_carousel_title">カルーセルプレイヤービュー。</string>
+    <string name="feature_compatibility_description">どこでもあなたの音楽をお楽しみください! N-Zikは、Androidモバイル、Androidタブレット、Android自動、Android自動車、Androidテレビと互換性があります。</string>
+    <string name="feature_compatibility_title">複数デバイスの互換性。</string>
+    <string name="feature_discord_description">Discordプロフィールに直接トラックを表示することで、現在の音楽的な雰囲気を披露しましょう。</string>
     <string name="feature_discord_title">Discord Rich Presence.</string>
-    <string name="feature_glass_credits">Android app Glass credits:</string>
-    <string name="feature_glass_description">Glass is off on fresh installs. In Settings, choose native, contour-only or Glass presentation by category and adjust rendering quality. Glass may increase rendering work and battery use; lower its quality or disable it to suit your device.</string>
-    <string name="feature_glass_title">Optional Glass Effect (BETA).</string>
-    <string name="feature_history_description">Never lose a song you loved. Access your complete listening history at any time.</string>
-    <string name="feature_history_title">Complete History.</string>
-    <string name="feature_lyrics_description">Fetch, display, edit, and translate lyrics in real-time with precise word-by-word synchronization.</string>
-    <string name="feature_lyrics_title">Advanced Lyrics Support.</string>
-    <string name="feature_modern_ui_description">A customizable interface with seamless navigation, YouTube integration, and an optional Glass player.</string>
-    <string name="feature_modern_ui_title">Modern &amp; Intuitive UI.</string>
-    <string name="feature_offline_caching_description">Automatically cache songs for offline playback with customizable limits, or download tracks for permanent access.</string>
-    <string name="feature_offline_caching_title">Smart Offline Caching.</string>
-    <string name="feature_playlists_description">Easily create, import, export, and manage your playlists in one unified interface.</string>
-    <string name="feature_playlists_title">Playlists Management.</string>
-    <string name="feature_profiles_description">Connect your accounts and customize the app: sync with YouTube Music, enable Discord Rich Presence and Last.fm scrobbling, and switch between multiple in-app profiles, each with its own name, avatar, database and settings.</string>
-    <string name="feature_profiles_title">Multiple Profiles.</string>
-    <string name="feature_queue_description">Keep track of what\'s playing next, rearrange songs on the fly, and manage your upcoming tracks.</string>
-    <string name="feature_queue_title">Playback Queue.</string>
-    <string name="feature_rewind_description">Relive your listening with personalized recaps. Every year, every month, all yours.</string>
+    <string name="feature_glass_credits">Android アプリの Glass credits:</string>
+    <string name="feature_glass_description">format@@0で、カテゴリ別にネイティブ、輪郭のみ、またはガラスプレゼンテーションを選択し、レンダリングの品質を調整します。 ガラスはレンダリング作業とバッテリーの使用を増やし、品質を下げたり、デバイスに合わせて無効にしたりすることがあります。</string>
+    <string name="feature_glass_title">オプションのガラス効果（BETA）</string>
+    <string name="feature_history_description">好きな曲を失うことはありません。いつでもあなたの完全なリスニング履歴にアクセスできます。</string>
+    <string name="feature_history_title">完了の履歴</string>
+    <string name="feature_lyrics_description">正確な単語ごとの同期により、リアルタイムで歌詞を取得、表示、編集、翻訳します。</string>
+    <string name="feature_lyrics_title">高度な歌詞サポート。</string>
+    <string name="feature_modern_ui_description">シームレスなナビゲーション、YouTubeの統合、オプションのガラスプレーヤーを備えたカスタマイズ可能なインターフェース。</string>
+    <string name="feature_modern_ui_title">現代的な &amp; 直感的なUI。</string>
+    <string name="feature_offline_caching_description">オフライン再生用の曲をカスタマイズ可能な制限付きで自動的にキャッシュしたり、トラックをダウンロードして永続的にアクセスすることもできます。</string>
+    <string name="feature_offline_caching_title">スマートオフラインキャッシュ。</string>
+    <string name="feature_playlists_description">プレイリストを簡単に作成、インポート、エクスポート、管理できます。</string>
+    <string name="feature_playlists_title">プレイリスト管理</string>
+    <string name="feature_profiles_description">アカウントを接続し、アプリをカスタマイズします：YouTube ミュージックと同期、Discord Rich PresenceとLastを有効にします。 それぞれの名前とアバター、データベースと設定を持つ複数のアプリ内プロファイルを切り替えます</string>
+    <string name="feature_profiles_title">複数のプロファイル</string>
+    <string name="feature_queue_description">次に何が再生されるかを追跡し、曲をその場で並べ替え、今後のトラックを管理します。</string>
+    <string name="feature_queue_title">再生キュー</string>
+    <string name="feature_rewind_description">パーソナライズされた要約であなたのリスニングをReliveしましょう。毎年、毎月、すべてあなたのものです。</string>
     <string name="feature_rewind_title">N-Zik Rewind.</string>
-    <string name="feature_search_description">Easily find your favorite tracks, albums, and artists, even with your voice.</string>
+    <string name="feature_search_description">あなたの声でも、お気に入りのトラック、アルバム、アーティストを簡単に見つけることができます。</string>
     <string name="feature_search_title">Search &amp; Voice Search.</string>
-    <string name="feature_theme_presets_description">Choose from 6 beautifully crafted visual themes to personalize your music experience.</string>
-    <string name="feature_theme_presets_title">Theme Presets.</string>
-    <string name="feature_updates_description">Receive automatic in-app updates directly from GitHub without needing to manually download new APKs.</string>
+    <string name="feature_theme_presets_description">美しく細工された6つのビジュアルテーマから音楽体験をパーソナライズします。</string>
+    <string name="feature_theme_presets_title">テーマのプリセット</string>
+    <string name="feature_updates_description">手動で新しい APK をダウンロードすることなく、GitHub から直接アプリ内の自動更新を受信します。</string>
     <string name="feature_updates_title">OTA Updates.</string>
-    <string name="feature_visualizer_description">Enjoy real-time visual effects synchronized perfectly with your music.</string>
-    <string name="feature_visualizer_title">Immersive Audio Visualizer.</string>
+    <string name="feature_visualizer_description">あなたの音楽と完全に同期されたリアルタイムの視覚効果をお楽しみください。</string>
+    <string name="feature_visualizer_title">没入型オーディオビジュアライザー</string>
     <!-- Téléchargement -->
-    <string name="download_description">Download N-Zik Now.</string>
-    <string name="download_title">Listen to your favorite music</string>
+    <string name="download_description">N-Zik Nowをダウンロード</string>
+    <string name="download_title">お気に入りの音楽を再生</string>
     <!-- Pied de page -->
-    <string name="footer_issue_tracker">Issue tracker</string>
-    <string name="footer_releases">Releases</string>
-    <string name="footer_repository">Repository</string>
+    <string name="footer_issue_tracker">課題トラッカー</string>
+    <string name="footer_releases">リリース</string>
+    <string name="footer_repository">リポジトリ</string>
 </resources>
