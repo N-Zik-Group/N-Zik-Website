@@ -1,52 +1,52 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <!-- Accueil -->
-    <string name="hero_description">N-Zik is a multilingual, open-source Android app for streaming music from YouTube Music. N-Zik Desktop Compagnon, its desktop companion, brings your library and playback to Windows and Linux.</string>
+    <string name="hero_description">N-Zik è un\'app per Android multilingue, open-source per lo streaming di musica da YouTube Music. N-Zik Desktop Compagnon, il suo compagno desktop, porta la tua libreria e riproduzione su Windows e Linux.</string>
     <!-- Navigation -->
-    <string name="navigation_glass_label">Glass</string>
+    <string name="navigation_glass_label">Vetro</string>
     <!-- Fonctionnalités -->
-    <string name="feature_artists_description">Explore comprehensive artist profiles with top tracks, albums, and similar artists.</string>
-    <string name="feature_artists_title">Detailed Artist Profiles.</string>
-    <string name="feature_audio_controls_description">Customize your experience with advanced audio controls, backup/restore features, and more.</string>
-    <string name="feature_audio_controls_title">Advanced Audio Controls.</string>
-    <string name="feature_carousel_description">Enjoy a unique, visually stunning 3D carousel view for your music playback.</string>
+    <string name="feature_artists_description">Esplora profili artistici completi con brani, album e artisti simili.</string>
+    <string name="feature_artists_title">Profili Di Artista Dettagliati.</string>
+    <string name="feature_audio_controls_description">Personalizza la tua esperienza con controlli audio avanzati, funzionalità di backup/restore e altro ancora.</string>
+    <string name="feature_audio_controls_title">Controlli Audio Avanzati.</string>
+    <string name="feature_carousel_description">Godetevi una singolare vista mozzafiato 3D carosello per la vostra riproduzione musicale.</string>
     <string name="feature_carousel_title">Carousel Player View.</string>
-    <string name="feature_compatibility_description">Enjoy your music everywhere! N-Zik is compatible with Android Mobile, Android Tablet, Android Auto, Android Automotive, and Android TV. (Later Wear OS).</string>
-    <string name="feature_compatibility_title">Multiple Device Compatibility.</string>
-    <string name="feature_discord_description">Show off your current musical vibe by displaying your playing track directly on your Discord profile.</string>
+    <string name="feature_compatibility_description">Goditi la tua musica ovunque! N-Zik è compatibile con Android Mobile, Android Tablet, Android Auto, Android Automotive, e Android TV (Later Wear OS).</string>
+    <string name="feature_compatibility_title">Compatibilità Dispositivo Multiplo.</string>
+    <string name="feature_discord_description">Mostra la tua atmosfera musicale attuale mostrando la tua traccia di visualizzazione direttamente sul tuo profilo Discord.</string>
     <string name="feature_discord_title">Discord Rich Presence.</string>
-    <string name="feature_glass_credits">Android app Glass credits:</string>
-    <string name="feature_glass_description">Glass is off on fresh installs. In Settings, choose native, contour-only or Glass presentation by category and adjust rendering quality. Glass may increase rendering work and battery use; lower its quality or disable it to suit your device.</string>
-    <string name="feature_glass_title">Optional Glass Effect (BETA).</string>
-    <string name="feature_history_description">Never lose a song you loved. Access your complete listening history at any time.</string>
-    <string name="feature_history_title">Complete History.</string>
-    <string name="feature_lyrics_description">Fetch, display, edit, and translate lyrics in real-time with precise word-by-word synchronization.</string>
-    <string name="feature_lyrics_title">Advanced Lyrics Support.</string>
-    <string name="feature_modern_ui_description">A customizable interface with seamless navigation, YouTube integration, and an optional Glass player.</string>
-    <string name="feature_modern_ui_title">Modern &amp; Intuitive UI.</string>
-    <string name="feature_offline_caching_description">Automatically cache songs for offline playback with customizable limits, or download tracks for permanent access.</string>
+    <string name="feature_glass_credits">Crediti di vetro app Android:</string>
+    <string name="feature_glass_description">Il vetro è spento su installazioni fresche. In Impostazioni, scegliere nativo, solo contorno o presentazione in vetro per categoria e regolare la qualità di rendering . Vetro può aumentare il lavoro di rendering e l\'uso della batteria; abbassare la sua qualità o disabilitarlo per soddisfare il vostro dispositivo.</string>
+    <string name="feature_glass_title">Effetto Di Vetro Opzionale (Beta).</string>
+    <string name="feature_history_description">Non perdere mai una canzone che ti è piaciuta. Accedi alla cronologia dell\'ascolto completa in qualsiasi momento.</string>
+    <string name="feature_history_title">Storia Completa.</string>
+    <string name="feature_lyrics_description">Recupera, visualizza, modifica e traduce i testi in tempo reale con una precisa sincronizzazione parola-parola.</string>
+    <string name="feature_lyrics_title">Supporto Testi Avanzato.</string>
+    <string name="feature_modern_ui_description">Un\'interfaccia personalizzabile con navigazione senza interruzioni, integrazione di YouTube e un lettore opzionale di Vetro.</string>
+    <string name="feature_modern_ui_title">Moderno &amp; Intuitivo UI.</string>
+    <string name="feature_offline_caching_description">Cache automaticamente le canzoni per la riproduzione offline con limiti personalizzabili, o scarica le tracce per l\'accesso permanente.</string>
     <string name="feature_offline_caching_title">Smart Offline Caching.</string>
-    <string name="feature_playlists_description">Easily create, import, export, and manage your playlists in one unified interface.</string>
-    <string name="feature_playlists_title">Playlists Management.</string>
-    <string name="feature_profiles_description">Connect your accounts and customize the app: sync with YouTube Music, enable Discord Rich Presence and Last.fm scrobbling, and switch between multiple in-app profiles, each with its own name, avatar, database and settings.</string>
-    <string name="feature_profiles_title">Multiple Profiles.</string>
-    <string name="feature_queue_description">Keep track of what\'s playing next, rearrange songs on the fly, and manage your upcoming tracks.</string>
-    <string name="feature_queue_title">Playback Queue.</string>
-    <string name="feature_rewind_description">Relive your listening with personalized recaps. Every year, every month, all yours.</string>
+    <string name="feature_playlists_description">Crea, importa, esporta e gestisci facilmente le tue playlist in un\'unica interfaccia unificata.</string>
+    <string name="feature_playlists_title">Gestione Playlist.</string>
+    <string name="feature_profiles_description">Collega i tuoi account e personalizza l\'app: sincronizza con YouTube Music, abilita Discord Rich Presence e Last. m scrobbling, e passare da più profili in-app, ciascuno con il proprio nome, avatar, database e impostazioni.</string>
+    <string name="feature_profiles_title">Profili Multipli.</string>
+    <string name="feature_queue_description">Tieni traccia di ciò che sta suonando dopo, riorganizza le canzoni al volo e gestisci le tue prossime tracce.</string>
+    <string name="feature_queue_title">Fila Di Riproduzione.</string>
+    <string name="feature_rewind_description">Rivivi il tuo ascolto con ricapitoli personalizzati. Ogni anno, ogni mese, tutto tuo.</string>
     <string name="feature_rewind_title">N-Zik Rewind.</string>
-    <string name="feature_search_description">Easily find your favorite tracks, albums, and artists, even with your voice.</string>
-    <string name="feature_search_title">Search &amp; Voice Search.</string>
-    <string name="feature_theme_presets_description">Choose from 6 beautifully crafted visual themes to personalize your music experience.</string>
-    <string name="feature_theme_presets_title">Theme Presets.</string>
-    <string name="feature_updates_description">Receive automatic in-app updates directly from GitHub without needing to manually download new APKs.</string>
-    <string name="feature_updates_title">OTA Updates.</string>
-    <string name="feature_visualizer_description">Enjoy real-time visual effects synchronized perfectly with your music.</string>
-    <string name="feature_visualizer_title">Immersive Audio Visualizer.</string>
+    <string name="feature_search_description">Trova facilmente i tuoi brani preferiti, album e artisti, anche con la tua voce.</string>
+    <string name="feature_search_title">Ricerca &amp; Ricerca Vocale.</string>
+    <string name="feature_theme_presets_description">Scegli tra 6 temi visivi splendidamente realizzati per personalizzare la tua esperienza musicale.</string>
+    <string name="feature_theme_presets_title">Tema Preimpostato.</string>
+    <string name="feature_updates_description">Ricevi aggiornamenti in-app automatici direttamente da GitHub senza dover scaricare manualmente nuove APK.</string>
+    <string name="feature_updates_title">Aggiornamenti OTA.</string>
+    <string name="feature_visualizer_description">Goditi effetti visivi in tempo reale sincronizzati perfettamente con la tua musica.</string>
+    <string name="feature_visualizer_title">Visualizzatore Audio Immersivo.</string>
     <!-- Téléchargement -->
-    <string name="download_description">Download N-Zik Now.</string>
-    <string name="download_title">Listen to your favorite music</string>
+    <string name="download_description">Scarica N-Zik Ora.</string>
+    <string name="download_title">Ascolta la tua musica preferita</string>
     <!-- Pied de page -->
-    <string name="footer_issue_tracker">Issue tracker</string>
-    <string name="footer_releases">Releases</string>
+    <string name="footer_issue_tracker">Problema tracker</string>
+    <string name="footer_releases">Versioni</string>
     <string name="footer_repository">Repository</string>
 </resources>
