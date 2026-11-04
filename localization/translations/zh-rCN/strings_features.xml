@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="feature_amoled_theme_alt">AMOLED 主题</string>
+    <string name="feature_android_mobile_alt">Android 手机</string>
+    <string name="feature_android_tablet_alt">安卓平板电脑</string>
     <string name="feature_artist_profile_alt">艺人资料</string>
     <string name="feature_artists_description">用顶部歌曲、专辑和类似的艺术家来探索全面的艺术家简介。</string>
     <string name="feature_artists_title">详细的艺人配置文件。</string>
@@ -37,6 +39,7 @@
     <string name="feature_n_zik_rewind_intro_alt">N-Zik 后风简介</string>
     <string name="feature_next_glass_preview_label">下一个玻璃预览</string>
     <string name="feature_next_search_preview_label">下次搜索预览</string>
+    <string name="feature_next_theme_preview_label">下一主题预览</string>
     <string name="feature_offline_caching_description">自动缓存可自定义限制离线播放的歌曲，或下载可永久存取的曲目。</string>
     <string name="feature_offline_caching_title">智能离线缓存。</string>
     <string name="feature_optional_glass_player_alt">可选玻璃播放器</string>
@@ -51,6 +54,7 @@
     <string name="feature_playlists_title">播放列表管理。</string>
     <string name="feature_previous_glass_preview_label">上一个玻璃预览</string>
     <string name="feature_previous_search_preview_label">上一个搜索预览</string>
+    <string name="feature_previous_theme_preview_label">上一个主题预览</string>
     <string name="feature_profiles_alt">Profiles</string>
     <string name="feature_profiles_description">关联账号并自定义应用：与 YouTube Music 同步，启用 Discord RPC 和 Last.fm 打点，并在应用内多个配置文件之间切换--每个配置文件都有独立的名称、头像、数据库和设置。</string>
     <string name="feature_profiles_title">多个配置文件</string>
