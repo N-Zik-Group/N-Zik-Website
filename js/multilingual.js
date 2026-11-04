@@ -96,9 +96,17 @@ class Multilingual {
       if (document.documentElement) this.setAttribute(document.documentElement);
     }
   }
+  catalogLocale() {
+    return this.language === "sr-rCS" ? "sr-Latn" : this.language.replace(/-r([A-Z]{2})$/, "-$1");
+  }
+  hasTranslation(name) {
+    return !this.fixedNames.has(name) && Boolean(this.selectedValues[name]?.trim());
+  }
+  stringLanguage(name) {
+    return this.hasTranslation(name) ? this.catalogLocale() : "en";
+  }
   getString(name) {
-    if (this.fixedNames.has(name)) return this.defaultValues[name];
-    return this.selectedValues[name] || this.defaultValues[name];
+    return this.hasTranslation(name) ? this.selectedValues[name] : this.defaultValues[name];
   }
   updateDom() {
     const allElements = Array.prototype.slice.call(
@@ -109,6 +117,7 @@ class Multilingual {
       if (name) {
         const value = this.getString(name);
         if (value) {
+          el.setAttribute("lang", this.stringLanguage(name));
           const lines = value.split("\n");
           el.replaceChildren(...lines.flatMap((line, index) =>
             index ? [document.createElement("br"), line] : [line],
@@ -118,7 +127,10 @@ class Multilingual {
       for (const attribute of ["alt", "aria-label"]) {
         const key = el.getAttribute("data-i18n-" + attribute);
         const value = key && this.getString(key);
-        if (value) el.setAttribute(attribute, value);
+        if (value) {
+          el.setAttribute(attribute, value);
+          el.setAttribute("lang", this.stringLanguage(key));
+        }
       }
     });
     if (typeof updateThemeIcon === "function") updateThemeIcon();
@@ -127,14 +139,14 @@ class Multilingual {
     const option = Array.from(document.getElementById("langOption").children)
       .find((button) => button.dataset.locale === this.language);
     if (!option) return;
-    for (const id of ["langSelect", "headerLangText"]) {
+    for (const id of ["footerLangText", "headerLangText"]) {
       const label = document.getElementById(id);
       label.textContent = option.textContent;
       label.lang = option.lang;
     }
   }
   setAttribute(el) {
-    const locale = this.language === "sr-rCS" ? "sr-Latn" : this.language.replace(/-r([A-Z]{2})$/, "-$1");
+    const locale = this.catalogLocale();
     el.setAttribute("lang", locale);
     const direction = /^(ar|fa|he)(-|$)/.test(locale) ? "rtl" : "ltr";
     el.setAttribute("dir", direction);

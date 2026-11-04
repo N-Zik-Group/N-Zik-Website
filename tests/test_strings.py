@@ -128,6 +128,24 @@ class StringResourcesTest(unittest.TestCase):
         self.assertIn("allow-scripts", sandbox)
         self.assertNotIn("allow-same-origin", sandbox)
 
+    def test_video_names_reference_localized_text(self):
+        page = TranslationReferences()
+        page.feed((ROOT / "index.html").read_text(encoding="utf-8"))
+        source = {entry.attrib["name"] for path in self.source_files for entry in ET.parse(path).getroot()}
+        names = set()
+        for video in page.videos:
+            with self.subTest(video=video["src"]):
+                if "aria-labelledby" in video:
+                    tag, heading = page.elements_by_id[video["aria-labelledby"]]
+                    self.assertEqual(tag, "h3")
+                    name = heading["name"]
+                else:
+                    self.assertTrue(video.get("aria-label"))
+                    name = video["data-i18n-aria-label"]
+                self.assertIn(name, source)
+                self.assertNotIn(name, names)
+                names.add(name)
+
     def test_resources_are_sorted_within_each_domain(self):
         for path in self.files:
             with self.subTest(locale=path.parent.name):

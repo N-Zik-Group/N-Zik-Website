@@ -26,6 +26,7 @@ function updateThemeIcon() {
   const key = icon.getAttribute(dark ? "data-i18n-light-theme" : "data-i18n-dark-theme");
   const label = multilingual.getString(key) || (dark ? "Switch to light theme" : "Switch to dark theme");
   icon.setAttribute("aria-label", label);
+  icon.setAttribute("lang", multilingual.stringLanguage(key));
   icon.setAttribute("title", label);
 }
 updateThemeIcon();
@@ -115,6 +116,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const newSpan = document.createElement('span');
     newSpan.setAttribute("name", key);
     newSpan.textContent = multilingual.getString(key) || fallback;
+    newSpan.lang = multilingual.stringLanguage(key);
     newSpan.style.transform = 'translateY(100%)';
     newSpan.style.opacity = '0';
     

@@ -1,4 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="hero_description">一个以YouTube音乐为歌源的开源多语言安卓音乐播放器</string>
+    <string name="hero_description">一个以YouTube音乐为歌源的开源多语言安卓音乐播放器。桌面配套应用 N-Zik Desktop Compagnon 可在 Windows 和 Linux 上访问音乐库并播放音乐。</string>
 </resources>

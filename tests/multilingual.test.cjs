@@ -57,6 +57,7 @@ test("les noms renommés remplissent le DOM avec repli anglais pour une traducti
   const elements = ["feature_glass_title", "feature_modern_ui_title"].map((key) => ({
     getAttribute: (attribute) => attribute === "name" ? key : null,
     replaceChildren(...nodes) { this.nodes = nodes; },
+    setAttribute(attribute, value) { this[attribute] = value; },
   }));
   const { loader } = create("fr", null, elements);
   loader.defaultValues = { feature_glass_title: "Glass\nBETA", feature_modern_ui_title: "Modern UI" };
@@ -64,6 +65,12 @@ test("les noms renommés remplissent le DOM avec repli anglais pour une traducti
   loader.updateDom();
   assert.deepEqual(elements[0].nodes, ["Glass", { tagName: "br" }, "BETA"]);
   assert.deepEqual(elements[1].nodes, ["<img src=x onerror=alert(1)>Interface moderne"]);
+  assert.equal(elements[0].lang, "en");
+  assert.equal(elements[1].lang, "fr");
+  loader.selectedValues = { feature_glass_title: "   ", feature_modern_ui_title: "  " };
+  loader.updateDom();
+  assert.deepEqual(elements[1].nodes, ["Modern UI"]);
+  assert.equal(elements[1].lang, "en");
 });
 
 test("le chargement par catalogue conserve les traductions partielles et le repli anglais", async () => {
@@ -110,6 +117,7 @@ test("le chargement par catalogue conserve les traductions partielles et le repl
   assert.equal(rootAttrs.get("lang"), "fr");
   assert.equal(rootAttrs.get("dir"), "ltr");
   assert.equal(imgAttrs.get("alt"), "English Glass");
+  assert.equal(imgAttrs.get("lang"), "en");
   await loader.loadStrings("fr");
   assert.equal(loader.getString("feature_glass_title"), "English Glass");
   assert.equal(requested.filter((file) => file.startsWith("localization/source/")).length, 4);
@@ -117,4 +125,30 @@ test("le chargement par catalogue conserve les traductions partielles et le repl
   assert.equal(rootAttrs.get("dir"), "rtl");
   await loader.loadStrings("fr");
   assert.equal(rootAttrs.get("dir"), "ltr");
+});
+
+test("le nom accessible du sélecteur garde sa langue distincte de l’autonyme", () => {
+  const attrs = new Map([["data-i18n-aria-label", "navigation_change_language"]]);
+  const button = { getAttribute: (key) => attrs.get(key), setAttribute: (key, value) => attrs.set(key, value) };
+  const footer = {};
+  const header = {};
+  const elements = {
+    langOption: { children: [{ dataset: { locale: "fr" }, textContent: "Français", lang: "fr" }] },
+    footerLangText: footer,
+    headerLangText: header,
+  };
+  const { loader } = create("fr", null, [], {
+    document: {
+      getElementById: (id) => elements[id],
+      body: { getElementsByTagName: () => [button] },
+    },
+  });
+  loader.defaultValues = { navigation_change_language: "Change language" };
+  loader.updateDom();
+  loader.updateLanguageLabels();
+  assert.equal(attrs.get("aria-label"), "Change language");
+  assert.equal(attrs.get("lang"), "en");
+  assert.equal(footer.textContent, "Français");
+  assert.equal(footer.lang, "fr");
+  assert.equal(header.lang, "fr");
 });

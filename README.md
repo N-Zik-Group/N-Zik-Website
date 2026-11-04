@@ -141,7 +141,10 @@ les dossiers d'export utilisent les mêmes codes.
 
 Les catalogues couvrent l'accueil et la navigation, les fonctionnalités, le téléchargement
 et le pied de page. Dans `index.html`, `name` référence le texte et `data-i18n-alt` ou `data-i18n-aria-label` référence les libellés accessibles.
-Le chargeur utilise la source anglaise pour les clés et catalogues manquants.
+Le chargeur utilise la source anglaise pour les clés et catalogues manquants et indique
+la langue du texte aux lecteurs d’écran. Les vidéos reprennent le titre localisé de
+leur section ou un libellé dédié pour la démonstration Glass. Conservez les noms de
+marque, dont N-Zik Desktop Compagnon, dans les traductions.
 Pour vérifier les ressources et leurs références sans dépendance supplémentaire :
 
 ```sh
