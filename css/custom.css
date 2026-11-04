@@ -966,10 +966,14 @@ a > img:hover {
   transform: translateY(-50%) scale(1.1);
 }
 .carousel-btn.prev {
-  left: -20px;
+  inset-inline-start: -20px;
 }
 .carousel-btn.next {
-  right: -20px;
+  inset-inline-end: -20px;
+}
+
+[dir="rtl"] .carousel-btn {
+  scale: -1 1;
 }
 
 /* 2 Phones Side-by-Side Layout */

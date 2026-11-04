@@ -136,7 +136,30 @@ class Multilingual {
   setAttribute(el) {
     const locale = this.language === "sr-rCS" ? "sr-Latn" : this.language.replace(/-r([A-Z]{2})$/, "-$1");
     el.setAttribute("lang", locale);
-    el.setAttribute("dir", /^(ar|fa|he)(-|$)/.test(locale) ? "rtl" : "ltr");
+    const direction = /^(ar|fa|he)(-|$)/.test(locale) ? "rtl" : "ltr";
+    el.setAttribute("dir", direction);
+    this.updateCampaignBanner(locale, direction);
+  }
+  updateCampaignBanner(locale, direction) {
+    const frame = document.getElementById?.("keep-android-open-banner");
+    if (!frame || frame.dataset.locale === locale) return;
+    frame.dataset.locale = locale;
+    frame.style.height = "0px";
+    frame.onload = () => {
+      const body = frame.contentDocument?.body;
+      if (!body) return;
+      const resize = () => { frame.style.height = Math.ceil(body.getBoundingClientRect().height) + "px"; };
+      resize();
+      const observer = new frame.contentWindow.ResizeObserver(resize);
+      observer.observe(body);
+    };
+    const url = new URL("https://keepandroidopen.org/banner.js");
+    url.search = new URLSearchParams({
+      id: "campaign", size: "minimal", link: "https://keepandroidopen.org", animation: "on",
+      lang: locale,
+    });
+    frame.srcdoc = '<!doctype html><html dir="' + direction + '"><body style="margin:0">' +
+      '<div id="campaign"></div><script src="' + url.href.replaceAll("&", "&amp;") + '"></script></body></html>';
   }
   changeLang(a) {
     const lang = a.target.attributes.lang.value

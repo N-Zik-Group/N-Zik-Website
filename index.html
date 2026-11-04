@@ -354,6 +354,8 @@
         }
         #keep-android-open-banner {
           width: 100%;
+          height: 0;
+          border: 0;
           border-radius: 12px;
         }
         #keep-android-open-banner > * {
@@ -372,21 +374,8 @@
         }
       </style>
       <div id="kao-banner-wrapper">
-        <div id="keep-android-open-banner"></div>
+        <iframe id="keep-android-open-banner" title="Keep Android Open"></iframe>
       </div>
-      <script>
-        (function () {
-          var siteLang =
-            localStorage.getItem('language') ||
-            (navigator.language || navigator.userLanguage).split('-')[0] ||
-            'en';
-          var script = document.createElement('script');
-          script.src =
-            'https://keepandroidopen.org/banner.js?id=keep-android-open-banner&size=minimal&link=https://keepandroidopen.org&animation=on&lang=' +
-            siteLang;
-          document.head.appendChild(script);
-        })();
-      </script>
       <main>
         <section id="hero" class="hero text-center text-light">
           <div class="hero-bg"></div>
@@ -816,12 +805,14 @@
                     >
                       <button
                         class="carousel-btn prev"
+                        aria-label="Previous theme preview" data-i18n-aria-label="feature_previous_theme_preview_label"
                         onclick="scrollPreview(this, -1)"
                       >
                         ❮
                       </button>
                       <button
                         class="carousel-btn next"
+                        aria-label="Next theme preview" data-i18n-aria-label="feature_next_theme_preview_label"
                         onclick="scrollPreview(this, 1)"
                       >
                         ❯
