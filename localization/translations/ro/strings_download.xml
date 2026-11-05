@@ -1,3 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="download_companion_description">Profesorul desktop pentru Windows și Linux: împereche-l cu telefonul prin Wi-Fi local (cod QR sau cod manual), apoi navigați prin bibliotecă, gestionează coada de așteptare și ascultă pe un ecran mare în timp ce telefonul trimite audio printr-un VLC încorporat, nu este necesară instalarea VLC. Telefonul rămâne singura sursă a adevărului, iar însoţitorul este un produs de tranziţie pe drumul către aplicaţia de birou N-Zik independentă.</string>
+    <string name="download_companion_platforms">Compagun Desktop N-Zik · Windows &amp; Linux</string>
+    <string name="download_description">Descarcă N-Zik acum.</string>
+    <string name="download_get_it_on_androidfreeware">Ia-l pe AndroidFreeware</string>
+    <string name="download_get_it_on_appteka">Ia-l pe Appteka</string>
+    <string name="download_get_it_on_f_droid">Ia-l pe F-Droid</string>
+    <string name="download_get_it_on_github">Ia-l pe GitHub</string>
+    <string name="download_get_it_on_github_beta">Ia-l pe GitHub (Beta)</string>
+    <string name="download_get_it_on_izzyondroid">Ia-l pe IzzyOnDroid</string>
+    <string name="download_get_it_on_obtainium">Ia-l pe Obtainium</string>
+    <string name="download_get_it_on_openapk">Obține-o pe OpenAPK</string>
+    <string name="download_get_the_desktop_companion_beta_on_github">Descarcă desktop-ul (Beta) pe GitHub</string>
+    <string name="download_get_the_desktop_companion_on_github">Obțineți desktop-ul pe GitHub</string>
+    <string name="download_launched_on_devglobe">Lansat pe DevGlobe</string>
+    <string name="download_title">Ascultă muzica ta preferată</string>
 </resources>
