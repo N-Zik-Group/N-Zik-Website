@@ -1,3 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="footer_font_credit">Шрифт від Xiaomi Inc.</string>
+    <string name="footer_font_license">Ліцензія MiSans шрифту</string>
+    <string name="footer_icon_credits">Кредити на значок</string>
+    <string name="footer_issue_tracker">Відстеження проблем</string>
+    <string name="footer_releases">Випуски</string>
+    <string name="footer_repository">Репозиторій</string>
 </resources>
