@@ -1,3 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="footer_font_credit">Fontti Xiaomi Inc.</string>
+    <string name="footer_font_license">MiSansin kirjasinlisenssi</string>
+    <string name="footer_icon_credits">Kuvakkeen hyvitykset</string>
+    <string name="footer_issue_tracker">Ongelmien seuranta</string>
+    <string name="footer_releases">Julkaisut</string>
+    <string name="footer_repository">Versiovarasto</string>
 </resources>
