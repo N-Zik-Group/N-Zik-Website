@@ -1,3 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="footer_font_credit">Typsnitt av Xiaomi Inc.</string>
+    <string name="footer_font_license">MiSans typsnittslicens</string>
+    <string name="footer_icon_credits">Ikon krediter</string>
+    <string name="footer_issue_tracker">Ärendespårare</string>
+    <string name="footer_releases">Släpp</string>
+    <string name="footer_repository">Utveckling</string>
 </resources>
