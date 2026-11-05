@@ -1,3 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="hero_description">N-Zik は、YouTube Music から音楽をストリーミングするための、多言語のオープンソースの Android アプリです。 N-Zik Desktop Compagnon、そのデスクトップコンパニオンは、WindowsとLinuxにライブラリと再生をもたらします。</string>
+    <string name="hero_logo_alt">ロゴ</string>
+    <string name="hero_n_zik_banner_alt">N-Zik Banner</string>
+    <string name="hero_n_zik_home_alt">N-Zik Home</string>
+    <string name="hero_n_zik_logo_alt">N-Zik ロゴ</string>
+    <string name="navigation_artist_profiles_label">アーティストプロフィール</string>
+    <string name="navigation_audio_controls_label">オーディオコントロール</string>
+    <string name="navigation_carousel_player_label">カルーセルプレイヤー</string>
+    <string name="navigation_change_language">言語の変更</string>
+    <string name="navigation_compatibility_label">互換性</string>
+    <string name="navigation_download_label">ダウンロード</string>
+    <string name="navigation_features_label">特徴</string>
+    <string name="navigation_history_label">沿革</string>
+    <string name="navigation_home_label">ホーム</string>
+    <string name="navigation_lyrics_label">歌詞</string>
+    <string name="navigation_modern_ui_label">Modern UI</string>
+    <string name="navigation_offline_caching_label">オフラインキャッシュ</string>
+    <string name="navigation_ota_updates_label">OTA アップデート</string>
+    <string name="navigation_playback_queue_label">再生キュー</string>
+    <string name="navigation_playlists_label">プレイリスト</string>
+    <string name="navigation_profiles_label">Profiles</string>
+    <string name="navigation_rewind_label">Rewind</string>
+    <string name="navigation_search_label">検索</string>
+    <string name="navigation_switch_to_dark_theme">ダークテーマに切り替える</string>
+    <string name="navigation_switch_to_light_theme">ライトテーマに切り替える</string>
+    <string name="navigation_theme_presets_label">テーマプリセット</string>
+    <string name="navigation_visualizer_label">ビジュアライザー</string>
 </resources>
