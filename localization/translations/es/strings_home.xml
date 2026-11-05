@@ -1,3 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="hero_description">N-Zik es una aplicación multilingue para Android de código abierto para streaming de música de YouTube Music. N-Zik Desktop Compagnon, su compañero de escritorio, trae su biblioteca y reproducción a Windows y Linux.</string>
+    <string name="hero_logo_alt">Logo</string>
+    <string name="hero_n_zik_banner_alt">N-Zik Banner</string>
+    <string name="hero_n_zik_home_alt">N-Zik Inicio</string>
+    <string name="hero_n_zik_logo_alt">N-Zik logo</string>
+    <string name="navigation_artist_profiles_label">Perfiles de Artista</string>
+    <string name="navigation_audio_controls_label">Controles de audio</string>
+    <string name="navigation_carousel_player_label">Jugador carrusel</string>
+    <string name="navigation_change_language">Cambiar idioma</string>
+    <string name="navigation_compatibility_label">Compatibilidad</string>
+    <string name="navigation_download_label">Descargar</string>
+    <string name="navigation_features_label">Características</string>
+    <string name="navigation_history_label">Historial</string>
+    <string name="navigation_home_label">Inicio</string>
+    <string name="navigation_lyrics_label">Letras</string>
+    <string name="navigation_modern_ui_label">Modern UI</string>
+    <string name="navigation_offline_caching_label">Caché sin conexión</string>
+    <string name="navigation_ota_updates_label">Actualizaciones OTA</string>
+    <string name="navigation_playback_queue_label">Cola de reproducción</string>
+    <string name="navigation_playlists_label">Listas</string>
+    <string name="navigation_profiles_label">Profiles</string>
+    <string name="navigation_rewind_label">Rewind</string>
+    <string name="navigation_search_label">Buscar</string>
+    <string name="navigation_switch_to_dark_theme">Cambiar a tema oscuro</string>
+    <string name="navigation_switch_to_light_theme">Cambiar a tema claro</string>
+    <string name="navigation_theme_presets_label">Ajustes del tema</string>
+    <string name="navigation_visualizer_label">Visualizador</string>
 </resources>
