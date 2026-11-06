@@ -1,4 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="hero_description">一个以YouTube音乐为歌源的开源多语言安卓音乐播放器。桌面配套应用 N-Zik Desktop Compagnon 可在 Windows 和 Linux 上访问音乐库并播放音乐。</string>
+    <string name="hero_logo_alt">徽标</string>
+    <string name="hero_n_zik_banner_alt">N-Zik Banner</string>
+    <string name="hero_n_zik_home_alt">N-Zik 主页</string>
+    <string name="hero_n_zik_logo_alt">N-Zik 标志</string>
+    <string name="navigation_artist_profiles_label">艺人资料</string>
+    <string name="navigation_audio_controls_label">音频控制</string>
+    <string name="navigation_carousel_player_label">旋转播放器</string>
+    <string name="navigation_change_language">更改语言</string>
+    <string name="navigation_compatibility_label">兼容性</string>
+    <string name="navigation_download_label">下载</string>
+    <string name="navigation_features_label">功能</string>
+    <string name="navigation_history_label">历史记录</string>
+    <string name="navigation_home_label">首页</string>
+    <string name="navigation_lyrics_label">歌词</string>
+    <string name="navigation_modern_ui_label">Modern UI</string>
+    <string name="navigation_offline_caching_label">脱机缓存</string>
+    <string name="navigation_ota_updates_label">OTA更新</string>
+    <string name="navigation_playback_queue_label">播放队列</string>
+    <string name="navigation_playlists_label">播放列表</string>
+    <string name="navigation_profiles_label">Profiles</string>
+    <string name="navigation_rewind_label">Rewind</string>
+    <string name="navigation_search_label">搜索</string>
+    <string name="navigation_switch_to_dark_theme">切换到暗色主题</string>
+    <string name="navigation_switch_to_light_theme">切换到亮色主题</string>
+    <string name="navigation_theme_presets_label">主题预设</string>
+    <string name="navigation_visualizer_label">可视化器</string>
 </resources>

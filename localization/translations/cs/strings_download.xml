@@ -1,3 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="download_companion_description">desktopový průvodce pro Windows a Linux: spárujte jej s telefonem přes lokální Wi-Fi (QR kód nebo ruční kód), poté prohlížejte vaši knihovnu, spravujte frontu a poslouchejte na velké obrazovce, zatímco váš telefon vysílá zvuk prostřednictvím vloženého VLC, není nutná žádná instalace VLC. Telefon zůstává jediným zdrojem pravdy a společník je přechodným produktem na cestě do samostatné desktopové aplikace N-Zik.</string>
+    <string name="download_companion_platforms">N-Zik Desktop Compagnon · Windows &amp; Linux</string>
+    <string name="download_description">Stáhněte si N-Zik Now.</string>
+    <string name="download_get_it_on_androidfreeware">Získejte to na AndroidFreeware</string>
+    <string name="download_get_it_on_appteka">Získej to na Appteku</string>
+    <string name="download_get_it_on_f_droid">Získat na F-Droid</string>
+    <string name="download_get_it_on_github">Získej to na GitHubu</string>
+    <string name="download_get_it_on_github_beta">Získej to na GitHub (Beta)</string>
+    <string name="download_get_it_on_izzyondroid">Získej to na IzzyOnDroid</string>
+    <string name="download_get_it_on_obtainium">Získej to na Zemi</string>
+    <string name="download_get_it_on_openapk">Získejte to na OpenAPK</string>
+    <string name="download_get_the_desktop_companion_beta_on_github">Získejte stolní společníka (Beta) na GitHub</string>
+    <string name="download_get_the_desktop_companion_on_github">Získejte stolní společníka na GitHubu</string>
+    <string name="download_launched_on_devglobe">Spuštěno na DevGlobe</string>
+    <string name="download_title">Poslouchejte vaši oblíbenou hudbu</string>
 </resources>

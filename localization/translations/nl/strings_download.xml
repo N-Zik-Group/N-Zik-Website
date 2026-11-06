@@ -1,3 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="download_companion_description">De desktop metgezel voor Windows en Linux: koppel het met uw telefoon via lokale Wi-Fi (QR-code of handmatige code), en blader vervolgens door uw bibliotheek, beheer de wachtrij en luister op een groot scherm terwijl uw telefoon het geluid via een ingesloten VLC streamt, geen VLC installatie nodig. De telefoon blijft de enige bron van waarheid, en het metgezelschap is een overgangsproduct op weg naar de standalone N-Zik desktop app.</string>
+    <string name="download_companion_platforms">N-Zik Desktop Compagnon · Windows &amp; Linux</string>
+    <string name="download_description">Download N-Zik nu.</string>
+    <string name="download_get_it_on_androidfreeware">Krijg het op AndroidFreeware</string>
+    <string name="download_get_it_on_appteka">Krijg het op Appteka</string>
+    <string name="download_get_it_on_f_droid">Krijg het op F-Droid</string>
+    <string name="download_get_it_on_github">Download het op GitHub</string>
+    <string name="download_get_it_on_github_beta">Download het op GitHub (Beta)</string>
+    <string name="download_get_it_on_izzyondroid">Krijg het op IzzyOnDroid</string>
+    <string name="download_get_it_on_obtainium">Krijg het op Obtainium</string>
+    <string name="download_get_it_on_openapk">Download het op OpenAPK</string>
+    <string name="download_get_the_desktop_companion_beta_on_github">Krijg het bureaublad metgezel (Beta) op GitHub</string>
+    <string name="download_get_the_desktop_companion_on_github">Krijg de desktop metgezel op GitHub</string>
+    <string name="download_launched_on_devglobe">Globe gestart op DevGlobe</string>
+    <string name="download_title">Luister naar jouw favoriete muziek</string>
 </resources>

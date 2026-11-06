@@ -1,3 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="hero_description">N-Zik is een meertalige en open-source Android app voor het streamen van muziek van YouTube Music. N-Zik Desktop Compagnon, zijn desktopkameraad, brengt uw bibliotheek en het afspelen naar Windows en Linux.</string>
+    <string name="hero_logo_alt">Logo</string>
+    <string name="hero_n_zik_banner_alt">N-Zik Banner</string>
+    <string name="hero_n_zik_home_alt">N-Zik Huis</string>
+    <string name="hero_n_zik_logo_alt">N-Zik logo</string>
+    <string name="navigation_artist_profiles_label">Kunstenaar profielen</string>
+    <string name="navigation_audio_controls_label">Audio Bediening</string>
+    <string name="navigation_carousel_player_label">Carrousel Speler</string>
+    <string name="navigation_change_language">Taal wijzigen</string>
+    <string name="navigation_compatibility_label">Compatibiliteit</string>
+    <string name="navigation_download_label">downloaden</string>
+    <string name="navigation_features_label">Eigenschappen</string>
+    <string name="navigation_history_label">Geschiedenis</string>
+    <string name="navigation_home_label">Startpagina</string>
+    <string name="navigation_lyrics_label">Songteksten</string>
+    <string name="navigation_modern_ui_label">Modern UI</string>
+    <string name="navigation_offline_caching_label">Offline caching</string>
+    <string name="navigation_ota_updates_label">OTA updates</string>
+    <string name="navigation_playback_queue_label">Wachtrij afspelen</string>
+    <string name="navigation_playlists_label">Afspeellijsten</string>
+    <string name="navigation_profiles_label">Profiles</string>
+    <string name="navigation_rewind_label">Rewind</string>
+    <string name="navigation_search_label">Zoeken</string>
+    <string name="navigation_switch_to_dark_theme">Overschakelen naar donker thema</string>
+    <string name="navigation_switch_to_light_theme">Overschakelen naar licht thema</string>
+    <string name="navigation_theme_presets_label">Thema voorinstellingen</string>
+    <string name="navigation_visualizer_label">Equalizer</string>
 </resources>

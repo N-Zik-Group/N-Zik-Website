@@ -1,3 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="hero_description">N-Zik este o aplicație Android open-source multilingvă pentru muzică de streaming de pe YouTube Music. N-Zik Desktop Compagnon, companionul său de desktop, aduce biblioteca și redarea în Windows și Linux.</string>
+    <string name="hero_logo_alt">Logo</string>
+    <string name="hero_n_zik_banner_alt">N-Zik Banner</string>
+    <string name="hero_n_zik_home_alt">N-Zik acasă</string>
+    <string name="hero_n_zik_logo_alt">Logo N-Zik</string>
+    <string name="navigation_artist_profiles_label">Profiluri Artist</string>
+    <string name="navigation_audio_controls_label">Controale audio</string>
+    <string name="navigation_carousel_player_label">Carusel Player</string>
+    <string name="navigation_change_language">Schimbă limba</string>
+    <string name="navigation_compatibility_label">Compatibilitate</string>
+    <string name="navigation_download_label">Descărcare</string>
+    <string name="navigation_features_label">Caracteristici</string>
+    <string name="navigation_history_label">Istoric</string>
+    <string name="navigation_home_label">Acasă</string>
+    <string name="navigation_lyrics_label">Versuri</string>
+    <string name="navigation_modern_ui_label">Modern UI</string>
+    <string name="navigation_offline_caching_label">Caching offline</string>
+    <string name="navigation_ota_updates_label">Actualizări OTA</string>
+    <string name="navigation_playback_queue_label">Lista de redare</string>
+    <string name="navigation_playlists_label">Liste</string>
+    <string name="navigation_profiles_label">Profiles</string>
+    <string name="navigation_rewind_label">Rewind</string>
+    <string name="navigation_search_label">Caută</string>
+    <string name="navigation_switch_to_dark_theme">Comutați la tema întunecată</string>
+    <string name="navigation_switch_to_light_theme">Comutați la tema luminoasă</string>
+    <string name="navigation_theme_presets_label">Presetări temă</string>
+    <string name="navigation_visualizer_label">Vizualizator</string>
 </resources>

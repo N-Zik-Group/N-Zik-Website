@@ -1,3 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="download_companion_description">El complemento de escritorio para Windows y Linux: emparejarlo con tu teléfono a través de Wi-Fi local (código QR o código manual), luego navegar por tu biblioteca, administra la cola y escucha en una pantalla grande mientras tu teléfono transmite el audio a través de un VLC embebido, no se necesita instalar VLC. El teléfono sigue siendo la única fuente de verdad, y el acompañante es un producto de transición en el camino a la aplicación de escritorio independiente N-Zik.</string>
+    <string name="download_companion_platforms">N-Zik Desktop Compagnon · Windows &amp; Linux</string>
+    <string name="download_description">Descargue N-Zik Now.</string>
+    <string name="download_get_it_on_androidfreeware">Consíguelo en AndroidFreeware</string>
+    <string name="download_get_it_on_appteka">Consíguelo en Appteka</string>
+    <string name="download_get_it_on_f_droid">Consíguelo en F-Droid</string>
+    <string name="download_get_it_on_github">Consíguelo en GitHub</string>
+    <string name="download_get_it_on_github_beta">Consíguelo en GitHub (Beta)</string>
+    <string name="download_get_it_on_izzyondroid">Consíguelo en IzzyOnDroid</string>
+    <string name="download_get_it_on_obtainium">Consíguelo en Obtainium</string>
+    <string name="download_get_it_on_openapk">Consíguelo en OpenAPK</string>
+    <string name="download_get_the_desktop_companion_beta_on_github">Obtener el compañero de escritorio (Beta) en GitHub</string>
+    <string name="download_get_the_desktop_companion_on_github">Obtener el compañero de escritorio en GitHub</string>
+    <string name="download_launched_on_devglobe">Lanzado en DevGlobe</string>
+    <string name="download_title">Escucha tu música favorita</string>
 </resources>

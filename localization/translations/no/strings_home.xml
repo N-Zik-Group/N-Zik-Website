@@ -1,3 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="hero_description">N-Zik er en Android app med åpen kildekode for å kringkaste musikk fra YouTube Music. N-Zik Desktop Compagnon, dens skrivebordskamera, bringer biblioteket og avspilling til Windows og Linux.</string>
+    <string name="hero_logo_alt">Logo</string>
+    <string name="hero_n_zik_banner_alt">N-Zik Banner</string>
+    <string name="hero_n_zik_home_alt">N-Zik hjem</string>
+    <string name="hero_n_zik_logo_alt">N-Zik logo</string>
+    <string name="navigation_artist_profiles_label">Artist profiler</string>
+    <string name="navigation_audio_controls_label">Lyd Kontroller</string>
+    <string name="navigation_carousel_player_label">Karusell Spiller</string>
+    <string name="navigation_change_language">Bytt språk</string>
+    <string name="navigation_compatibility_label">Kompatibilitet</string>
+    <string name="navigation_download_label">Nedlasting</string>
+    <string name="navigation_features_label">Funksjoner</string>
+    <string name="navigation_history_label">Historikk</string>
+    <string name="navigation_home_label">Hjem</string>
+    <string name="navigation_lyrics_label">Tekster</string>
+    <string name="navigation_modern_ui_label">Modern UI</string>
+    <string name="navigation_offline_caching_label">Frakoblet mellomlagring</string>
+    <string name="navigation_ota_updates_label">OTA Oppdateringer</string>
+    <string name="navigation_playback_queue_label">Avspillingskø</string>
+    <string name="navigation_playlists_label">Spillelister</string>
+    <string name="navigation_profiles_label">Profiles</string>
+    <string name="navigation_rewind_label">Rewind</string>
+    <string name="navigation_search_label">Søk</string>
+    <string name="navigation_switch_to_dark_theme">Bytt til mørkt tema</string>
+    <string name="navigation_switch_to_light_theme">Bytt til lystema</string>
+    <string name="navigation_theme_presets_label">Forhåndsinnstillinger for tema</string>
+    <string name="navigation_visualizer_label">Visualiser</string>
 </resources>

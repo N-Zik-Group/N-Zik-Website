@@ -1,3 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="footer_font_credit">Písmo od Xiaomi Inc.</string>
+    <string name="footer_font_license">Licence pro fonty MiSans</string>
+    <string name="footer_icon_credits">Ikona kredity</string>
+    <string name="footer_issue_tracker">Sledování problémů</string>
+    <string name="footer_releases">Vydání</string>
+    <string name="footer_repository">Repozitář</string>
 </resources>
