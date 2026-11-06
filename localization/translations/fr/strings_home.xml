@@ -19,10 +19,10 @@
     <string name="navigation_offline_caching_label">Mise en cache hors ligne</string>
     <string name="navigation_ota_updates_label">Mises à jour OTA</string>
     <string name="navigation_playback_queue_label">File d\'attente de lecture</string>
-    <string name="navigation_playlists_label">Listes de lecture</string>
+    <string name="navigation_playlists_label">Playlists</string>
     <string name="navigation_profiles_label">Profils</string>
     <string name="navigation_rewind_label">Rewind</string>
-    <string name="navigation_search_label">Chercher</string>
+    <string name="navigation_search_label">Rechercher</string>
     <string name="navigation_switch_to_dark_theme">Basculer vers le thème sombre</string>
     <string name="navigation_switch_to_light_theme">Basculer vers le thème clair</string>
     <string name="navigation_theme_presets_label">Préréglages du thème</string>
