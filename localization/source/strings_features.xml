@@ -14,7 +14,7 @@
     <string name="feature_carousel_player_with_glass_enabled_alt">Carousel player with Glass enabled</string>
     <string name="feature_carousel_title">Carousel Player View.</string>
     <string name="feature_classic_player_alt">Classic player</string>
-    <string name="feature_compatibility_description">Enjoy your music everywhere! N-Zik is compatible with Android Mobile, Android Tablet, Android Auto, Android Automotive, and Android TV. (Later Wear OS).</string>
+    <string name="feature_compatibility_description">Enjoy your music everywhere! N-Zik is compatible with Android Mobile, Android Tablet, Android Auto, Android Automotive, and Android TV. Support for Wear OS is planned.</string>
     <string name="feature_compatibility_title">Multiple Device Compatibility.</string>
     <string name="feature_dark_theme_alt">Dark Theme</string>
     <string name="feature_discord_description">Show off your current musical vibe by displaying your playing track directly on your Discord profile.</string>
@@ -54,7 +54,7 @@
     <string name="feature_player_with_glass_enabled_alt">Player with Glass enabled</string>
     <string name="feature_playlists_alt">Playlists</string>
     <string name="feature_playlists_description">Easily create, import, export, and manage your playlists in one unified interface.</string>
-    <string name="feature_playlists_title">Playlists Management.</string>
+    <string name="feature_playlists_title">Playlist Management.</string>
     <string name="feature_previous_glass_preview_label">Previous Glass preview</string>
     <string name="feature_previous_search_preview_label">Previous search preview</string>
     <string name="feature_previous_theme_preview_label">Previous theme preview</string>

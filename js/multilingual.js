@@ -10,6 +10,7 @@ class Multilingual {
   defaultValues = {};
   fixedNames = new Set();
   defaultCatalogComplete = false;
+  htmlFallbacksCaptured = false;
   selectedValues = {};
   loadVersion = 0;
   constructor(supported) {
@@ -26,17 +27,18 @@ class Multilingual {
     const find = (candidate) => this.supported.find((value) => value.toLowerCase() === candidate);
     const exact = find(code);
     if (exact) return exact;
-    const base = code.split("-")[0];
+    const [base, ...subtags] = code.split("-");
     let candidate = base;
     if (base === "zh") {
-      const parts = code.split("-");
-      const traditional = parts.includes("hant") ||
-        (!parts.includes("hans") && parts.some((part) => ["tw", "hk", "mo"].includes(part)));
+      const traditional = subtags.includes("hant") ||
+        (!subtags.includes("hans") && subtags.some((part) => ["tw", "hk", "mo"].includes(part)));
       candidate = traditional ? "zh-rtw" : "zh-rcn";
     } else if (base === "sr" && /(?:^|-)(latn|cs)(?:-|$)/.test(code)) {
       candidate = "sr-rcs";
-    } else if (code === "pt-br") {
+    } else if (base === "pt" && /^(?:[a-z]{4}-)?br(?:-|$)/.test(subtags.join("-"))) {
       candidate = "pt-rbr";
+    } else if (base === "nb" || base === "nn") {
+      candidate = "no";
     } else if (base === "in" || base === "iw") {
       candidate = base === "in" ? "id" : "he";
     }
@@ -51,7 +53,22 @@ class Multilingual {
       .replaceAll("\\\\", "\\")
       .replaceAll("\\t", "\t");
   }
+  captureHtmlFallbacks() {
+    if (this.htmlFallbacksCaptured) return;
+    for (const el of document.body.getElementsByTagName("*")) {
+      const name = el.getAttribute("name");
+      const text = el.textContent?.trim().replace(/\s+/g, " ");
+      if (name && text) this.defaultValues[name] ??= text;
+      for (const attribute of ["alt", "aria-label"]) {
+        const key = el.getAttribute("data-i18n-" + attribute);
+        const value = key && el.getAttribute(attribute);
+        if (value) this.defaultValues[key] ??= value;
+      }
+    }
+    this.htmlFallbacksCaptured = true;
+  }
   async loadStrings(lang) {
+    this.captureHtmlFallbacks();
     const language = this.resolveLanguage(lang || this.language);
     const version = ++this.loadVersion;
     this.language = language;

@@ -23,7 +23,8 @@ function create(browserLanguage = "en", savedLanguage = null, elements = [], env
 
 test("les langues régionales du navigateur utilisent un catalogue existant", () => {
   const cases = {
-    "fr-FR": "fr", "pt-BR": "pt-rBR", "pt-PT": "pt",
+    "fr-FR": "fr", "pt-BR": "pt-rBR", "pt-Latn-BR": "pt-rBR", "pt-PT": "pt",
+    "nb-NO": "no", "nn-NO": "no", "no-NO": "no",
     zh: "zh-rCN", "zh-CN": "zh-rCN", "zh-Hans": "zh-rCN",
     "zh-TW": "zh-rTW", "zh-Hant": "zh-rTW", "zh-HK": "zh-rTW",
     "zh-Hans-TW": "zh-rCN", "zh-Hant-CN": "zh-rTW",
@@ -170,4 +171,54 @@ test("les textes de repli gardent leur langue et leur direction dans les noms ac
   assert.equal(footer.textContent, "العربية");
   assert.equal(footer.lang, "ar");
   assert.equal(header.lang, "ar");
+});
+
+
+test("un catalogue source indisponible restaure le repli HTML après un changement de langue", async () => {
+  const title = {
+    attrs: { name: "feature_modern_ui_title" },
+    textContent: "Modern UI",
+    getAttribute(name) { return this.attrs[name]; },
+    setAttribute(name, value) { this.attrs[name] = value; },
+    replaceChildren(...nodes) { this.textContent = nodes.join(""); },
+  };
+  const image = {
+    attrs: { "data-i18n-alt": "feature_classic_player_alt", alt: "Classic player" },
+    getAttribute(name) { return this.attrs[name]; },
+    setAttribute(name, value) { this.attrs[name] = value; },
+  };
+  const { loader } = create("en", null, [title, image], {
+    console: { warn() {} },
+    fetch: async (file) => {
+      const translated = file === "localization/translations/fr/strings_features.xml";
+      const failed = file === "localization/source/strings_features.xml";
+      return {
+        ok: translated || (!failed && file.startsWith("localization/source/")),
+        status: failed ? 500 : translated ? 200 : 404,
+        text: async () => translated ? "fr" : "",
+      };
+    },
+    DOMParser: class {
+      parseFromString(body) {
+        const values = body === "fr"
+          ? { feature_modern_ui_title: "Interface moderne", feature_classic_player_alt: "Lecteur classique" }
+          : {};
+        return {
+          querySelector: () => null,
+          getElementsByTagName: () => Object.entries(values).map(([key, value]) => ({
+            getAttribute: (name) => name === "name" ? key : null,
+            textContent: value,
+          })),
+        };
+      }
+    },
+  });
+  await loader.loadStrings("fr");
+  assert.equal(title.textContent, "Interface moderne");
+  assert.equal(image.attrs.alt, "Lecteur classique");
+  await loader.loadStrings("en");
+  assert.equal(title.textContent, "Modern UI");
+  assert.equal(title.attrs.lang, "en");
+  assert.equal(image.attrs.alt, "Classic player");
+  assert.equal(image.attrs.lang, "en");
 });
