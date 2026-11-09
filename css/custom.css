@@ -538,7 +538,7 @@ body.dark .section-dropdown {
   }
 
   .site-header .container {
-    padding-inline: 0;
+    --site-container-inline-padding: 0;
   }
 
   .site-header-inner {
@@ -696,8 +696,7 @@ body.dark {
 .site-header .container,
 .site-footer-bottom .container {
   max-width: 100% !important;
-  padding-left: 4% !important;
-  padding-right: 4% !important;
+  padding-inline: var(--site-container-inline-padding, 4%) !important;
 }
 
 /* Override style.css rules that break phone layouts inside hero */
