@@ -3,7 +3,6 @@
     <string name="hero_description">N-Zik - это многоязычное приложение для Android с открытым исходным кодом для воспроизведения музыки с YouTube Music. N-Zik Desktop Compagnon, его настольный компаньон, передает вашу библиотеку и воспроизведение в Windows и Linux.</string>
     <string name="hero_logo_alt">Логотип</string>
     <string name="hero_n_zik_banner_alt">N-Zik Banner</string>
-    <string name="hero_n_zik_home_alt">N-Zik Дом</string>
     <string name="hero_n_zik_logo_alt">Логотип N-Zik</string>
     <string name="navigation_artist_profiles_label">Профили исполнителя</string>
     <string name="navigation_audio_controls_label">Управление звуком</string>
