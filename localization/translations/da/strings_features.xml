@@ -14,7 +14,7 @@
     <string name="feature_carousel_player_with_glass_enabled_alt">Karruselspiller med glas aktiveret</string>
     <string name="feature_carousel_title">Karrusel Spillervisning.</string>
     <string name="feature_classic_player_alt">Klassisk spiller</string>
-    <string name="feature_compatibility_description">Nyd din musik overalt! N-Zik er kompatibel med Android Mobile, Android Tablet, Android Auto, Android Automotive og Android TV. (senere Wear OS).</string>
+    <string name="feature_compatibility_description">Nyd din musik overalt! N-Zik er kompatibel med Android Mobile, Android Tablet, Android Auto, Android Automotive og Android TV. Støtte til Wear OS er planlagt.</string>
     <string name="feature_compatibility_title">Multipel Enhedskompatibilitet.</string>
     <string name="feature_dark_theme_alt">Mørkt Tema</string>
     <string name="feature_discord_description">Vis din aktuelle musikalske vibe ved at vise dit afspilningsspor direkte på din Discord profil.</string>
@@ -51,7 +51,7 @@
     <string name="feature_player_with_glass_enabled_alt">Spiller med glas aktiveret</string>
     <string name="feature_playlists_alt">Afspilningslister</string>
     <string name="feature_playlists_description">Opret nemt, importere, eksportere og administrere dine afspilningslister i en samlet grænseflade.</string>
-    <string name="feature_playlists_title">Afspilningslister Management.</string>
+    <string name="feature_playlists_title">Afspilningslistehåndtering.</string>
     <string name="feature_previous_glass_preview_label">Forrige Glas forhåndsvisning</string>
     <string name="feature_previous_search_preview_label">Foregående søgevisning</string>
     <string name="feature_previous_theme_preview_label">Foregående forhåndsvisning af tema</string>
