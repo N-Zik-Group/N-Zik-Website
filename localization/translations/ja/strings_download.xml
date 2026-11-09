@@ -3,6 +3,7 @@
     <string name="download_companion_description">WindowsとLinuxのデスクトップコンパニオン: ローカルWi-Fi(QRコードまたは手動コード)を介して携帯電話とペアリングし、ライブラリを閲覧します。 あなたの電話が埋め込まれたVLCを介してオーディオをストリーミングしながら、キューを管理し、大画面で聞く、VLCのインストールは必要ありません。 携帯電話は真実の単一のソースを維持し、コンパニオンはスタンドアロンN-Zikデスクトップアプリへの途中で移行製品です。</string>
     <string name="download_companion_platforms">N-Zik Desktop Compagnon · Windows &amp; Linux</string>
     <string name="download_description">N-Zik Nowをダウンロード</string>
+    <string name="download_desktop_on_devglobe">N-Zik Desktop Compagnon がDevGlobe で起動</string>
     <string name="download_get_it_on_androidfreeware">Androidフリーウェアで入手する</string>
     <string name="download_get_it_on_appteka">Apptekaで入手</string>
     <string name="download_get_it_on_f_droid">F-Droid で入手</string>
@@ -13,6 +14,6 @@
     <string name="download_get_it_on_openapk">OpenAPKで取得</string>
     <string name="download_get_the_desktop_companion_beta_on_github">GitHubでデスクトップコンパニオン(ベータ版)を入手</string>
     <string name="download_get_the_desktop_companion_on_github">GitHubでデスクトップコンパニオンを取得する</string>
-    <string name="download_launched_on_devglobe">DevGlobe で起動</string>
+    <string name="download_launched_on_devglobe">N-Zik はDevGlobe で発売されました</string>
     <string name="download_title">お気に入りの音楽を再生</string>
 </resources>
