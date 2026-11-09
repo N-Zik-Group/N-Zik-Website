@@ -14,7 +14,7 @@
     <string name="feature_carousel_player_with_glass_enabled_alt">Карусель з склом включений</string>
     <string name="feature_carousel_title">Карусель режим \"Гравців\".</string>
     <string name="feature_classic_player_alt">Класичний гравець</string>
-    <string name="feature_compatibility_description">Насолоджуйтесь вашою музикою всюди! N-Zik сумісний з Android Mobile, Android Auto, Android Autotive, та Android TV. (пізнішою версією Wear OS).</string>
+    <string name="feature_compatibility_description">Насолоджуйтесь вашою музикою всюди! N-Zik сумісний з Android Mobile, Android Auto, Android Autotive, та Android TV. Підтримка Wear OS запланована.</string>
     <string name="feature_compatibility_title">Кілька пристроїв сумісності.</string>
     <string name="feature_dark_theme_alt">Темна тема</string>
     <string name="feature_discord_description">Показує ваше поточне музичне посилання, показуючи трек прямо на вашому Discord профілі.</string>
@@ -51,7 +51,7 @@
     <string name="feature_player_with_glass_enabled_alt">Програвач з Склом увімкнено</string>
     <string name="feature_playlists_alt">Плейлісти</string>
     <string name="feature_playlists_description">Легко творити, імпорт, експорт та керувати списками відтворення в одному об’єднаному інтерфейсі.</string>
-    <string name="feature_playlists_title">Керування списками відтворень.</string>
+    <string name="feature_playlists_title">Керування плейлистами.</string>
     <string name="feature_previous_glass_preview_label">Попередній попередній перегляд скла</string>
     <string name="feature_previous_search_preview_label">Попередній перегляд пошуку</string>
     <string name="feature_previous_theme_preview_label">Попередня тема</string>
