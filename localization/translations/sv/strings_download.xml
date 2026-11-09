@@ -3,6 +3,7 @@
     <string name="download_companion_description">Skrivbordsföljeslagare för Windows och Linux: para ihop den med telefonen via lokalt Wi-Fi (QR-kod eller manuell kod), bläddra sedan i biblioteket, hantera kön och lyssna på en stor skärm medan telefonen strömmar ljudet genom en inbäddad VLC, ingen VLC installation behövs. Telefonen förblir den enda källan till sanning, och följeslagaren är en övergångsprodukt på väg till den fristående N-Zik skrivbordsapp.</string>
     <string name="download_companion_platforms">N-Zik Desktop Compagnon · Windows &amp; Linux</string>
     <string name="download_description">Ladda ner N-Zik nu.</string>
+    <string name="download_desktop_on_devglobe">N-Zik Desktop Compagnon lanserades på DevGlobe</string>
     <string name="download_get_it_on_androidfreeware">Få det på AndroidFreeware</string>
     <string name="download_get_it_on_appteka">Skaffa det på Appteka</string>
     <string name="download_get_it_on_f_droid">Få det på F-Droid</string>
@@ -13,6 +14,6 @@
     <string name="download_get_it_on_openapk">Få det på OpenAPK</string>
     <string name="download_get_the_desktop_companion_beta_on_github">Få den stationära följeslagaren (Beta) på GitHub</string>
     <string name="download_get_the_desktop_companion_on_github">Få skrivbordsföljeslagare på GitHub</string>
-    <string name="download_launched_on_devglobe">Lanserad på DevGlobe</string>
+    <string name="download_launched_on_devglobe">N-Zik lanserades på DevGlobe</string>
     <string name="download_title">Lyssna på din favoritmusik</string>
 </resources>
