@@ -14,7 +14,7 @@
     <string name="feature_carousel_player_with_glass_enabled_alt">مشغل كاروسل مع الزجاج مفعل</string>
     <string name="feature_carousel_title">عرض لاعب كاروسل.</string>
     <string name="feature_classic_player_alt">لاعب كلاسيكي</string>
-    <string name="feature_compatibility_description">استمتع بالموسيقى الخاصة بك في كل مكان! N-Zik متوافق مع Android Mobile, Android Tablet, Android Auto, Android Automotive, وAndroid TV. (نظام التشغيل في وقت لاحق).</string>
+    <string name="feature_compatibility_description">استمتع بالموسيقى الخاصة بك في كل مكان! N-Zik متوافق مع Android Mobile, Android Tablet, Android Auto, Android Automotive, و Android. تم التخطيط لدعم نظام تشغيل Wear OS.</string>
     <string name="feature_compatibility_title">توافق الأجهزة المتعددة.</string>
     <string name="feature_dark_theme_alt">السمة المظلمة</string>
     <string name="feature_discord_description">إظهار الفيس الموسيقي الحالي الخاص بك عن طريق عرض مسار التشغيل الخاص بك مباشرة على ملف ديسكورد الشخصي.</string>
@@ -51,7 +51,7 @@
     <string name="feature_player_with_glass_enabled_alt">مشغل مع الزجاج مفعل</string>
     <string name="feature_playlists_alt">قوائم التشغيل</string>
     <string name="feature_playlists_description">قم بسهولة بإنشاء واستيراد وتصدير وإدارة قوائم التشغيل الخاصة بك في واجهة واحدة موحدة.</string>
-    <string name="feature_playlists_title">إدارة قوائم التشغيل.</string>
+    <string name="feature_playlists_title">إدارة قائمة التشغيل.</string>
     <string name="feature_previous_glass_preview_label">معاينة زجاجية سابقة</string>
     <string name="feature_previous_search_preview_label">معاينة البحث السابقة</string>
     <string name="feature_previous_theme_preview_label">معاينة السمة السابقة</string>
