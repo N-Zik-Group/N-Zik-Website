@@ -3,6 +3,7 @@
     <string name="download_companion_description">Kompanor stacjonarny dla Windows i Linux: sparowuj go z telefonem przez lokalne Wi-Fi (kod QR lub ręczny kod), a następnie przeglądaj bibliotekę, zarządzaj kolejką i słuchaj na dużym ekranie, podczas gdy telefon streamuje dźwięk przez osadzony VLC, instalacja VLC nie jest potrzebna. Telefon pozostaje pojedynczym źródłem prawdy, a towarzysz jest produktem przejściowym w drodze do samodzielnej aplikacji desktopowej N-Zik.</string>
     <string name="download_companion_platforms">N-Zik Desktop Compagnon · Windows &amp; Linux</string>
     <string name="download_description">Pobierz N-Zik teraz.</string>
+    <string name="download_desktop_on_devglobe">Pulpit N-Zik wystrzelony na DevGlobe</string>
     <string name="download_get_it_on_androidfreeware">Pobierz na AndroidFreeware</string>
     <string name="download_get_it_on_appteka">Pobierz na Appteka</string>
     <string name="download_get_it_on_f_droid">Pobierz na F-Droid</string>
