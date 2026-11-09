@@ -13,7 +13,7 @@
     <string name="feature_carousel_player_with_glass_enabled_alt">Lecteur de carrousel avec verre activé</string>
     <string name="feature_carousel_title">Affichage du lecteur Carousel.</string>
     <string name="feature_classic_player_alt">Joueur classique</string>
-    <string name="feature_compatibility_description">Profitez de votre musique partout ! N-Zik est compatible avec les smartphones Android, les tablettes Android, Android Auto, Android Automotive et Android TV. (Bientôt compatible avec Wear OS).</string>
+    <string name="feature_compatibility_description">Profitez de votre musique partout ! N-Zik est compatible avec les smartphones Android, les tablettes Android, Android Auto, Android Automotive et Android TV. La prise en charge de Wear OS est prévue.</string>
     <string name="feature_compatibility_title">Compatibilité avec plusieurs appareils.</string>
     <string name="feature_dark_theme_alt">Thème Sombre</string>
     <string name="feature_discord_description">Mettez en avant vos goûts musicaux du moment en affichant le morceau que vous écoutez directement sur votre profil Discord.</string>
@@ -48,7 +48,7 @@
     <string name="feature_player_with_glass_enabled_alt">Lecteur avec verre activé</string>
     <string name="feature_playlists_alt">Listes de lecture</string>
     <string name="feature_playlists_description">Créez, importez, exportez et gérez facilement vos playlists depuis une interface unique.</string>
-    <string name="feature_playlists_title">Gestion des Playlists.</string>
+    <string name="feature_playlists_title">Gestion des playlists.</string>
     <string name="feature_previous_glass_preview_label">Prévisualisation précédente du verre</string>
     <string name="feature_previous_search_preview_label">Aperçu de la recherche précédente</string>
     <string name="feature_previous_theme_preview_label">Aperçu du thème précédent</string>
