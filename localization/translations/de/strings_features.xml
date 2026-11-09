@@ -14,7 +14,7 @@
     <string name="feature_carousel_player_with_glass_enabled_alt">Karussellspieler mit Glas aktiviert</string>
     <string name="feature_carousel_title">Karussellspieler-Ansicht.</string>
     <string name="feature_classic_player_alt">Klassischer Player</string>
-    <string name="feature_compatibility_description">Genießen Sie Ihre Musik überall! N-Zik ist kompatibel mit Android Mobile, Android Tablet, Android Auto, Android Automotive und Android TV. (Later Wear OS).</string>
+    <string name="feature_compatibility_description">Genießen Sie Ihre Musik überall! N-Zik ist kompatibel mit Android Mobile, Android Tablet, Android Auto, Android Automotive und Android TV. Unterstützung für Wear OS ist geplant.</string>
     <string name="feature_compatibility_title">Kompatibilität mehrerer Geräte.</string>
     <string name="feature_dark_theme_alt">Dunkles Theme</string>
     <string name="feature_discord_description">Zeige dein aktuelles musikalisches Ambiente, indem du deinen Musiktitel direkt auf deinem Discord Profil anzeigst.</string>
@@ -51,7 +51,7 @@
     <string name="feature_player_with_glass_enabled_alt">Player mit Glas aktiviert</string>
     <string name="feature_playlists_alt">Wiedergabelisten</string>
     <string name="feature_playlists_description">Erstellen, importieren, exportieren und verwalten Sie Ihre Wiedergabelisten in einer einheitlichen Oberfläche.</string>
-    <string name="feature_playlists_title">Playlisten-Management.</string>
+    <string name="feature_playlists_title">Playlist-Management.</string>
     <string name="feature_previous_glass_preview_label">Vorherige Glasvorschau</string>
     <string name="feature_previous_search_preview_label">Vorherige Suchvorschau</string>
     <string name="feature_previous_theme_preview_label">Vorherige Theme-Vorschau</string>
