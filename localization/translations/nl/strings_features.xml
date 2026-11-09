@@ -14,7 +14,7 @@
     <string name="feature_carousel_player_with_glass_enabled_alt">Carrouselspeler met glas ingeschakeld</string>
     <string name="feature_carousel_title">Carrousel Speler Bekijk.</string>
     <string name="feature_classic_player_alt">Klassieke speler</string>
-    <string name="feature_compatibility_description">Geniet van uw muziek overal! N-Zik is compatibel met Android Mobile, Android Tablet, Android Auto, Android Automotive, en Android TV. (Later Wear OS).</string>
+    <string name="feature_compatibility_description">Geniet van uw muziek overal! N-Zik is compatibel met Android Mobile, Android Tablet, Android Auto, Android Automotive, en Android TV. Ondersteuning voor Wear OS is gepland.</string>
     <string name="feature_compatibility_title">Compatibiliteit van meerdere apparaten.</string>
     <string name="feature_dark_theme_alt">Donker thema</string>
     <string name="feature_discord_description">Laat je huidige muziek vibe zien door je afspeelnummer direct op je Discord-profiel weer te geven.</string>
@@ -51,7 +51,7 @@
     <string name="feature_player_with_glass_enabled_alt">Speler met glas ingeschakeld</string>
     <string name="feature_playlists_alt">Afspeellijsten</string>
     <string name="feature_playlists_description">Gemakkelijk maken, importeren, exporteren en beheren van je afspeellijsten in één uniforme interface.</string>
-    <string name="feature_playlists_title">Beheer afspeellijsten.</string>
+    <string name="feature_playlists_title">Afspeellijst beheer.</string>
     <string name="feature_previous_glass_preview_label">Vorig glas voorbeeld</string>
     <string name="feature_previous_search_preview_label">Vorige zoekvoorbeeld</string>
     <string name="feature_previous_theme_preview_label">Voorvertoning vorig thema</string>
