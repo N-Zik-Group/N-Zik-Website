@@ -126,6 +126,10 @@ test("le chargement par catalogue conserve les traductions partielles et le repl
   assert.equal(rootAttrs.get("dir"), "rtl");
   await loader.loadStrings("fr");
   assert.equal(rootAttrs.get("dir"), "ltr");
+  await loader.loadStrings("en");
+  assert.equal(loader.getString("hero_description"), "English home");
+  assert.equal(rootAttrs.get("lang"), "en");
+  assert.ok(!requested.some((file) => file.startsWith("localization/translations/en/")));
 });
 
 test("les textes de repli gardent leur langue et leur direction dans les noms accessibles", () => {

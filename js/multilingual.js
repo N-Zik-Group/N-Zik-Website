@@ -84,7 +84,9 @@ class Multilingual {
     const defaults = this.defaultCatalogComplete
       ? Promise.resolve({ values: this.defaultValues, fixedNames: this.fixedNames, complete: true })
       : readCatalog("localization/source");
-    const selected = readCatalog(`localization/translations/${language}`, true);
+    const selected = language === "en"
+      ? Promise.resolve({ values: {} })
+      : readCatalog(`localization/translations/${language}`, true);
     const [defaultCatalog, { values: selectedValues }] = await Promise.all([defaults, selected]);
     if (version !== this.loadVersion) return;
     this.defaultValues = { ...this.defaultValues, ...defaultCatalog.values };
