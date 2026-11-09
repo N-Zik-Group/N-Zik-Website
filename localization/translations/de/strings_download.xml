@@ -3,6 +3,7 @@
     <string name="download_companion_description">Der Desktop-Begleiter für Windows und Linux: Paaren Sie ihn mit Ihrem Telefon über lokales Wi-Fi (QR-Code oder manueller Code), dann durchsuchen Sie Ihre Bibliothek, verwalten Sie die Warteschlange und hören Sie auf einem großen Bildschirm, während Ihr Telefon Streams die Audio durch eine eingebettete VLC, keine VLC Installation erforderlich. Das Telefon bleibt die einzige Quelle der Wahrheit, und der Begleiter ist ein Übergangsprodukt auf dem Weg zur Standalone N-Zik Desktop-App.</string>
     <string name="download_companion_platforms">N-Zik Desktop Compagnon · Windows &amp; Linux</string>
     <string name="download_description">N-Zik jetzt herunterladen.</string>
+    <string name="download_desktop_on_devglobe">N-Zik Desktop Compagnon auf DevGlobe gestartet</string>
     <string name="download_get_it_on_androidfreeware">Hol es auf AndroidFreeware</string>
     <string name="download_get_it_on_appteka">Hole es auf Appteka</string>
     <string name="download_get_it_on_f_droid">Bekomme es auf F-Droid</string>
@@ -13,6 +14,6 @@
     <string name="download_get_it_on_openapk">Hole es auf OpenAPK</string>
     <string name="download_get_the_desktop_companion_beta_on_github">Lade den Desktop-Begleiter (Beta) auf GitHub</string>
     <string name="download_get_the_desktop_companion_on_github">Lade den Desktop-Begleiter auf GitHub</string>
-    <string name="download_launched_on_devglobe">Auf DevGlobe gestartet</string>
+    <string name="download_launched_on_devglobe">N-Zik auf DevGlobe gestartet</string>
     <string name="download_title">Höre auf deine Lieblingsmusik</string>
 </resources>
