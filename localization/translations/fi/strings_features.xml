@@ -14,7 +14,7 @@
     <string name="feature_carousel_player_with_glass_enabled_alt">Karusellinsoitin, jossa Lasi on käytössä</string>
     <string name="feature_carousel_title">Karusellin Pelaajanäkymä.</string>
     <string name="feature_classic_player_alt">Klassinen pelaaja</string>
-    <string name="feature_compatibility_description">Nauti musiikistasi kaikkialla! N-Zik on yhteensopiva Android Mobile, Android Tablet, Android Auto, ja Android TV. (Myöhemmin Wear OS).</string>
+    <string name="feature_compatibility_description">Nauti musiikista kaikkialla! N-Zik on yhteensopiva Android Mobile, Android Tablet, Android Auto, Android Automotive, ja Android TV. Tuki Wear OS on suunnitteilla.</string>
     <string name="feature_compatibility_title">Usean Laitteen Yhteensopivuus.</string>
     <string name="feature_dark_theme_alt">Tumma Teema</string>
     <string name="feature_discord_description">Näytä nykyinen musiikillinen väesi pois näyttämällä soittokappaletta suoraan Discord-profiilissasi.</string>
@@ -51,7 +51,7 @@
     <string name="feature_player_with_glass_enabled_alt">Pelaaja, jossa Lasi on käytössä</string>
     <string name="feature_playlists_alt">Soittolistat</string>
     <string name="feature_playlists_description">Luoda, tuoda, vie ja hallinnoi soittolistoja helposti yhdessä yhtenäisessä käyttöliittymässä.</string>
-    <string name="feature_playlists_title">Soittolistojen Hallitseminen.</string>
+    <string name="feature_playlists_title">Soittolistan Hallinta</string>
     <string name="feature_previous_glass_preview_label">Edellinen lasin esikatselu</string>
     <string name="feature_previous_search_preview_label">Edellinen haun esikatselu</string>
     <string name="feature_previous_theme_preview_label">Edellinen teeman esikatselu</string>
