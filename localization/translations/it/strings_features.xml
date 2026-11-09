@@ -52,7 +52,7 @@
     <string name="feature_previous_glass_preview_label">Anteprima vetro precedente</string>
     <string name="feature_previous_search_preview_label">Anteprima ricerca precedente</string>
     <string name="feature_previous_theme_preview_label">Anteprima tema precedente</string>
-    <string name="feature_profiles_alt">Profiles</string>
+    <string name="feature_profiles_alt">Profili</string>
     <string name="feature_profiles_description">Collega i tuoi account e personalizza l\'app: sincronizza con YouTube Music, abilita Discord RPC e Last. m scrobbling, e passare da più profili in-app, ciascuno con il proprio nome, avatar, database e impostazioni.</string>
     <string name="feature_profiles_title">Profili Multipli.</string>
     <string name="feature_queue_description">Tieni traccia di ciò che sta suonando dopo, riorganizza le canzoni al volo e gestisci le tue prossime tracce.</string>
