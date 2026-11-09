@@ -8,7 +8,6 @@
     <string name="feature_artists_title">Profili Di Artista Dettagliati.</string>
     <string name="feature_audio_controls_description">Personalizza la tua esperienza con controlli audio avanzati, funzionalità di backup/restore e altro ancora.</string>
     <string name="feature_audio_controls_title">Controlli Audio Avanzati.</string>
-    <string name="feature_background_alt">sfondo</string>
     <string name="feature_carousel_description">Godetevi una singolare vista mozzafiato 3D carosello per la vostra riproduzione musicale.</string>
     <string name="feature_carousel_player_view_alt">Carousel Player View</string>
     <string name="feature_carousel_player_with_glass_enabled_alt">Giocatore Carousel con Vetro abilitato</string>
@@ -30,7 +29,6 @@
     <string name="feature_history_statistics_alt">Statistiche Cronologia</string>
     <string name="feature_history_title">Storia Completa.</string>
     <string name="feature_home_with_glass_enabled_alt">Home con vetro abilitato</string>
-    <string name="feature_illustration_alt">illustrazione</string>
     <string name="feature_light_theme_alt">Tema Chiaro</string>
     <string name="feature_lyrics_description">Recupera, visualizza, modifica e traduce i testi in tempo reale con una precisa sincronizzazione parola-parola.</string>
     <string name="feature_lyrics_title">Supporto Testi Avanzato.</string>
@@ -44,7 +42,6 @@
     <string name="feature_offline_caching_title">Smart Offline Caching.</string>
     <string name="feature_optional_glass_player_alt">Giocatore di vetro opzionale</string>
     <string name="feature_ota_updates_alt">Aggiornamenti OTA</string>
-    <string name="feature_phone_frame_alt">Telaio Telefono</string>
     <string name="feature_playback_queue_alt">Coda Di Riproduzione</string>
     <string name="feature_player_audio_bar_alt">Barra Audio Del Lettore</string>
     <string name="feature_player_lyrics_alt">Testo Del Giocatore</string>

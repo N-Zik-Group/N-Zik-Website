@@ -25,8 +25,10 @@ function updateThemeIcon() {
   icon.classList.toggle("fi-br-moon-stars", !dark);
   const key = icon.getAttribute(dark ? "data-i18n-light-theme" : "data-i18n-dark-theme");
   const label = multilingual.getString(key) || (dark ? "Switch to light theme" : "Switch to dark theme");
+  const language = multilingual.stringLanguage(key);
   icon.setAttribute("aria-label", label);
-  icon.setAttribute("lang", multilingual.stringLanguage(key));
+  icon.setAttribute("lang", language);
+  icon.setAttribute("dir", multilingual.directionFor(language));
   icon.setAttribute("title", label);
 }
 updateThemeIcon();
@@ -76,111 +78,11 @@ function updatePreviewMotion() {
 updatePreviewMotion();
 motionPreference.addEventListener("change", updatePreviewMotion);
 
-// Feature Section Observer for Navigation
+// Features navigation menu
 document.addEventListener("DOMContentLoaded", function() {
-  const featureSections = document.querySelectorAll('.feature-extended[id]');
-  const featuresNavTextWrapper = document.getElementById('featuresNavTextWrapper');
-  const featuresDropdown = document.getElementById('featuresDropdown');
-  const featuresTrigger = document.getElementById('featuresDropdownTrigger');
-  const featureLinks = document.querySelectorAll('.feature-link');
-
-  if (!featuresNavTextWrapper || !featureSections.length) return;
-
-  const defaultKey = "navigation_features_label";
-  const mobileNavigation = matchMedia("(max-width: 768px)");
-
-  function updateNavText(key, fallback) {
-    const mobile = mobileNavigation.matches;
-    if (mobile) {
-      key = defaultKey;
-      fallback = "Features";
-    }
-    const currentSpan = featuresNavTextWrapper.querySelector('span:not(.leaving)');
-    if (currentSpan?.getAttribute("name") === key) return;
-
-    const newSpan = document.createElement('span');
-    newSpan.setAttribute("name", key);
-    newSpan.textContent = multilingual.getString(key) || fallback;
-    newSpan.lang = multilingual.stringLanguage(key);
-    newSpan.dir = multilingual.directionFor(newSpan.lang);
-    if (mobile) {
-      featuresNavTextWrapper.style.transition = '';
-      featuresNavTextWrapper.style.width = 'auto';
-      featuresNavTextWrapper.replaceChildren(newSpan);
-      return;
-    }
-    
-    // 1. Lock the current width
-    const currentWidth = featuresNavTextWrapper.offsetWidth;
-    featuresNavTextWrapper.style.width = currentWidth + 'px';
-    
-    // 2. Prepare the old span to slide out
-    const oldSpan = currentSpan;
-    if (oldSpan) {
-      oldSpan.classList.add('leaving');
-      oldSpan.setAttribute('aria-hidden', 'true');
-      oldSpan.style.transform = 'translateY(-100%)';
-      oldSpan.style.opacity = '0';
-      setTimeout(() => {
-        if (oldSpan && oldSpan.parentNode) oldSpan.parentNode.removeChild(oldSpan);
-      }, 300);
-    }
-
-    // 3. Prepare the new span to slide in
-    newSpan.style.transform = 'translateY(100%)';
-    newSpan.style.opacity = '0';
-    
-    featuresNavTextWrapper.appendChild(newSpan);
-
-    // 4. Measure the new width directly from the new span
-    // We don't measure the wrapper because the old (potentially longer) span is still in the grid
-    const targetWidth = newSpan.offsetWidth;
-    
-    // 5. Restore old width and trigger reflow
-    featuresNavTextWrapper.style.width = currentWidth + 'px';
-    void featuresNavTextWrapper.offsetWidth; // force reflow
-
-    // 6. Animate everything to the new state
-    featuresNavTextWrapper.style.transition = 'width 0.3s cubic-bezier(0.4, 0, 0.2, 1)';
-    featuresNavTextWrapper.style.width = targetWidth + 'px';
-
-    newSpan.style.transform = 'translateY(0)';
-    newSpan.style.opacity = '1';
-
-    // 7. Clean up after transition
-    setTimeout(() => {
-      featuresNavTextWrapper.style.transition = '';
-      featuresNavTextWrapper.style.width = 'auto';
-    }, 300);
-  }
-
-  const observer = new IntersectionObserver((entries) => {
-    let activeFeature = null;
-    
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        activeFeature = entry.target.id;
-      }
-    });
-    
-    if (activeFeature) {
-      const link = document.querySelector(`.feature-link[href="#${activeFeature}"]`);
-      if (link) {
-        updateNavText(link.getAttribute('name'), link.textContent);
-      }
-    } else {
-      const scrollPos = window.scrollY;
-      const featuresTop = document.getElementById('features')?.offsetTop || 0;
-      if (scrollPos < featuresTop - 300) {
-        updateNavText(defaultKey, "Features");
-      }
-    }
-  }, { threshold: 0.4 });
-
-  featureSections.forEach(sec => observer.observe(sec));
-  mobileNavigation.addEventListener("change", () => {
-    if (mobileNavigation.matches) updateNavText(defaultKey, "Features");
-  });
+  const featuresDropdown = document.getElementById("featuresDropdown");
+  const featuresTrigger = document.getElementById("featuresDropdownTrigger");
+  const featureLinks = document.querySelectorAll(".feature-link");
 
   function setFeaturesOpen(open) {
     featuresDropdown.classList.toggle("show", open);

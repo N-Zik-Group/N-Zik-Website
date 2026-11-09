@@ -8,7 +8,6 @@
     <string name="feature_artists_title">Detaillierte Interpretenprofile.</string>
     <string name="feature_audio_controls_description">Passen Sie Ihre Erfahrung mit erweiterten Audio-Steuerelementen, Backup- und Wiederherstellungsfunktionen und mehr an.</string>
     <string name="feature_audio_controls_title">Erweiterte Audio-Controls.</string>
-    <string name="feature_background_alt">hintergrund</string>
     <string name="feature_carousel_description">Genießen Sie einen einzigartigen, visuell atemberaubenden 3D-Karussell-Blick für Ihre Musikwiedergabe.</string>
     <string name="feature_carousel_player_view_alt">Karussellspieleransicht</string>
     <string name="feature_carousel_player_with_glass_enabled_alt">Karussellspieler mit Glas aktiviert</string>
@@ -30,7 +29,6 @@
     <string name="feature_history_statistics_alt">Verlaufstatistik</string>
     <string name="feature_history_title">Vervollständige Verlauf.</string>
     <string name="feature_home_with_glass_enabled_alt">Zuhause mit Glas aktiviert</string>
-    <string name="feature_illustration_alt">illustrieren</string>
     <string name="feature_light_theme_alt">Helles Theme</string>
     <string name="feature_lyrics_description">Songtexte in Echtzeit abrufen, anzeigen, bearbeiten und übersetzen mit präziser Wort-für-Wort-Synchronisation.</string>
     <string name="feature_lyrics_title">Erweiterte Songtext-Unterstützung.</string>
@@ -44,7 +42,6 @@
     <string name="feature_offline_caching_title">Intelligenter Offline-Caching.</string>
     <string name="feature_optional_glass_player_alt">Optionaler Glasspieler</string>
     <string name="feature_ota_updates_alt">OTA-Updates</string>
-    <string name="feature_phone_frame_alt">Telefonrahmen</string>
     <string name="feature_playback_queue_alt">Playback-Warteschlange</string>
     <string name="feature_player_audio_bar_alt">Player-Audio-Leiste</string>
     <string name="feature_player_lyrics_alt">Player-Songtexte</string>

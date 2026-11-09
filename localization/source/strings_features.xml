@@ -8,7 +8,6 @@
     <string name="feature_artists_title">Detailed Artist Profiles.</string>
     <string name="feature_audio_controls_description">Customize your experience with advanced audio controls, backup/restore features, and more.</string>
     <string name="feature_audio_controls_title">Advanced Audio Controls.</string>
-    <string name="feature_background_alt" translatable="false">background</string>
     <string name="feature_carousel_description">Enjoy a unique, visually stunning 3D carousel view for your music playback.</string>
     <string name="feature_carousel_player_view_alt">Carousel Player View</string>
     <string name="feature_carousel_player_with_glass_enabled_alt">Carousel player with Glass enabled</string>
@@ -32,7 +31,6 @@
     <string name="feature_history_statistics_alt">History Statistics</string>
     <string name="feature_history_title">Complete History.</string>
     <string name="feature_home_with_glass_enabled_alt">Home with Glass enabled</string>
-    <string name="feature_illustration_alt" translatable="false">illustration</string>
     <string name="feature_light_theme_alt">Light Theme</string>
     <string name="feature_lyrics_description">Fetch, display, edit, and translate lyrics in real-time with precise word-by-word synchronization.</string>
     <string name="feature_lyrics_title">Advanced Lyrics Support.</string>
@@ -47,7 +45,6 @@
     <string name="feature_offline_caching_title">Smart Offline Caching.</string>
     <string name="feature_optional_glass_player_alt">Optional Glass player</string>
     <string name="feature_ota_updates_alt">OTA Updates</string>
-    <string name="feature_phone_frame_alt" translatable="false">Phone Frame</string>
     <string name="feature_playback_queue_alt">Playback Queue</string>
     <string name="feature_player_audio_bar_alt">Player Audio Bar</string>
     <string name="feature_player_lyrics_alt">Player Lyrics</string>

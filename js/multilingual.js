@@ -6,6 +6,107 @@ class Multilingual {
     "strings_footer.xml",
   ];
 
+  // Compare only known English phrases that can appear as copies in the exports.
+  static englishCopyKeys = new Set([
+    "download_companion_description",
+    "download_description",
+    "download_desktop_on_devglobe",
+    "download_get_it_on_androidfreeware",
+    "download_get_it_on_appteka",
+    "download_get_it_on_f_droid",
+    "download_get_it_on_github",
+    "download_get_it_on_github_beta",
+    "download_get_it_on_izzyondroid",
+    "download_get_it_on_obtainium",
+    "download_get_it_on_openapk",
+    "download_get_the_desktop_companion_beta_on_github",
+    "download_get_the_desktop_companion_on_github",
+    "download_launched_on_devglobe",
+    "download_title",
+    "feature_amoled_theme_alt",
+    "feature_android_mobile_alt",
+    "feature_android_tablet_alt",
+    "feature_artist_profile_alt",
+    "feature_artists_description",
+    "feature_artists_title",
+    "feature_audio_controls_description",
+    "feature_audio_controls_title",
+    "feature_carousel_description",
+    "feature_carousel_player_view_alt",
+    "feature_carousel_player_with_glass_enabled_alt",
+    "feature_carousel_title",
+    "feature_classic_player_alt",
+    "feature_compatibility_title",
+    "feature_dark_theme_alt",
+    "feature_discord_description",
+    "feature_discord_rich_presence_settings_alt",
+    "feature_glass_credits",
+    "feature_glass_description",
+    "feature_glass_effect_demonstration_label",
+    "feature_glass_previews_label",
+    "feature_glass_settings_and_quality_controls_alt",
+    "feature_history_description",
+    "feature_history_statistics_alt",
+    "feature_history_title",
+    "feature_home_with_glass_enabled_alt",
+    "feature_light_theme_alt",
+    "feature_lyrics_description",
+    "feature_lyrics_title",
+    "feature_modern_ui_description",
+    "feature_modern_ui_title",
+    "feature_next_glass_preview_label",
+    "feature_next_search_preview_label",
+    "feature_next_theme_preview_label",
+    "feature_offline_caching_description",
+    "feature_offline_caching_title",
+    "feature_optional_glass_player_alt",
+    "feature_playback_queue_alt",
+    "feature_player_audio_bar_alt",
+    "feature_player_lyrics_alt",
+    "feature_player_with_glass_enabled_alt",
+    "feature_playlists_description",
+    "feature_previous_glass_preview_label",
+    "feature_previous_search_preview_label",
+    "feature_previous_theme_preview_label",
+    "feature_profiles_description",
+    "feature_profiles_title",
+    "feature_queue_title",
+    "feature_queue_with_mini_player_alt",
+    "feature_rewind_description",
+    "feature_search_description",
+    "feature_search_previews_label",
+    "feature_search_title",
+    "feature_song_recognition_alt",
+    "feature_theme_preset_five_alt",
+    "feature_theme_preset_four_alt",
+    "feature_theme_preset_one_alt",
+    "feature_theme_preset_six_alt",
+    "feature_theme_preset_three_alt",
+    "feature_theme_preset_two_alt",
+    "feature_theme_presets_description",
+    "feature_theme_presets_title",
+    "feature_updates_description",
+    "feature_visualizer_description",
+    "feature_visualizer_title",
+    "feature_voice_search_alt",
+    "feature_youtube_account_alt",
+    "footer_font_credit",
+    "footer_font_license",
+    "footer_icon_credits",
+    "footer_issue_tracker",
+    "hero_description",
+    "navigation_artist_profiles_label",
+    "navigation_audio_controls_label",
+    "navigation_carousel_player_label",
+    "navigation_change_language",
+    "navigation_features_label",
+    "navigation_offline_caching_label",
+    "navigation_playback_queue_label",
+    "navigation_switch_to_dark_theme",
+    "navigation_switch_to_light_theme",
+    "navigation_theme_presets_label",
+  ]);
+
   static sessionPreferences = new Map();
 
   static readPreference(key) {
@@ -140,7 +241,11 @@ class Multilingual {
     return this.language === "sr-rCS" ? "sr-Latn" : this.language.replace(/-r([A-Z]{2})$/, "-$1");
   }
   hasTranslation(name) {
-    return !this.fixedNames.has(name) && Boolean(this.selectedValues[name]?.trim());
+    const value = this.selectedValues[name]?.trim();
+    if (!value || this.fixedNames.has(name)) return false;
+    if (Multilingual.englishCopyKeys.has(name) && value === this.defaultValues[name]?.trim()) return false;
+    // Older exports can still contain the English source without the project name.
+    return name !== "download_launched_on_devglobe" || value !== "Launched on DevGlobe";
   }
   stringLanguage(name) {
     return this.hasTranslation(name) ? this.catalogLocale() : "en";
@@ -171,11 +276,14 @@ class Multilingual {
         const value = key && this.getString(key);
         if (value) {
           el.setAttribute(attribute, value);
-          el.setAttribute("lang", this.stringLanguage(key));
+          const language = this.stringLanguage(key);
+          el.setAttribute("lang", language);
+          // A carousel scrolls in the page direction regardless of its label's language.
+          if (el.getAttribute("role") !== "group") el.setAttribute("dir", this.directionFor(language));
         }
       }
     });
-    const labelled = 'video[aria-labelledby], [role="group"][aria-labelledby], #homeLink[aria-labelledby]';
+    const labelled = 'video[aria-labelledby], [role="group"][aria-labelledby], #homeLink[aria-labelledby], #featuresDropdownTrigger[aria-labelledby]';
     for (const el of document.body.querySelectorAll(labelled)) {
       const label = document.getElementById(el.getAttribute("aria-labelledby"));
       const language = label?.getAttribute("lang");

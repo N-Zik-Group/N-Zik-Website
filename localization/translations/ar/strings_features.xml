@@ -8,7 +8,6 @@
     <string name="feature_artists_title">ملفات فنان مفصلة.</string>
     <string name="feature_audio_controls_description">تخصيص تجربتك مع التحكم الصوتي المتقدم، ومميزات النسخ الاحتياطي/الاستعادة، والمزيد.</string>
     <string name="feature_audio_controls_title">التحكم الصوتي المتقدم.</string>
-    <string name="feature_background_alt">الخلفية</string>
     <string name="feature_carousel_description">استمتع بمشاهدة ثلاثية الأبعاد فريدة ومذهلة بصرياً لمشغل الموسيقى الخاص بك.</string>
     <string name="feature_carousel_player_view_alt">عرض لاعب كاروسل</string>
     <string name="feature_carousel_player_with_glass_enabled_alt">مشغل كاروسل مع الزجاج مفعل</string>
@@ -30,7 +29,6 @@
     <string name="feature_history_statistics_alt">إحصائيات التاريخ</string>
     <string name="feature_history_title">اكمل التاريخ.</string>
     <string name="feature_home_with_glass_enabled_alt">المنزل مع الزجاج مفعل</string>
-    <string name="feature_illustration_alt">توضيح</string>
     <string name="feature_light_theme_alt">سمة فاتحة</string>
     <string name="feature_lyrics_description">إحضار كلمات الأغاني وعرضها وتحريرها وترجمتها في الوقت الحقيقي مع مزامنة كلمة بكلمة على حدة.</string>
     <string name="feature_lyrics_title">دعم متقدم لكلمات الأغنية.</string>
@@ -44,7 +42,6 @@
     <string name="feature_offline_caching_title">التخزين المؤقت الذكي دون اتصال.</string>
     <string name="feature_optional_glass_player_alt">لاعب زجاج اختياري</string>
     <string name="feature_ota_updates_alt">تحديثات OTA</string>
-    <string name="feature_phone_frame_alt">إطار الهاتف</string>
     <string name="feature_playback_queue_alt">قائمة انتظار التشغيل</string>
     <string name="feature_player_audio_bar_alt">شريط صوت المشغل</string>
     <string name="feature_player_lyrics_alt">كلمات اللاعب</string>

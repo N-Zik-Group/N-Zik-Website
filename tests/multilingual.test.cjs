@@ -21,7 +21,7 @@ function create(browserLanguage = "en", savedLanguage = null, elements = [], env
   return { loader: new Multilingual(supported), storage };
 }
 
-test("les langues régionales du navigateur utilisent un catalogue existant", () => {
+test("regional browser languages resolve to an existing catalog", () => {
   const cases = {
     "fr-FR": "fr", "pt-BR": "pt-rBR", "pt-Latn-BR": "pt-rBR", "pt-PT": "pt",
     "nb-NO": "no", "nn-NO": "no", "no-NO": "no",
@@ -38,7 +38,7 @@ test("les langues régionales du navigateur utilisent un catalogue existant", ()
   }
 });
 
-test("les anciennes préférences sont migrées et la préférence enregistrée reste prioritaire", () => {
+test("saved language preferences migrate and take priority", () => {
   for (const [saved, expected] of [["zh", "zh-rCN"], ["in", "id"], ["zh-TW", "zh-rTW"], ["pt-rBR", "pt-rBR"], ["eu", "en"]]) {
     const { loader, storage } = create("fr-FR", saved);
     assert.equal(loader.language, expected);
@@ -46,7 +46,7 @@ test("les anciennes préférences sont migrées et la préférence enregistrée 
   }
 });
 
-test("chaque choix du sélecteur conserve sa variante régionale", () => {
+test("each language option keeps its regional variant", () => {
   assert.equal(supported.length, 48);
   assert.equal(new Set(supported).size, 48);
   for (const locale of supported) {
@@ -54,7 +54,7 @@ test("chaque choix du sélecteur conserve sa variante régionale", () => {
   }
 });
 
-test("les noms renommés remplissent le DOM avec repli anglais pour une traduction partielle", () => {
+test("localized elements fall back to English when translations are partial", () => {
   const elements = ["feature_glass_title", "feature_modern_ui_title"].map((key) => ({
     getAttribute: (attribute) => attribute === "name" ? key : null,
     replaceChildren(...nodes) { this.nodes = nodes; },
@@ -75,7 +75,7 @@ test("les noms renommés remplissent le DOM avec repli anglais pour une traducti
   assert.equal(elements[1].lang, "en");
 });
 
-test("le chargement par catalogue conserve les traductions partielles et le repli anglais", async () => {
+test("loading catalogs preserves partial translations and the English fallback", async () => {
   const requested = [];
   const rootAttrs = new Map();
   const imgAttrs = new Map([["data-i18n-alt", "feature_glass_title"]]);
@@ -133,7 +133,7 @@ test("le chargement par catalogue conserve les traductions partielles et le repl
   assert.ok(!requested.some((file) => file.startsWith("localization/translations/en/")));
 });
 
-test("les textes de repli gardent leur langue et leur direction dans les noms accessibles", () => {
+test("accessible names retain the language and direction of fallback text", () => {
   function element(attrs) {
     return {
       getAttribute: (key) => attrs[key],
@@ -189,8 +189,59 @@ test("les textes de repli gardent leur langue et leur direction dans les noms ac
   assert.equal(header.lang, "ar");
 });
 
+test("known English copies get English metadata while shared brand wording keeps its locale", () => {
+  const createElement = (attrs) => ({
+    attrs,
+    getAttribute(key) { return this.attrs[key]; },
+    setAttribute(key, value) { this.attrs[key] = value; },
+    replaceChildren(...nodes) { this.textContent = nodes.join(""); },
+  });
+  const hero = createElement({ name: "hero_description" });
+  const preset = createElement({ "data-i18n-alt": "feature_theme_preset_one_alt" });
+  const carousel = createElement({ role: "group", "data-i18n-aria-label": "feature_glass_previews_label" });
+  const brand = createElement({ name: "download_companion_platforms" });
+  const badge = createElement({ name: "download_launched_on_devglobe" });
+  const features = createElement({ name: "navigation_features_label" });
+  const { loader } = create("ar", null, [hero, preset, carousel, brand, badge, features]);
+  loader.defaultValues = {
+    hero_description: "N-Zik is a multilingual, open-source Android app.",
+    feature_theme_preset_one_alt: "Theme Preset 1",
+    feature_glass_previews_label: "Glass previews",
+    download_companion_platforms: "N-Zik Desktop Compagnon · Windows & Linux",
+    download_launched_on_devglobe: "N-Zik launched on DevGlobe",
+    navigation_features_label: "Features",
+  };
+  loader.selectedValues = { ...loader.defaultValues, download_launched_on_devglobe: "Launched on DevGlobe" };
 
-test("un catalogue source indisponible restaure le repli HTML après un changement de langue", async () => {
+  loader.updateDom();
+  assert.equal(hero.textContent, loader.defaultValues.hero_description);
+  assert.equal(hero.attrs.lang, "en");
+  assert.equal(hero.attrs.dir, "ltr");
+  assert.equal(preset.attrs.alt, "Theme Preset 1");
+  assert.equal(preset.attrs.lang, "en");
+  assert.equal(preset.attrs.dir, "ltr");
+  assert.equal(carousel.attrs.lang, "en");
+  assert.equal(carousel.attrs.dir, undefined);
+  assert.equal(brand.textContent, loader.defaultValues.download_companion_platforms);
+  assert.equal(brand.attrs.lang, "ar");
+  assert.equal(brand.attrs.dir, "rtl");
+  assert.equal(badge.textContent, "N-Zik launched on DevGlobe");
+  assert.equal(badge.attrs.lang, "en");
+  assert.equal(features.attrs.lang, "en");
+  assert.equal(features.attrs.dir, "ltr");
+
+  loader.selectedValues.hero_description = "وصف التطبيق";
+  loader.selectedValues.download_launched_on_devglobe = "تم إطلاقه على DevGlobe";
+  loader.updateDom();
+  assert.equal(hero.textContent, "وصف التطبيق");
+  assert.equal(hero.attrs.lang, "ar");
+  assert.equal(hero.attrs.dir, "rtl");
+  assert.equal(badge.textContent, "تم إطلاقه على DevGlobe");
+  assert.equal(badge.attrs.lang, "ar");
+});
+
+
+test("an unavailable source catalog restores the HTML fallback after a language change", async () => {
   const title = {
     attrs: { name: "feature_modern_ui_title" },
     textContent: "Modern UI",
@@ -240,7 +291,7 @@ test("un catalogue source indisponible restaure le repli HTML après un changeme
 });
 
 
-test("le choix de langue fonctionne sans stockage local", async () => {
+test("language selection works without local storage", async () => {
   const fail = () => { throw new Error("Storage disabled"); };
   const { loader } = create("fr-FR", null, [], {
     localStorage: { getItem: fail, setItem: fail },
@@ -253,67 +304,4 @@ test("le choix de langue fonctionne sans stockage local", async () => {
   await loader.changeLang({ dataset: { locale: "ar" } });
   assert.equal(loader.language, "ar");
   assert.equal(loader.constructor.readPreference("language"), "ar");
-});
-
-
-test("le menu des fonctionnalités retrouve son libellé en passant à la largeur mobile", () => {
-  const additional = fs.readFileSync(path.join(root, "js/additional.js"), "utf8");
-  const listeners = {};
-  let observeSections;
-  let changeWidth;
-  const mobile = {
-    matches: false,
-    addEventListener: (_, listener) => { changeWidth = listener; },
-  };
-  const span = (name) => {
-    const attrs = { name };
-    const classes = new Set();
-    return {
-      style: {},
-      offsetWidth: 100,
-      classList: { add: (value) => classes.add(value), contains: (value) => classes.has(value) },
-      setAttribute: (key, value) => { attrs[key] = value; },
-      getAttribute: (key) => attrs[key],
-    };
-  };
-  const wrapper = {
-    children: [span("navigation_features_label")],
-    style: {},
-    offsetWidth: 100,
-    querySelector() { return this.children.find((child) => !child.classList.contains("leaving")); },
-    appendChild(child) { this.children.push(child); },
-    replaceChildren(child) { this.children = [child]; },
-  };
-  const section = { id: "feature-glass" };
-  const glass = { getAttribute: () => "navigation_glass_label", textContent: "Glass" };
-  const toggle = { classList: { toggle() {} }, getAttribute: () => "", setAttribute() {}, addEventListener() {} };
-  const elements = { featuresNavTextWrapper: wrapper, featuresDropdownTrigger: toggle, toggledark: toggle };
-  const translations = { navigation_features_label: "Fonctionnalités", navigation_glass_label: "Glass" };
-  vm.runInNewContext(additional, {
-    document: {
-      body: { classList: { contains: () => false } },
-      getElementById: (id) => elements[id],
-      querySelectorAll: (selector) => selector === ".feature-extended[id]" ? [section] : [],
-      querySelector: () => glass,
-      createElement: () => span(),
-      addEventListener: (type, listener) => { listeners[type] = listener; },
-    },
-    window: { addEventListener() {} },
-    matchMedia: (query) => query.includes("max-width") ? mobile : { matches: false, addEventListener() {} },
-    IntersectionObserver: class {
-      constructor(listener) { observeSections = listener; }
-      observe() {}
-    },
-    multilingual: { getString: (key) => translations[key], stringLanguage: () => "fr", directionFor: () => "ltr" },
-    setTimeout() {},
-  });
-  listeners.DOMContentLoaded();
-  observeSections([{ target: section, isIntersecting: true }]);
-  assert.equal(wrapper.querySelector().textContent, "Glass");
-  mobile.matches = true;
-  changeWidth();
-  assert.equal(wrapper.children.length, 1);
-  assert.equal(wrapper.querySelector().textContent, "Fonctionnalités");
-  observeSections([{ target: section, isIntersecting: true }]);
-  assert.equal(wrapper.querySelector().textContent, "Fonctionnalités");
 });

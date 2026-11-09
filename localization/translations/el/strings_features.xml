@@ -8,7 +8,6 @@
     <string name="feature_artists_title">Λεπτομερή Προφίλ Καλλιτεχνών.</string>
     <string name="feature_audio_controls_description">Προσαρμόστε την εμπειρία σας με προηγμένα στοιχεία ελέγχου ήχου, δυνατότητες δημιουργίας αντιγράφων ασφαλείας/επαναφοράς και πολλά άλλα.</string>
     <string name="feature_audio_controls_title">Προηγμένα Στοιχεία Ελέγχου Ήχου.</string>
-    <string name="feature_background_alt">φόντο</string>
     <string name="feature_carousel_description">Απολαύστε μια μοναδική, οπτικά εκπληκτική 3D carousel θέα για την αναπαραγωγή μουσικής σας.</string>
     <string name="feature_carousel_player_view_alt">Προβολή Παίκτη Καρουσέλ</string>
     <string name="feature_carousel_player_with_glass_enabled_alt">Carousel player με ενεργοποιημένο το γυαλί</string>
@@ -30,7 +29,6 @@
     <string name="feature_history_statistics_alt">Στατιστικά Ιστορικού</string>
     <string name="feature_history_title">Πλήρης Ιστορία.</string>
     <string name="feature_home_with_glass_enabled_alt">Αρχική σελίδα με ενεργοποιημένο το Glass</string>
-    <string name="feature_illustration_alt">εικονογράφηση</string>
     <string name="feature_light_theme_alt">Ανοιχτό Θέμα</string>
     <string name="feature_lyrics_description">Ανάκτηση, προβολή, επεξεργασία και μετάφραση στίχων σε πραγματικό χρόνο με ακριβή συγχρονισμό λέξης-από-λέξη.</string>
     <string name="feature_lyrics_title">Προηγμένη Υποστήριξη Στίχων.</string>
@@ -44,7 +42,6 @@
     <string name="feature_offline_caching_title">Έξυπνη Προσωρινή Αποθήκευση Εκτός Σύνδεσης.</string>
     <string name="feature_optional_glass_player_alt">Προαιρετικός παίκτης γυαλιού</string>
     <string name="feature_ota_updates_alt">Ενημερώσεις ΟΤΑ</string>
-    <string name="feature_phone_frame_alt">Πλαίσιο Τηλεφώνου</string>
     <string name="feature_playback_queue_alt">Ουρά Αναπαραγωγής</string>
     <string name="feature_player_audio_bar_alt">Γραμμή Ήχου Παίκτη</string>
     <string name="feature_player_lyrics_alt">Στίχοι Παίκτη</string>

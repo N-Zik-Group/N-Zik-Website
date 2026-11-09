@@ -8,7 +8,6 @@
     <string name="feature_artists_title">Podrobné profily umělce.</string>
     <string name="feature_audio_controls_description">Přizpůsobte si své zkušenosti s pokročilým ovládáním zvuku, zálohování/obnovením funkcí a dalších.</string>
     <string name="feature_audio_controls_title">Pokročilé ovládání zvuku.</string>
-    <string name="feature_background_alt">pozadí</string>
     <string name="feature_carousel_description">Užijte si jedinečné, vizuálně úžasné 3D kolotočové zobrazení pro přehrávání hudby.</string>
     <string name="feature_carousel_player_view_alt">Zobrazení kolotoče hráče</string>
     <string name="feature_carousel_player_with_glass_enabled_alt">Kolotoč s povoleným sklem</string>
@@ -30,7 +29,6 @@
     <string name="feature_history_statistics_alt">Statistiky historie</string>
     <string name="feature_history_title">Dokončete historii.</string>
     <string name="feature_home_with_glass_enabled_alt">Domovská stránka se zapnutým sklem</string>
-    <string name="feature_illustration_alt">ilustrace</string>
     <string name="feature_light_theme_alt">Světlý motiv</string>
     <string name="feature_lyrics_description">Načíst, zobrazovat, upravovat a překládat texty v reálném čase s přesnou synchronizací slov po slovu.</string>
     <string name="feature_lyrics_title">Pokročilá podpora textů.</string>
@@ -44,7 +42,6 @@
     <string name="feature_offline_caching_title">Chytré offline ukládání do mezipaměti.</string>
     <string name="feature_optional_glass_player_alt">Volitelný přehrávač skla</string>
     <string name="feature_ota_updates_alt">OTA aktualizace</string>
-    <string name="feature_phone_frame_alt">Telefonní rám</string>
     <string name="feature_playback_queue_alt">Fronta přehrávání</string>
     <string name="feature_player_audio_bar_alt">Přehrávač zvukového panelu</string>
     <string name="feature_player_lyrics_alt">Texty přehrávače</string>

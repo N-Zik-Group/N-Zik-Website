@@ -3,7 +3,6 @@
     <string name="hero_description">一個開源、支援多語言的 Android 應用程式，用來收聽 YouTube Music上的串流音樂。桌面配套應用程式 N-Zik Desktop Compagnon 可在 Windows 和 Linux 上存取音樂庫並播放音樂。</string>
     <string name="hero_logo_alt">Logo</string>
     <string name="hero_n_zik_banner_alt">N-Zik Banner</string>
-    <string name="hero_n_zik_home_alt">N-Zik Home</string>
     <string name="hero_n_zik_logo_alt">N-Zik logo</string>
     <string name="navigation_artist_profiles_label">Artist Profiles</string>
     <string name="navigation_audio_controls_label">Audio Controls</string>

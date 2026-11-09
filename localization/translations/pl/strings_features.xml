@@ -8,7 +8,6 @@
     <string name="feature_artists_title">Szczegółowy profil wykonawcy.</string>
     <string name="feature_audio_controls_description">Dostosuj swoje doświadczenia dzięki zaawansowanym kontrolom audio, funkcjom kopii/przywracania i innym.</string>
     <string name="feature_audio_controls_title">Zaawansowane sterowanie dźwiękiem.</string>
-    <string name="feature_background_alt">kontekst</string>
     <string name="feature_carousel_description">Ciesz się unikalnym, wizualnie oszałamiającym 3D widokiem karuzeli dla twojego odtwarzania muzyki.</string>
     <string name="feature_carousel_player_view_alt">Widok karuzeli</string>
     <string name="feature_carousel_player_with_glass_enabled_alt">Karuzela z włączonym szkłem</string>
@@ -30,7 +29,6 @@
     <string name="feature_history_statistics_alt">Statystyki historii</string>
     <string name="feature_history_title">Pełna historia.</string>
     <string name="feature_home_with_glass_enabled_alt">Strona główna z włączonym szkłem</string>
-    <string name="feature_illustration_alt">ilustracja</string>
     <string name="feature_light_theme_alt">Jasny motyw</string>
     <string name="feature_lyrics_description">Pobieraj, wyświetlacz, edytuj i przetłumacz słowa w czasie rzeczywistym z dokładną synchronizacją słowa po słowie.</string>
     <string name="feature_lyrics_title">Zaawansowane wsparcie dla tekstów piosenek.</string>
@@ -44,7 +42,6 @@
     <string name="feature_offline_caching_title">Inteligentne buforowanie offline.</string>
     <string name="feature_optional_glass_player_alt">Opcjonalny gracz szkła</string>
     <string name="feature_ota_updates_alt">Aktualizacje OTA</string>
-    <string name="feature_phone_frame_alt">Ramka telefoniczna</string>
     <string name="feature_playback_queue_alt">Kolejka odtwarzania</string>
     <string name="feature_player_audio_bar_alt">Pasek audio odtwarzacza</string>
     <string name="feature_player_lyrics_alt">Teksty piosenek gracza</string>

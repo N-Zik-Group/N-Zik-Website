@@ -8,7 +8,6 @@
     <string name="feature_artists_title">Profiluri de Artist detaliate.</string>
     <string name="feature_audio_controls_description">Personalizați experiența dvs. cu controale audio avansate, funcții de backup/restore și multe altele.</string>
     <string name="feature_audio_controls_title">Controale audio avansate.</string>
-    <string name="feature_background_alt">Fundal</string>
     <string name="feature_carousel_description">Bucură-te de o vizualizare carusel 3D unică și uimitoare pentru muzica ta.</string>
     <string name="feature_carousel_player_view_alt">Vedere jucător Carusel</string>
     <string name="feature_carousel_player_with_glass_enabled_alt">Carusel player cu sticlă activat</string>
@@ -30,7 +29,6 @@
     <string name="feature_history_statistics_alt">Statistici istoric</string>
     <string name="feature_history_title">Istoric complet.</string>
     <string name="feature_home_with_glass_enabled_alt">Acasă cu sticlă activată</string>
-    <string name="feature_illustration_alt">ilustrare</string>
     <string name="feature_light_theme_alt">Temă deschisă</string>
     <string name="feature_lyrics_description">Fetch, afişează, editează şi traduce versuri în timp real cu cuvinte precise sincronizate.</string>
     <string name="feature_lyrics_title">Suport versuri avansate.</string>
@@ -44,7 +42,6 @@
     <string name="feature_offline_caching_title">Caching Smart Offline.</string>
     <string name="feature_optional_glass_player_alt">Jucător opțional de sticlă</string>
     <string name="feature_ota_updates_alt">Actualizări OTA</string>
-    <string name="feature_phone_frame_alt">Cadru Telefon</string>
     <string name="feature_playback_queue_alt">Lista de redare</string>
     <string name="feature_player_audio_bar_alt">Bara Audio Player</string>
     <string name="feature_player_lyrics_alt">Versuri jucător</string>

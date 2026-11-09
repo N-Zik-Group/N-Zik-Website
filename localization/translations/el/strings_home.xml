@@ -3,7 +3,6 @@
     <string name="hero_description">Το N-Zik είναι μια πολυγλωσσική, ανοιχτού κώδικα εφαρμογή Android για streaming μουσικής από το YouTube Music. N-Zik Desktop Compagnon, σύντροφος για υπολογιστές γραφείου, φέρνει τη βιβλιοθήκη σας και την αναπαραγωγή στα Windows και Linux.</string>
     <string name="hero_logo_alt">Λογότυπο</string>
     <string name="hero_n_zik_banner_alt">N-Zik Banner</string>
-    <string name="hero_n_zik_home_alt">N-Zik Αρχική</string>
     <string name="hero_n_zik_logo_alt">Λογότυπο N-Zik</string>
     <string name="navigation_artist_profiles_label">Προφίλ Καλλιτέχνη</string>
     <string name="navigation_audio_controls_label">Στοιχεία Ελέγχου Ήχου</string>

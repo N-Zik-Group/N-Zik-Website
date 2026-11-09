@@ -439,22 +439,8 @@ body.dark .section-dropdown {
   background: rgba(128, 128, 128, 0.2) !important;
 }
 
-/* Nav Text Slider */
-.nav-text-slider {
-  display: grid;
-  align-items: center;
-  justify-items: center;
-  overflow: hidden;
-  white-space: nowrap;
-}
-.nav-text-slider > span {
-  grid-area: 1 / 1;
+#featuresNavText {
   line-height: 1;
-  transition:
-    transform 0.3s cubic-bezier(0.4, 0, 0.2, 1),
-    opacity 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-  display: flex;
-  align-items: center;
 }
 
 /* Fix baseline alignment for all nav items */
@@ -521,14 +507,8 @@ body.dark .section-dropdown {
     height: 26px !important;
   }
 
-  .nav-text-slider {
-    min-inline-size: 0;
-    white-space: normal;
-  }
-
-  .nav-text-slider > span {
+  #featuresNavText {
     overflow-wrap: anywhere;
-    transform: none !important; /* Disable vertical slide (push) on mobile, just crossfade */
   }
 }
 

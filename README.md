@@ -135,17 +135,31 @@ Use this command to clone the repo
 git clone -b main --single-branch https://github.com/N-Zik-Group/N-Zik-Website.git
 ```
 
-Les sources anglaises sont dans `localization/source/`. Crowdin exporte les mêmes fichiers
-dans `localization/translations/<locale>/`. Le sélecteur de langue dans `index.html` et
-les dossiers d'export utilisent les mêmes codes.
+The English catalogs are in `localization/source/`. Crowdin exports matching files
+to `localization/translations/<locale>/`. The language selector in `index.html`
+uses the same locale codes as the export directories.
 
-Les catalogues couvrent l'accueil et la navigation, les fonctionnalités, le téléchargement
-et le pied de page. Dans `index.html`, `name` référence le texte et `data-i18n-alt` ou `data-i18n-aria-label` référence les libellés accessibles.
-Le chargeur utilise la source anglaise pour les clés et catalogues manquants et indique
-la langue du texte aux lecteurs d’écran. Les vidéos reprennent le titre localisé de
-leur section ou un libellé dédié pour la démonstration Glass. Conservez les noms de
-marque, dont N-Zik Desktop Compagnon, dans les traductions.
-Pour vérifier les ressources et leurs références sans dépendance supplémentaire :
+The catalogs cover the home page and navigation, features, downloads, and the footer.
+In `index.html`, `name` references visible text, while `data-i18n-alt` and
+`data-i18n-aria-label` reference accessible labels. The theme button uses
+`data-i18n-dark-theme` and `data-i18n-light-theme` to identify the action that
+switches to each theme. The script applies the selected label to both `aria-label`
+and `title`.
+
+The loader falls back to the English source when a key or catalog is missing and
+exposes the text's language to screen readers. It recognizes known English copies
+in Crowdin exports by comparing a limited set of phrases with the source.
+Homographs and brand names can legitimately match the English text. Videos use
+their localized section title or a dedicated label for the Glass demonstration.
+
+The N-Zik DevGlobe badge uses its existing translations. The N-Zik Desktop
+Compagnon badge identifies a different project. Sharing a single label with a
+project name parameter would require retranslating the full phrase to preserve
+word order and agreement in each language. The six theme previews use individual
+keys to preserve their existing Turkish labels, including the spacing in the
+sixth label, which a shared numbered template would change.
+
+These commands check the catalogs and their references without additional dependencies.
 
 ```sh
 python -B -m unittest discover -s tests -v

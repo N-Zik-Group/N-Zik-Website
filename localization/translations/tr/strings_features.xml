@@ -8,7 +8,6 @@
     <string name="feature_artists_title">Ayrıntılı Sanatçı Profilleri.</string>
     <string name="feature_audio_controls_description">Gelişmiş ses kontrolleri, yedekleme/geri yükleme özellikleri ve daha fazlasıyla deneyiminizi kişiselleştirin.</string>
     <string name="feature_audio_controls_title">Gelişmiş Ses Kontrolleri.</string>
-    <string name="feature_background_alt">arka plan</string>
     <string name="feature_carousel_description">Müzik dinlerken benzersiz ve görsel açıdan büyüleyici bir 3D karusel görünümünün keyfini çıkarın.</string>
     <string name="feature_carousel_player_view_alt">Karusel Oynatıcı Görünümü</string>
     <string name="feature_carousel_player_with_glass_enabled_alt">Cam özelliği etkinleştirilmiş karusel oynatıcı</string>
@@ -30,7 +29,6 @@
     <string name="feature_history_statistics_alt">Geçmiş İstatistikleri</string>
     <string name="feature_history_title">Tam Geçmiş.</string>
     <string name="feature_home_with_glass_enabled_alt">Cam özelliği etkinleştirilmiş ana sayfa</string>
-    <string name="feature_illustration_alt">çizim</string>
     <string name="feature_light_theme_alt">Aydınlık Tema</string>
     <string name="feature_lyrics_description">Şarkı sözlerini gerçek zamanlı olarak alın, görüntüleyin, düzenleyin ve kelime kelime kusursuz senkronizasyon ile çevirin.</string>
     <string name="feature_lyrics_title">Gelişmiş Şarkı Sözü Desteği.</string>
@@ -44,7 +42,6 @@
     <string name="feature_offline_caching_title">Akıllı Çevrimdışı Önbellekleme.</string>
     <string name="feature_optional_glass_player_alt">İsteğe bağlı Cam oynatıcı</string>
     <string name="feature_ota_updates_alt">OTA Güncellemeleri</string>
-    <string name="feature_phone_frame_alt">Telefon Çerçevesi</string>
     <string name="feature_playback_queue_alt">Oynatma Sırası</string>
     <string name="feature_player_audio_bar_alt">Oynatıcı Ses Çubuğu</string>
     <string name="feature_player_lyrics_alt">Oynatıcı Şarkı Sözleri</string>

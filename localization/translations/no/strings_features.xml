@@ -8,7 +8,6 @@
     <string name="feature_artists_title">Detaljerte artister filer.</string>
     <string name="feature_audio_controls_description">Tilpass din opplevelse med avanserte lydkontroller, sikkerhetskopiering/gjenoppretting funksjoner og mer.</string>
     <string name="feature_audio_controls_title">Avanserte lydkontroller.</string>
-    <string name="feature_background_alt">bakgrunn</string>
     <string name="feature_carousel_description">Nyt en unik, visuelt fantastisk 3D-karusellvisning for din musikkavspilling.</string>
     <string name="feature_carousel_player_view_alt">Karusell spiller visning</string>
     <string name="feature_carousel_player_with_glass_enabled_alt">Karusellspiller med aktivert glass</string>
@@ -30,7 +29,6 @@
     <string name="feature_history_statistics_alt">Historikk Statistikk</string>
     <string name="feature_history_title">Fullstendig historie.</string>
     <string name="feature_home_with_glass_enabled_alt">Hjem med glass aktivert</string>
-    <string name="feature_illustration_alt">illustrasjon</string>
     <string name="feature_light_theme_alt">Lyst tema</string>
     <string name="feature_lyrics_description">Hent den, vise, rediger og oversetter tekster i sanntid med presis ord-etter-ord synkronisering.</string>
     <string name="feature_lyrics_title">Avansert tekst som støtte.</string>
@@ -44,7 +42,6 @@
     <string name="feature_offline_caching_title">Smart Frakoblet Caching.</string>
     <string name="feature_optional_glass_player_alt">Valgfri glass spiller</string>
     <string name="feature_ota_updates_alt">OTA Oppdateringer</string>
-    <string name="feature_phone_frame_alt">Telefon ramme</string>
     <string name="feature_playback_queue_alt">Avspillingskø</string>
     <string name="feature_player_audio_bar_alt">Spiller lydlinje</string>
     <string name="feature_player_lyrics_alt">Spiller tekster</string>

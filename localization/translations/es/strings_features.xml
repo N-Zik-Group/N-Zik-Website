@@ -8,7 +8,6 @@
     <string name="feature_artists_title">Perfiles de Artista detallados.</string>
     <string name="feature_audio_controls_description">Personalice su experiencia con controles de audio avanzados, funciones de copia de seguridad/restauración y más.</string>
     <string name="feature_audio_controls_title">Controles de audio avanzados.</string>
-    <string name="feature_background_alt">fondo</string>
     <string name="feature_carousel_description">Disfruta de una vista única del carrusel 3D para tu reproducción musical.</string>
     <string name="feature_carousel_player_view_alt">Vista del carrusel</string>
     <string name="feature_carousel_player_with_glass_enabled_alt">Jugador carrusel con Cristal activado</string>
@@ -30,7 +29,6 @@
     <string name="feature_history_statistics_alt">Estadísticas del historial</string>
     <string name="feature_history_title">Completa el historial.</string>
     <string name="feature_home_with_glass_enabled_alt">Hogar con vidrio activado</string>
-    <string name="feature_illustration_alt">ilustración</string>
     <string name="feature_light_theme_alt">Tema claro</string>
     <string name="feature_lyrics_description">Recuperar, mostrar, editar y traducir letras en tiempo real con una sincronización precisa de palabras por palabra.</string>
     <string name="feature_lyrics_title">Soporte avanzado de letras.</string>
@@ -44,7 +42,6 @@
     <string name="feature_offline_caching_title">Caché inteligente sin conexión.</string>
     <string name="feature_optional_glass_player_alt">Jugador opcional de cristal</string>
     <string name="feature_ota_updates_alt">Actualizaciones OTA</string>
-    <string name="feature_phone_frame_alt">Marco de teléfono</string>
     <string name="feature_playback_queue_alt">Cola de reproducción</string>
     <string name="feature_player_audio_bar_alt">Barra de audio del reproductor</string>
     <string name="feature_player_lyrics_alt">Letras del jugador</string>

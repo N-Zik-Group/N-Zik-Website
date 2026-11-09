@@ -1,4 +1,4 @@
-"""Vérification des ressources : python -m unittest discover -s tests -v."""
+"""Verify localization resources with python -m unittest discover -s tests -v."""
 
 from html.parser import HTMLParser
 from pathlib import Path
@@ -81,7 +81,7 @@ class StringResourcesTest(unittest.TestCase):
                         self.assertTrue("".join(entry.itertext()).strip())
                 self.assertTrue(keys)
                 self.assertEqual(len(keys), len(set(keys)))
-                # Les traductions partielles gardent le repli anglais du chargeur.
+                # Partial translations fall back to the English source.
                 self.assertFalse(set(keys) - self.source_keys)
 
     def test_every_html_reference_has_a_resource_and_every_resource_is_used(self):
@@ -111,6 +111,10 @@ class StringResourcesTest(unittest.TestCase):
             self.assertEqual(tag, "button")
             self.assertEqual(attrs["aria-expanded"], "false")
             self.assertIn(attrs["aria-controls"], page.elements_by_id)
+        _, features = page.elements_by_id["featuresDropdownTrigger"]
+        self.assertEqual(features["aria-labelledby"], "featuresNavText")
+        _, features_label = page.elements_by_id["featuresNavText"]
+        self.assertEqual(features_label["name"], "navigation_features_label")
         for trigger, current_language in (("globe", "headerLangText"), ("langSelect", "footerLangText")):
             _, attrs = page.elements_by_id[trigger]
             self.assertEqual(attrs["aria-labelledby"].split(), [current_language, "changeLanguageAction"])

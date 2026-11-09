@@ -8,7 +8,6 @@
     <string name="feature_artists_title">Подробные профили исполнителей.</string>
     <string name="feature_audio_controls_description">Настройте свой опыт с расширенными системами управления звуком, резервного копирования/восстановления и многое другое.</string>
     <string name="feature_audio_controls_title">Расширенные настройки звука.</string>
-    <string name="feature_background_alt">фон</string>
     <string name="feature_carousel_description">Наслаждайтесь уникальным, визуально потрясающим 3D карусель для воспроизведения вашей музыки.</string>
     <string name="feature_carousel_player_view_alt">Просмотр плеера карусели</string>
     <string name="feature_carousel_player_with_glass_enabled_alt">Карусель плеер с стеклом включен</string>
@@ -30,7 +29,6 @@
     <string name="feature_history_statistics_alt">Статистика истории</string>
     <string name="feature_history_title">Завершенная история.</string>
     <string name="feature_home_with_glass_enabled_alt">Главная с стеклянным включением</string>
-    <string name="feature_illustration_alt">иллюстрация</string>
     <string name="feature_light_theme_alt">Светлая тема</string>
     <string name="feature_lyrics_description">Выборка, отображение, редактирование и перевод текстов песен в режиме реального времени с точной синхронизацией слов/слов.</string>
     <string name="feature_lyrics_title">Расширенная поддержка текстов.</string>
@@ -44,7 +42,6 @@
     <string name="feature_offline_caching_title">Умное Оффлайн кэширование.</string>
     <string name="feature_optional_glass_player_alt">Необязательный Стеклянный плеер</string>
     <string name="feature_ota_updates_alt">OTA обновления</string>
-    <string name="feature_phone_frame_alt">Телефонный фрейм</string>
     <string name="feature_playback_queue_alt">Очередь воспроизведения</string>
     <string name="feature_player_audio_bar_alt">Панель аудио плеера</string>
     <string name="feature_player_lyrics_alt">Текст песни плеера</string>

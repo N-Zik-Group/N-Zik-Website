@@ -8,7 +8,6 @@
     <string name="feature_artists_title">詳細なアーティストプロフィール。</string>
     <string name="feature_audio_controls_description">高度なオーディオコントロール、バックアップ/復元機能などであなたの経験をカスタマイズします。</string>
     <string name="feature_audio_controls_title">高度なオーディオコントロール。</string>
-    <string name="feature_background_alt">背景</string>
     <string name="feature_carousel_description">ユニークな視覚的に素晴らしい3Dカルーセルビューをお楽しみください。</string>
     <string name="feature_carousel_player_view_alt">カルーセルプレイヤービュー</string>
     <string name="feature_carousel_player_with_glass_enabled_alt">ガラスが有効なカルーセルプレイヤー</string>
@@ -30,7 +29,6 @@
     <string name="feature_history_statistics_alt">履歴の統計</string>
     <string name="feature_history_title">完了の履歴</string>
     <string name="feature_home_with_glass_enabled_alt">Home-with Glass enabled</string>
-    <string name="feature_illustration_alt">イラスト</string>
     <string name="feature_light_theme_alt">明るいテーマ</string>
     <string name="feature_lyrics_description">正確な単語ごとの同期により、リアルタイムで歌詞を取得、表示、編集、翻訳します。</string>
     <string name="feature_lyrics_title">高度な歌詞サポート。</string>
@@ -44,7 +42,6 @@
     <string name="feature_offline_caching_title">スマートオフラインキャッシュ。</string>
     <string name="feature_optional_glass_player_alt">オプションのガラスプレーヤー</string>
     <string name="feature_ota_updates_alt">OTA アップデート</string>
-    <string name="feature_phone_frame_alt">電話フレーム</string>
     <string name="feature_playback_queue_alt">再生キュー</string>
     <string name="feature_player_audio_bar_alt">プレイヤーオーディオバー</string>
     <string name="feature_player_lyrics_alt">プレイヤーの歌詞</string>

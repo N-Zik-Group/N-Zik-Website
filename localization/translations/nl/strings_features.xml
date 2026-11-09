@@ -8,7 +8,6 @@
     <string name="feature_artists_title">Gedetailleerde artiest profielen.</string>
     <string name="feature_audio_controls_description">Pas je ervaring aan met geavanceerde audiocontroles, backup/herstel functies en meer.</string>
     <string name="feature_audio_controls_title">Geavanceerde audiobesturing.</string>
-    <string name="feature_background_alt">achtergrond</string>
     <string name="feature_carousel_description">Geniet van een unieke, visueel verbluffende 3D-carrousel weergave voor uw muziek afspeelt.</string>
     <string name="feature_carousel_player_view_alt">Carrousel Speler Bekijken</string>
     <string name="feature_carousel_player_with_glass_enabled_alt">Carrouselspeler met glas ingeschakeld</string>
@@ -30,7 +29,6 @@
     <string name="feature_history_statistics_alt">Statistieken geschiedenis</string>
     <string name="feature_history_title">Voltooi geschiedenis.</string>
     <string name="feature_home_with_glass_enabled_alt">Thuis met glas ingeschakeld</string>
-    <string name="feature_illustration_alt">illustratie</string>
     <string name="feature_light_theme_alt">Licht Thema</string>
     <string name="feature_lyrics_description">Ophalen, weergeven, bewerken en vertalen van songteksten in realtime met precieze woord-voor-woordsynchronisatie.</string>
     <string name="feature_lyrics_title">Ondersteuning voor geavanceerde songteksten.</string>
@@ -44,7 +42,6 @@
     <string name="feature_offline_caching_title">Smart Offline caching.</string>
     <string name="feature_optional_glass_player_alt">Optionele glazen speler</string>
     <string name="feature_ota_updates_alt">OTA updates</string>
-    <string name="feature_phone_frame_alt">Telefoon frame</string>
     <string name="feature_playback_queue_alt">Wachtrij afspelen</string>
     <string name="feature_player_audio_bar_alt">Speler audiobalk</string>
     <string name="feature_player_lyrics_alt">Speler songteksten</string>
