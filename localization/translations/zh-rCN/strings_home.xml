@@ -3,7 +3,6 @@
     <string name="hero_description">一个以YouTube音乐为歌源的开源多语言安卓音乐播放器。桌面配套应用 N-Zik Desktop Compagnon 可在 Windows 和 Linux 上访问音乐库并播放音乐。</string>
     <string name="hero_logo_alt">徽标</string>
     <string name="hero_n_zik_banner_alt">N-Zik Banner</string>
-    <string name="hero_n_zik_home_alt">N-Zik 主页</string>
     <string name="hero_n_zik_logo_alt">N-Zik 标志</string>
     <string name="navigation_artist_profiles_label">艺人资料</string>
     <string name="navigation_audio_controls_label">音频控制</string>
