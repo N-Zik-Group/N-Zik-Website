@@ -3,6 +3,7 @@
     <string name="download_companion_description">Комп\'ютерний супутник для Windows та Linux: з\'єднати його з вашим телефоном через локальну Wi-Fi (QR-код або ручний код), а потім переглянути свою бібліотеку, керуйте чергою та слухайте на великому екрані, поки ваш телефон передає звук через вбудований VLC, немає потреби інсталяції VLC. Телефон залишається єдиним джерелом істини, а супутник - це перехідний продукт на шляху до автономної програми N-Zik на сайті.</string>
     <string name="download_companion_platforms">N-Zik сумісний з робочим столом · Windows &amp; Linux</string>
     <string name="download_description">Завантажити N-Zik зараз.</string>
+    <string name="download_desktop_on_devglobe">Запуск N-Zik для комп\'ютера на DevGlobe</string>
     <string name="download_get_it_on_androidfreeware">Отримайте на AndroidFreeware</string>
     <string name="download_get_it_on_appteka">Завантажити на Appteka</string>
     <string name="download_get_it_on_f_droid">Завантажити у F-Droid</string>
@@ -13,6 +14,6 @@
     <string name="download_get_it_on_openapk">Отримайте на OpenAPK</string>
     <string name="download_get_the_desktop_companion_beta_on_github">Отримати настільну компанію (Beta) на GitHub</string>
     <string name="download_get_the_desktop_companion_on_github">Завантажте настільний супутник на GitHub</string>
-    <string name="download_launched_on_devglobe">Запущено на DevGlobe</string>
+    <string name="download_launched_on_devglobe">N-Zik запущений на DevGlobe</string>
     <string name="download_title">Слухайте свою улюблену музику</string>
 </resources>
