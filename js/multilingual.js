@@ -450,7 +450,8 @@ class Multilingual {
     const header = trigger.id === "globe";
     const border = document.getElementById("langBorder");
     const options = document.getElementById("langOption");
-    trigger.parentElement.appendChild(border);
+    const container = window.matchMedia("(max-width: 640px)").matches ? document.body : trigger.parentElement;
+    container.appendChild(border);
     options.style.top = header ? "calc(100% + 5px)" : "auto";
     options.style.bottom = header ? "auto" : "calc(100% + 5px)";
     this.languageMenuTrigger = trigger;

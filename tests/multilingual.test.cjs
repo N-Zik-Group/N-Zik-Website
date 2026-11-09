@@ -464,3 +464,25 @@ test("language trigger metadata follows the action while the visible autonym ret
   assert.equal(elements.globe.lang, "fa");
   assert.equal(elements.langSelect.lang, "fa");
 });
+
+test("the mobile header language picker uses the viewport overlay", () => {
+  const border = {};
+  const option = { dataset: { locale: "en" }, focus() {} };
+  const options = { children: [option], style: {} };
+  const body = { classList: { add() {}, remove() {} }, appendChild(child) { child.parent = this; } };
+  const desktop = { appendChild(child) { child.parent = this; } };
+  const trigger = { id: "globe", parentElement: desktop, setAttribute() {} };
+  let mobile = true;
+  const { loader } = create("en", null, [], {
+    window: { matchMedia: () => ({ matches: mobile }) },
+    document: { body, getElementById: (id) => id === "langBorder" ? border : options },
+  });
+  const event = { target: { closest: (selector) => selector === "#globe, #langSelect" ? trigger : null } };
+
+  loader.langEvent(event);
+  assert.equal(border.parent, body);
+  loader.closeLanguageMenu();
+  mobile = false;
+  loader.langEvent(event);
+  assert.equal(border.parent, desktop);
+});

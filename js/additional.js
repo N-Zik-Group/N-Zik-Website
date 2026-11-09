@@ -52,6 +52,7 @@ function detecttouch() {
 }
 
 document.addEventListener("click", (event) => multilingual.langEvent(event));
+matchMedia("(max-width: 640px)").addEventListener("change", () => multilingual.closeLanguageMenu(true));
 document.addEventListener("keydown", (event) => {
   if (event.key === "Escape" && multilingual.languageMenuTrigger) {
     event.preventDefault();
