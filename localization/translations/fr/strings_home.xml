@@ -3,7 +3,6 @@
     <string name="hero_description">N-Zik est une application Android multilingue et open source permettant d\'écouter de la musique en streaming depuis YouTube Music. N-Zik Desktop Compagnon, son application complémentaire pour ordinateur de bureau, vous permet d\'accéder à votre bibliothèque musicale et de lire vos morceaux sous Windows et Linux.</string>
     <string name="hero_logo_alt">Logo</string>
     <string name="hero_n_zik_banner_alt">N-Zik Banner</string>
-    <string name="hero_n_zik_home_alt">Accueil N-Zik</string>
     <string name="hero_n_zik_logo_alt">Logo N-Zik</string>
     <string name="navigation_artist_profiles_label">Profils d\'artistes</string>
     <string name="navigation_audio_controls_label">Contrôles audio</string>
