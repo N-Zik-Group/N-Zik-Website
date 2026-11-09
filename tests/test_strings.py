@@ -117,6 +117,7 @@ class StringResourcesTest(unittest.TestCase):
             self.assertNotIn("aria-label", attrs)
         _, action = page.elements_by_id["changeLanguageAction"]
         self.assertEqual(action["name"], "navigation_change_language")
+        self.assertIn("hidden", action)
 
     def test_videos_allow_pause_and_campaign_has_an_opaque_origin(self):
         page = TranslationReferences()

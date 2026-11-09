@@ -228,7 +228,7 @@
                     href="#feature-rewind"
                     class="feature-link"
                     name="navigation_rewind_label"
-                    >N-Zik Rewind</a
+                    >Rewind</a
                   >
                   <a
                     href="#feature-caching"
@@ -240,7 +240,7 @@
                     href="#feature-search"
                     class="feature-link"
                     name="navigation_search_label"
-                    >Smart Search</a
+                    >Search</a
                   >
                   <a
                     href="#feature-ota"
@@ -591,7 +591,7 @@
                         aria-label="Next Glass preview" data-i18n-aria-label="feature_next_glass_preview_label"
                         onclick="scrollPreview(this, 1)"
                       >❯</button>
-                      <div class="preset-carousel media-preview-carousel is-revealing up" tabindex="0" aria-label="Glass previews" data-i18n-aria-label="feature_glass_previews_label">
+                      <div class="preset-carousel media-preview-carousel is-revealing up" tabindex="0" role="group" aria-label="Glass previews" data-i18n-aria-label="feature_glass_previews_label">
                         <video
                           class="device-mockup"
                           src="./videos/glass-demo.mp4"
@@ -701,8 +701,7 @@
                           Advanced Lyrics Support.
                         </h3>
                         <p name="feature_lyrics_description" class="m-0">
-                          Fetch, display, edit, synchronize, and translate
-                          lyrics in real-time.
+                          Fetch, display, edit, and translate lyrics in real-time with precise word-by-word synchronization.
                         </p>
                       </div>
                     </div>
@@ -1049,7 +1048,7 @@
                         aria-label="Next search preview" data-i18n-aria-label="feature_next_search_preview_label"
                         onclick="scrollPreview(this, 1)"
                       >❯</button>
-                      <div class="preset-carousel media-preview-carousel is-revealing up" tabindex="0" aria-label="Search previews" data-i18n-aria-label="feature_search_previews_label">
+                      <div class="preset-carousel media-preview-carousel is-revealing up" tabindex="0" role="group" aria-label="Search previews" data-i18n-aria-label="feature_search_previews_label">
                         <div class="video-mockup-wrapper device-mockup">
                           <video
                             class="video-element"
@@ -1464,7 +1463,7 @@
                       <img
                         class="device-mockup"
                         src="./images/Screenshots/AndroidTablet.webp"
-                        alt="Android Tablet" data-i18n-alt="feature_android_tablet_alt"
+                        alt="Android tablet" data-i18n-alt="feature_android_tablet_alt"
                         loading="lazy"
                         decoding="async"
                         style="
@@ -1493,7 +1492,7 @@
                       <img
                         class="device-mockup"
                         src="./images/Screenshots/2.webp"
-                        alt="Android Mobile" data-i18n-alt="feature_android_mobile_alt"
+                        alt="Android phone" data-i18n-alt="feature_android_mobile_alt"
                         loading="lazy"
                         decoding="async"
                         style="
@@ -1656,7 +1655,7 @@
                 </li>
                 <li id="languageSelect">
                   <button type="button" id="langSelect" aria-expanded="false" aria-controls="langOption" class="fi-bs-globe" aria-labelledby="footerLangText changeLanguageAction"><span id="footerLangText" lang="en" dir="auto">English</span></button>
-                  <span id="changeLanguageAction" name="navigation_change_language" lang="en" class="screen-reader-text">Change language</span>
+                  <span id="changeLanguageAction" name="navigation_change_language" lang="en" hidden>Change language</span>
                     <div id="langBorder">
                       <div id="langOption">
                         <button type="button" data-locale="af" lang="af">Afrikaans</button>
