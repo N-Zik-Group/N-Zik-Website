@@ -3,6 +3,7 @@
     <string name="download_companion_description">Настольный компаньон для Windows и Linux: синхронизируйте его с вашим телефоном через локальный Wi-Fi (QR-код или ручной код), затем просматривайте вашу библиотеку, управление очередью и прослушивание на большом экране, в то время как телефон транслирует звук через встроенный VLC, установка не требуется. Телефон остается единственным источником истины, и компаньон является переходным продуктом на пути к автономному настольному приложению N-Zik.</string>
     <string name="download_companion_platforms">N-Zik Desktop Compagnon · Windows &amp; Linux</string>
     <string name="download_description">Скачать N-Zik Now.</string>
+    <string name="download_desktop_on_devglobe">N-Zik Desktop Compagnon запущен на DevGlobe</string>
     <string name="download_get_it_on_androidfreeware">Скачать на AndroidFreeware</string>
     <string name="download_get_it_on_appteka">Скачать на Appteka</string>
     <string name="download_get_it_on_f_droid">Получить на F-Droid</string>
@@ -13,6 +14,6 @@
     <string name="download_get_it_on_openapk">Получить на OpenAPK</string>
     <string name="download_get_the_desktop_companion_beta_on_github">Получить спутник рабочего стола (Beta) на GitHub</string>
     <string name="download_get_the_desktop_companion_on_github">Получить спутник рабочего стола на GitHub</string>
-    <string name="download_launched_on_devglobe">Запущен на DevGlobe</string>
+    <string name="download_launched_on_devglobe">N-Zik запущен на DevGlobe</string>
     <string name="download_title">Слушайте свою любимую музыку</string>
 </resources>
