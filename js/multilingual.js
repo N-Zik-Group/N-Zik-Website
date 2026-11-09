@@ -195,7 +195,7 @@ class Multilingual {
       const traditional = subtags.includes("hant") ||
         (!subtags.includes("hans") && subtags.some((part) => ["tw", "hk", "mo"].includes(part)));
       candidate = traditional ? "zh-rtw" : "zh-rcn";
-    } else if (base === "sr" && /(?:^|-)(latn|cs)(?:-|$)/.test(code)) {
+    } else if (base === "sr" && (subtags.includes("latn") || (!subtags.includes("cyrl") && subtags.includes("cs")))) {
       candidate = "sr-rcs";
     } else if (base === "pt" && /^(?:[a-z]{4}-)?br(?:-|$)/.test(subtags.join("-"))) {
       candidate = "pt-rbr";

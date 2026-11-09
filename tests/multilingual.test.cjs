@@ -28,7 +28,7 @@ test("regional browser languages resolve to an existing catalog", () => {
     zh: "zh-rCN", "zh-CN": "zh-rCN", "zh-Hans": "zh-rCN",
     "zh-TW": "zh-rTW", "zh-Hant": "zh-rTW", "zh-HK": "zh-rTW",
     "zh-Hans-TW": "zh-rCN", "zh-Hant-CN": "zh-rTW",
-    "sr-Latn-RS": "sr-rCS", "sr-CS": "sr-rCS", "sr-Cyrl-RS": "sr",
+    "sr-Latn-RS": "sr-rCS", "sr-CS": "sr-rCS", "sr-Cyrl-RS": "sr", "sr-Cyrl-CS": "sr",
     "in-ID": "id", "iw-IL": "he", "unknown-XX": "en",
   };
   for (const [browser, expected] of Object.entries(cases)) {
@@ -485,4 +485,26 @@ test("the mobile header language picker uses the viewport overlay", () => {
   mobile = false;
   loader.langEvent(event);
   assert.equal(border.parent, desktop);
+});
+
+test("an earlier loading-screen fade cannot hide a new language load", () => {
+  const additionalScript = fs.readFileSync(path.join(root, "js/additional.js"), "utf8");
+  const overlay = { style: {} };
+  const timers = new Map();
+  let nextTimer = 0;
+  const LoadingScreen = vm.runInNewContext(
+    additionalScript.split("function updateThemeIcon")[0] + "; LoadingScreen;",
+    {
+      document: { querySelector: () => overlay },
+      setTimeout(callback) { timers.set(++nextTimer, callback); return nextTimer; },
+      clearTimeout(timer) { timers.delete(timer); },
+    },
+  );
+  LoadingScreen.loaded();
+  LoadingScreen.unload();
+  for (const callback of timers.values()) callback();
+  assert.equal(overlay.style.display, "flex");
+  LoadingScreen.loaded();
+  for (const callback of timers.values()) callback();
+  assert.equal(overlay.style.display, "none");
 });

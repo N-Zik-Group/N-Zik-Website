@@ -5,14 +5,18 @@ function scrollPreview(button, step) {
 }
 
 class LoadingScreen {
+  static hideTimer;
+
   static loaded() {
     const loadingScreen = document.querySelector(".loadingScreen");
     loadingScreen.style.opacity = "0";
-    setTimeout(() => {
+    clearTimeout(this.hideTimer);
+    this.hideTimer = setTimeout(() => {
       loadingScreen.style.display = "none";
     }, 400);
   }
-  static unload(){
+  static unload() {
+    clearTimeout(this.hideTimer);
     const loadingScreen = document.querySelector(".loadingScreen");
     loadingScreen.style.opacity = "1";
     loadingScreen.style.display = "flex";
