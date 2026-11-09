@@ -14,7 +14,7 @@
     <string name="feature_carousel_player_with_glass_enabled_alt">Kolotoč s povoleným sklem</string>
     <string name="feature_carousel_title">Carousel Player View.</string>
     <string name="feature_classic_player_alt">Klasický přehrávač</string>
-    <string name="feature_compatibility_description">Užijte si svou hudbu všude! N-Zik je kompatibilní s Android Mobile, Android Tablet, Android Auto, Android Automotive a Android TV (později Wear OS).</string>
+    <string name="feature_compatibility_description">Užijte si svou hudbu všude! N-Zik je kompatibilní s Android Mobile, Android Tablet, Android Auto, Android Automotive a Android TV. Je plánována podpora Wear OS.</string>
     <string name="feature_compatibility_title">Více kompatibility zařízení.</string>
     <string name="feature_dark_theme_alt">Tmavý motiv</string>
     <string name="feature_discord_description">Ukažte svou aktuální hudební vipou zobrazením tvé skladby přímo na tvém Discordu profilu.</string>
@@ -51,7 +51,7 @@
     <string name="feature_player_with_glass_enabled_alt">Hráč se sklem povolen</string>
     <string name="feature_playlists_alt">Seznamy stop</string>
     <string name="feature_playlists_description">Snadno vytvářet, importovat, exportovat a spravovat seznamy skladeb v jednom sjednoceném rozhraní.</string>
-    <string name="feature_playlists_title">Správa playlistů.</string>
+    <string name="feature_playlists_title">Správa playlistu.</string>
     <string name="feature_previous_glass_preview_label">Předchozí náhled skla</string>
     <string name="feature_previous_search_preview_label">Předchozí náhled hledání</string>
     <string name="feature_previous_theme_preview_label">Předchozí náhled motivu</string>
