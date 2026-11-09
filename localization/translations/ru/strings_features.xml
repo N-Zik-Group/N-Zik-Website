@@ -14,7 +14,7 @@
     <string name="feature_carousel_player_with_glass_enabled_alt">Карусель плеер с стеклом включен</string>
     <string name="feature_carousel_title">Карусель просмотр игрока.</string>
     <string name="feature_classic_player_alt">Классический игрок</string>
-    <string name="feature_compatibility_description">Наслаждайтесь своей музыкой везде! N-Zik совместим с Android Mobile, Android Tablet, Android Auto, Android Automotive и Android TV. (Later Wear OS).</string>
+    <string name="feature_compatibility_description">Наслаждайтесь своей музыкой везде! N-Zik совместим с Android Mobile, Android Tablet, Android Auto, Android Automotive и Android TV. Планируется поддержка Wear OS.</string>
     <string name="feature_compatibility_title">Совместимость нескольких устройств.</string>
     <string name="feature_dark_theme_alt">Темная тема</string>
     <string name="feature_discord_description">Покажите свою текущую музыкальную vibe, показав свой музыкальный трек прямо в вашем профиле Discord.</string>
