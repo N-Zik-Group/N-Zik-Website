@@ -14,7 +14,7 @@
     <string name="feature_carousel_player_with_glass_enabled_alt">Karusellspelare med glas aktiverat</string>
     <string name="feature_carousel_title">Karusell spelare vy.</string>
     <string name="feature_classic_player_alt">Klassisk spelare</string>
-    <string name="feature_compatibility_description">Njut av din musik överallt! N-Zik är kompatibel med Android Mobile, Android Tablet, Android Auto, Android Automotive, och Android TV. (Senare Wear OS).</string>
+    <string name="feature_compatibility_description">Njut av din musik överallt! N-Zik är kompatibel med Android Mobile, Android Tablet, Android Auto, Android Automotive, och Android TV. Stöd för Wear OS är planerat.</string>
     <string name="feature_compatibility_title">Flera enhetskompatibilitet.</string>
     <string name="feature_dark_theme_alt">Mörkt tema</string>
     <string name="feature_discord_description">Visa upp din nuvarande musikkänsla genom att visa ditt spelspår direkt på din Discord-profil.</string>
@@ -51,7 +51,7 @@
     <string name="feature_player_with_glass_enabled_alt">Spelare med glas aktiverat</string>
     <string name="feature_playlists_alt">Spellistor</string>
     <string name="feature_playlists_description">Skapa, importera, exportera och hantera dina spellistor i ett enhetligt gränssnitt.</string>
-    <string name="feature_playlists_title">Hantering av spellistor.</string>
+    <string name="feature_playlists_title">Spellista Management.</string>
     <string name="feature_previous_glass_preview_label">Förhandsgranskning av föregående glas</string>
     <string name="feature_previous_search_preview_label">Föregående sökförhandsgranskning</string>
     <string name="feature_previous_theme_preview_label">Förhandsgranskning av föregående tema</string>
