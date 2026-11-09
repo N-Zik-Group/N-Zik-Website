@@ -14,7 +14,7 @@
     <string name="feature_carousel_player_with_glass_enabled_alt">Carousel player με ενεργοποιημένο το γυαλί</string>
     <string name="feature_carousel_title">Προβολή Παίκτη Carousel.</string>
     <string name="feature_classic_player_alt">Κλασικός παίκτης</string>
-    <string name="feature_compatibility_description">Απολαύστε τη μουσική σας παντού! N-Zik είναι συμβατό με Android Mobile, Android Tablet, Android Auto, Android Automotive, και Android TV. (Later Wear OS).</string>
+    <string name="feature_compatibility_description">Απολαύστε τη μουσική σας παντού! N-Zik είναι συμβατό με Android Mobile, Android Tablet, Android Auto, Android Automotive, και Android TV.</string>
     <string name="feature_compatibility_title">Πολλαπλή Συμβατότητα Συσκευών.</string>
     <string name="feature_dark_theme_alt">Σκοτεινό Θέμα</string>
     <string name="feature_discord_description">Εμφάνιση του τρέχοντος μουσικού vibe εμφανίζοντας το τραγούδι σας απευθείας στο προφίλ σας Discord.</string>
@@ -51,7 +51,7 @@
     <string name="feature_player_with_glass_enabled_alt">Παίκτης με το γυαλί ενεργοποιημένος</string>
     <string name="feature_playlists_alt">Λίστες</string>
     <string name="feature_playlists_description">Δημιουργήστε εύκολα, εισάγετε, εξάγετε, και διαχειριστείτε λίστες αναπαραγωγής σας σε μια ενοποιημένη διασύνδεση.</string>
-    <string name="feature_playlists_title">Διαχείριση Λίστες Αναπαραγωγής.</string>
+    <string name="feature_playlists_title">Διαχείριση Λίστας Αναπαραγωγής.</string>
     <string name="feature_previous_glass_preview_label">Προηγούμενη προεπισκόπηση γυαλιού</string>
     <string name="feature_previous_search_preview_label">Προηγούμενη προεπισκόπηση αναζήτησης</string>
     <string name="feature_previous_theme_preview_label">Προηγούμενη προεπισκόπηση θέματος</string>
