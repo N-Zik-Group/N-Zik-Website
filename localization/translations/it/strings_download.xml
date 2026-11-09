@@ -3,6 +3,7 @@
     <string name="download_companion_description">Il compagno desktop per Windows e Linux: abbinalo con il telefono tramite Wi-Fi locale (codice QR o codice manuale), quindi sfoglia la tua libreria, gestire la coda e ascoltare su un grande schermo mentre il telefono trasmette l\'audio attraverso un VLC incorporato, non è necessario installare VLC. Il telefono rimane la singola fonte di verità, e il compagno è un prodotto transitorio sulla strada per l\'app desktop standalone N-Zik.</string>
     <string name="download_companion_platforms">N-Zik Desktop Compagnon · Windows &amp; Linux</string>
     <string name="download_description">Scarica N-Zik Ora.</string>
+    <string name="download_desktop_on_devglobe">N-Zik Desktop Compagnon lanciato su DevGlobe</string>
     <string name="download_get_it_on_androidfreeware">Scaricalo su AndroidFreeware</string>
     <string name="download_get_it_on_appteka">Scaricalo su Appteka</string>
     <string name="download_get_it_on_f_droid">Scaricalo su F-Droid</string>
@@ -13,6 +14,6 @@
     <string name="download_get_it_on_openapk">Scaricalo su OpenAPK</string>
     <string name="download_get_the_desktop_companion_beta_on_github">Ottieni il compagno desktop (Beta) su GitHub</string>
     <string name="download_get_the_desktop_companion_on_github">Ottieni il compagno desktop su GitHub</string>
-    <string name="download_launched_on_devglobe">Lanciato su DevGlobe</string>
+    <string name="download_launched_on_devglobe">N-Zik lanciato su DevGlobe</string>
     <string name="download_title">Ascolta la tua musica preferita</string>
 </resources>
