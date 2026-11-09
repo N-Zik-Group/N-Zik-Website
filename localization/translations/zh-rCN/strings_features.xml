@@ -8,13 +8,12 @@
     <string name="feature_artists_title">详细的艺人配置文件。</string>
     <string name="feature_audio_controls_description">自定义您使用高级音频控制、备份/恢复功能的体验等等。</string>
     <string name="feature_audio_controls_title">高级音频控件。</string>
-    <string name="feature_background_alt">二. 背景</string>
     <string name="feature_carousel_description">享受一个独特的、令人惊叹的 3D 旋转屏幕来播放音乐。</string>
     <string name="feature_carousel_player_view_alt">旋转播放器视图</string>
     <string name="feature_carousel_player_with_glass_enabled_alt">启用玻璃的旋转播放器</string>
     <string name="feature_carousel_title">旋转播放器视图。</string>
     <string name="feature_classic_player_alt">经典播放器</string>
-    <string name="feature_compatibility_description">随时随地享受您的音乐！N-Zik 与 Android Mobile、Android Tablet、Android Auto、Android Auto、 Android Automotive和 Android TV 兼容。已计划支持Wear OS</string>
+    <string name="feature_compatibility_description">随时随地畅享音乐！N-Zik 支持 Android Mobile、Android Tablet、Android Auto、Android Automotive 和 Android TV。（之后将支持 Wear OS）</string>
     <string name="feature_compatibility_title">多设备兼容性。</string>
     <string name="feature_dark_theme_alt">暗色主题</string>
     <string name="feature_discord_description">直接在您的 Discord 个人资料上显示您正在播放的曲目，从而显示您当前的乐曲。</string>
@@ -30,7 +29,6 @@
     <string name="feature_history_statistics_alt">历史统计</string>
     <string name="feature_history_title">完整历史记录。</string>
     <string name="feature_home_with_glass_enabled_alt">首页玻璃已启用</string>
-    <string name="feature_illustration_alt">标示图</string>
     <string name="feature_light_theme_alt">亮色主题</string>
     <string name="feature_lyrics_description">获取，显示，编辑，实时翻译歌词，按字逐字同步准确。</string>
     <string name="feature_lyrics_title">高级歌词支持。</string>
@@ -44,7 +42,6 @@
     <string name="feature_offline_caching_title">智能离线缓存。</string>
     <string name="feature_optional_glass_player_alt">可选玻璃播放器</string>
     <string name="feature_ota_updates_alt">OTA更新</string>
-    <string name="feature_phone_frame_alt">电话框架</string>
     <string name="feature_playback_queue_alt">播放队列</string>
     <string name="feature_player_audio_bar_alt">播放器音频栏</string>
     <string name="feature_player_lyrics_alt">播放器歌词</string>
