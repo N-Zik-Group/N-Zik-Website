@@ -3,6 +3,7 @@
     <string name="download_companion_description">صاحب سطح المكتب ل Windows و Linux: إقرانه مع هاتفك عبر Wi-Fi المحلي (رمز QR أو كود يدوي)، ثم تصفح مكتبتك، إدارة قائمة الانتظار والاستماع على شاشة كبيرة بينما يعمل هاتفك على بث الصوت من خلال VLC المضمنة، لا تحتاج إلى تثبيت VLC. يبقى الهاتف المصدر الوحيد للحقيقة، والرافق هو منتج انتقالي في الطريق إلى تطبيق سطح المكتب المستقل N-Zik.</string>
     <string name="download_companion_platforms">دمجون سطح المكتب N-Zik · ويندوز &amp; لينكس</string>
     <string name="download_description">تحميل N-Zik الآن.</string>
+    <string name="download_desktop_on_devglobe">مدمجون سطح المكتب N-Zik تم إطلاقه على DevGlobe</string>
     <string name="download_get_it_on_androidfreeware">احصل عليه على AndroidFreeware</string>
     <string name="download_get_it_on_appteka">الحصول عليها على Appteka</string>
     <string name="download_get_it_on_f_droid">احصل عليه على F-Droid</string>
@@ -13,6 +14,6 @@
     <string name="download_get_it_on_openapk">احصل عليه على OpenAPK</string>
     <string name="download_get_the_desktop_companion_beta_on_github">احصل على رفيق سطح المكتب (بيتا) على GitHub</string>
     <string name="download_get_the_desktop_companion_on_github">احصل على رفيق سطح المكتب على GitHub</string>
-    <string name="download_launched_on_devglobe">تم إطلاقه على DevGlobe</string>
+    <string name="download_launched_on_devglobe">N-Zik أطلق على DevGlobe</string>
     <string name="download_title">الاستماع إلى الموسيقى المفضلة لديك</string>
 </resources>
