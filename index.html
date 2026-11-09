@@ -575,13 +575,13 @@
                         class="carousel-btn prev"
                         aria-label="Previous Glass preview" data-i18n-aria-label="feature_previous_glass_preview_label"
                         onclick="scrollPreview(this, -1)"
-                      >❮</button>
+                      ><span aria-hidden="true" dir="ltr">❮</span></button>
                       <button
                         type="button"
                         class="carousel-btn next"
                         aria-label="Next Glass preview" data-i18n-aria-label="feature_next_glass_preview_label"
                         onclick="scrollPreview(this, 1)"
-                      >❯</button>
+                      ><span aria-hidden="true" dir="ltr">❯</span></button>
                       <div class="preset-carousel media-preview-carousel is-revealing up" tabindex="0" role="group" aria-label="Glass previews" data-i18n-aria-label="feature_glass_previews_label">
                         <video
                           class="device-mockup"
@@ -805,14 +805,14 @@
                         aria-label="Previous theme preview" data-i18n-aria-label="feature_previous_theme_preview_label"
                         onclick="scrollPreview(this, -1)"
                       >
-                        ❮
+                        <span aria-hidden="true" dir="ltr">❮</span>
                       </button>
                       <button
                         class="carousel-btn next"
                         aria-label="Next theme preview" data-i18n-aria-label="feature_next_theme_preview_label"
                         onclick="scrollPreview(this, 1)"
                       >
-                        ❯
+                        <span aria-hidden="true" dir="ltr">❯</span>
                       </button>
                       <div class="preset-carousel is-revealing up" tabindex="0" role="group" aria-labelledby="theme-presets-title">
                         <img
@@ -1032,13 +1032,13 @@
                         class="carousel-btn prev"
                         aria-label="Previous search preview" data-i18n-aria-label="feature_previous_search_preview_label"
                         onclick="scrollPreview(this, -1)"
-                      >❮</button>
+                      ><span aria-hidden="true" dir="ltr">❮</span></button>
                       <button
                         type="button"
                         class="carousel-btn next"
                         aria-label="Next search preview" data-i18n-aria-label="feature_next_search_preview_label"
                         onclick="scrollPreview(this, 1)"
-                      >❯</button>
+                      ><span aria-hidden="true" dir="ltr">❯</span></button>
                       <div class="preset-carousel media-preview-carousel is-revealing up" tabindex="0" role="group" aria-label="Search previews" data-i18n-aria-label="feature_search_previews_label">
                         <div class="video-mockup-wrapper device-mockup">
                           <video
@@ -1731,7 +1731,7 @@
       const multilingual = new Multilingual(languages);
 
       (async () => {
-        await multilingual.loadStrings();
+        if (!(await multilingual.loadStrings())) return;
         multilingual.updateDom();
         multilingual.updateLanguageLabels();
         multilingual.setAttribute(document.documentElement);

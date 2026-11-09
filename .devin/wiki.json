@@ -72,7 +72,7 @@
           "content": "How strings are loaded: localization/source/ and localization/translations/<locale>/, js/multilingual.js fetch flow, footer language selector in index.html."
         },
         {
-          "content": "Locale coverage: the 48 selectable locales match the directories under localization/translations/. Missing localized values fall back to the matching English source catalog."
+          "content": "The 48 selectable locales match the directories under localization/translations/. English is rendered from localization/source/. The English export is an optional comparison reference for identifying English copies in other locales."
         }
       ]
     },

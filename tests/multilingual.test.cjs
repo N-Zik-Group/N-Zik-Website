@@ -115,7 +115,7 @@ test("loading catalogs preserves partial translations and the English fallback",
   assert.equal(loader.getString("feature_glass_title"), "English Glass");
   assert.equal(loader.getString("download_title"), "Téléchargement français");
   assert.equal(loader.getString("footer_repository"), "English repository");
-  assert.equal(requested.length, 8);
+  assert.equal(requested.length, 12);
   assert.equal(rootAttrs.get("lang"), "fr");
   assert.equal(rootAttrs.get("dir"), "ltr");
   assert.equal(imgAttrs.get("alt"), "English Glass");
@@ -127,10 +127,89 @@ test("loading catalogs preserves partial translations and the English fallback",
   assert.equal(rootAttrs.get("dir"), "rtl");
   await loader.loadStrings("fr");
   assert.equal(rootAttrs.get("dir"), "ltr");
+  const requestsBeforeEnglish = requested.length;
   await loader.loadStrings("en");
   assert.equal(loader.getString("hero_description"), "English home");
   assert.equal(rootAttrs.get("lang"), "en");
-  assert.ok(!requested.some((file) => file.startsWith("localization/translations/en/")));
+  assert.equal(requested.length, requestsBeforeEnglish);
+});
+
+test("English export copies use the current source while matching words in mixed catalogs keep their locale", async () => {
+  const current = {
+    feature_compatibility_description: "Support for Wear OS is planned.",
+    feature_playlists_title: "Playlist Management.",
+    hero_n_zik_banner_alt: "N-Zik Banner",
+    navigation_modern_ui_label: "Modern UI",
+    footer_repository: "Repository",
+    hero_description: "An open-source app.",
+  };
+  const englishExport = {
+    ...current,
+    feature_compatibility_description: "(Later Wear OS).",
+    feature_playlists_title: "Playlists Management.",
+  };
+  const catalogs = {
+    source: current,
+    "translations/en": englishExport,
+    "translations/ba": englishExport,
+    "translations/ar": { ...englishExport, hero_description: "تطبيق مفتوح المصدر." },
+    "translations/de": { ...englishExport, hero_description: "Eine Open-Source-App." },
+  };
+  let releaseBashkir;
+  const bashkirPending = new Promise((resolve) => { releaseBashkir = resolve; });
+  let delayBashkir = false;
+  let referenceAvailable = true;
+  const environment = {
+    fetch: async (file) => {
+      const [, catalog, name] = file.match(/^localization\/(.+)\/([^/]+)$/);
+      if (delayBashkir && catalog === "translations/ba") await bashkirPending;
+      const exists = catalog in catalogs && (catalog !== "translations/en" || referenceAvailable || name !== "strings_footer.xml");
+      return { ok: exists, status: exists ? 200 : 404, text: async () => JSON.stringify(name === "strings_home.xml" ? catalogs[catalog] : {}) };
+    },
+    DOMParser: class {
+      parseFromString(json) {
+        return {
+          querySelector: () => null,
+          getElementsByTagName: () => Object.entries(JSON.parse(json)).map(([name, textContent]) => ({
+            getAttribute: (attribute) => attribute === "name" ? name : null,
+            textContent,
+          })),
+        };
+      }
+    },
+  };
+  const { loader } = create("en", null, [], environment);
+  await loader.loadStrings("ba");
+  assert.equal(loader.getString("feature_compatibility_description"), current.feature_compatibility_description);
+  assert.equal(loader.getString("feature_playlists_title"), current.feature_playlists_title);
+  assert.equal(loader.stringLanguage("footer_repository"), "en");
+
+  await loader.loadStrings("ar");
+  assert.equal(loader.stringLanguage("hero_n_zik_banner_alt"), "en");
+  assert.equal(loader.stringLanguage("navigation_modern_ui_label"), "en");
+  assert.equal(loader.getString("hero_description"), catalogs["translations/ar"].hero_description);
+  assert.equal(loader.stringLanguage("hero_description"), "ar");
+
+  delayBashkir = true;
+  const staleLoad = loader.loadStrings("ba");
+  assert.equal(loader.language, "ar");
+  assert.equal(loader.stringLanguage("hero_description"), "ar");
+  assert.equal(await loader.loadStrings("de"), true);
+  releaseBashkir();
+  assert.equal(await staleLoad, false);
+  assert.equal(loader.language, "de");
+  assert.equal(loader.stringLanguage("footer_repository"), "de");
+  assert.equal(loader.stringLanguage("navigation_modern_ui_label"), "de");
+  assert.equal(loader.getString("feature_playlists_title"), current.feature_playlists_title);
+
+  referenceAvailable = false;
+  const { loader: partialReference } = create("en", null, [], environment);
+  await partialReference.loadStrings("ba");
+  assert.equal(partialReference.stringLanguage("footer_repository"), "ba");
+  assert.equal(partialReference.getString("feature_playlists_title"), current.feature_playlists_title);
+  referenceAvailable = true;
+  await partialReference.loadStrings("ba");
+  assert.equal(partialReference.stringLanguage("footer_repository"), "en");
 });
 
 test("accessible names retain the language and direction of fallback text", () => {
@@ -199,14 +278,16 @@ test("known English copies get English metadata while shared brand wording keeps
   const hero = createElement({ name: "hero_description" });
   const preset = createElement({ "data-i18n-alt": "feature_theme_preset_one_alt" });
   const carousel = createElement({ role: "group", "data-i18n-aria-label": "feature_glass_previews_label" });
+  const arrow = createElement({ "data-i18n-aria-label": "feature_previous_glass_preview_label" });
   const brand = createElement({ name: "download_companion_platforms" });
   const badge = createElement({ name: "download_launched_on_devglobe" });
   const features = createElement({ name: "navigation_features_label" });
-  const { loader } = create("ar", null, [hero, preset, carousel, brand, badge, features]);
+  const { loader } = create("ar", null, [hero, preset, carousel, arrow, brand, badge, features]);
   loader.defaultValues = {
     hero_description: "N-Zik is a multilingual, open-source Android app.",
     feature_theme_preset_one_alt: "Theme Preset 1",
     feature_glass_previews_label: "Glass previews",
+    feature_previous_glass_preview_label: "Previous Glass preview",
     download_companion_platforms: "N-Zik Desktop Compagnon · Windows & Linux",
     download_launched_on_devglobe: "N-Zik launched on DevGlobe",
     navigation_features_label: "Features",
@@ -222,6 +303,8 @@ test("known English copies get English metadata while shared brand wording keeps
   assert.equal(preset.attrs.dir, "ltr");
   assert.equal(carousel.attrs.lang, "en");
   assert.equal(carousel.attrs.dir, undefined);
+  assert.equal(arrow.attrs.lang, "en");
+  assert.equal(arrow.attrs.dir, undefined);
   assert.equal(brand.textContent, loader.defaultValues.download_companion_platforms);
   assert.equal(brand.attrs.lang, "ar");
   assert.equal(brand.attrs.dir, "rtl");
@@ -240,6 +323,57 @@ test("known English copies get English metadata while shared brand wording keeps
   assert.equal(badge.attrs.lang, "ar");
 });
 
+
+test("known English wording variants fall back only in their catalog and key", () => {
+  const read = (catalog, name) => fs.readFileSync(path.join(root, "localization", catalog, "strings_features.xml"), "utf8")
+    .match(new RegExp(`<string name="${name}">([^<]*)</string>`))[1];
+  const cases = [
+    ["ja", "feature_home_with_glass_enabled_alt", "alt", "feature_compatibility_title"],
+    ["nl", "feature_offline_caching_title", "name", "feature_compatibility_title"],
+  ];
+  for (const [locale, key, attribute, translatedKey] of cases) {
+    const attrs = attribute === "alt" ? { "data-i18n-alt": key } : { name: key };
+    const element = {
+      getAttribute: (name) => attrs[name],
+      setAttribute: (name, value) => { attrs[name] = value; },
+      replaceChildren(...nodes) { this.textContent = nodes.join(""); },
+    };
+    const { loader } = create(locale, null, [element]);
+    const source = read("source", key);
+    const variant = read(`translations/${locale}`, key);
+    const translated = read(`translations/${locale}`, translatedKey);
+    assert.notEqual(variant, source);
+    loader.defaultValues = { [key]: source, [translatedKey]: read("source", translatedKey) };
+    loader.selectedValues = { [key]: variant, [translatedKey]: translated };
+
+    loader.updateDom();
+    assert.equal(attribute === "alt" ? attrs.alt : element.textContent, source);
+    assert.equal(attrs.lang, "en");
+    assert.equal(attrs.dir, "ltr");
+    assert.equal(loader.getString(translatedKey), translated);
+    assert.equal(loader.stringLanguage(translatedKey), locale);
+
+    loader.language = "de";
+    assert.equal(loader.getString(key), variant);
+    assert.equal(loader.stringLanguage(key), "de");
+  }
+});
+
+test("Cyrillic text in the Serbian Latin catalog retains its script metadata", () => {
+  const { loader } = create("sr-Latn");
+  loader.defaultValues = { navigation_profiles_label: "Profiles", navigation_home_label: "Home" };
+  loader.selectedValues = {
+    feature_profiles_title: "Више профила.",
+    navigation_profiles_label: "Profiles",
+    navigation_home_label: "Home",
+    navigation_settings_label: "Podešavanja",
+  };
+
+  assert.equal(loader.stringLanguage("feature_profiles_title"), "sr-Cyrl");
+  assert.equal(loader.stringLanguage("navigation_profiles_label"), "en");
+  assert.equal(loader.stringLanguage("navigation_home_label"), "en");
+  assert.equal(loader.stringLanguage("navigation_settings_label"), "sr-Latn");
+});
 
 test("an unavailable source catalog restores the HTML fallback after a language change", async () => {
   const title = {
@@ -299,9 +433,34 @@ test("language selection works without local storage", async () => {
   });
   assert.equal(loader.language, "fr");
   loader.closeLanguageMenu = () => {};
-  loader.loadStrings = async (lang) => { loader.language = lang; };
+  loader.loadStrings = async (lang) => {
+    loader.loadVersion++;
+    loader.language = lang;
+    return true;
+  };
   loader.updateLanguageLabels = () => {};
   await loader.changeLang({ dataset: { locale: "ar" } });
   assert.equal(loader.language, "ar");
   assert.equal(loader.constructor.readPreference("language"), "ar");
+});
+
+test("language trigger metadata follows the action while the visible autonym retains its language", () => {
+  const option = { dataset: { locale: "fa" }, lang: "fa", textContent: "Persian" };
+  const trigger = () => ({ setAttribute(key, value) { this[key] = value; } });
+  const elements = { langOption: { children: [option] }, headerLangText: {}, footerLangText: {},
+    globe: trigger(), langSelect: trigger() };
+  const { loader } = create("fa", null, [], { document: { getElementById: (id) => elements[id] } });
+  loader.defaultValues = { navigation_change_language: "Change language" };
+
+  loader.updateLanguageLabels();
+  assert.equal(elements.globe.lang, "en");
+  assert.equal(elements.langSelect.lang, "en");
+  assert.equal(elements.headerLangText.lang, "fa");
+  assert.equal(elements.footerLangText.lang, "fa");
+  assert.equal(elements.globe.dir, undefined);
+
+  loader.selectedValues = { navigation_change_language: "Localized action" };
+  loader.updateLanguageLabels();
+  assert.equal(elements.globe.lang, "fa");
+  assert.equal(elements.langSelect.lang, "fa");
 });
