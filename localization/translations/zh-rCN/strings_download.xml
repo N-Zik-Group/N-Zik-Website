@@ -3,6 +3,7 @@
     <string name="download_companion_description">Windows和Linux桌面配套：将它与您的手机与本地Wi-Fi连接(QR码或手动代码)，然后浏览您的库； 当您的手机通过嵌入的 VLC 流音频时，管理队列并在大屏幕上收听音频，而不需要安装 VLC 。 电话仍然是唯一的真理来源，配套是通往独立的 N-Zik 桌面应用的过渡产品。</string>
     <string name="download_companion_platforms">N-Zik 桌面Compagnon Windows &amp; Linux</string>
     <string name="download_description">立即下载N-Zik。</string>
+    <string name="download_desktop_on_devglobe">N-Zik 桌面Compagnon 在DevGlobe上启动</string>
     <string name="download_get_it_on_androidfreeware">在 AndroidFreeware 上获取</string>
     <string name="download_get_it_on_appteka">在 Appteka 上获取</string>
     <string name="download_get_it_on_f_droid">在 F-Droid 上获取</string>
@@ -13,6 +14,6 @@
     <string name="download_get_it_on_openapk">在 OpenAPK 上获取</string>
     <string name="download_get_the_desktop_companion_beta_on_github">在 GitHub 上获取桌面同伴(Beta)</string>
     <string name="download_get_the_desktop_companion_on_github">在 GitHub 上获取桌面配对</string>
-    <string name="download_launched_on_devglobe">在 DevGlobe 上启动</string>
+    <string name="download_launched_on_devglobe">N-Zik在DevGlobe上启动</string>
     <string name="download_title">聆听您最喜欢的音乐</string>
 </resources>
