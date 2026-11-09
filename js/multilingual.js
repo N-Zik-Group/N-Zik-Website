@@ -6,6 +6,27 @@ class Multilingual {
     "strings_footer.xml",
   ];
 
+  static sessionPreferences = new Map();
+
+  static readPreference(key) {
+    if (this.sessionPreferences.has(key)) return this.sessionPreferences.get(key);
+    try {
+      return localStorage.getItem(key);
+    } catch {
+      return null;
+    }
+  }
+
+  static writePreference(key, value) {
+    const text = String(value);
+    this.sessionPreferences.set(key, text);
+    try {
+      localStorage.setItem(key, text);
+    } catch {
+      // Keep the preference for the current page when storage is unavailable.
+    }
+  }
+
   language;
   defaultValues = {};
   fixedNames = new Set();
@@ -15,10 +36,10 @@ class Multilingual {
   loadVersion = 0;
   constructor(supported) {
     this.supported = supported;
-    const saved = localStorage.getItem("language");
+    const saved = Multilingual.readPreference("language");
     this.language = this.resolveLanguage(saved || navigator.language || navigator.userLanguage || "en");
     if (saved && saved !== this.language) {
-      localStorage.setItem("language", this.language);
+      Multilingual.writePreference("language", this.language);
     }
   }
 
@@ -154,9 +175,18 @@ class Multilingual {
         }
       }
     });
-    for (const video of document.body.querySelectorAll?.("video[aria-labelledby]") ?? []) {
-      const heading = document.getElementById(video.getAttribute("aria-labelledby"));
-      if (heading) video.setAttribute("lang", heading.getAttribute("lang") || "en");
+    const labelled = 'video[aria-labelledby], [role="group"][aria-labelledby]';
+    for (const el of document.body.querySelectorAll(labelled)) {
+      const label = document.getElementById(el.getAttribute("aria-labelledby"));
+      const language = label?.getAttribute("lang");
+      if (language) el.setAttribute("lang", language);
+    }
+    const imageLinks = 'a[href]:not([aria-label]):not([aria-labelledby])';
+    for (const link of document.body.querySelectorAll(imageLinks)) {
+      const image = link.firstElementChild;
+      if (link.childElementCount !== 1 || link.textContent.trim() || !image.matches("img[data-i18n-alt]:not([aria-hidden=true])")) continue;
+      const language = image.getAttribute("lang");
+      if (language) link.setAttribute("lang", language);
     }
     if (typeof updateThemeIcon === "function") updateThemeIcon();
   }
@@ -184,7 +214,7 @@ class Multilingual {
     const frame = document.getElementById?.("keep-android-open-banner");
     if (!frame || frame.dataset.locale === locale) return;
     const dismissKey = "kao-banner-hidden";
-    const dismissedAt = Number(localStorage.getItem(dismissKey));
+    const dismissedAt = Number(Multilingual.readPreference(dismissKey));
     if (Date.now() - dismissedAt < 30 * 24 * 60 * 60 * 1000) return;
     frame.dataset.locale = locale;
     frame.hidden = false;
@@ -193,7 +223,7 @@ class Multilingual {
       window.addEventListener("message", (event) => {
         if (frame.hidden || event.source !== frame.contentWindow || event.origin !== "null") return;
         if (event.data?.type === "campaign-banner-dismissed") {
-          localStorage.setItem(dismissKey, String(Date.now()));
+          Multilingual.writePreference(dismissKey, Date.now());
           frame.hidden = true;
           frame.removeAttribute("srcdoc");
         } else if (event.data?.type === "campaign-banner-height" && Number.isFinite(event.data.height)) {
@@ -216,7 +246,7 @@ class Multilingual {
   async changeLang(option) {
     const lang = option.dataset.locale;
     this.closeLanguageMenu(true);
-    localStorage.setItem("language", lang);
+    Multilingual.writePreference("language", lang);
     LoadingScreen.unload();
     try {
       await this.loadStrings(lang);

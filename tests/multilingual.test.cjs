@@ -15,7 +15,7 @@ function create(browserLanguage = "en", savedLanguage = null, elements = [], env
     window: {},
     navigator: { language: browserLanguage },
     localStorage: { getItem: (key) => storage.get(key) || null, setItem: (key, value) => storage.set(key, value) },
-    document: { createElement: (tagName) => ({ tagName }), body: { getElementsByTagName: () => elements } },
+    document: { createElement: (tagName) => ({ tagName }), body: { getElementsByTagName: () => elements, querySelectorAll: () => [] } },
     ...environment,
   });
   return { loader: new Multilingual(supported), storage };
@@ -90,7 +90,7 @@ test("le chargement par catalogue conserve les traductions partielles et le repl
     "localization/translations/fr/strings_download.xml": { download_title: "Téléchargement français" },
   };
   const { loader } = create("fr", null, [image], {
-    document: { body: { getElementsByTagName: () => [image] }, documentElement: { setAttribute: (name, value) => rootAttrs.set(name, value) } },
+    document: { body: { getElementsByTagName: () => [image], querySelectorAll: () => [] }, documentElement: { setAttribute: (name, value) => rootAttrs.set(name, value) } },
     fetch: async (file) => {
       requested.push(file);
       return { ok: file in catalogues, status: file in catalogues ? 200 : 404, text: async () => file };
@@ -144,6 +144,10 @@ test("les textes de repli gardent leur langue et leur direction dans les noms ac
   const action = element({ name: "navigation_change_language" });
   const heading = element({ name: "feature_lyrics_title" });
   const video = element({ "aria-labelledby": "demo-lyrics-title" });
+  const group = element({ "aria-labelledby": "demo-lyrics-title" });
+  const image = { ...element({ "data-i18n-alt": "feature_lyrics_title" }), matches: () => true };
+  const imageLink = { ...element({}), childElementCount: 1, firstElementChild: image, textContent: " " };
+  const textLink = { ...element({}), childElementCount: 1, firstElementChild: image, textContent: "العربية" };
   const footer = {};
   const header = {};
   const elements = {
@@ -155,7 +159,10 @@ test("les textes de repli gardent leur langue et leur direction dans les noms ac
   const { loader } = create("ar", null, [], {
     document: {
       getElementById: (id) => elements[id],
-      body: { getElementsByTagName: () => [action, video, heading], querySelectorAll: () => [video] },
+      body: {
+        getElementsByTagName: () => [action, video, group, heading, imageLink, image, textLink],
+        querySelectorAll: (selector) => selector.startsWith("video") ? [video, group] : [imageLink, textLink],
+      },
     },
   });
   loader.defaultValues = {
@@ -168,6 +175,9 @@ test("les textes de repli gardent leur langue et leur direction dans les noms ac
   assert.equal(action.getAttribute("lang"), "en");
   assert.equal(heading.getAttribute("dir"), "ltr");
   assert.equal(video.getAttribute("lang"), "en");
+  assert.equal(group.getAttribute("lang"), "en");
+  assert.equal(imageLink.getAttribute("lang"), "en");
+  assert.equal(textLink.getAttribute("lang"), undefined);
   assert.equal(footer.textContent, "العربية");
   assert.equal(footer.lang, "ar");
   assert.equal(header.lang, "ar");
@@ -221,4 +231,83 @@ test("un catalogue source indisponible restaure le repli HTML après un changeme
   assert.equal(title.attrs.lang, "en");
   assert.equal(image.attrs.alt, "Classic player");
   assert.equal(image.attrs.lang, "en");
+});
+
+
+test("le choix de langue fonctionne sans stockage local", async () => {
+  const fail = () => { throw new Error("Storage disabled"); };
+  const { loader } = create("fr-FR", null, [], {
+    localStorage: { getItem: fail, setItem: fail },
+    LoadingScreen: { unload() {}, loaded() {} },
+  });
+  assert.equal(loader.language, "fr");
+  loader.closeLanguageMenu = () => {};
+  loader.loadStrings = async (lang) => { loader.language = lang; };
+  loader.updateLanguageLabels = () => {};
+  await loader.changeLang({ dataset: { locale: "ar" } });
+  assert.equal(loader.language, "ar");
+  assert.equal(loader.constructor.readPreference("language"), "ar");
+});
+
+
+test("le menu des fonctionnalités retrouve son libellé en passant à la largeur mobile", () => {
+  const additional = fs.readFileSync(path.join(root, "js/additional.js"), "utf8");
+  const listeners = {};
+  let observeSections;
+  let changeWidth;
+  const mobile = {
+    matches: false,
+    addEventListener: (_, listener) => { changeWidth = listener; },
+  };
+  const span = (name) => {
+    const attrs = { name };
+    const classes = new Set();
+    return {
+      style: {},
+      offsetWidth: 100,
+      classList: { add: (value) => classes.add(value), contains: (value) => classes.has(value) },
+      setAttribute: (key, value) => { attrs[key] = value; },
+      getAttribute: (key) => attrs[key],
+    };
+  };
+  const wrapper = {
+    children: [span("navigation_features_label")],
+    style: {},
+    offsetWidth: 100,
+    querySelector() { return this.children.find((child) => !child.classList.contains("leaving")); },
+    appendChild(child) { this.children.push(child); },
+    replaceChildren(child) { this.children = [child]; },
+  };
+  const section = { id: "feature-glass" };
+  const glass = { getAttribute: () => "navigation_glass_label", textContent: "Glass" };
+  const toggle = { classList: { toggle() {} }, getAttribute: () => "", setAttribute() {}, addEventListener() {} };
+  const elements = { featuresNavTextWrapper: wrapper, featuresDropdownTrigger: toggle, toggledark: toggle };
+  const translations = { navigation_features_label: "Fonctionnalités", navigation_glass_label: "Glass" };
+  vm.runInNewContext(additional, {
+    document: {
+      body: { classList: { contains: () => false } },
+      getElementById: (id) => elements[id],
+      querySelectorAll: (selector) => selector === ".feature-extended[id]" ? [section] : [],
+      querySelector: () => glass,
+      createElement: () => span(),
+      addEventListener: (type, listener) => { listeners[type] = listener; },
+    },
+    window: { addEventListener() {} },
+    matchMedia: (query) => query.includes("max-width") ? mobile : { matches: false, addEventListener() {} },
+    IntersectionObserver: class {
+      constructor(listener) { observeSections = listener; }
+      observe() {}
+    },
+    multilingual: { getString: (key) => translations[key], stringLanguage: () => "fr", directionFor: () => "ltr" },
+    setTimeout() {},
+  });
+  listeners.DOMContentLoaded();
+  observeSections([{ target: section, isIntersecting: true }]);
+  assert.equal(wrapper.querySelector().textContent, "Glass");
+  mobile.matches = true;
+  changeWidth();
+  assert.equal(wrapper.children.length, 1);
+  assert.equal(wrapper.querySelector().textContent, "Fonctionnalités");
+  observeSections([{ target: section, isIntersecting: true }]);
+  assert.equal(wrapper.querySelector().textContent, "Fonctionnalités");
 });

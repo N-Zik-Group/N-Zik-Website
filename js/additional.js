@@ -35,7 +35,7 @@ updateThemeIcon();
 function toggleDark() {
   const dark = document.body.classList.contains("dark");
   document.body.classList.toggle("dark");
-  localStorage.setItem("dark", !dark);
+  Multilingual.writePreference("dark", !dark);
   updateThemeIcon();
 }
 document.getElementById("toggledark").addEventListener("keydown", (event) => {
@@ -87,14 +87,28 @@ document.addEventListener("DOMContentLoaded", function() {
   if (!featuresNavTextWrapper || !featureSections.length) return;
 
   const defaultKey = "navigation_features_label";
+  const mobileNavigation = matchMedia("(max-width: 768px)");
 
   function updateNavText(key, fallback) {
-    // Disable text updating on mobile entirely.
-    // It will just stay as "Features".
-    if (window.innerWidth <= 768) return;
-
+    const mobile = mobileNavigation.matches;
+    if (mobile) {
+      key = defaultKey;
+      fallback = "Features";
+    }
     const currentSpan = featuresNavTextWrapper.querySelector('span:not(.leaving)');
     if (currentSpan?.getAttribute("name") === key) return;
+
+    const newSpan = document.createElement('span');
+    newSpan.setAttribute("name", key);
+    newSpan.textContent = multilingual.getString(key) || fallback;
+    newSpan.lang = multilingual.stringLanguage(key);
+    newSpan.dir = multilingual.directionFor(newSpan.lang);
+    if (mobile) {
+      featuresNavTextWrapper.style.transition = '';
+      featuresNavTextWrapper.style.width = 'auto';
+      featuresNavTextWrapper.replaceChildren(newSpan);
+      return;
+    }
     
     // 1. Lock the current width
     const currentWidth = featuresNavTextWrapper.offsetWidth;
@@ -113,11 +127,6 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 
     // 3. Prepare the new span to slide in
-    const newSpan = document.createElement('span');
-    newSpan.setAttribute("name", key);
-    newSpan.textContent = multilingual.getString(key) || fallback;
-    newSpan.lang = multilingual.stringLanguage(key);
-    newSpan.dir = multilingual.directionFor(newSpan.lang);
     newSpan.style.transform = 'translateY(100%)';
     newSpan.style.opacity = '0';
     
@@ -132,11 +141,7 @@ document.addEventListener("DOMContentLoaded", function() {
     void featuresNavTextWrapper.offsetWidth; // force reflow
 
     // 6. Animate everything to the new state
-    if (window.innerWidth > 768) {
-      featuresNavTextWrapper.style.transition = 'width 0.3s cubic-bezier(0.4, 0, 0.2, 1)';
-    } else {
-      featuresNavTextWrapper.style.transition = 'none';
-    }
+    featuresNavTextWrapper.style.transition = 'width 0.3s cubic-bezier(0.4, 0, 0.2, 1)';
     featuresNavTextWrapper.style.width = targetWidth + 'px';
 
     newSpan.style.transform = 'translateY(0)';
@@ -173,6 +178,9 @@ document.addEventListener("DOMContentLoaded", function() {
   }, { threshold: 0.4 });
 
   featureSections.forEach(sec => observer.observe(sec));
+  mobileNavigation.addEventListener("change", () => {
+    if (mobileNavigation.matches) updateNavText(defaultKey, "Features");
+  });
 
   function setFeaturesOpen(open) {
     featuresDropdown.classList.toggle("show", open);

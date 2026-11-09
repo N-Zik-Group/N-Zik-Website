@@ -74,7 +74,7 @@
     onload="LoadingScreen.loaded()"
   >
     <script>
-      const preference = localStorage.getItem('dark');
+      const preference = Multilingual.readPreference('dark');
       if (preference == 'true') {
         document.body.classList.add('dark');
       } else if (
