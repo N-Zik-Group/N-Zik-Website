@@ -3,6 +3,7 @@
     <string name="download_companion_description">Windows ve Linux için masaüstü yardımcı uygulaması: Uygulamayı yerel Wi-Fi ağı üzerinden telefonunuzla eşleştirin (QR kodu veya manuel kod kullanarak), ardından müzik kitaplığınızı tarayın, çalma kuyruğunu yönetin ve telefonunuz yerleşik VLC aracılığıyla sesi aktarırken büyük ekranda dinleyin; VLC yüklemenize gerek yoktur. Telefon, tek güvenilir kaynak olmaya devam eder; bu yardımcı uygulama ise bağımsız N-Zik masaüstü uygulamasına geçiş sürecinde bir ara üründür.</string>
     <string name="download_companion_platforms">N-Zik Masaüstü Yardımcısı · Windows &amp; Linux</string>
     <string name="download_description">N-Zik’i şimdi indirin.</string>
+    <string name="download_desktop_on_devglobe">N-Zik Masaüstü Yardımcısı, DevGlobe\'da yayınlandı</string>
     <string name="download_get_it_on_androidfreeware">AndroidFreeware\'den indirin</string>
     <string name="download_get_it_on_appteka">Appteka\'dan indirin</string>
     <string name="download_get_it_on_f_droid">F-Droid’den indir</string>
@@ -13,6 +14,6 @@
     <string name="download_get_it_on_openapk">OpenAPK\'dan indirin</string>
     <string name="download_get_the_desktop_companion_beta_on_github">GitHub\'dan masaüstü yardımcısı (Beta) uygulamasını indirin</string>
     <string name="download_get_the_desktop_companion_on_github">GitHub\'dan masaüstü uygulamasını indirin</string>
-    <string name="download_launched_on_devglobe">DevGlobe\'da yayınlandı</string>
+    <string name="download_launched_on_devglobe">N-Zik DevGlobe\'da yayınlandı</string>
     <string name="download_title">En sevdiğiniz müzikleri dinleyin</string>
 </resources>

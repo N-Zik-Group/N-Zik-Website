@@ -3,6 +3,7 @@
     <string name="download_companion_description">Windows ja Linuxin työpöytäkumppani: paranna se puhelimesi kanssa paikallisen Wi-Fi:n kautta (QR-koodi tai manuaalinen koodi) ja selaa kirjastoasi, hallitse jonoa ja kuuntele suurella näytöllä, kun puhelin virtaa ääntä sulautetun VLC:n kautta, VLC-asennusta ei tarvita. Puhelin pysyy yhtenä totuuden lähteenä, ja kumppani on välivaiheen tuote matkalla itsenäiseen N-Zik työpöytäsovellukseen.</string>
     <string name="download_companion_platforms">N-Zik Työpöytä Compagnon · Windows &amp; Linux</string>
     <string name="download_description">Lataa N-Zik Nyt.</string>
+    <string name="download_desktop_on_devglobe">N-Zik DevGlobessa lanseerattu työpöytä Compagnon</string>
     <string name="download_get_it_on_androidfreeware">Hanki se AndroidFreeware</string>
     <string name="download_get_it_on_appteka">Hanki se Apptekasta</string>
     <string name="download_get_it_on_f_droid">Hanki se F-Droidista</string>
