@@ -3,6 +3,7 @@
     <string name="download_companion_description">Le compagnon de bureau pour Windows et Linux : associez-le à votre téléphone via le Wi-Fi local (code QR ou code manuel), puis parcourez votre bibliothèque, gérez la file d\'attente et écoutez sur un grand écran pendant que votre téléphone diffuse l\'audio via un VLC intégré, sans installation VLC requise. Le téléphone reste la seule source de vérité, et le compagnon est un produit transitoire sur le chemin vers l\'application de bureau autonome N-Zik.</string>
     <string name="download_companion_platforms">N-Zik Desktop Compagnon · Windows &amp; Linux</string>
     <string name="download_description">Téléchargez N-Zik dès maintenant.</string>
+    <string name="download_desktop_on_devglobe">Lancement de N-Zik Desktop Compagnon sur DevGlobe</string>
     <string name="download_get_it_on_androidfreeware">Obtenez-le sur AndroidFreeware</string>
     <string name="download_get_it_on_appteka">Obtenez-le sur Appteka</string>
     <string name="download_get_it_on_f_droid">Obtenez-le sur F-Droid</string>
@@ -13,6 +14,6 @@
     <string name="download_get_it_on_openapk">Obtenez-le sur OpenAPK</string>
     <string name="download_get_the_desktop_companion_beta_on_github">Obtenez le compagnon de bureau (Beta) sur GitHub</string>
     <string name="download_get_the_desktop_companion_on_github">Obtenez le compagnon de bureau sur GitHub</string>
-    <string name="download_launched_on_devglobe">Lancé sur DevGlobe</string>
+    <string name="download_launched_on_devglobe">Lancement de N-Zik sur DevGlobe</string>
     <string name="download_title">Écoutez votre musique préférée</string>
 </resources>
