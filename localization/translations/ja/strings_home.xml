@@ -3,7 +3,6 @@
     <string name="hero_description">N-Zik は、YouTube Music から音楽をストリーミングするための、多言語のオープンソースの Android アプリです。 N-Zik Desktop Compagnon、そのデスクトップコンパニオンは、WindowsとLinuxにライブラリと再生をもたらします。</string>
     <string name="hero_logo_alt">ロゴ</string>
     <string name="hero_n_zik_banner_alt">N-Zik Banner</string>
-    <string name="hero_n_zik_home_alt">N-Zik Home</string>
     <string name="hero_n_zik_logo_alt">N-Zik ロゴ</string>
     <string name="navigation_artist_profiles_label">アーティストプロフィール</string>
     <string name="navigation_audio_controls_label">オーディオコントロール</string>
