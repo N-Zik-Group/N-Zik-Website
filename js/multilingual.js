@@ -175,7 +175,7 @@ class Multilingual {
         }
       }
     });
-    const labelled = 'video[aria-labelledby], [role="group"][aria-labelledby]';
+    const labelled = 'video[aria-labelledby], [role="group"][aria-labelledby], #homeLink[aria-labelledby]';
     for (const el of document.body.querySelectorAll(labelled)) {
       const label = document.getElementById(el.getAttribute("aria-labelledby"));
       const language = label?.getAttribute("lang");

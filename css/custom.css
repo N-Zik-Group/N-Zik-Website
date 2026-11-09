@@ -508,7 +508,12 @@ body.dark .section-dropdown {
   }
 
   .home-text {
-    display: none !important;
+    position: absolute;
+    inline-size: 1px;
+    block-size: 1px;
+    overflow: hidden;
+    clip-path: inset(50%);
+    white-space: nowrap;
   }
   .home-icon {
     display: block !important;
@@ -517,13 +522,40 @@ body.dark .section-dropdown {
   }
 
   .nav-text-slider {
-    max-width: 110px;
+    min-inline-size: 0;
+    white-space: normal;
   }
 
   .nav-text-slider > span {
-    text-overflow: ellipsis;
-    overflow: hidden;
+    overflow-wrap: anywhere;
     transform: none !important; /* Disable vertical slide (push) on mobile, just crossfade */
+  }
+}
+
+@media (max-width: 400px) {
+  .site-header {
+    padding-inline: 4px !important;
+  }
+
+  .site-header .container {
+    padding-inline: 0;
+  }
+
+  .site-header-inner {
+    gap: 8px !important;
+  }
+
+  .header-nav {
+    min-inline-size: 0;
+    gap: 6px !important;
+  }
+
+  #featuresDropdownTrigger {
+    min-inline-size: 0;
+  }
+
+  #featuresDropdownTrigger svg {
+    flex-shrink: 0;
   }
 }
 
@@ -574,11 +606,21 @@ body.dark .section-dropdown {
 
 .localized-badge-icon img {
   position: absolute;
-  width: 539%;
+  /* The store PNGs are 388 × 150. Show an 84 × 84 logo-only window. */
+  width: 461.9%;
   max-width: none;
   height: auto;
-  top: -56%;
-  left: -56%;
+  top: -38.1%;
+  left: -46.43%;
+}
+
+/* These two marks are offset within their original artwork. */
+.localized-badge-icon img[src$="/F-Droid.png"] {
+  left: -40.48%;
+}
+
+.localized-badge-icon img[src$="/IzzyOnDroid.png"] {
+  left: -51.19%;
 }
 
 .localized-badge--devglobe {

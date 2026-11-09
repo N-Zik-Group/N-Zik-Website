@@ -131,7 +131,7 @@
             >
               <a
                 href="#hero"
-                id="homeLink"
+                id="homeLink" aria-labelledby="homeNavText"
                 style="
                   color: var(--color);
                   text-decoration: none;
@@ -149,9 +149,9 @@
                   width="16"
                   height="16"
                   style="display: none"
-                  alt="N-Zik Home" data-i18n-alt="hero_n_zik_home_alt"
+                  alt="N-Zik Home" data-i18n-alt="hero_n_zik_home_alt" aria-hidden="true"
                 />
-                <span class="home-text" name="navigation_home_label">Home</span>
+                <span id="homeNavText" class="home-text" name="navigation_home_label">Home</span>
               </a>
               <div style="position: relative" class="nav-dropdown-container">
                 <button
