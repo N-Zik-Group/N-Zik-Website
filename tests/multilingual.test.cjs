@@ -145,9 +145,12 @@ test("les textes de repli gardent leur langue et leur direction dans les noms ac
   const heading = element({ name: "feature_lyrics_title" });
   const video = element({ "aria-labelledby": "demo-lyrics-title" });
   const group = element({ "aria-labelledby": "demo-lyrics-title" });
-  const image = { ...element({ "data-i18n-alt": "feature_lyrics_title" }), matches: () => true };
+  const image = { ...element({ "data-i18n-alt": "feature_lyrics_title" }), matches: (selector) => selector.startsWith("img") };
   const imageLink = { ...element({}), childElementCount: 1, firstElementChild: image, textContent: " " };
   const textLink = { ...element({}), childElementCount: 1, firstElementChild: image, textContent: "العربية" };
+  const badgeLabel = element({ name: "download_get_it_on_github" });
+  const badge = { matches: (selector) => selector === ".localized-badge", lastElementChild: badgeLabel };
+  const badgeLink = { ...element({}), childElementCount: 1, firstElementChild: badge, textContent: "Get it on GitHub" };
   const footer = {};
   const header = {};
   const elements = {
@@ -160,14 +163,15 @@ test("les textes de repli gardent leur langue et leur direction dans les noms ac
     document: {
       getElementById: (id) => elements[id],
       body: {
-        getElementsByTagName: () => [action, video, group, heading, imageLink, image, textLink],
-        querySelectorAll: (selector) => selector.startsWith("video") ? [video, group] : [imageLink, textLink],
+        getElementsByTagName: () => [action, video, group, heading, imageLink, image, textLink, badgeLabel],
+        querySelectorAll: (selector) => selector.startsWith("video") ? [video, group] : [imageLink, textLink, badgeLink],
       },
     },
   });
   loader.defaultValues = {
     navigation_change_language: "Change language",
     feature_lyrics_title: "Advanced Lyrics Support.",
+    download_get_it_on_github: "Get it on GitHub",
   };
   loader.updateDom();
   loader.updateLanguageLabels();
@@ -178,6 +182,8 @@ test("les textes de repli gardent leur langue et leur direction dans les noms ac
   assert.equal(group.getAttribute("lang"), "en");
   assert.equal(imageLink.getAttribute("lang"), "en");
   assert.equal(textLink.getAttribute("lang"), undefined);
+  assert.equal(badgeLabel.textContent, "Get it on GitHub");
+  assert.equal(badgeLink.getAttribute("lang"), "en");
   assert.equal(footer.textContent, "العربية");
   assert.equal(footer.lang, "ar");
   assert.equal(header.lang, "ar");

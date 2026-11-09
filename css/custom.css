@@ -543,6 +543,55 @@ body.dark .section-dropdown {
   margin-left: 0 !important;
 }
 
+/* Keep only the service mark visible from the original badge artwork. */
+.localized-badge {
+  display: inline-flex;
+  box-sizing: border-box;
+  inline-size: min(200px, 100%);
+  min-block-size: 58px;
+  align-items: center;
+  gap: 10px;
+  padding: 6px 10px;
+  border: 1px solid #a4a4a4;
+  border-radius: 9px;
+  background: #000;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.25;
+  text-align: start;
+  vertical-align: middle;
+  overflow-wrap: anywhere;
+}
+
+.localized-badge-icon {
+  display: block;
+  position: relative;
+  flex: 0 0 36px;
+  block-size: 36px;
+  overflow: hidden;
+}
+
+.localized-badge-icon img {
+  position: absolute;
+  width: 539%;
+  max-width: none;
+  height: auto;
+  top: -56%;
+  left: -56%;
+}
+
+.localized-badge--devglobe {
+  background: #0e1113;
+  border-color: #2a3236;
+}
+
+.localized-badge--devglobe .localized-badge-icon img {
+  width: 412.5%;
+  top: -17.5%;
+  left: -17.5%;
+}
+
 /* Hero: keep the DevGlobe badges on their own line, below the store badges */
 .hero-cta- br {
   display: none;

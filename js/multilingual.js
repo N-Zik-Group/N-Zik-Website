@@ -181,11 +181,13 @@ class Multilingual {
       const language = label?.getAttribute("lang");
       if (language) el.setAttribute("lang", language);
     }
-    const imageLinks = 'a[href]:not([aria-label]):not([aria-labelledby])';
-    for (const link of document.body.querySelectorAll(imageLinks)) {
-      const image = link.firstElementChild;
-      if (link.childElementCount !== 1 || link.textContent.trim() || !image.matches("img[data-i18n-alt]:not([aria-hidden=true])")) continue;
-      const language = image.getAttribute("lang");
+    const links = 'a[href]:not([aria-label]):not([aria-labelledby])';
+    for (const link of document.body.querySelectorAll(links)) {
+      if (link.childElementCount !== 1) continue;
+      const child = link.firstElementChild;
+      const label = child.matches(".localized-badge") ? child.lastElementChild : child;
+      if (label === child && (link.textContent.trim() || !child.matches("img[data-i18n-alt]:not([aria-hidden=true])"))) continue;
+      const language = label.getAttribute("lang");
       if (language) link.setAttribute("lang", language);
     }
     if (typeof updateThemeIcon === "function") updateThemeIcon();
