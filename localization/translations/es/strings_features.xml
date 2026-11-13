@@ -19,7 +19,6 @@
     <string name="feature_discord_description">Muestra tu vibe musical actual mostrando tu pista de reproducción directamente en tu perfil de Discord.</string>
     <string name="feature_discord_rich_presence_live_alt">Discord RPC Live</string>
     <string name="feature_discord_rich_presence_settings_alt">Configuración RPC de Discord</string>
-    <string name="feature_glass_credits">Créditos de la aplicación Android Glast:</string>
     <string name="feature_glass_description">El cristal está apagado en instalaciones frescas. En Configuración, elige presentaciones nativas, exclusivas para contornos o vidrio por categoría y ajusta la calidad de renderizado. El cristal puede aumentar el renderizado y el uso de la batería; reduce su calidad o desactívelo para adaptarse a su dispositivo.</string>
     <string name="feature_glass_effect_demonstration_label">Demostración de efecto de cristal</string>
     <string name="feature_glass_previews_label">Vista previa de cristal</string>
