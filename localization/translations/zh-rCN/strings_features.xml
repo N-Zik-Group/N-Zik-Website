@@ -19,7 +19,6 @@
     <string name="feature_discord_description">直接在您的 Discord 个人资料上显示您正在播放的曲目，从而显示您当前的乐曲。</string>
     <string name="feature_discord_rich_presence_live_alt">Discord RPC Live</string>
     <string name="feature_discord_rich_presence_settings_alt">Discord RPC 设置</string>
-    <string name="feature_glass_credits">Android 应用程序玻璃积分：</string>
     <string name="feature_glass_description">玻璃在新的安装上处于关闭状态。在设置中，按类别选择原生、等距或玻璃表示并调整渲染质量。 玻璃可能会增加渲染工作和电池使用；降低其质量或禁用它来适应您的设备。</string>
     <string name="feature_glass_effect_demonstration_label">玻璃效果演示</string>
     <string name="feature_glass_previews_label">玻璃预览</string>
