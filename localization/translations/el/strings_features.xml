@@ -19,7 +19,6 @@
     <string name="feature_discord_description">Εμφάνιση του τρέχοντος μουσικού vibe εμφανίζοντας το τραγούδι σας απευθείας στο προφίλ σας Discord.</string>
     <string name="feature_discord_rich_presence_live_alt">Discord RPC Live</string>
     <string name="feature_discord_rich_presence_settings_alt">Ρυθμίσεις Discord RPC</string>
-    <string name="feature_glass_credits">Android app Glass credits:</string>
     <string name="feature_glass_description">Στις Ρυθμίσεις, επιλέξτε εγγενή, μόνο περίγραμμα ή γυάλινη παρουσίαση ανά κατηγορία και ρυθμίστε την ποιότητα απόδοσης . Το γυαλί μπορεί να αυξήσει την απόδοση εργασίας και τη χρήση της μπαταρίας, να μειώσει την ποιότητά του ή να την απενεργοποιήσει ώστε να ταιριάζει στη συσκευή σας.</string>
     <string name="feature_glass_effect_demonstration_label">Επίδειξη γυαλιού εφέ</string>
     <string name="feature_glass_previews_label">Προεπισκοπήσεις γυαλιού</string>
