@@ -19,7 +19,6 @@
     <string name="feature_discord_description">Ukažte svou aktuální hudební vipou zobrazením tvé skladby přímo na tvém Discordu profilu.</string>
     <string name="feature_discord_rich_presence_live_alt">Discord RPC Live</string>
     <string name="feature_discord_rich_presence_settings_alt">Nastavení Discordu RPC</string>
-    <string name="feature_glass_credits">Android app Glass kredity:</string>
     <string name="feature_glass_description">Skleněné sklo je vypnuté při čerstvých instalacích. V Nastavení, zvolte nativní, pouze povrchovou nebo skleněnou prezentaci podle kategorií a upravte kvalitu vykreslování. Skleněné sklo může zvýšit vykreslování a využití baterie; snížit jeho kvalitu nebo ho vypnout tak, aby vyhovovalo vašemu zařízení.</string>
     <string name="feature_glass_effect_demonstration_label">Prokázání skleněného efektu</string>
     <string name="feature_glass_previews_label">Skleněné náhledy</string>
