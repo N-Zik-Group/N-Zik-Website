@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="footer_font_credit">Font av Xiaomi Inc.</string>
-    <string name="footer_font_license">MiSans skrifttypen lisens</string>
-    <string name="footer_icon_credits">Ikon kreditt</string>
+    <string name="footer_credits">Krediteringer og lisenser</string>
     <string name="footer_issue_tracker">Sak sporing</string>
     <string name="footer_releases">Utgivelser</string>
     <string name="footer_repository">Kodelager</string>
