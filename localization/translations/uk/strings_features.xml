@@ -19,7 +19,6 @@
     <string name="feature_discord_description">Показує ваше поточне музичне посилання, показуючи трек прямо на вашому Discord профілі.</string>
     <string name="feature_discord_rich_presence_live_alt">Discord RPC Live</string>
     <string name="feature_discord_rich_presence_settings_alt">Налаштування Discord RPC</string>
-    <string name="feature_glass_credits">Кредити для роботи з ОС Android:</string>
     <string name="feature_glass_description">Скло вимкнено на свіжі інсталяції. В налаштуваннях, налаштування налаштування налаштування налаштування визначають, тільки контуром або \"склян\" за допомогою категорії і налаштування якості візуалізації. Скло може збільшити роботу з споживанням батареї; знизити якість або вимкнути його на костюм пристрою.</string>
     <string name="feature_glass_effect_demonstration_label">Демонстрація ефектів скла</string>
     <string name="feature_glass_previews_label">Попередній перегляд скла</string>
