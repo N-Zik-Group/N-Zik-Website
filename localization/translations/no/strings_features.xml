@@ -19,7 +19,6 @@
     <string name="feature_discord_description">Vis frem din nåværende musikalske vibe ved å vise spillesporet direkte på Discord profilen din.</string>
     <string name="feature_discord_rich_presence_live_alt">Discord RPC Live</string>
     <string name="feature_discord_rich_presence_settings_alt">Innstillinger for Discord RPC</string>
-    <string name="feature_glass_credits">Android app Glass credits:</string>
     <string name="feature_glass_description">Glass er av på ferske installasjoner. I innstillinger velger du native, kontekstbaserte eller glassfrie presentasjoner ved kategorisering og juster gjengivelseskvaliteten. Glass kan øke gjengivelsesarbeid og batteriforbruk, redusere kvaliteten eller deaktivere det for å passe enheten din.</string>
     <string name="feature_glass_effect_demonstration_label">demonstrasjon av glasseffekt</string>
     <string name="feature_glass_previews_label">Glass forhåndsvisninger</string>
