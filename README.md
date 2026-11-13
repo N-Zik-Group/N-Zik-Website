@@ -137,6 +137,10 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for setup, verification and pull requests
 
 # 👀 Status
 
+[![Add to N-Zik RoadMap](https://github.com/N-Zik-Group/N-Zik-Website/actions/workflows/mobile-roadmap.yml/badge.svg)](https://github.com/N-Zik-Group/N-Zik-Website/actions/workflows/mobile-roadmap.yml)
+
+[N-Zik mobile roadmap](https://github.com/orgs/N-Zik-Group/projects/1)
+
 [![Refresh contributor grids](https://github.com/N-Zik-Group/N-Zik-Website/actions/workflows/readme-contributors.yml/badge.svg)](https://github.com/N-Zik-Group/N-Zik-Website/actions/workflows/readme-contributors.yml)
 
 [![Website checks](https://github.com/N-Zik-Group/N-Zik-Website/actions/workflows/tests.yml/badge.svg)](https://github.com/N-Zik-Group/N-Zik-Website/actions/workflows/tests.yml)  
