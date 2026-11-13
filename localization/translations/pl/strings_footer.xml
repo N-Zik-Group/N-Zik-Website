@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="footer_font_credit">Font by Xiaomi Inc.</string>
-    <string name="footer_font_license">Licencja czcionki MiSans</string>
-    <string name="footer_icon_credits">Kredyty ikon</string>
+    <string name="footer_credits">Kredyty i licencje</string>
     <string name="footer_issue_tracker">Śledzenie problemów</string>
     <string name="footer_releases">Wydania</string>
     <string name="footer_repository">Repozytorium</string>
