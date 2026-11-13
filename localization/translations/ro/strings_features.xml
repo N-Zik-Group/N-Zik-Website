@@ -19,7 +19,6 @@
     <string name="feature_discord_description">Arătați-vă din viba ta muzicală curentă prin afișarea piesei tale de redare direct pe profilul tău Discord.</string>
     <string name="feature_discord_rich_presence_live_alt">Discord RPC Live</string>
     <string name="feature_discord_rich_presence_settings_alt">Setări RPC Discord</string>
-    <string name="feature_glass_credits">Credite Android Sticlă:</string>
     <string name="feature_glass_description">Sticla este dezactivată pe instalări proaspete. În setări, alegeţi prezentarea nativă, doar-în-contor sau sticla pe categorii şi ajustaţi calitatea randamentului. Sticla poate crește randarea muncii și utilizarea bateriei; poate scădea calitatea sau o poate dezactiva pentru a se potrivi cu dispozitivul dvs.</string>
     <string name="feature_glass_effect_demonstration_label">Demonstraţie pentru efectul sticlei</string>
     <string name="feature_glass_previews_label">Previzualizări pentru sticlă</string>
