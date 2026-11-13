@@ -16,10 +16,6 @@
     standalone N-Zik desktop app.
   </p>
   <p>
-    <strong>Note:</strong> This project is based on the website from
-    <a href="https://github.com/fast4x/RiMusic">RiMusic</a>.
-  </p>
-  <p>
     <strong>N-Zik</strong> is a side project I originally built for myself and friends, not chasing glory.
     It's grown a bit since then, which is cool.
   </p>
@@ -87,7 +83,7 @@ Glass is optional and disabled on fresh installations. Enable it in Settings, ch
   <a href="videos/glass-demo.mp4">🎬 Watch the Glass demo</a>
 </div>
 
-Glass credits: [Square / Convx Project](https://github.com/Lelonio/Square) (GPL-3.0) and [Kyant0 AndroidLiquidGlass / Backdrop](https://github.com/Kyant0/AndroidLiquidGlass) (Apache-2.0).
+See the [N-Zik credits](https://github.com/N-Zik-Group/N-Zik/blob/main/ComposeN-Zik/src/androidMain/res/raw/credits.md) for the Glass license notices.
 
 # 🌐 Translations
 
@@ -101,7 +97,22 @@ Glass credits: [Square / Convx Project](https://github.com/Lelonio/Square) (GPL-
 
 ## Contributors
 
-[![Contributors](https://crowdin-stats.rewake.org/embed/29f72ed2-fc01-4570-8c8f-3e6e9acbaf0c/contributors.svg?limit=100&unit=strings&avatarSize=35&theme=dark&bg=transparent&text=f4efff&muted=b8a9ca&accent=8d5cff&border=transparent)](https://crowdin.com/project/N-Zik)
+<!-- crowdin-contributors:start -->
+<p align="center">
+<a href="https://crowdin.com/profile/babapro123agent"><img src="https://crowdin-static.cf-downloads.crowdin.com/avatar/17628336/medium/652a4ba8122a453346351b024913fd24_default.png" width="54" height="54" alt="babapro123agent" title="babapro123agent" /></a>
+<a href="https://crowdin.com/profile/ebisadeghi81362647"><img src="https://crowdin-static.cf-downloads.crowdin.com/avatar/17301554/medium/890d19d37674fddaf0e70d7e15f9145f.jpeg" width="54" height="54" alt="Ebi Sadeghi (Behnam)" title="Ebi Sadeghi (Behnam)" /></a>
+<a href="https://crowdin.com/profile/floot727"><img src="https://crowdin-static.cf-downloads.crowdin.com/avatar/17413824/medium/eefda7cd518f1f4e9f292cef645ca112.jpeg" width="54" height="54" alt="Floot" title="Floot" /></a>
+<a href="https://crowdin.com/profile/LeonDayi"><img src="https://crowdin-static.cf-downloads.crowdin.com/avatar/17519450/medium/0a7d52edd7725d4d9d3366b86401d46e.jpg" width="54" height="54" alt="Leon Dayı" title="Leon Dayı" /></a>
+<a href="https://crowdin.com/profile/manuel09"><img src="https://crowdin-static.cf-downloads.crowdin.com/avatar/17179874/medium/74fa7d43eb181ca8f68d611f7f379e44.png" width="54" height="54" alt="manuel09" title="manuel09" /></a>
+<a href="https://crowdin.com/profile/Mickael81"><img src="https://crowdin-static.cf-downloads.crowdin.com/avatar/16589059/medium/65fcdfc7892c0e034a5b24fcba44b471_default.png" width="54" height="54" alt="Mickael81" title="Mickael81" /></a>
+<a href="https://crowdin.com/profile/Nick806"><img src="https://crowdin-static.cf-downloads.crowdin.com/avatar/17910183/medium/234b8a1b1b91ba19e30891e033975024.jpeg" width="54" height="54" alt="Nicola Zamprogno" title="Nicola Zamprogno" /></a>
+<a href="https://crowdin.com/profile/NEVARLeVrai"><img src="https://crowdin-static.cf-downloads.crowdin.com/avatar/16131012/medium/847885a012bc64ae85091c750fe095b0.jpg" width="54" height="54" alt="NΞVΛR" title="NΞVΛR" /></a>
+<a href="https://crowdin.com/profile/OrangeZXZ"><img src="https://crowdin-static.cf-downloads.crowdin.com/avatar/16130898/medium/63a28f52887ba3835eb7cc7ef828ec5b.png" width="54" height="54" alt="OrangeZXZ" title="OrangeZXZ" /></a>
+<a href="https://crowdin.com/profile/siggi1984"><img src="https://crowdin-static.cf-downloads.crowdin.com/avatar/15963157/medium/af6f94fe7cea3595b77a2a8b41433d03.png" width="54" height="54" alt="siggi1984" title="siggi1984" /></a>
+<a href="https://crowdin.com/profile/Usia"><img src="https://crowdin-static.cf-downloads.crowdin.com/avatar/16236470/medium/315b1ebbd38e0f7e41d44bee752afa33.jpg" width="54" height="54" alt="Usia" title="Usia" /></a>
+<a href="https://crowdin.com/profile/yrrad8"><img src="https://crowdin-static.cf-downloads.crowdin.com/avatar/16884921/medium/26b03f3f453a0e021552026b04acfd3c_default.png" width="54" height="54" alt="yrrad8" title="yrrad8" /></a>
+</p>
+<!-- crowdin-contributors:end -->
 
 ## 🌍 Help Translate
 
@@ -170,30 +181,32 @@ python -B -m unittest discover -s tests -v
 node --test tests/*.test.cjs
 ```
 
-# 🫂 Acknowledgements
 
-### 🛠 Based on / Inspired by:
+# 👀 Status
 
-- [**RiMusic**](https://github.com/fast4x/RiMusic): The website this project is based on.
-- [**ViMusic**](https://github.com/vfsfitvnm/ViMusic)
+[![Refresh contributor grids](https://github.com/N-Zik-Group/N-Zik-Website/actions/workflows/readme-contributors.yml/badge.svg)](https://github.com/N-Zik-Group/N-Zik-Website/actions/workflows/readme-contributors.yml)
 
-### 🎨 Design & UI Contributions:
+[![Website checks](https://github.com/N-Zik-Group/N-Zik-Website/actions/workflows/tests.yml/badge.svg)](https://github.com/N-Zik-Group/N-Zik-Website/actions/workflows/tests.yml)  
+[![Copilot](https://img.shields.io/badge/Copilot-View%20runs-blue)](https://github.com/N-Zik-Group/N-Zik-Website/actions/workflows/agents/copilot-pull-request-reviewer)  
+[![CodeQL - Code Quality](https://github.com/N-Zik-Group/N-Zik-Website/actions/workflows/github-code-quality/codeql/badge.svg)](https://github.com/N-Zik-Group/N-Zik-Website/actions/workflows/github-code-quality/codeql)  
+[![CodeQL](https://github.com/N-Zik-Group/N-Zik-Website/actions/workflows/github-code-scanning/codeql/badge.svg)](https://github.com/N-Zik-Group/N-Zik-Website/actions/workflows/github-code-scanning/codeql)
 
-- The app's Glass adaptations draw on [**Square / Convx Project**](https://github.com/Lelonio/Square), licensed under GPL-3.0, and [**Kyant0 / AndroidLiquidGlass (Backdrop)**](https://github.com/Kyant0/AndroidLiquidGlass), whose backdrop sources are separately licensed under Apache-2.0. These credits describe the Android app's implementation, not the website's rendering.
-- Current banner and logo [**OrangeZXZ**](https://github.com/OrangeZXZ), [**NEVARLeVrai**](https://github.com/NEVARLeVrai)
+# 👥 Contributors
 
-### 🌍 Platform & Ecosystem:
+<!-- project-contributors:start -->
+<p align="center">
+<a href="https://github.com/NEVARLeVrai"><img src="https://avatars.githubusercontent.com/u/63956787?v=4" width="54" height="54" alt="NEVARLeVrai" title="NEVARLeVrai" /></a>
+</p>
+<!-- project-contributors:end -->
 
-- [**Crowdin**](https://crowdin.com/): Community translation platform.
-- [**Vercel**](https://vercel.com/): Hosting.
+# 🎖️ Credits
+
+See the [N-Zik credits](https://github.com/N-Zik-Group/N-Zik/blob/main/ComposeN-Zik/src/androidMain/res/raw/credits.md) for the website and Android app.
+
+Made with ❤️ by the N-Zik Group community · Project license: GPLv3 - see [LICENSE](LICENSE)
 
 # ⚠️ Disclaimer
 
-This project has no relation to the original author of [RiMusic](https://github.com/fast4x/RiMusic).
-
-Furthermore, its contents are not affiliated with, funded, authorized, endorsed by, or in any way associated with YouTube, Google LLC, or any of its affiliates or subsidiaries.
+The site's contents are not affiliated with, funded, authorized, endorsed by, or in any way associated with YouTube, Google LLC, or any of its affiliates or subsidiaries.
 
 Any trademarks, service marks, trade names, or other intellectual property rights used in this project remain the property of their respective owners.
-
-Made with ❤️ by [NEVARLeVrai](https://github.com/NEVARLeVrai)
-Licensed under GPLv3 - see [LICENSE](LICENSE)
