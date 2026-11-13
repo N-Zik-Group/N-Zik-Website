@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="footer_credits">الاعتمادات والتراخيص</string>
     <string name="footer_issue_tracker">تعقب المشكلة</string>
     <string name="footer_releases">الإصدارات</string>
     <string name="footer_repository">المستودع</string>

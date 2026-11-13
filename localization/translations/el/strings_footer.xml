@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="footer_credits">Πιστώσεις και άδειες</string>
     <string name="footer_issue_tracker">Παρακολούθηση θεμάτων</string>
     <string name="footer_releases">Εκδόσεις</string>
     <string name="footer_repository">Αποθετήριο</string>

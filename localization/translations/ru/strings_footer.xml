@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="footer_credits">Кредиты и лицензии</string>
     <string name="footer_issue_tracker">Трекер задач</string>
     <string name="footer_releases">Релизы</string>
     <string name="footer_repository">Репозиторий</string>
