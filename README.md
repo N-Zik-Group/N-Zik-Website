@@ -167,6 +167,10 @@ node --test tests/*.test.cjs
 ```
 
 
+# 👥 Contributors
+
+[![GitHub contributors](https://contrib.rocks/image?repo=N-Zik-Group/N-Zik-Website)](https://github.com/N-Zik-Group/N-Zik-Website/graphs/contributors)
+
 # 🎖️ Credits
 
 See the [N-Zik credits](https://github.com/N-Zik-Group/N-Zik/blob/main/ComposeN-Zik/src/androidMain/res/raw/credits.md) for the website and Android app.
