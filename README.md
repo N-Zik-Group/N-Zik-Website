@@ -177,4 +177,4 @@ The site's contents are not affiliated with, funded, authorized, endorsed by, or
 
 Any trademarks, service marks, trade names, or other intellectual property rights used in this project remain the property of their respective owners.
 
-Made with ❤️ by the N-Zik Group community · Licensed under [GPLv3](https://www.gnu.org/licenses/gpl-3.0)
+Made with ❤️ by the N-Zik Group community · Licensed under GPLv3 - see [LICENSE](LICENSE)
