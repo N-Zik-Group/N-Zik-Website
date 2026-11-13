@@ -166,6 +166,9 @@ python -B -m unittest discover -s tests -v
 node --test tests/*.test.cjs
 ```
 
+
+# 🎖️ Credits
+
 See the [N-Zik credits](https://github.com/N-Zik-Group/N-Zik/blob/main/ComposeN-Zik/src/androidMain/res/raw/credits.md) for the website and Android app.
 
 # ⚠️ Disclaimer
