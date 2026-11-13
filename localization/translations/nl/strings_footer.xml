@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="footer_font_credit">Lettertype van Xiaomi Inc.</string>
-    <string name="footer_font_license">MiSans lettertype licentie</string>
-    <string name="footer_icon_credits">Pictogram credits</string>
+    <string name="footer_credits">Credits en licenties</string>
     <string name="footer_issue_tracker">Probleem met tracker</string>
     <string name="footer_releases">Releases</string>
     <string name="footer_repository">Bewaarplaats</string>
