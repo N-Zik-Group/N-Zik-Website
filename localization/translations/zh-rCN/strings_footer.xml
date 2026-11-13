@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="footer_font_credit">字体由 Xiaomi 公司</string>
-    <string name="footer_font_license">MiSans 字体许可证</string>
-    <string name="footer_icon_credits">图标点数</string>
+    <string name="footer_credits">信用和许可证</string>
     <string name="footer_issue_tracker">问题反馈</string>
     <string name="footer_releases">版本发布</string>
     <string name="footer_repository">源代码</string>
