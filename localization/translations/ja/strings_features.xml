@@ -19,7 +19,6 @@
     <string name="feature_discord_description">Discordプロフィールに直接トラックを表示することで、現在の音楽的な雰囲気を披露しましょう。</string>
     <string name="feature_discord_rich_presence_live_alt">Discord RPC Live</string>
     <string name="feature_discord_rich_presence_settings_alt">Discord RPCの設定</string>
-    <string name="feature_glass_credits">Android アプリの Glass credits:</string>
     <string name="feature_glass_description">format@@0で、カテゴリ別にネイティブ、輪郭のみ、またはガラスプレゼンテーションを選択し、レンダリングの品質を調整します。 ガラスはレンダリング作業とバッテリーの使用を増やし、品質を下げたり、デバイスに合わせて無効にしたりすることがあります。</string>
     <string name="feature_glass_effect_demonstration_label">ガラス効果のデモ</string>
     <string name="feature_glass_previews_label">ガラスのプレビュー</string>
