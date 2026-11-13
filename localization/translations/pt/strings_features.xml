@@ -19,7 +19,6 @@
     <string name="feature_discord_description">Mostre a sua música atual exibindo sua música diretamente no seu perfil do Discord.</string>
     <string name="feature_discord_rich_presence_live_alt">Discord RPC Live</string>
     <string name="feature_discord_rich_presence_settings_alt">Configurações do Discord RPC</string>
-    <string name="feature_glass_credits">Créditos de Vidro do app Android:</string>
     <string name="feature_glass_description">O vidro está desativado em instalações novas. Em Configurações, escolha nativo, somente conteúdo ou apresentação de vidro por categoria e ajuste a qualidade de renderização. O vidro pode aumentar o trabalho e o uso da bateria; diminuir sua qualidade ou desativá-lo para adequar ao seu dispositivo.</string>
     <string name="feature_glass_effect_demonstration_label">Demonstração de efeito vidro</string>
     <string name="feature_glass_previews_label">Pré-visualizações de vidro</string>
