@@ -167,6 +167,10 @@ node --test tests/*.test.cjs
 ```
 
 
+# 👀 Status
+
+[![Website checks](https://github.com/N-Zik-Group/N-Zik-Website/actions/workflows/tests.yml/badge.svg)](https://github.com/N-Zik-Group/N-Zik-Website/actions/workflows/tests.yml)
+
 # 👥 Contributors
 
 [![GitHub contributors](https://contrib.rocks/image?repo=N-Zik-Group/N-Zik-Website)](https://github.com/N-Zik-Group/N-Zik-Website/graphs/contributors)
