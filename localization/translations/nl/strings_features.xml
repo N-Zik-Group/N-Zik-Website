@@ -19,7 +19,6 @@
     <string name="feature_discord_description">Laat je huidige muziek vibe zien door je afspeelnummer direct op je Discord-profiel weer te geven.</string>
     <string name="feature_discord_rich_presence_live_alt">Discord RPC Live</string>
     <string name="feature_discord_rich_presence_settings_alt">Discord RPC Instellingen</string>
-    <string name="feature_glass_credits">Glazen credits voor Android-app:</string>
     <string name="feature_glass_description">Glas is uit bij verse installaties. Kies in Instellingen, voor alleen nette, contour- of Glazen presentatie door de categorie en pas de renderkwaliteit aan. Glas kan het renderingswerk en batterijgebruik vergroten; de kwaliteit ervan verlagen of uitschakelen voor het pak van uw apparaat.</string>
     <string name="feature_glass_effect_demonstration_label">Demonstratie glas</string>
     <string name="feature_glass_previews_label">Voorvertoningen glas</string>
