@@ -19,7 +19,6 @@
     <string name="feature_discord_description">Näytä nykyinen musiikillinen väesi pois näyttämällä soittokappaletta suoraan Discord-profiilissasi.</string>
     <string name="feature_discord_rich_presence_live_alt">Discord RPC Live</string>
     <string name="feature_discord_rich_presence_settings_alt">Discord Rpc Asetukset</string>
-    <string name="feature_glass_credits">Android-sovelluksen lasiset hyvitykset:</string>
     <string name="feature_glass_description">Lasi on pois tuoreissa asennuksissa. Valitse asetuksissa natiivinen, ääriviivat tai lasinen esittely luokittain ja säädä renderöintilaatua. Lasi voi lisätä renderointityötä ja akkukäyttöä; heikentää sen laatua tai poistaa sen käytöstä laitteesi mukaan.</string>
     <string name="feature_glass_effect_demonstration_label">Lasivaikutusten demonstrointi</string>
     <string name="feature_glass_previews_label">Lasin esikatselut</string>
