@@ -19,7 +19,6 @@
     <string name="feature_discord_description">إظهار الفيس الموسيقي الحالي الخاص بك عن طريق عرض مسار التشغيل الخاص بك مباشرة على ملف ديسكورد الشخصي.</string>
     <string name="feature_discord_rich_presence_live_alt">Discord RPC Live</string>
     <string name="feature_discord_rich_presence_settings_alt">إعدادات ديسكورد RPC</string>
-    <string name="feature_glass_credits">رصيد زجاج تطبيق الأندرويد:</string>
     <string name="feature_glass_description">الزجاج معطل على التجهيزات الطازجة. في الإعدادات، اختر العرض المحلي أو عرض المحتوى فقط أو العرض الزجاجي حسب الفئة وتعديل جودة التقديم. الزجاج قد يزيد من تشغيل العمل واستخدام البطارية؛ ويقلل من جودته أو يعطله ليتناسب مع جهازك.</string>
     <string name="feature_glass_effect_demonstration_label">عرض تأثير الزجاج</string>
     <string name="feature_glass_previews_label">معاينات زجاجية</string>

@@ -19,7 +19,6 @@
     <string name="feature_discord_description">Покажите свою текущую музыкальную vibe, показав свой музыкальный трек прямо в вашем профиле Discord.</string>
     <string name="feature_discord_rich_presence_live_alt">Discord RPC Live</string>
     <string name="feature_discord_rich_presence_settings_alt">Настройки Discord RPC</string>
-    <string name="feature_glass_credits">Кредиты стеклянных приложений Android:</string>
     <string name="feature_glass_description">Стекло отключено на свежих установках. В Настройках, выберите родную, только контурную презентацию или стекло по категориям и отрегулируйте качество рендеринга. Стекло может увеличить рендеринг и использование аккумулятора; снизить его качество или отключить в соответствии с вашим устройством.</string>
     <string name="feature_glass_effect_demonstration_label">Стеклянный эффект</string>
     <string name="feature_glass_previews_label">Предпросмотр Стекла</string>

@@ -19,7 +19,6 @@
     <string name="feature_discord_description">Zeige dein aktuelles musikalisches Ambiente, indem du deinen Musiktitel direkt auf deinem Discord Profil anzeigst.</string>
     <string name="feature_discord_rich_presence_live_alt">Discord RPC Live</string>
     <string name="feature_discord_rich_presence_settings_alt">Discord RPC Einstellungen</string>
-    <string name="feature_glass_credits">Android-App Glass Credits:</string>
     <string name="feature_glass_description">Glas ist bei frischen Installationen ausgeschaltet. Wählen Sie in den Einstellungen Einheimische, Kontur- oder Glaspräsentation nach Kategorie und passen Sie die Rendering-Qualität an. Glas kann die Rendering- und Batteriennutzung erhöhen; die Qualität senken oder deaktivieren Sie es entsprechend Ihrem Gerät.</string>
     <string name="feature_glass_effect_demonstration_label">Glaseffekt-Demonstration</string>
     <string name="feature_glass_previews_label">Glasvorschau</string>

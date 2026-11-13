@@ -16,10 +16,6 @@
     standalone N-Zik desktop app.
   </p>
   <p>
-    <strong>Note:</strong> This project is based on the website from
-    <a href="https://github.com/fast4x/RiMusic">RiMusic</a>.
-  </p>
-  <p>
     <strong>N-Zik</strong> is a side project I originally built for myself and friends, not chasing glory.
     It's grown a bit since then, which is cool.
   </p>
@@ -87,7 +83,7 @@ Glass is optional and disabled on fresh installations. Enable it in Settings, ch
   <a href="videos/glass-demo.mp4">🎬 Watch the Glass demo</a>
 </div>
 
-Glass credits: [Square / Convx Project](https://github.com/Lelonio/Square) (GPL-3.0) and [Kyant0 AndroidLiquidGlass / Backdrop](https://github.com/Kyant0/AndroidLiquidGlass) (Apache-2.0).
+See the [N-Zik credits](https://github.com/N-Zik-Group/N-Zik/blob/main/ComposeN-Zik/src/androidMain/res/raw/credits.md) for the Glass license notices.
 
 # 🌐 Translations
 
@@ -170,28 +166,11 @@ python -B -m unittest discover -s tests -v
 node --test tests/*.test.cjs
 ```
 
-# 🫂 Acknowledgements
-
-### 🛠 Based on / Inspired by:
-
-- [**RiMusic**](https://github.com/fast4x/RiMusic): The website this project is based on.
-- [**ViMusic**](https://github.com/vfsfitvnm/ViMusic)
-
-### 🎨 Design & UI Contributions:
-
-- The app's Glass adaptations draw on [**Square / Convx Project**](https://github.com/Lelonio/Square), licensed under GPL-3.0, and [**Kyant0 / AndroidLiquidGlass (Backdrop)**](https://github.com/Kyant0/AndroidLiquidGlass), whose backdrop sources are separately licensed under Apache-2.0. These credits describe the Android app's implementation, not the website's rendering.
-- Current banner and logo [**OrangeZXZ**](https://github.com/OrangeZXZ), [**NEVARLeVrai**](https://github.com/NEVARLeVrai)
-
-### 🌍 Platform & Ecosystem:
-
-- [**Crowdin**](https://crowdin.com/): Community translation platform.
-- [**Vercel**](https://vercel.com/): Hosting.
+See the [N-Zik credits](https://github.com/N-Zik-Group/N-Zik/blob/main/ComposeN-Zik/src/androidMain/res/raw/credits.md) for the website and Android app.
 
 # ⚠️ Disclaimer
 
-This project has no relation to the original author of [RiMusic](https://github.com/fast4x/RiMusic).
-
-Furthermore, its contents are not affiliated with, funded, authorized, endorsed by, or in any way associated with YouTube, Google LLC, or any of its affiliates or subsidiaries.
+The site's contents are not affiliated with, funded, authorized, endorsed by, or in any way associated with YouTube, Google LLC, or any of its affiliates or subsidiaries.
 
 Any trademarks, service marks, trade names, or other intellectual property rights used in this project remain the property of their respective owners.
 

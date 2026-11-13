@@ -19,7 +19,6 @@
     <string name="feature_discord_description">Mettez en avant vos goûts musicaux du moment en affichant le morceau que vous écoutez directement sur votre profil Discord.</string>
     <string name="feature_discord_rich_presence_live_alt">Discord RPC Live</string>
     <string name="feature_discord_rich_presence_settings_alt">Paramètres RPC Discord</string>
-    <string name="feature_glass_credits">Crédits de l\'application Android Glass :</string>
     <string name="feature_glass_description">L\'effet Glass est désactivé par défaut lors des nouvelles installations. Dans les Paramètres, choisissez entre l\'affichage natif, « contour uniquement » ou « Glass » par catégorie, puis réglez la qualité de rendu. L\'effet Glass peut augmenter la charge de travail liée au rendu et la consommation de la batterie ; réduisez sa qualité ou désactivez-le en fonction de votre appareil.</string>
     <string name="feature_glass_effect_demonstration_label">Démonstration de l’effet Glass</string>
     <string name="feature_glass_previews_label">Aperçu du verre</string>

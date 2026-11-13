@@ -1,8 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="footer_font_credit">Police par Xiaomi Inc.</string>
-    <string name="footer_font_license">Licence MiSans Police</string>
-    <string name="footer_icon_credits">Crédits d\'icônes</string>
     <string name="footer_issue_tracker">Suivi des problèmes</string>
     <string name="footer_releases">Versions</string>
     <string name="footer_repository">Référentiel</string>

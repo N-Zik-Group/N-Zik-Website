@@ -19,7 +19,6 @@
     <string name="feature_discord_description">Mostra la tua atmosfera musicale attuale mostrando la tua traccia di visualizzazione direttamente sul tuo profilo Discord.</string>
     <string name="feature_discord_rich_presence_live_alt">Discord RPC Live</string>
     <string name="feature_discord_rich_presence_settings_alt">Impostazioni Discord RPC</string>
-    <string name="feature_glass_credits">Crediti di vetro app Android:</string>
     <string name="feature_glass_description">Il vetro è spento su installazioni fresche. In Impostazioni, scegliere nativo, solo contorno o presentazione in vetro per categoria e regolare la qualità di rendering . Vetro può aumentare il lavoro di rendering e l\'uso della batteria; abbassare la sua qualità o disabilitarlo per soddisfare il vostro dispositivo.</string>
     <string name="feature_glass_effect_demonstration_label">Dimostrazione effetto vetro</string>
     <string name="feature_glass_previews_label">Anteprime in vetro</string>

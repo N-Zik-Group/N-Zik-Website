@@ -19,7 +19,6 @@
     <string name="feature_discord_description">Çalmakta olduğun parçayı doğrudan Discord profilinde göstererek şu anki müzik ruh halini sergile.</string>
     <string name="feature_discord_rich_presence_live_alt">Discord RPC Canlı</string>
     <string name="feature_discord_rich_presence_settings_alt">Discord RPC Ayarları</string>
-    <string name="feature_glass_credits">Android uygulaması Cam’ın kaynakları:</string>
     <string name="feature_glass_description">Cam, yeni kurulumlarda devre dışıdır. Ayarlarda, kategoriye göre yerel, sadece kenar veya Cam görünümünü seçin ve görüntüleme kalitesini ayarlayın. Cam görüntüleme yükünü ve pil tüketimini artırabilir; cihazınıza uygun şekilde kalitesini düşürün veya devre dışı bırakın.</string>
     <string name="feature_glass_effect_demonstration_label">Cam etkisi gösterimi</string>
     <string name="feature_glass_previews_label">Cam önizlemeleri</string>

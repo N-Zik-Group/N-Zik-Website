@@ -19,7 +19,6 @@
     <string name="feature_discord_description">Pokaż swoją aktualną muzykę poprzez wyświetlenie ścieżki odtwarzania bezpośrednio na profilu Discorda.</string>
     <string name="feature_discord_rich_presence_live_alt">Discord RPC Live</string>
     <string name="feature_discord_rich_presence_settings_alt">Ustawienia RPC Discorda</string>
-    <string name="feature_glass_credits">Android app Glass credits:</string>
     <string name="feature_glass_description">Szkło jest wyłączone na świeżych instalacjach. W Ustawieniach wybierz prezentację krajową, kontury lub szkło według kategorii i dostosuj jakość renderowania. Szkło może zwiększyć pracę renderowaną i zużycie baterii; obniżyć jej jakość lub wyłączyć ją, aby pasować do urządzenia.</string>
     <string name="feature_glass_effect_demonstration_label">Wykazanie efektu szklanego</string>
     <string name="feature_glass_previews_label">Podgląd szkła</string>

@@ -19,7 +19,6 @@
     <string name="feature_discord_description">Visa upp din nuvarande musikkänsla genom att visa ditt spelspår direkt på din Discord-profil.</string>
     <string name="feature_discord_rich_presence_live_alt">Discord RPC Live</string>
     <string name="feature_discord_rich_presence_settings_alt">Discord RPC-inställningar</string>
-    <string name="feature_glass_credits">Appen för Android Glas krediter:</string>
     <string name="feature_glass_description">Glas är avstängt på färska installationer. I Inställningar, välj inföding, contour-only eller Glas presentation per kategori och justera renderingskvalitet. Glas kan öka rendering arbete och batterianvändning; sänka dess kvalitet eller inaktivera det för att passa din enhet.</string>
     <string name="feature_glass_effect_demonstration_label">demonstration av glaseffekt</string>
     <string name="feature_glass_previews_label">Förhandsvisningar av glas</string>
