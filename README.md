@@ -171,7 +171,7 @@ node --test tests/*.test.cjs
 
 See the [N-Zik credits](https://github.com/N-Zik-Group/N-Zik/blob/main/ComposeN-Zik/src/androidMain/res/raw/credits.md) for the website and Android app.
 
-Made with ❤️ by the N-Zik Group community · Licensed under GPLv3 - see [LICENSE](LICENSE)
+Made with ❤️ by the N-Zik Group community · Project license: GPLv3 - see [LICENSE](LICENSE)
 
 # ⚠️ Disclaimer
 
