@@ -20,7 +20,7 @@
     <string name="navigation_playback_queue_label">Oynatma Sırası</string>
     <string name="navigation_playlists_label">Çalma listeleri</string>
     <string name="navigation_profiles_label">Profiller</string>
-    <string name="navigation_rewind_label">Geri Sarma</string>
+    <string name="navigation_rewind_label">Rewind</string>
     <string name="navigation_search_label">Arama</string>
     <string name="navigation_switch_to_dark_theme">Karanlık temaya geç</string>
     <string name="navigation_switch_to_light_theme">Aydınlık temaya geç</string>
