@@ -62,10 +62,10 @@
     <string name="feature_search_title">Recherche Vocale &amp; Textuelle.</string>
     <string name="feature_settings_alt">Réglages</string>
     <string name="feature_song_recognition_alt">Reconnaissance de la chanson</string>
-    <string name="feature_theme_store_artwork_gradient_alt">Thème dégradé de l\'œuvre dans le lecteur</string>
-    <string name="feature_theme_store_carousel_glass_alt">Thème de Carrousel avec Verre dans le joueur</string>
-    <string name="feature_theme_store_description">Parcourez les thèmes de la communauté en N-Zik et appliquez les parties que vous aimez, des couleurs et de la mise en page du lecteur à la navigation et au verre.</string>
-    <string name="feature_theme_store_repository_link">Voir la boutique de thèmes sur GitHub</string>
+    <string name="feature_theme_store_artwork_gradient_alt">Thème « Gradient » pour les illustrations dans le lecteur</string>
+    <string name="feature_theme_store_carousel_glass_alt">Thème « Carousel » avec effet « Glass » dans le lecteur</string>
+    <string name="feature_theme_store_description">Parcourez les thèmes communautaires disponibles dans N-Zik et utilisez les éléments qui vous plaisent, qu\'il s\'agisse des couleurs, de la disposition du lecteur, de la navigation ou de Glass.</string>
+    <string name="feature_theme_store_repository_link">Consultez la boutique de thèmes sur GitHub</string>
     <string name="feature_theme_store_title">Magasin de Thèmes</string>
     <string name="feature_updates_description">Recevez des mises à jour automatiques dans l\'application, directement depuis GitHub, sans avoir à télécharger manuellement les nouveaux fichiers APK.</string>
     <string name="feature_updates_title">Mises à jour OTA.</string>
