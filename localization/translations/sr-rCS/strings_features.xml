@@ -36,7 +36,6 @@
     <string name="feature_n_zik_rewind_intro_alt">N-Zik Rewind Intro</string>
     <string name="feature_next_glass_preview_label">Next Glass preview</string>
     <string name="feature_next_search_preview_label">Next search preview</string>
-    <string name="feature_next_theme_preview_label">Next theme preview</string>
     <string name="feature_offline_caching_description">Automatically cache songs for offline playback with customizable limits, or download tracks for permanent access.</string>
     <string name="feature_offline_caching_title">Smart Offline Caching.</string>
     <string name="feature_optional_glass_player_alt">Optional Glass player</string>
@@ -50,7 +49,6 @@
     <string name="feature_playlists_title">Playlists Management.</string>
     <string name="feature_previous_glass_preview_label">Previous Glass preview</string>
     <string name="feature_previous_search_preview_label">Previous search preview</string>
-    <string name="feature_previous_theme_preview_label">Previous theme preview</string>
     <string name="feature_profiles_alt">Profiles</string>
     <string name="feature_profiles_description">Повежите своје налоге и прилагодите апликацију: синхронизујте са YouTube Music, омогућите Discord RPC и Last.fm скробблирање и пребацујте се између више профила у апликацији - сваки са својим именом, аватаром, базом података и подешавањима.</string>
     <string name="feature_profiles_title">Више профила.</string>
@@ -64,14 +62,11 @@
     <string name="feature_search_title">Search &amp; Voice Search.</string>
     <string name="feature_settings_alt">Settings</string>
     <string name="feature_song_recognition_alt">Song Recognition</string>
-    <string name="feature_theme_preset_five_alt">Theme Preset 5</string>
-    <string name="feature_theme_preset_four_alt">Theme Preset 4</string>
-    <string name="feature_theme_preset_one_alt">Theme Preset 1</string>
-    <string name="feature_theme_preset_six_alt">Theme Preset 6</string>
-    <string name="feature_theme_preset_three_alt">Theme Preset 3</string>
-    <string name="feature_theme_preset_two_alt">Theme Preset 2</string>
-    <string name="feature_theme_presets_description">Choose from 6 beautifully crafted visual themes to personalize your music experience.</string>
-    <string name="feature_theme_presets_title">Theme Presets.</string>
+    <string name="feature_theme_store_artwork_gradient_alt">Artwork Gradient theme in the player</string>
+    <string name="feature_theme_store_carousel_glass_alt">Carousel theme with Glass in the player</string>
+    <string name="feature_theme_store_description">Browse community themes in N-Zik and apply the parts you like, from colors and the player layout to navigation and Glass.</string>
+    <string name="feature_theme_store_repository_link">View the Theme Store on GitHub</string>
+    <string name="feature_theme_store_title">Theme Store</string>
     <string name="feature_updates_description">Receive automatic in-app updates directly from GitHub without needing to manually download new APKs.</string>
     <string name="feature_updates_title">OTA Updates.</string>
     <string name="feature_visualizer_description">Enjoy real-time visual effects synchronized perfectly with your music.</string>
