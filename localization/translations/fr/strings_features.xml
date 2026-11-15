@@ -36,7 +36,6 @@
     <string name="feature_n_zik_rewind_intro_alt">Introduction au Rewind N-Zik</string>
     <string name="feature_next_glass_preview_label">Aperçu du verre suivant</string>
     <string name="feature_next_search_preview_label">Aperçu de la recherche suivante</string>
-    <string name="feature_next_theme_preview_label">Aperçu du thème suivant</string>
     <string name="feature_offline_caching_description">Mettez automatiquement des morceaux en cache pour les écouter hors ligne, avec des limites personnalisables, ou téléchargez-les pour y accéder à tout moment.</string>
     <string name="feature_offline_caching_title">Mise en cache hors ligne intelligente.</string>
     <string name="feature_optional_glass_player_alt">Lecteur de verre optionnel</string>
@@ -50,7 +49,6 @@
     <string name="feature_playlists_title">Gestion des playlists.</string>
     <string name="feature_previous_glass_preview_label">Prévisualisation précédente du verre</string>
     <string name="feature_previous_search_preview_label">Aperçu de la recherche précédente</string>
-    <string name="feature_previous_theme_preview_label">Aperçu du thème précédent</string>
     <string name="feature_profiles_alt">Profils</string>
     <string name="feature_profiles_description">Connectez vos comptes et personnalisez l\'application : synchronisez-la avec YouTube Music, activez la fonctionnalité « Rich Presence » sur Discord et le scrobbling sur Last.fm, et passez d\'un profil à l\'autre au sein de l\'application, chacun disposant de son propre nom, avatar, base de données et paramètres.</string>
     <string name="feature_profiles_title">Profils multiples.</string>
@@ -64,14 +62,11 @@
     <string name="feature_search_title">Recherche Vocale &amp; Textuelle.</string>
     <string name="feature_settings_alt">Réglages</string>
     <string name="feature_song_recognition_alt">Reconnaissance de la chanson</string>
-    <string name="feature_theme_preset_five_alt">Theme Preset 5</string>
-    <string name="feature_theme_preset_four_alt">Theme Preset 4</string>
-    <string name="feature_theme_preset_one_alt">Theme Preset 1</string>
-    <string name="feature_theme_preset_six_alt">Theme Preset 6</string>
-    <string name="feature_theme_preset_three_alt">Theme Preset 3</string>
-    <string name="feature_theme_preset_two_alt">Theme Preset 2</string>
-    <string name="feature_theme_presets_description">Choisissez parmi 6 thèmes visuels magnifiquement conçus pour personnaliser votre expérience musicale.</string>
-    <string name="feature_theme_presets_title">Thèmes Prédéfinis.</string>
+    <string name="feature_theme_store_artwork_gradient_alt">Thème dégradé de l\'œuvre dans le lecteur</string>
+    <string name="feature_theme_store_carousel_glass_alt">Thème de Carrousel avec Verre dans le joueur</string>
+    <string name="feature_theme_store_description">Parcourez les thèmes de la communauté en N-Zik et appliquez les parties que vous aimez, des couleurs et de la mise en page du lecteur à la navigation et au verre.</string>
+    <string name="feature_theme_store_repository_link">Voir la boutique de thèmes sur GitHub</string>
+    <string name="feature_theme_store_title">Magasin de Thèmes</string>
     <string name="feature_updates_description">Recevez des mises à jour automatiques dans l\'application, directement depuis GitHub, sans avoir à télécharger manuellement les nouveaux fichiers APK.</string>
     <string name="feature_updates_title">Mises à jour OTA.</string>
     <string name="feature_visualizer_description">Profitez d\'effets visuels en temps réel parfaitement synchronisés avec votre musique.</string>
