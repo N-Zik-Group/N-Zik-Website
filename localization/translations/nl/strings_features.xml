@@ -36,7 +36,6 @@
     <string name="feature_n_zik_rewind_intro_alt">N-Zik terugspoelen Intro</string>
     <string name="feature_next_glass_preview_label">Volgende glasvoorvertoning</string>
     <string name="feature_next_search_preview_label">Volgende zoekvoorbeeld</string>
-    <string name="feature_next_theme_preview_label">Voorbeeld volgende thema</string>
     <string name="feature_offline_caching_description">Automatisch nummers cachen voor offline afspelen met aanpasbare limieten, of nummers downloaden voor permanente toegang.</string>
     <string name="feature_offline_caching_title">Smart Offline caching.</string>
     <string name="feature_optional_glass_player_alt">Optionele glazen speler</string>
@@ -50,7 +49,6 @@
     <string name="feature_playlists_title">Beheer afspeellijsten.</string>
     <string name="feature_previous_glass_preview_label">Vorig glas voorbeeld</string>
     <string name="feature_previous_search_preview_label">Vorige zoekvoorbeeld</string>
-    <string name="feature_previous_theme_preview_label">Voorvertoning vorig thema</string>
     <string name="feature_profiles_alt">Profiles</string>
     <string name="feature_profiles_description">Verbind je accounts en pas de app aan: synchroniseer met YouTube Music, schakel Discord RPC en Last in. m scrobbleren en schakelen tussen meerdere in-app profielen, elk met zijn eigen naam, avatar, database en instellingen.</string>
     <string name="feature_profiles_title">Meerdere profielen</string>
@@ -64,14 +62,11 @@
     <string name="feature_search_title">Zoek &amp; Stem zoeken.</string>
     <string name="feature_settings_alt">Instellingen</string>
     <string name="feature_song_recognition_alt">Lied herkenning</string>
-    <string name="feature_theme_preset_five_alt">Theme Preset 5</string>
-    <string name="feature_theme_preset_four_alt">Theme Preset 4</string>
-    <string name="feature_theme_preset_one_alt">Theme Preset 1</string>
-    <string name="feature_theme_preset_six_alt">Theme Preset 6</string>
-    <string name="feature_theme_preset_three_alt">Theme Preset 3</string>
-    <string name="feature_theme_preset_two_alt">Theme Preset 2</string>
-    <string name="feature_theme_presets_description">Kies uit 6 mooi gemaakte visuele thema\'s om uw muziekervaring te personaliseren.</string>
-    <string name="feature_theme_presets_title">Thema voorinstellingen.</string>
+    <string name="feature_theme_store_artwork_gradient_alt">Artwork Gradiënt thema in de speler</string>
+    <string name="feature_theme_store_carousel_glass_alt">Carrousel thema met glas in de speler</string>
+    <string name="feature_theme_store_description">Blader door communitythema\'s in N-Zik en pas de delen toe die u wilt, van kleuren en de speler-indeling tot navigatie en glas.</string>
+    <string name="feature_theme_store_repository_link">Bekijk de themawinkel op GitHub</string>
+    <string name="feature_theme_store_title">Thema winkel</string>
     <string name="feature_updates_description">Ontvang automatische in-app updates rechtstreeks van GitHub zonder dat je handmatig nieuwe APK\'s moet downloaden.</string>
     <string name="feature_updates_title">OTA updates.</string>
     <string name="feature_visualizer_description">Geniet van real-time visuele effecten die perfect gesynchroniseerd zijn met je muziek.</string>
