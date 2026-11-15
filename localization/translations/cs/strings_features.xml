@@ -36,7 +36,6 @@
     <string name="feature_n_zik_rewind_intro_alt">Úvod zpětného chodu N-Zik</string>
     <string name="feature_next_glass_preview_label">Další náhled skla</string>
     <string name="feature_next_search_preview_label">Další náhled hledání</string>
-    <string name="feature_next_theme_preview_label">Náhled dalšího motivu</string>
     <string name="feature_offline_caching_description">Automaticky ukládat skladby do mezipaměti pro offline přehrávání s nastavitelnými limity nebo stahovat skladby pro trvalý přístup.</string>
     <string name="feature_offline_caching_title">Chytré offline ukládání do mezipaměti.</string>
     <string name="feature_optional_glass_player_alt">Volitelný přehrávač skla</string>
@@ -50,7 +49,6 @@
     <string name="feature_playlists_title">Správa playlistů.</string>
     <string name="feature_previous_glass_preview_label">Předchozí náhled skla</string>
     <string name="feature_previous_search_preview_label">Předchozí náhled hledání</string>
-    <string name="feature_previous_theme_preview_label">Předchozí náhled motivu</string>
     <string name="feature_profiles_alt">Profiles</string>
     <string name="feature_profiles_description">Připojte své účty a přizpůsobte aplikaci: synchronizujte s YouTube Music, povolte Discord RPC a Last. m scrobbling a přepínání mezi více profily v aplikaci, každý s vlastním jménem, avatar, databází a nastavením.</string>
     <string name="feature_profiles_title">Více profilů.</string>
@@ -64,14 +62,11 @@
     <string name="feature_search_title">Hledat &amp; Hlasové hledání.</string>
     <string name="feature_settings_alt">Nastavení</string>
     <string name="feature_song_recognition_alt">Rozpoznávání skladeb</string>
-    <string name="feature_theme_preset_five_alt">Theme Preset 5</string>
-    <string name="feature_theme_preset_four_alt">Theme Preset 4</string>
-    <string name="feature_theme_preset_one_alt">Theme Preset 1</string>
-    <string name="feature_theme_preset_six_alt">Theme Preset 6</string>
-    <string name="feature_theme_preset_three_alt">Theme Preset 3</string>
-    <string name="feature_theme_preset_two_alt">Theme Preset 2</string>
-    <string name="feature_theme_presets_description">Vyberte si ze 6 krásně vytvořených vizuálních motivů a přizpůsobte si svůj hudební zážitek.</string>
-    <string name="feature_theme_presets_title">Předvolby motivů.</string>
+    <string name="feature_theme_store_artwork_gradient_alt">Motiv Gradient v přehrávači</string>
+    <string name="feature_theme_store_carousel_glass_alt">Kolotoč téma se sklem v přehrávači</string>
+    <string name="feature_theme_store_description">Procházejte komunitní motivy v N-Zik a používejte části, které se vám líbí, od barev a rozložení přehrávače až po navigaci a sklo.</string>
+    <string name="feature_theme_store_repository_link">Zobrazit obchod s motivy na GitHubu</string>
+    <string name="feature_theme_store_title">Obchod s motivy</string>
     <string name="feature_updates_description">Přijímat automatické aktualizace přímo z GitHub bez nutnosti ručně stahovat nové APK.</string>
     <string name="feature_updates_title">OTA aktualizace.</string>
     <string name="feature_visualizer_description">Užijte si vizuální efekty v reálném čase dokonale synchronizované s vaší hudbou.</string>
