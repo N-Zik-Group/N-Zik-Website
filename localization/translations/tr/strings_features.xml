@@ -62,10 +62,10 @@
     <string name="feature_search_title">Arama &amp; Sesli Arama.</string>
     <string name="feature_settings_alt">Ayarlar</string>
     <string name="feature_song_recognition_alt">Şarkı Tanıma</string>
-    <string name="feature_theme_store_artwork_gradient_alt">Artwork Gradient theme in the player</string>
-    <string name="feature_theme_store_carousel_glass_alt">Carousel theme with Glass in the player</string>
-    <string name="feature_theme_store_description">Browse community themes in N-Zik and apply the parts you like, from colors and the player layout to navigation and Glass.</string>
-    <string name="feature_theme_store_repository_link">View the Theme Store on GitHub</string>
+    <string name="feature_theme_store_artwork_gradient_alt">Oynatıcıdaki Sanat Eseri Gradyan teması.</string>
+    <string name="feature_theme_store_carousel_glass_alt">Oynatıcıda Cam özelliğine sahip karusel tema</string>
+    <string name="feature_theme_store_description">N-Zik\'teki topluluk temalarına göz atın ve renklerden oynatıcı düzenine, gezinme öğelerinden Cama kadar beğendiğiniz öğeleri uygulayın.</string>
+    <string name="feature_theme_store_repository_link">GitHub\'daki Tema Mağazasını görüntüleyin</string>
     <string name="feature_theme_store_title">Tema Mağazası</string>
     <string name="feature_updates_description">Yeni APK’ları manuel olarak indirmenize gerek kalmadan, GitHub’dan doğrudan uygulama içi otomatik güncellemeleri alın.</string>
     <string name="feature_updates_title">OTA Güncellemeleri.</string>
