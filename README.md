@@ -64,7 +64,7 @@ Join the N-Zik Discord:
 - 📥 **Download Hub**: Store badges for GitHub, F-Droid, IzzyOnDroid, OpenAPK, AndroidFreeware, Obtainium and Appteka.
 - 🖥️ **N-Zik Desktop Compagnon** (Windows & Linux): Pair it with your phone over local Wi-Fi (QR code or manual code), then browse your library, manage the queue and listen on a large screen while your phone streams the audio through an embedded VLC, no VLC install needed. The phone stays the single source of truth.
 - 🎬 **Feature Showcase**: 11 demo videos - home, Glass, lyrics, audio visualizer, rewind, songs, search, OTA updates, carrousel, artist pages and settings.
-- 🎨 **Theme Store**. Preview community themes and browse the [Theme Store repository](https://github.com/N-Zik-Group/N-Zik-Theme-Store).
+- 🎨 **Theme Store**: Preview community themes and browse the [Theme Store repository](https://github.com/N-Zik-Group/N-Zik-Theme-Store).
 - 🫧 **Optional Glass Effect (BETA)**: The app keeps Glass off on fresh installations. Settings let you choose native, contour-only or Glass presentation by category and adjust rendering quality. Glass may increase rendering work and battery use; it can be lowered or disabled to suit your device.
 - ⚡ **Zero Build**: Static HTML, CSS and JavaScript with no framework, package installation, or build step. The site loads icons from public CDNs, Vercel analytics on the deployed site, and the Keep Android Open banner in an isolated frame. Video previews autoplay in a loop by default, with playback controls. They start paused when reduced motion is enabled.
 - 📱 **Fully Responsive**: From phone to widescreen.
