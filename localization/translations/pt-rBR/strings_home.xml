@@ -24,6 +24,6 @@
     <string name="navigation_search_label">Pesquisa</string>
     <string name="navigation_switch_to_dark_theme">Mudar para tema escuro</string>
     <string name="navigation_switch_to_light_theme">Alternar para tema claro</string>
-    <string name="navigation_theme_presets_label">Predefinições de tema</string>
+    <string name="navigation_theme_store_label">Loja de Temas</string>
     <string name="navigation_visualizer_label">Visualizador</string>
 </resources>
