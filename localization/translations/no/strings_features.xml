@@ -36,7 +36,6 @@
     <string name="feature_n_zik_rewind_intro_alt">N-Zik svindle intro</string>
     <string name="feature_next_glass_preview_label">Neste forhåndsvisning</string>
     <string name="feature_next_search_preview_label">Neste forhåndsvisning av søk</string>
-    <string name="feature_next_theme_preview_label">Neste forhåndsvisning av tema</string>
     <string name="feature_offline_caching_description">Automatisk cache sanger for frakoblet avspilling med tilpassede grenser eller nedlastingslag for permanent tilgang.</string>
     <string name="feature_offline_caching_title">Smart Frakoblet Caching.</string>
     <string name="feature_optional_glass_player_alt">Valgfri glass spiller</string>
@@ -50,7 +49,6 @@
     <string name="feature_playlists_title">Behandling av spillelister.</string>
     <string name="feature_previous_glass_preview_label">Forrige Glass forhåndsvisning</string>
     <string name="feature_previous_search_preview_label">Forhåndsvis forrige søk</string>
-    <string name="feature_previous_theme_preview_label">Forrige tema forhåndsvisning</string>
     <string name="feature_profiles_alt">Profiles</string>
     <string name="feature_profiles_description">Koble kontoene dine for å tilpasse appen: synk med YouTube Musikk, aktiver Discord RPC og sist. m scrobbling, og bytte mellom flere i-app profiler, hver med sitt eget navn, avatar, database og innstillinger.</string>
     <string name="feature_profiles_title">Flere profiler.</string>
@@ -64,14 +62,11 @@
     <string name="feature_search_title">Søk etter &amp; Stemmesøk.</string>
     <string name="feature_settings_alt">Innstillinger</string>
     <string name="feature_song_recognition_alt">Sang gjenkjenning</string>
-    <string name="feature_theme_preset_five_alt">Theme Preset 5</string>
-    <string name="feature_theme_preset_four_alt">Theme Preset 4</string>
-    <string name="feature_theme_preset_one_alt">Theme Preset 1</string>
-    <string name="feature_theme_preset_six_alt">Theme Preset 6</string>
-    <string name="feature_theme_preset_three_alt">Theme Preset 3</string>
-    <string name="feature_theme_preset_two_alt">Theme Preset 2</string>
-    <string name="feature_theme_presets_description">Velg mellom 6 vakre utformet visuelle temaer for å tilpasse din musikkopplevelse.</string>
-    <string name="feature_theme_presets_title">Tema Forhåndsinnstillinger</string>
+    <string name="feature_theme_store_artwork_gradient_alt">Artwork Gradient tema i spilleren</string>
+    <string name="feature_theme_store_carousel_glass_alt">Karusell-tema med glass i spilleren</string>
+    <string name="feature_theme_store_description">Bla gjennom samfunnstemaene i N-Zik og bruk delene du liker, fra farger og spilleroppsettet for navigering og Glass.</string>
+    <string name="feature_theme_store_repository_link">Vis tema butikken på GitHub</string>
+    <string name="feature_theme_store_title">Tema Butikk</string>
     <string name="feature_updates_description">Motta automatiske oppdateringer i appen direkte fra GitHub uten å måtte laste ned nye apper manuelt.</string>
     <string name="feature_updates_title">OTA oppdateringer.</string>
     <string name="feature_visualizer_description">Nyt visuelle effekter i sanntid synkronisert fullstendig med musikken din.</string>
