@@ -24,6 +24,6 @@
     <string name="navigation_search_label">Искать</string>
     <string name="navigation_switch_to_dark_theme">Переключиться на темную тему</string>
     <string name="navigation_switch_to_light_theme">Включить светлую тему</string>
-    <string name="navigation_theme_presets_label">Предустановки темы</string>
+    <string name="navigation_theme_store_label">Магазин тем</string>
     <string name="navigation_visualizer_label">Визуализатор</string>
 </resources>
