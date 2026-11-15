@@ -24,6 +24,5 @@
     <string name="navigation_search_label">Søk</string>
     <string name="navigation_switch_to_dark_theme">Bytt til mørkt tema</string>
     <string name="navigation_switch_to_light_theme">Bytt til lystema</string>
-    <string name="navigation_theme_presets_label">Forhåndsinnstillinger for tema</string>
     <string name="navigation_visualizer_label">Visualiser</string>
 </resources>

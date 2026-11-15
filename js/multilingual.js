@@ -58,7 +58,6 @@ class Multilingual {
     "feature_modern_ui_title",
     "feature_next_glass_preview_label",
     "feature_next_search_preview_label",
-    "feature_next_theme_preview_label",
     "feature_offline_caching_description",
     "feature_offline_caching_title",
     "feature_optional_glass_player_alt",
@@ -70,7 +69,6 @@ class Multilingual {
     "feature_playlists_title",
     "feature_previous_glass_preview_label",
     "feature_previous_search_preview_label",
-    "feature_previous_theme_preview_label",
     "feature_profiles_description",
     "feature_profiles_title",
     "feature_queue_description",
@@ -83,14 +81,6 @@ class Multilingual {
     "feature_search_title",
     "feature_settings_alt",
     "feature_song_recognition_alt",
-    "feature_theme_preset_five_alt",
-    "feature_theme_preset_four_alt",
-    "feature_theme_preset_one_alt",
-    "feature_theme_preset_six_alt",
-    "feature_theme_preset_three_alt",
-    "feature_theme_preset_two_alt",
-    "feature_theme_presets_description",
-    "feature_theme_presets_title",
     "feature_updates_description",
     "feature_visualizer_description",
     "feature_visualizer_title",
@@ -115,7 +105,6 @@ class Multilingual {
     "navigation_search_label",
     "navigation_switch_to_dark_theme",
     "navigation_switch_to_light_theme",
-    "navigation_theme_presets_label",
   ]);
 
   // These short labels can be shared wording in Latin-script translations.

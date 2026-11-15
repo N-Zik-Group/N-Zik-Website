@@ -24,6 +24,5 @@
     <string name="navigation_search_label">Szukaj</string>
     <string name="navigation_switch_to_dark_theme">Przełącz na ciemny motyw</string>
     <string name="navigation_switch_to_light_theme">Przełącz na jasny motyw</string>
-    <string name="navigation_theme_presets_label">Presety motywu</string>
     <string name="navigation_visualizer_label">Wizualizator</string>
 </resources>

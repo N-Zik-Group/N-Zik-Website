@@ -36,7 +36,6 @@
     <string name="feature_n_zik_rewind_intro_alt">مقدمة N-Zik Rewind</string>
     <string name="feature_next_glass_preview_label">المعاينة الزجاجية التالية</string>
     <string name="feature_next_search_preview_label">معاينة البحث التالي</string>
-    <string name="feature_next_theme_preview_label">معاينة السمة التالية</string>
     <string name="feature_offline_caching_description">تخزين الأغاني تلقائياً للتشغيل بدون اتصال مع حدود قابلة للتخصيص، أو تحميل المسارات للوصول الدائم.</string>
     <string name="feature_offline_caching_title">التخزين المؤقت الذكي دون اتصال.</string>
     <string name="feature_optional_glass_player_alt">لاعب زجاج اختياري</string>
@@ -50,7 +49,6 @@
     <string name="feature_playlists_title">إدارة قوائم التشغيل.</string>
     <string name="feature_previous_glass_preview_label">معاينة زجاجية سابقة</string>
     <string name="feature_previous_search_preview_label">معاينة البحث السابقة</string>
-    <string name="feature_previous_theme_preview_label">معاينة السمة السابقة</string>
     <string name="feature_profiles_alt">Profiles</string>
     <string name="feature_profiles_description">قم بتوصيل حساباتك وتخصيص التطبيق: مزامنة مع يوتيوب الموسيقى، تمكين ديسكورد RPC و الأخير. م نسخ، والتبديل بين ملفات تعريف متعددة داخل التطبيق، كل منها باسمه الخاص، صورته الرمزية وقاعدة البيانات والإعدادات.</string>
     <string name="feature_profiles_title">ملفات شخصية متعددة.</string>
@@ -64,14 +62,6 @@
     <string name="feature_search_title">البحث &amp; البحث الصوتي.</string>
     <string name="feature_settings_alt">الإعدادات</string>
     <string name="feature_song_recognition_alt">التعرف على الأغنية</string>
-    <string name="feature_theme_preset_five_alt">Theme Preset 5</string>
-    <string name="feature_theme_preset_four_alt">Theme Preset 4</string>
-    <string name="feature_theme_preset_one_alt">Theme Preset 1</string>
-    <string name="feature_theme_preset_six_alt">Theme Preset 6</string>
-    <string name="feature_theme_preset_three_alt">Theme Preset 3</string>
-    <string name="feature_theme_preset_two_alt">Theme Preset 2</string>
-    <string name="feature_theme_presets_description">اختر من 6 سمات مرئية مصنوعة بشكل جميل لتخصيص تجربة الموسيقى الخاصة بك.</string>
-    <string name="feature_theme_presets_title">عرض السمة.</string>
     <string name="feature_updates_description">تلقي التحديثات التلقائية في التطبيق مباشرة من GitHub دون الحاجة إلى تنزيل APK جديدة يدوياً.</string>
     <string name="feature_updates_title">تحديثات OTA.</string>
     <string name="feature_visualizer_description">استمتع بتأثيرات مرئية في الوقت الحقيقي متزامنة تماما مع موسيقاك.</string>

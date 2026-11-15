@@ -36,7 +36,6 @@
     <string name="feature_n_zik_rewind_intro_alt">N-Zik Rewind Intro</string>
     <string name="feature_next_glass_preview_label">Nästa förhandsgranskning av glas</string>
     <string name="feature_next_search_preview_label">Nästa sökförhandsgranskning</string>
-    <string name="feature_next_theme_preview_label">Nästa tema förhandsgranskning</string>
     <string name="feature_offline_caching_description">Cacha automatiskt låtar för offline-uppspelning med anpassningsbara gränser, eller ladda ner låtar för permanent åtkomst.</string>
     <string name="feature_offline_caching_title">Smart Offline Caching.</string>
     <string name="feature_optional_glass_player_alt">Valfri glasspelare</string>
@@ -50,7 +49,6 @@
     <string name="feature_playlists_title">Hantering av spellistor.</string>
     <string name="feature_previous_glass_preview_label">Förhandsgranskning av föregående glas</string>
     <string name="feature_previous_search_preview_label">Föregående sökförhandsgranskning</string>
-    <string name="feature_previous_theme_preview_label">Förhandsgranskning av föregående tema</string>
     <string name="feature_profiles_alt">Profiles</string>
     <string name="feature_profiles_description">Anslut dina konton och anpassa appen: synkronisera med YouTube Music, aktivera Discord RPC och Sast. m scrobbling, och växla mellan flera i-app-profiler, var och en med sitt eget namn, avatar, databas och inställningar.</string>
     <string name="feature_profiles_title">Flera profiler.</string>
@@ -64,14 +62,6 @@
     <string name="feature_search_title">Sök &amp; Röstsökning.</string>
     <string name="feature_settings_alt">Inställningar</string>
     <string name="feature_song_recognition_alt">Låtigenkänning</string>
-    <string name="feature_theme_preset_five_alt">Theme Preset 5</string>
-    <string name="feature_theme_preset_four_alt">Theme Preset 4</string>
-    <string name="feature_theme_preset_one_alt">Theme Preset 1</string>
-    <string name="feature_theme_preset_six_alt">Theme Preset 6</string>
-    <string name="feature_theme_preset_three_alt">Theme Preset 3</string>
-    <string name="feature_theme_preset_two_alt">Theme Preset 2</string>
-    <string name="feature_theme_presets_description">Välj mellan 6 vackert skapade visuella teman för att anpassa din musikupplevelse.</string>
-    <string name="feature_theme_presets_title">Förinställda teman.</string>
     <string name="feature_updates_description">Få automatiska in-app uppdateringar direkt från GitHub utan att behöva manuellt ladda ner nya APKs.</string>
     <string name="feature_updates_title">OTA uppdateringar.</string>
     <string name="feature_visualizer_description">Njut av visuella effekter i realtid synkroniserade perfekt med din musik.</string>

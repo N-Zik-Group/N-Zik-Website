@@ -36,7 +36,6 @@
     <string name="feature_n_zik_rewind_intro_alt">Вступ до ревітру проти Зіка</string>
     <string name="feature_next_glass_preview_label">Попередній перегляд наступного скла</string>
     <string name="feature_next_search_preview_label">Попередній перегляд наступного пошуку</string>
-    <string name="feature_next_theme_preview_label">Попередній перегляд наступної теми</string>
     <string name="feature_offline_caching_description">Автоматично кешувати пісні для відтворення оффлайн за допомогою лімітів налаштувань або завантаження треків для постійного доступу.</string>
     <string name="feature_offline_caching_title">Розумний Caching.</string>
     <string name="feature_optional_glass_player_alt">Необов\'язковий скляний програвач</string>
@@ -50,7 +49,6 @@
     <string name="feature_playlists_title">Керування списками відтворень.</string>
     <string name="feature_previous_glass_preview_label">Попередній попередній перегляд скла</string>
     <string name="feature_previous_search_preview_label">Попередній перегляд пошуку</string>
-    <string name="feature_previous_theme_preview_label">Попередня тема</string>
     <string name="feature_profiles_alt">Profiles</string>
     <string name="feature_profiles_description">Підключіть свої облікові записи та налаштуйте програму: синхронізуйте їх з YouTube Music, увімкніть Discord RPC і Останні. скроблінг і переключення між кількома профілями програми, кожен з яких має власне ім\'я, аватар, бази даних і параметрів.</string>
     <string name="feature_profiles_title">Декілька профілів.</string>
@@ -64,14 +62,6 @@
     <string name="feature_search_title">Пошук &amp; Голосовий пошук.</string>
     <string name="feature_settings_alt">Налаштування</string>
     <string name="feature_song_recognition_alt">Розпізнавання пісні</string>
-    <string name="feature_theme_preset_five_alt">Theme Preset 5</string>
-    <string name="feature_theme_preset_four_alt">Theme Preset 4</string>
-    <string name="feature_theme_preset_one_alt">Theme Preset 1</string>
-    <string name="feature_theme_preset_six_alt">Theme Preset 6</string>
-    <string name="feature_theme_preset_three_alt">Theme Preset 3</string>
-    <string name="feature_theme_preset_two_alt">Theme Preset 2</string>
-    <string name="feature_theme_presets_description">Виберіть із 6 красивих візуальних тем для персоналізації музичного досвіду.</string>
-    <string name="feature_theme_presets_title">Шаблони тем.</string>
     <string name="feature_updates_description">Отримувати автоматичне оновлення через додаток безпосередньо з GitHub, не потребуючи вручну завантажити нові APKs.</string>
     <string name="feature_updates_title">Оновлення OTA.</string>
     <string name="feature_visualizer_description">Насолоджуйтесь візуальними ефектами в режимі реального часу чудово синхронізованими з музикою.</string>

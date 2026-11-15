@@ -276,16 +276,16 @@ test("known English copies get English metadata while shared brand wording keeps
     replaceChildren(...nodes) { this.textContent = nodes.join(""); },
   });
   const hero = createElement({ name: "hero_description" });
-  const preset = createElement({ "data-i18n-alt": "feature_theme_preset_one_alt" });
+  const songRecognition = createElement({ "data-i18n-alt": "feature_song_recognition_alt" });
   const carousel = createElement({ role: "group", "data-i18n-aria-label": "feature_glass_previews_label" });
   const arrow = createElement({ "data-i18n-aria-label": "feature_previous_glass_preview_label" });
   const brand = createElement({ name: "download_companion_platforms" });
   const badge = createElement({ name: "download_launched_on_devglobe" });
   const features = createElement({ name: "navigation_features_label" });
-  const { loader } = create("ar", null, [hero, preset, carousel, arrow, brand, badge, features]);
+  const { loader } = create("ar", null, [hero, songRecognition, carousel, arrow, brand, badge, features]);
   loader.defaultValues = {
     hero_description: "N-Zik is a multilingual, open-source Android app.",
-    feature_theme_preset_one_alt: "Theme Preset 1",
+    feature_song_recognition_alt: "Song Recognition",
     feature_glass_previews_label: "Glass previews",
     feature_previous_glass_preview_label: "Previous Glass preview",
     download_companion_platforms: "N-Zik Desktop Compagnon · Windows & Linux",
@@ -298,9 +298,9 @@ test("known English copies get English metadata while shared brand wording keeps
   assert.equal(hero.textContent, loader.defaultValues.hero_description);
   assert.equal(hero.attrs.lang, "en");
   assert.equal(hero.attrs.dir, "ltr");
-  assert.equal(preset.attrs.alt, "Theme Preset 1");
-  assert.equal(preset.attrs.lang, "en");
-  assert.equal(preset.attrs.dir, "ltr");
+  assert.equal(songRecognition.attrs.alt, "Song Recognition");
+  assert.equal(songRecognition.attrs.lang, "en");
+  assert.equal(songRecognition.attrs.dir, "ltr");
   assert.equal(carousel.attrs.lang, "en");
   assert.equal(carousel.attrs.dir, undefined);
   assert.equal(arrow.attrs.lang, "en");

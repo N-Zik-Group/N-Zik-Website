@@ -24,6 +24,5 @@
     <string name="navigation_search_label">Arama</string>
     <string name="navigation_switch_to_dark_theme">Karanlık temaya geç</string>
     <string name="navigation_switch_to_light_theme">Aydınlık temaya geç</string>
-    <string name="navigation_theme_presets_label">Tema Ön Ayarları</string>
     <string name="navigation_visualizer_label">Görselleştirme</string>
 </resources>

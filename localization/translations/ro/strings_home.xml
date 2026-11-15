@@ -24,6 +24,5 @@
     <string name="navigation_search_label">Caută</string>
     <string name="navigation_switch_to_dark_theme">Comutați la tema întunecată</string>
     <string name="navigation_switch_to_light_theme">Comutați la tema luminoasă</string>
-    <string name="navigation_theme_presets_label">Presetări temă</string>
     <string name="navigation_visualizer_label">Vizualizator</string>
 </resources>

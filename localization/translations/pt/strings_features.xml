@@ -36,7 +36,6 @@
     <string name="feature_n_zik_rewind_intro_alt">Introdução de retrocesso N-Zik</string>
     <string name="feature_next_glass_preview_label">Próxima pré-visualização de vidro</string>
     <string name="feature_next_search_preview_label">Pré-visualização da próxima pesquisa</string>
-    <string name="feature_next_theme_preview_label">Pré-visualização do tema seguinte</string>
     <string name="feature_offline_caching_description">Armazenar automaticamente músicas em cache para reprodução off-line com limites personalizáveis ou faixas de download para acesso permanente.</string>
     <string name="feature_offline_caching_title">Cache inteligente off-line.</string>
     <string name="feature_optional_glass_player_alt">Jogador de vidro opcional</string>
@@ -50,7 +49,6 @@
     <string name="feature_playlists_title">Gerenciamento de playlists.</string>
     <string name="feature_previous_glass_preview_label">Pré-visualização de vidro anterior</string>
     <string name="feature_previous_search_preview_label">Pré-visualizar pesquisa anterior</string>
-    <string name="feature_previous_theme_preview_label">Pré-visualização anterior do tema</string>
     <string name="feature_profiles_alt">Profiles</string>
     <string name="feature_profiles_description">Conecte suas contas e personalize o aplicativo: sincronize com o YouTube Music, ative o RPC do Discord e Last. role o scrobbling, e alterne entre vários perfis dentro do aplicativo, cada um com seu próprio nome, avatar, banco de dados e configurações.</string>
     <string name="feature_profiles_title">Múltiplos Perfis</string>
@@ -64,14 +62,6 @@
     <string name="feature_search_title">Buscar &amp; Pesquisa de Voz.</string>
     <string name="feature_settings_alt">Confirgurações</string>
     <string name="feature_song_recognition_alt">Reconhecimento de músicas</string>
-    <string name="feature_theme_preset_five_alt">Theme Preset 5</string>
-    <string name="feature_theme_preset_four_alt">Theme Preset 4</string>
-    <string name="feature_theme_preset_one_alt">Theme Preset 1</string>
-    <string name="feature_theme_preset_six_alt">Theme Preset 6</string>
-    <string name="feature_theme_preset_three_alt">Theme Preset 3</string>
-    <string name="feature_theme_preset_two_alt">Theme Preset 2</string>
-    <string name="feature_theme_presets_description">Escolha entre 6 temas visuais maravilhosamente criados para personalizar a sua experiência musical.</string>
-    <string name="feature_theme_presets_title">Predefinições de tema.</string>
     <string name="feature_updates_description">Receber atualizações automáticas in-app diretamente do GitHub sem a necessidade de baixar manualmente novos APKs.</string>
     <string name="feature_updates_title">Atualizações OTA.</string>
     <string name="feature_visualizer_description">Aproveite os efeitos visuais em tempo real sincronizados perfeitamente com sua música.</string>

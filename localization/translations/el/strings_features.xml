@@ -36,7 +36,6 @@
     <string name="feature_n_zik_rewind_intro_alt">Εισαγωγή N-Zik Rewind</string>
     <string name="feature_next_glass_preview_label">Επόμενη προεπισκόπηση γυαλιού</string>
     <string name="feature_next_search_preview_label">Προεπισκόπηση επόμενης αναζήτησης</string>
-    <string name="feature_next_theme_preview_label">Προεπισκόπηση επόμενου θέματος</string>
     <string name="feature_offline_caching_description">Αυτόματη προσωρινή μνήμη τραγουδιών για αναπαραγωγή εκτός σύνδεσης με προσαρμόσιμα όρια, ή λήψη κομματιών για μόνιμη πρόσβαση.</string>
     <string name="feature_offline_caching_title">Έξυπνη Προσωρινή Αποθήκευση Εκτός Σύνδεσης.</string>
     <string name="feature_optional_glass_player_alt">Προαιρετικός παίκτης γυαλιού</string>
@@ -50,7 +49,6 @@
     <string name="feature_playlists_title">Διαχείριση Λίστες Αναπαραγωγής.</string>
     <string name="feature_previous_glass_preview_label">Προηγούμενη προεπισκόπηση γυαλιού</string>
     <string name="feature_previous_search_preview_label">Προηγούμενη προεπισκόπηση αναζήτησης</string>
-    <string name="feature_previous_theme_preview_label">Προηγούμενη προεπισκόπηση θέματος</string>
     <string name="feature_profiles_alt">Profiles</string>
     <string name="feature_profiles_description">Συνδέστε τους λογαριασμούς σας και προσαρμόσετε την εφαρμογή: συγχρονίστε με τη μουσική YouTube, ενεργοποιήστε το Discord RPC και το Last. m scrobbling, και εναλλαγή μεταξύ πολλαπλών in-app προφίλ, το καθένα με το δικό του όνομα, avatar, βάση δεδομένων και ρυθμίσεις.</string>
     <string name="feature_profiles_title">Πολλαπλά Προφίλ.</string>
@@ -64,14 +62,6 @@
     <string name="feature_search_title">Search &amp; Voice Search.</string>
     <string name="feature_settings_alt">Ρυθμίσεις</string>
     <string name="feature_song_recognition_alt">Αναγνώριση Τραγουδιού</string>
-    <string name="feature_theme_preset_five_alt">Theme Preset 5</string>
-    <string name="feature_theme_preset_four_alt">Theme Preset 4</string>
-    <string name="feature_theme_preset_one_alt">Theme Preset 1</string>
-    <string name="feature_theme_preset_six_alt">Theme Preset 6</string>
-    <string name="feature_theme_preset_three_alt">Theme Preset 3</string>
-    <string name="feature_theme_preset_two_alt">Theme Preset 2</string>
-    <string name="feature_theme_presets_description">Επιλέξτε από 6 όμορφα δημιουργημένα οπτικά θέματα για να προσωποποιήσετε τη μουσική σας εμπειρία.</string>
-    <string name="feature_theme_presets_title">Προεπιλογές Θέματος.</string>
     <string name="feature_updates_description">Λάβετε αυτόματες ενημερώσεις εντός της εφαρμογής απευθείας από το GitHub χωρίς να χρειάζεται να κατεβάσετε χειροκίνητα νέα APKs.</string>
     <string name="feature_updates_title">Ενημερώσεις OTA.</string>
     <string name="feature_visualizer_description">Απολαύστε σε πραγματικό χρόνο οπτικά εφέ συγχρονισμένα τέλεια με τη μουσική σας.</string>
