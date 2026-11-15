@@ -36,7 +36,6 @@
     <string name="feature_n_zik_rewind_intro_alt">N-Zik Geri Sarma Açılış</string>
     <string name="feature_next_glass_preview_label">Sonraki Cam önizlemesi</string>
     <string name="feature_next_search_preview_label">Sonraki arama önizlemesi</string>
-    <string name="feature_next_theme_preview_label">Sonraki tema önizlemesi</string>
     <string name="feature_offline_caching_description">Özelleştirilebilir sınırlarla şarkıları çevrimdışı dinlemek için otomatik olarak önbelleğe alın veya kalıcı erişim için parçaları indirin.</string>
     <string name="feature_offline_caching_title">Akıllı Çevrimdışı Önbellekleme.</string>
     <string name="feature_optional_glass_player_alt">İsteğe bağlı Cam oynatıcı</string>
@@ -50,7 +49,6 @@
     <string name="feature_playlists_title">Çalma Listesi Yönetimi.</string>
     <string name="feature_previous_glass_preview_label">Önceki Cam önizlemesi</string>
     <string name="feature_previous_search_preview_label">Önceki arama önizlemesi</string>
-    <string name="feature_previous_theme_preview_label">Önceki tema önizlemesi</string>
     <string name="feature_profiles_alt">Profiller</string>
     <string name="feature_profiles_description">Hesaplarınızı bağlayın ve uygulamayı kişiselleştirin: YouTube Music ile senkronize edin, Discord Zengin Varlık ve Last.fm kaydetme özelliklerini etkinleştirin ve her biri kendi adı, avatarı, veritabanı ve ayarlarına sahip olan çoklu uygulama içi profiller arasında geçiş yapın.</string>
     <string name="feature_profiles_title">Çoklu Profiller.</string>
@@ -64,14 +62,11 @@
     <string name="feature_search_title">Arama &amp; Sesli Arama.</string>
     <string name="feature_settings_alt">Ayarlar</string>
     <string name="feature_song_recognition_alt">Şarkı Tanıma</string>
-    <string name="feature_theme_preset_five_alt">Tema Ön Ayarı 5</string>
-    <string name="feature_theme_preset_four_alt">Tema Ön Ayarı 4</string>
-    <string name="feature_theme_preset_one_alt">Tema Ön Ayarı 1</string>
-    <string name="feature_theme_preset_six_alt">Tema Ön Ayarı  6</string>
-    <string name="feature_theme_preset_three_alt">Tema Ön Ayarı 3</string>
-    <string name="feature_theme_preset_two_alt">Tema Ön Ayarı 2</string>
-    <string name="feature_theme_presets_description">Müzik deneyiminizi kişiselleştirmek için özenle tasarlanmış 6 görsel tema arasından seçim yapın.</string>
-    <string name="feature_theme_presets_title">Tema Ön Ayarları.</string>
+    <string name="feature_theme_store_artwork_gradient_alt">Artwork Gradient theme in the player</string>
+    <string name="feature_theme_store_carousel_glass_alt">Carousel theme with Glass in the player</string>
+    <string name="feature_theme_store_description">Browse community themes in N-Zik and apply the parts you like, from colors and the player layout to navigation and Glass.</string>
+    <string name="feature_theme_store_repository_link">View the Theme Store on GitHub</string>
+    <string name="feature_theme_store_title">Tema Mağazası</string>
     <string name="feature_updates_description">Yeni APK’ları manuel olarak indirmenize gerek kalmadan, GitHub’dan doğrudan uygulama içi otomatik güncellemeleri alın.</string>
     <string name="feature_updates_title">OTA Güncellemeleri.</string>
     <string name="feature_visualizer_description">Müziğinizle mükemmel bir şekilde senkronize edilmiş gerçek zamanlı görsel efektlerin keyfini çıkarın.</string>
