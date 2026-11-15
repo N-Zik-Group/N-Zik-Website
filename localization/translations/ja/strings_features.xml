@@ -36,7 +36,6 @@
     <string name="feature_n_zik_rewind_intro_alt">N-Zik Rewind Intro</string>
     <string name="feature_next_glass_preview_label">次のガラスのプレビュー</string>
     <string name="feature_next_search_preview_label">次の検索プレビュー</string>
-    <string name="feature_next_theme_preview_label">次のテーマのプレビュー</string>
     <string name="feature_offline_caching_description">オフライン再生用の曲をカスタマイズ可能な制限付きで自動的にキャッシュしたり、トラックをダウンロードして永続的にアクセスすることもできます。</string>
     <string name="feature_offline_caching_title">スマートオフラインキャッシュ。</string>
     <string name="feature_optional_glass_player_alt">オプションのガラスプレーヤー</string>
@@ -50,7 +49,6 @@
     <string name="feature_playlists_title">プレイリスト管理</string>
     <string name="feature_previous_glass_preview_label">前のガラスのプレビュー</string>
     <string name="feature_previous_search_preview_label">前の検索プレビュー</string>
-    <string name="feature_previous_theme_preview_label">前のテーマのプレビュー</string>
     <string name="feature_profiles_alt">Profiles</string>
     <string name="feature_profiles_description">アカウントを接続し、アプリをカスタマイズします：YouTube ミュージックと同期、Discord RPCとLastを有効にします。 それぞれの名前とアバター、データベースと設定を持つ複数のアプリ内プロファイルを切り替えます</string>
     <string name="feature_profiles_title">複数のプロファイル</string>
@@ -64,14 +62,11 @@
     <string name="feature_search_title">Search &amp; Voice Search.</string>
     <string name="feature_settings_alt">設定</string>
     <string name="feature_song_recognition_alt">曲認識</string>
-    <string name="feature_theme_preset_five_alt">Theme Preset 5</string>
-    <string name="feature_theme_preset_four_alt">Theme Preset 4</string>
-    <string name="feature_theme_preset_one_alt">Theme Preset 1</string>
-    <string name="feature_theme_preset_six_alt">Theme Preset 6</string>
-    <string name="feature_theme_preset_three_alt">Theme Preset 3</string>
-    <string name="feature_theme_preset_two_alt">Theme Preset 2</string>
-    <string name="feature_theme_presets_description">美しく細工された6つのビジュアルテーマから音楽体験をパーソナライズします。</string>
-    <string name="feature_theme_presets_title">テーマのプリセット</string>
+    <string name="feature_theme_store_artwork_gradient_alt">プレイヤーのアートワークグラデーションテーマ</string>
+    <string name="feature_theme_store_carousel_glass_alt">プレーヤーでガラスを使ったカルーセルのテーマ</string>
+    <string name="feature_theme_store_description">N-Zikでコミュニティテーマを閲覧し、色やプレイヤーのレイアウトからナビゲーションやガラスに至るまで、好きな部分を適用します。</string>
+    <string name="feature_theme_store_repository_link">GitHubでテーマストアを見る</string>
+    <string name="feature_theme_store_title">テーマストア</string>
     <string name="feature_updates_description">手動で新しい APK をダウンロードすることなく、GitHub から直接アプリ内の自動更新を受信します。</string>
     <string name="feature_updates_title">OTA Updates.</string>
     <string name="feature_visualizer_description">あなたの音楽と完全に同期されたリアルタイムの視覚効果をお楽しみください。</string>
