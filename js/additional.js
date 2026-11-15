@@ -74,20 +74,25 @@ window.addEventListener("wheel", (event) => {
 
 const motionPreference = matchMedia("(prefers-reduced-motion: reduce)");
 const previews = document.querySelectorAll("video");
+const previewVisibilityThreshold = 0.25;
+const startedPreviews = new WeakSet();
 const previewObserver = new IntersectionObserver((entries, observer) => {
   for (const entry of entries) {
-    if (!entry.isIntersecting || motionPreference.matches) continue;
-    observer.unobserve(entry.target);
+    const preview = entry.target;
+    if (motionPreference.matches || startedPreviews.has(preview) ||
+        !entry.isIntersecting || entry.intersectionRatio < previewVisibilityThreshold) continue;
     // Start once so returning to a preview does not override a manual pause.
-    entry.target.play().catch(() => {});
+    startedPreviews.add(preview);
+    observer.unobserve(preview);
+    preview.play().catch(() => {});
   }
-}, { threshold: 0.25 });
+}, { threshold: previewVisibilityThreshold });
 
 function updatePreviewMotion() {
   previewObserver.disconnect();
   for (const preview of previews) {
     if (motionPreference.matches) preview.pause();
-    else previewObserver.observe(preview);
+    else if (!startedPreviews.has(preview)) previewObserver.observe(preview);
   }
 }
 updatePreviewMotion();
