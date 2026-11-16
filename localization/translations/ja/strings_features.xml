@@ -62,10 +62,16 @@
     <string name="feature_search_title">Search &amp; Voice Search.</string>
     <string name="feature_settings_alt">設定</string>
     <string name="feature_song_recognition_alt">曲認識</string>
+    <string name="feature_theme_store_artwork_gradient_alt">プレイヤーのアートワークグラデーションテーマ</string>
+    <string name="feature_theme_store_carousel_glass_alt">プレーヤーでガラスを使ったカルーセルのテーマ</string>
+    <string name="feature_theme_store_description">N-Zikでコミュニティテーマを閲覧し、色やプレイヤーのレイアウトからナビゲーションやガラスに至るまで、好きな部分を適用します。</string>
+    <string name="feature_theme_store_repository_link">GitHubでテーマストアを見る</string>
+    <string name="feature_theme_store_title">テーマストア</string>
     <string name="feature_updates_description">手動で新しい APK をダウンロードすることなく、GitHub から直接アプリ内の自動更新を受信します。</string>
     <string name="feature_updates_title">OTA Updates.</string>
     <string name="feature_visualizer_description">あなたの音楽と完全に同期されたリアルタイムの視覚効果をお楽しみください。</string>
     <string name="feature_visualizer_title">没入型オーディオビジュアライザー</string>
     <string name="feature_voice_search_alt">音声検索</string>
     <string name="feature_youtube_account_alt">YouTubeアカウント</string>
+    <string name="feature_youtube_accounts_description">同じアカウントで管理されているチャンネルを含むGoogleアカウントとYouTubeチャンネルを切り替えます。 N-Zik プロファイルは、1 つの有効な YouTube 音楽チャンネルを使用します。実験的な双方向ライブラリの同期は Debug ビルドと Dev ビルドで利用できます。</string>
 </resources>
