@@ -50,7 +50,7 @@
     <string name="feature_previous_glass_preview_label">Forrige Glass forhåndsvisning</string>
     <string name="feature_previous_search_preview_label">Forhåndsvis forrige søk</string>
     <string name="feature_profiles_alt">Profiles</string>
-    <string name="feature_profiles_description">Koble kontoene dine for å tilpasse appen: synk med YouTube Musikk, aktiver Discord RPC og sist. m scrobbling, og bytte mellom flere i-app profiler, hver med sitt eget navn, avatar, database og innstillinger.</string>
+    <string name="feature_profiles_description">Bytt mellom N-Zik-profiler, hver med sitt eget navn, avatar, database og innstillinger. Tilknytt Discord Rich Presence og Last.fm scrobbling til hver profil.</string>
     <string name="feature_profiles_title">Flere profiler.</string>
     <string name="feature_queue_description">Hold oversikt over hva som spiller neste, omorganiser sanger fly, og administrer dine kommende spor.</string>
     <string name="feature_queue_title">Avspillings kø.</string>
@@ -73,4 +73,5 @@
     <string name="feature_visualizer_title">Fullskjerm lyd visualiser.</string>
     <string name="feature_voice_search_alt">Søk etter stemme</string>
     <string name="feature_youtube_account_alt">YouTube konto</string>
+    <string name="feature_youtube_accounts_description">Bytt mellom Google-kontoer og YouTube-kanaler, inkludert kanaler administrert av samme konto. Hver N-Zik-profil bruker en aktiv YouTube musikkkanal. Synking av eksperimentell toveis bibliotek er tilgjengelig i Debug og Dev builds.</string>
 </resources>
