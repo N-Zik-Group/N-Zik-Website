@@ -50,7 +50,7 @@
     <string name="feature_previous_glass_preview_label">Förhandsgranskning av föregående glas</string>
     <string name="feature_previous_search_preview_label">Föregående sökförhandsgranskning</string>
     <string name="feature_profiles_alt">Profiles</string>
-    <string name="feature_profiles_description">Anslut dina konton och anpassa appen: synkronisera med YouTube Music, aktivera Discord RPC och Sast. m scrobbling, och växla mellan flera i-app-profiler, var och en med sitt eget namn, avatar, databas och inställningar.</string>
+    <string name="feature_profiles_description">Växla mellan N-Zik-profiler, var och en med sitt eget namn, avatar, databas och inställningar. Anslut Discord Rich Presence och Last.fm scrobbling till varje profil.</string>
     <string name="feature_profiles_title">Flera profiler.</string>
     <string name="feature_queue_description">Håll koll på vad som spelar härnäst, arrangera om låtar i farten och hantera dina kommande låtar.</string>
     <string name="feature_queue_title">Uppspelningskön.</string>
@@ -73,4 +73,5 @@
     <string name="feature_visualizer_title">Omslutande Audio Visualizer.</string>
     <string name="feature_voice_search_alt">Röstsökning</string>
     <string name="feature_youtube_account_alt">YouTube-konto</string>
+    <string name="feature_youtube_accounts_description">Växla mellan Google-konton och YouTube-kanaler, inklusive kanaler som hanteras av samma konto. Varje N-Zik-profil använder en aktiv YouTube-musikkanal. Experimentell tvåvägsbibliotekssynkning finns i Debug och Dev bygger.</string>
 </resources>
