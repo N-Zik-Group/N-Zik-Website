@@ -50,7 +50,7 @@
     <string name="feature_previous_glass_preview_label">Попередній попередній перегляд скла</string>
     <string name="feature_previous_search_preview_label">Попередній перегляд пошуку</string>
     <string name="feature_profiles_alt">Profiles</string>
-    <string name="feature_profiles_description">Підключіть свої облікові записи та налаштуйте програму: синхронізуйте їх з YouTube Music, увімкніть Discord RPC і Останні. скроблінг і переключення між кількома профілями програми, кожен з яких має власне ім\'я, аватар, бази даних і параметрів.</string>
+    <string name="feature_profiles_description">Перемикання між N-Zik профілями, кожен із власним іменем, аватаром, базами даних і параметрів. Підключіть Discord Rich Presence і Last.fm скасовують в кожен профіль.</string>
     <string name="feature_profiles_title">Декілька профілів.</string>
     <string name="feature_queue_description">Слідкуйте за тим, що відбулося, можливо можливо можливо робити пісні на льоту і керуйте наступними шляхами.</string>
     <string name="feature_queue_title">Черга відтворення.</string>
@@ -73,4 +73,5 @@
     <string name="feature_visualizer_title">Захоплюючий аудіо візуалізатор звуку.</string>
     <string name="feature_voice_search_alt">Голосовий пошук</string>
     <string name="feature_youtube_account_alt">YouTube акаунт</string>
+    <string name="feature_youtube_accounts_description">Перемикання між акаунтами Google і каналами YouTube, включаючи канали, що керуються одним обліковим записом. Кожен профіль N-Zik використовує один активний канал YouTube музики. Експериментальна двостороння синхронізація бібліотеки доступна в збірках Debug і Dev.</string>
 </resources>
