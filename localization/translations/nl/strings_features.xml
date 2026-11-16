@@ -50,7 +50,7 @@
     <string name="feature_previous_glass_preview_label">Vorig glas voorbeeld</string>
     <string name="feature_previous_search_preview_label">Vorige zoekvoorbeeld</string>
     <string name="feature_profiles_alt">Profiles</string>
-    <string name="feature_profiles_description">Verbind je accounts en pas de app aan: synchroniseer met YouTube Music, schakel Discord RPC en Last in. m scrobbleren en schakelen tussen meerdere in-app profielen, elk met zijn eigen naam, avatar, database en instellingen.</string>
+    <string name="feature_profiles_description">Schakel tussen N-Zik profielen, elk met zijn eigen naam, avatar, database en instellingen. Verbind Discord Rich Presence en Last.fm scrobbling met elk profiel.</string>
     <string name="feature_profiles_title">Meerdere profielen</string>
     <string name="feature_queue_description">Blijf bijhouden wat er nu wordt afgespeeld, herschik nummers tijdens het vliegen en beheer je aankomende nummers.</string>
     <string name="feature_queue_title">Afspeelwachtrij</string>
@@ -73,4 +73,5 @@
     <string name="feature_visualizer_title">Schermvullende audiovisualisator</string>
     <string name="feature_voice_search_alt">Spraakgestuurd zoeken</string>
     <string name="feature_youtube_account_alt">YouTube account</string>
+    <string name="feature_youtube_accounts_description">Schakel tussen Google-accounts en YouTube-kanalen, met inbegrip van kanalen die worden beheerd door hetzelfde account. Elk N-Zik-profiel gebruikt één actieve YouTube-muziekkanaal. Experimentele bibliotheek is beschikbaar in Debug en Dev builds.</string>
 </resources>
