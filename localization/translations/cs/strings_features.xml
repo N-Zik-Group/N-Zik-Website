@@ -50,7 +50,7 @@
     <string name="feature_previous_glass_preview_label">Předchozí náhled skla</string>
     <string name="feature_previous_search_preview_label">Předchozí náhled hledání</string>
     <string name="feature_profiles_alt">Profiles</string>
-    <string name="feature_profiles_description">Připojte své účty a přizpůsobte aplikaci: synchronizujte s YouTube Music, povolte Discord RPC a Last. m scrobbling a přepínání mezi více profily v aplikaci, každý s vlastním jménem, avatar, databází a nastavením.</string>
+    <string name="feature_profiles_description">Přepínání mezi profily N-Zik, každý s vlastním jménem, avatarem, databází a nastavením. Připojte Discord Rich Presence a Last.fm scrobbling ke každému profilu.</string>
     <string name="feature_profiles_title">Více profilů.</string>
     <string name="feature_queue_description">Sledujte, co hraje dál, přeorganizujte písničky a spravujte své nadcházející skladby.</string>
     <string name="feature_queue_title">Fronta přehrávání</string>
@@ -73,4 +73,5 @@
     <string name="feature_visualizer_title">Pohlcující vizualizér zvuku.</string>
     <string name="feature_voice_search_alt">Hlasové vyhledávání</string>
     <string name="feature_youtube_account_alt">YouTube účet</string>
+    <string name="feature_youtube_accounts_description">Přepínání mezi účty Google a YouTube kanály, včetně kanálů spravovaných stejným účtem. Každý N-Zik profil používá jeden aktivní YouTube hudební kanál. Experimentální obousměrná synchronizace knihovny je dostupná v ladících a ladících sestavách.</string>
 </resources>
