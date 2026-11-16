@@ -50,7 +50,7 @@
     <string name="feature_previous_glass_preview_label">Prévisualisation précédente du verre</string>
     <string name="feature_previous_search_preview_label">Aperçu de la recherche précédente</string>
     <string name="feature_profiles_alt">Profils</string>
-    <string name="feature_profiles_description">Connectez vos comptes et personnalisez l\'application : synchronisez-la avec YouTube Music, activez la fonctionnalité « Rich Presence » sur Discord et le scrobbling sur Last.fm, et passez d\'un profil à l\'autre au sein de l\'application, chacun disposant de son propre nom, avatar, base de données et paramètres.</string>
+    <string name="feature_profiles_description">Basculer entre les profils N-Zik, chacun avec son propre nom, avatar, base de données et paramètres. Connectez Discord Rich Presence et Last.fm scrobbling à chaque profil.</string>
     <string name="feature_profiles_title">Profils multiples.</string>
     <string name="feature_queue_description">Suivez le programme des morceaux à venir, réorganisez-les à la volée et gérez vos prochains morceaux.</string>
     <string name="feature_queue_title">File d\'attente de lecture.</string>
@@ -73,4 +73,5 @@
     <string name="feature_visualizer_title">Visualiseur Audio Immersif.</string>
     <string name="feature_voice_search_alt">Recherche vocale</string>
     <string name="feature_youtube_account_alt">Compte YouTube</string>
+    <string name="feature_youtube_accounts_description">Basculer entre les comptes Google et les chaînes YouTube, y compris les chaînes gérées par le même compte. Chaque profil N-Zik utilise un canal YouTube Music actif. La synchronisation expérimentale de la bibliothèque bidirectionnelle est disponible dans les versions Debug et Dev.</string>
 </resources>
