@@ -62,10 +62,16 @@
     <string name="feature_search_title">Sök &amp; Röstsökning.</string>
     <string name="feature_settings_alt">Inställningar</string>
     <string name="feature_song_recognition_alt">Låtigenkänning</string>
+    <string name="feature_theme_store_artwork_gradient_alt">Tema Artwork Gradient i spelaren</string>
+    <string name="feature_theme_store_carousel_glass_alt">Karuselltema med glas i spelaren</string>
+    <string name="feature_theme_store_description">Bläddra bland gemenskapsteman i N-Zik och tillämpa de delar du vill, från färger och spelarlayouten till navigering och glas.</string>
+    <string name="feature_theme_store_repository_link">Visa Temabutiken på GitHub</string>
+    <string name="feature_theme_store_title">Butik för tema</string>
     <string name="feature_updates_description">Få automatiska in-app uppdateringar direkt från GitHub utan att behöva manuellt ladda ner nya APKs.</string>
     <string name="feature_updates_title">OTA uppdateringar.</string>
     <string name="feature_visualizer_description">Njut av visuella effekter i realtid synkroniserade perfekt med din musik.</string>
     <string name="feature_visualizer_title">Omslutande Audio Visualizer.</string>
     <string name="feature_voice_search_alt">Röstsökning</string>
     <string name="feature_youtube_account_alt">YouTube-konto</string>
+    <string name="feature_youtube_accounts_description">Växla mellan Google-konton och YouTube-kanaler, inklusive kanaler som hanteras av samma konto. Varje N-Zik-profil använder en aktiv YouTube-musikkanal. Experimentell tvåvägsbibliotekssynkning finns i Debug och Dev bygger.</string>
 </resources>
