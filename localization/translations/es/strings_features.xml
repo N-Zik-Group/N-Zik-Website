@@ -62,10 +62,16 @@
     <string name="feature_search_title">Buscar &amp; Búsqueda por voz.</string>
     <string name="feature_settings_alt">Ajustes</string>
     <string name="feature_song_recognition_alt">Reconocimiento de la canción</string>
+    <string name="feature_theme_store_artwork_gradient_alt">Tema Caliente de arte en el jugador</string>
+    <string name="feature_theme_store_carousel_glass_alt">Tema del carrusel con el vidrio en el jugador</string>
+    <string name="feature_theme_store_description">Navega por los temas de la comunidad en N-Zik y aplica las partes que quieras, desde los colores y la disposición del jugador a la navegación y el vidrio.</string>
+    <string name="feature_theme_store_repository_link">Ver la tienda de temas en GitHub</string>
+    <string name="feature_theme_store_title">Tienda de temas</string>
     <string name="feature_updates_description">Recibir actualizaciones automáticas en la aplicación directamente desde GitHub sin necesidad de descargar manualmente nuevas APKs.</string>
     <string name="feature_updates_title">Actualizaciones OTA.</string>
     <string name="feature_visualizer_description">Disfruta de efectos visuales en tiempo real sincronizados perfectamente con tu música.</string>
     <string name="feature_visualizer_title">Visualizador de audio inmersivo.</string>
     <string name="feature_voice_search_alt">Búsqueda por voz</string>
     <string name="feature_youtube_account_alt">Cuenta de YouTube</string>
+    <string name="feature_youtube_accounts_description">Cambiar entre cuentas de Google y canales de YouTube, incluyendo canales administrados por la misma cuenta. Cada perfil de N-Zik utiliza un canal activo de YouTube. La sincronización experimental de la biblioteca bidireccional está disponible en versiones de depuración y dev.</string>
 </resources>
