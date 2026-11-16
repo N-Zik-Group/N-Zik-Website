@@ -24,5 +24,6 @@
     <string name="navigation_search_label">検索</string>
     <string name="navigation_switch_to_dark_theme">ダークテーマに切り替える</string>
     <string name="navigation_switch_to_light_theme">ライトテーマに切り替える</string>
+    <string name="navigation_theme_store_label">テーマストア</string>
     <string name="navigation_visualizer_label">ビジュアライザー</string>
 </resources>
