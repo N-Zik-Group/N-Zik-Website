@@ -62,10 +62,16 @@
     <string name="feature_search_title">Search &amp; Voice Search.</string>
     <string name="feature_settings_alt">Ρυθμίσεις</string>
     <string name="feature_song_recognition_alt">Αναγνώριση Τραγουδιού</string>
+    <string name="feature_theme_store_artwork_gradient_alt">Θέμα διαβάθμισης έργων στον παίκτη</string>
+    <string name="feature_theme_store_carousel_glass_alt">Carousel θέμα με γυαλί στον παίκτη</string>
+    <string name="feature_theme_store_description">Περιηγηθείτε στα θέματα κοινότητας στο N-Zik και εφαρμόστε τα μέρη που σας αρέσουν, από τα χρώματα και τη διάταξη του παίκτη μέχρι την πλοήγηση και το γυαλί.</string>
+    <string name="feature_theme_store_repository_link">Προβολή του καταστήματος θεμάτων στο GitHub</string>
+    <string name="feature_theme_store_title">Κατάστημα Θεμάτων</string>
     <string name="feature_updates_description">Λάβετε αυτόματες ενημερώσεις εντός της εφαρμογής απευθείας από το GitHub χωρίς να χρειάζεται να κατεβάσετε χειροκίνητα νέα APKs.</string>
     <string name="feature_updates_title">Ενημερώσεις OTA.</string>
     <string name="feature_visualizer_description">Απολαύστε σε πραγματικό χρόνο οπτικά εφέ συγχρονισμένα τέλεια με τη μουσική σας.</string>
     <string name="feature_visualizer_title">Immersive Visualizer Ήχου.</string>
     <string name="feature_voice_search_alt">Φωνητική Αναζήτηση</string>
     <string name="feature_youtube_account_alt">Λογαριασμός YouTube</string>
+    <string name="feature_youtube_accounts_description">Εναλλαγή μεταξύ λογαριασμών Google και καναλιών YouTube, συμπεριλαμβανομένων καναλιών που διαχειρίζεται ο ίδιος λογαριασμός. Κάθε προφίλ N-Zik χρησιμοποιεί ένα ενεργό κανάλι YouTube Music. Ο πειραματικός αμφίδρομος συγχρονισμός βιβλιοθήκης είναι διαθέσιμος σε Debug και Dev κτίρια.</string>
 </resources>

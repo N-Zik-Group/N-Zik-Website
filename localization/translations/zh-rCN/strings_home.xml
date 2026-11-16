@@ -24,5 +24,6 @@
     <string name="navigation_search_label">搜索</string>
     <string name="navigation_switch_to_dark_theme">切换到暗色主题</string>
     <string name="navigation_switch_to_light_theme">切换到亮色主题</string>
+    <string name="navigation_theme_store_label">主题商店</string>
     <string name="navigation_visualizer_label">可视化器</string>
 </resources>

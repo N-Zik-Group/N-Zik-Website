@@ -62,10 +62,16 @@
     <string name="feature_search_title">البحث &amp; البحث الصوتي.</string>
     <string name="feature_settings_alt">الإعدادات</string>
     <string name="feature_song_recognition_alt">التعرف على الأغنية</string>
+    <string name="feature_theme_store_artwork_gradient_alt">موضوع العمل الفني في اللاعب</string>
+    <string name="feature_theme_store_carousel_glass_alt">سمة كاروسل مع الزجاج في اللاعب</string>
+    <string name="feature_theme_store_description">تصفح سمات المجتمع في N-Zik و تطبيق الأجزاء التي تحبها، من الألوان و تخطيط اللاعب إلى الملاحة و Glass.</string>
+    <string name="feature_theme_store_repository_link">عرض متجر السمة على GitHub</string>
+    <string name="feature_theme_store_title">متجر السمة</string>
     <string name="feature_updates_description">تلقي التحديثات التلقائية في التطبيق مباشرة من GitHub دون الحاجة إلى تنزيل APK جديدة يدوياً.</string>
     <string name="feature_updates_title">تحديثات OTA.</string>
     <string name="feature_visualizer_description">استمتع بتأثيرات مرئية في الوقت الحقيقي متزامنة تماما مع موسيقاك.</string>
     <string name="feature_visualizer_title">المرئيات الصوتية الغامرة.</string>
     <string name="feature_voice_search_alt">البحث الصوتي</string>
     <string name="feature_youtube_account_alt">حساب اليوتيوب</string>
+    <string name="feature_youtube_accounts_description">التبديل بين حسابات جوجل وقنوات اليوتيوب، بما في ذلك القنوات التي يديرها نفس الحساب. كل ملف شخصي N-Zik يستخدم قناة موسيقى يوتيوب نشطة. المزامنة التجريبية للمكتبة ثنائية الاتجاه متوفرة في إصدارات التصحيح و Dev</string>
 </resources>

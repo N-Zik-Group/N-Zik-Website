@@ -24,5 +24,6 @@
     <string name="navigation_search_label">Hledat</string>
     <string name="navigation_switch_to_dark_theme">Přepnout na tmavý motiv</string>
     <string name="navigation_switch_to_light_theme">Přepnout na světlý motiv</string>
+    <string name="navigation_theme_store_label">Obchod s motivy</string>
     <string name="navigation_visualizer_label">Viděný</string>
 </resources>

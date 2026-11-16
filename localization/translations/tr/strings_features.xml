@@ -50,7 +50,7 @@
     <string name="feature_previous_glass_preview_label">Önceki Cam önizlemesi</string>
     <string name="feature_previous_search_preview_label">Önceki arama önizlemesi</string>
     <string name="feature_profiles_alt">Profiller</string>
-    <string name="feature_profiles_description">Hesaplarınızı bağlayın ve uygulamayı kişiselleştirin: YouTube Music ile senkronize edin, Discord Zengin Varlık ve Last.fm kaydetme özelliklerini etkinleştirin ve her biri kendi adı, avatarı, veritabanı ve ayarlarına sahip olan çoklu uygulama içi profiller arasında geçiş yapın.</string>
+    <string name="feature_profiles_description">Her biri kendine özgü adı, avatarı, veritabanı ve ayarları olan N-Zik profilleri arasında geçiş yapın. Her profile Discord Zengin Varlık ve Last.fm kaydetme özelliklerini bağlayın.</string>
     <string name="feature_profiles_title">Çoklu Profiller.</string>
     <string name="feature_queue_description">Sıradaki parçayı takip edin, şarkıları anında yeniden sıralayın ve çalınacak parçalarınızı yönetin.</string>
     <string name="feature_queue_title">Oynatma Sırası.</string>
@@ -62,10 +62,16 @@
     <string name="feature_search_title">Arama &amp; Sesli Arama.</string>
     <string name="feature_settings_alt">Ayarlar</string>
     <string name="feature_song_recognition_alt">Şarkı Tanıma</string>
+    <string name="feature_theme_store_artwork_gradient_alt">Oynatıcıdaki Sanat Eseri Gradyan teması.</string>
+    <string name="feature_theme_store_carousel_glass_alt">Oynatıcıda Cam özelliğine sahip karusel tema</string>
+    <string name="feature_theme_store_description">N-Zik\'teki topluluk temalarına göz atın ve renklerden oynatıcı düzenine, gezinme öğelerinden Cama kadar beğendiğiniz öğeleri uygulayın.</string>
+    <string name="feature_theme_store_repository_link">GitHub\'daki Tema Mağazasını görüntüleyin</string>
+    <string name="feature_theme_store_title">Tema Mağazası</string>
     <string name="feature_updates_description">Yeni APK’ları manuel olarak indirmenize gerek kalmadan, GitHub’dan doğrudan uygulama içi otomatik güncellemeleri alın.</string>
     <string name="feature_updates_title">OTA Güncellemeleri.</string>
     <string name="feature_visualizer_description">Müziğinizle mükemmel bir şekilde senkronize edilmiş gerçek zamanlı görsel efektlerin keyfini çıkarın.</string>
     <string name="feature_visualizer_title">Sürükleyici Ses Görselleştirici.</string>
     <string name="feature_voice_search_alt">Sesli Arama</string>
     <string name="feature_youtube_account_alt">YouTube Hesabı</string>
+    <string name="feature_youtube_accounts_description">Aynı hesap tarafından yönetilen kanallar da dahil olmak üzere, Google hesapları ve YouTube kanalları arasında geçiş yapabilirsiniz. Her N-Zik profili, bir adet aktif YouTube Music kanalı kullanır. Deneysel iki yönlü kütüphane senkronizasyonu, Hata Ayıklama ve Geliştirici sürümlerinde kullanılabilir.</string>
 </resources>
