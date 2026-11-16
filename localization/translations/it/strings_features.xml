@@ -50,7 +50,7 @@
     <string name="feature_previous_glass_preview_label">Anteprima vetro precedente</string>
     <string name="feature_previous_search_preview_label">Anteprima ricerca precedente</string>
     <string name="feature_profiles_alt">Profili</string>
-    <string name="feature_profiles_description">Collega i tuoi account e personalizza l\'app: sincronizza con YouTube Music, abilita Discord RPC e Last. m scrobbling, e passare da più profili in-app, ciascuno con il proprio nome, avatar, database e impostazioni.</string>
+    <string name="feature_profiles_description">Passa tra i profili N-Zik, ognuno con il proprio nome, avatar, database e impostazioni. Connetti Discord Rich Presence e Last.fm scrobbling ad ogni profilo.</string>
     <string name="feature_profiles_title">Profili Multipli.</string>
     <string name="feature_queue_description">Tieni traccia di ciò che sta suonando dopo, riorganizza le canzoni al volo e gestisci le tue prossime tracce.</string>
     <string name="feature_queue_title">Fila Di Riproduzione.</string>
@@ -73,4 +73,5 @@
     <string name="feature_visualizer_title">Visualizzatore Audio Immersivo.</string>
     <string name="feature_voice_search_alt">Ricerca Vocale</string>
     <string name="feature_youtube_account_alt">Account YouTube</string>
+    <string name="feature_youtube_accounts_description">Passa tra gli account Google e i canali YouTube, inclusi i canali gestiti dallo stesso account. Ogni profilo N-Zik utilizza un canale musicale YouTube attivo. La sincronizzazione sperimentale della libreria bidirezionale è disponibile nelle build Debug e Dev.</string>
 </resources>
