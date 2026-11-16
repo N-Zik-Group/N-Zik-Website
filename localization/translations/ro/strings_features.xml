@@ -50,7 +50,7 @@
     <string name="feature_previous_glass_preview_label">Previzualizarea anterioară a sticlei</string>
     <string name="feature_previous_search_preview_label">Previzualizare căutare anterioară</string>
     <string name="feature_profiles_alt">Profiles</string>
-    <string name="feature_profiles_description">Conectează-ți conturile și personalizează aplicația: sincronizare cu YouTube Music, activează Discord RPC și ultimul. m scrobbling, și comutați între mai multe profiluri din aplicație, fiecare cu numele, avatarul, baza de date și setările.</string>
+    <string name="feature_profiles_description">Comutați între profilurile N-Zik, fiecare cu propriul nume, avatar, bază de date și setări. Conectați Discord Rich Presence și scrobbling Last.fm la fiecare profil.</string>
     <string name="feature_profiles_title">Profiluri multiple.</string>
     <string name="feature_queue_description">Urmărește ce va reda în continuare, rearanjează melodiile în zbor și gestionează piesele care urmează.</string>
     <string name="feature_queue_title">Lista de redare.</string>
@@ -73,4 +73,5 @@
     <string name="feature_visualizer_title">Vizualizator audio imersiv.</string>
     <string name="feature_voice_search_alt">Căutare vocală</string>
     <string name="feature_youtube_account_alt">Cont YouTube</string>
+    <string name="feature_youtube_accounts_description">Comutați între conturile Google și canalele YouTube, inclusiv canalele gestionate de același cont. Fiecare profil N-Zik folosește un canal activ de muzică YouTube. Sincronizarea bidirecțională experimentală a bibliotecii este disponibilă în Debug și Dev construiește.</string>
 </resources>
