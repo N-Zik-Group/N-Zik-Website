@@ -50,7 +50,7 @@
     <string name="feature_previous_glass_preview_label">معاينة زجاجية سابقة</string>
     <string name="feature_previous_search_preview_label">معاينة البحث السابقة</string>
     <string name="feature_profiles_alt">Profiles</string>
-    <string name="feature_profiles_description">قم بتوصيل حساباتك وتخصيص التطبيق: مزامنة مع يوتيوب الموسيقى، تمكين ديسكورد RPC و الأخير. م نسخ، والتبديل بين ملفات تعريف متعددة داخل التطبيق، كل منها باسمه الخاص، صورته الرمزية وقاعدة البيانات والإعدادات.</string>
+    <string name="feature_profiles_description">التبديل بين ملفات تعريف N-Zik ، لكل منها اسمه الخاص ، صورته الرمزية ، قاعدة البيانات والإعدادات. قم بتوصيل ديسكورد ريتش وجود و Last.fm scrobbling إلى كل ملف شخصي.</string>
     <string name="feature_profiles_title">ملفات شخصية متعددة.</string>
     <string name="feature_queue_description">متابعة ما يلعب بعد ذلك، وإعادة ترتيب الأغاني على الطائرة، وإدارة المسارات القادمة الخاصة بك.</string>
     <string name="feature_queue_title">قائمة انتظار التشغيل.</string>
@@ -73,4 +73,5 @@
     <string name="feature_visualizer_title">المرئيات الصوتية الغامرة.</string>
     <string name="feature_voice_search_alt">البحث الصوتي</string>
     <string name="feature_youtube_account_alt">حساب اليوتيوب</string>
+    <string name="feature_youtube_accounts_description">التبديل بين حسابات جوجل وقنوات اليوتيوب، بما في ذلك القنوات التي يديرها نفس الحساب. كل ملف شخصي N-Zik يستخدم قناة موسيقى يوتيوب نشطة. المزامنة التجريبية للمكتبة ثنائية الاتجاه متوفرة في إصدارات التصحيح و Dev</string>
 </resources>
