@@ -170,3 +170,5 @@ Made with ❤️ by the N-Zik Group community · Project license: GPLv3 - see [L
 The site's contents are not affiliated with, funded, authorized, endorsed by, or in any way associated with YouTube, Google LLC, or any of its affiliates or subsidiaries.
 
 Any trademarks, service marks, trade names, or other intellectual property rights used in this project remain the property of their respective owners.
+
+<!-- Temporary roadmap integration test. -->
