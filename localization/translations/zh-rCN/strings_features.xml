@@ -50,7 +50,7 @@
     <string name="feature_previous_glass_preview_label">上一个玻璃预览</string>
     <string name="feature_previous_search_preview_label">上一个搜索预览</string>
     <string name="feature_profiles_alt">Profiles</string>
-    <string name="feature_profiles_description">关联账号并自定义应用：与 YouTube Music 同步，启用 Discord RPC 和 Last.fm 打点，并在应用内多个配置文件之间切换--每个配置文件都有独立的名称、头像、数据库和设置。</string>
+    <string name="feature_profiles_description">在N-Zik配置文件之间切换，每个配置文件都有自己的名称、头像、数据库和设置。连接Discord Rich Presence和Last.fm 扫描到每个配置文件。</string>
     <string name="feature_profiles_title">多个配置文件</string>
     <string name="feature_queue_description">跟踪下一步播放的内容，重新排列歌曲，并管理您即将播放的歌曲。</string>
     <string name="feature_queue_title">播放队列。</string>
@@ -73,4 +73,5 @@
     <string name="feature_visualizer_title">沉浸式音频可视化器。</string>
     <string name="feature_voice_search_alt">语音搜索</string>
     <string name="feature_youtube_account_alt">YouTube帐户</string>
+    <string name="feature_youtube_accounts_description">在Google账户和 YouTube 频道之间切换，包括由同一账户管理的频道。 每个N-Zik配置文件使用一个活跃的 YouTube 音乐频道。在Debug 和 Dev构建中可以使用实验性双向库同步功能。</string>
 </resources>
