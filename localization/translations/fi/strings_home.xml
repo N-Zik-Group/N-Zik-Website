@@ -24,5 +24,6 @@
     <string name="navigation_search_label">Etsi</string>
     <string name="navigation_switch_to_dark_theme">Vaihda tummaan teemaan</string>
     <string name="navigation_switch_to_light_theme">Vaihda vaaleaan teemaan</string>
+    <string name="navigation_theme_store_label">Teeman Kauppa</string>
     <string name="navigation_visualizer_label">Visualisoija</string>
 </resources>
