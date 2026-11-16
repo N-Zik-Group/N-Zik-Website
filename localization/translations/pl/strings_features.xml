@@ -50,7 +50,7 @@
     <string name="feature_previous_glass_preview_label">Poprzedni podgląd szkła</string>
     <string name="feature_previous_search_preview_label">Poprzedni podgląd wyszukiwania</string>
     <string name="feature_profiles_alt">Profiles</string>
-    <string name="feature_profiles_description">Połącz swoje konta i dostosuj aplikację: synchronizuj z YouTube Music, włącz Discord RPC i Last. m scrobbling i przełączanie się pomiędzy wieloma profilami w aplikacji, z których każdy ma własną nazwę, awatar, bazę danych i ustawienia.</string>
+    <string name="feature_profiles_description">Przełącz się między profilem N-Zik, z których każdy ma własną nazwę, awatar, bazę danych i ustawienia. Połącz Discord Rich Presence i Last.fm scrobbling do każdego profilu.</string>
     <string name="feature_profiles_title">Wiele profili.</string>
     <string name="feature_queue_description">Śledź to, co się odtwarza dalej, zmień kolejność piosenek na locie i zarządzaj nadchodzącymi utworami.</string>
     <string name="feature_queue_title">Kolejka odtwarzania.</string>
@@ -73,4 +73,5 @@
     <string name="feature_visualizer_title">Immersive Audio Visualizer.</string>
     <string name="feature_voice_search_alt">Wyszukiwanie głosowe</string>
     <string name="feature_youtube_account_alt">Konto YouTube</string>
+    <string name="feature_youtube_accounts_description">Przełącz pomiędzy kontami Google i kanałami YouTube, w tym kanałami zarządzanymi przez to samo konto. Każdy profil N-Zik używa jednego aktywnego kanału muzycznego YouTube. Eksperymentalna synchronizacja biblioteki jest dostępna w wersjach Debug i Dev.</string>
 </resources>
