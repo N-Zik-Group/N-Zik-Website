@@ -50,7 +50,7 @@
     <string name="feature_previous_glass_preview_label">Prévisualisation précédente du verre</string>
     <string name="feature_previous_search_preview_label">Aperçu de la recherche précédente</string>
     <string name="feature_profiles_alt">Profils</string>
-    <string name="feature_profiles_description">Connectez vos comptes et personnalisez l\'application : synchronisez-la avec YouTube Music, activez la fonctionnalité « Rich Presence » sur Discord et le scrobbling sur Last.fm, et passez d\'un profil à l\'autre au sein de l\'application, chacun disposant de son propre nom, avatar, base de données et paramètres.</string>
+    <string name="feature_profiles_description">Passez d\'un profil N-Zik à l\'autre : chacun dispose de son propre nom, de son avatar, de sa base de données et de ses paramètres. Associez Discord Rich Presence et le scrobbling Last.fm à chaque profil.</string>
     <string name="feature_profiles_title">Profils multiples.</string>
     <string name="feature_queue_description">Suivez le programme des morceaux à venir, réorganisez-les à la volée et gérez vos prochains morceaux.</string>
     <string name="feature_queue_title">File d\'attente de lecture.</string>
@@ -66,7 +66,7 @@
     <string name="feature_theme_store_carousel_glass_alt">Thème « Carousel » avec effet « Glass » dans le lecteur</string>
     <string name="feature_theme_store_description">Parcourez les thèmes communautaires disponibles dans N-Zik et utilisez les éléments qui vous plaisent, qu\'il s\'agisse des couleurs, de la disposition du lecteur, de la navigation ou de Glass.</string>
     <string name="feature_theme_store_repository_link">Consultez la boutique de thèmes sur GitHub</string>
-    <string name="feature_theme_store_title">Magasin de Thèmes</string>
+    <string name="feature_theme_store_title">Boutique de Thèmes</string>
     <string name="feature_updates_description">Recevez des mises à jour automatiques dans l\'application, directement depuis GitHub, sans avoir à télécharger manuellement les nouveaux fichiers APK.</string>
     <string name="feature_updates_title">Mises à jour OTA.</string>
     <string name="feature_visualizer_description">Profitez d\'effets visuels en temps réel parfaitement synchronisés avec votre musique.</string>
