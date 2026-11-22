@@ -50,7 +50,7 @@
     <string name="feature_previous_glass_preview_label">Anteprima vetro precedente</string>
     <string name="feature_previous_search_preview_label">Anteprima ricerca precedente</string>
     <string name="feature_profiles_alt">Profili</string>
-    <string name="feature_profiles_description">Collega i tuoi account e personalizza l\'app: sincronizza con YouTube Music, abilita Discord RPC e Last. m scrobbling, e passare da più profili in-app, ciascuno con il proprio nome, avatar, database e impostazioni.</string>
+    <string name="feature_profiles_description">Passa da un profilo N-Zik all\'altro: ognuno ha il proprio nome, avatar, database e impostazioni. Collega Discord Rich Presence e lo scrobbling di Last.fm a ciascun profilo.</string>
     <string name="feature_profiles_title">Profili Multipli.</string>
     <string name="feature_queue_description">Tieni traccia di ciò che sta suonando dopo, riorganizza le canzoni al volo e gestisci le tue prossime tracce.</string>
     <string name="feature_queue_title">Fila Di Riproduzione.</string>
@@ -62,11 +62,11 @@
     <string name="feature_search_title">Ricerca &amp; Ricerca Vocale.</string>
     <string name="feature_settings_alt">Impostazioni</string>
     <string name="feature_song_recognition_alt">Riconoscimento Brano</string>
-    <string name="feature_theme_store_artwork_gradient_alt">Tema Gradiente grafico nel giocatore</string>
-    <string name="feature_theme_store_carousel_glass_alt">Tema Carousel con Vetro nel giocatore</string>
+    <string name="feature_theme_store_artwork_gradient_alt">Tema Gradiente nel lettore multimediale</string>
+    <string name="feature_theme_store_carousel_glass_alt">Tema Carosello con Vetro nel lettore multimediale</string>
     <string name="feature_theme_store_description">Sfoglia i temi della community in N-Zik e applica le parti che ti piacciono, dai colori e il layout del player alla navigazione e al Vetro.</string>
     <string name="feature_theme_store_repository_link">Visualizza il tema Store su GitHub</string>
-    <string name="feature_theme_store_title">Negozio Tema</string>
+    <string name="feature_theme_store_title">Negozio dei Temi</string>
     <string name="feature_updates_description">Ricevi aggiornamenti in-app automatici direttamente da GitHub senza dover scaricare manualmente nuove APK.</string>
     <string name="feature_updates_title">Aggiornamenti OTA.</string>
     <string name="feature_visualizer_description">Goditi effetti visivi in tempo reale sincronizzati perfettamente con la tua musica.</string>
