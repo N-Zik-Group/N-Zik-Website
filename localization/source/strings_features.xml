@@ -33,6 +33,9 @@
     <string name="feature_light_theme_alt">Light Theme</string>
     <string name="feature_lyrics_description">Fetch, display, edit, and translate lyrics in real-time with precise word-by-word synchronization.</string>
     <string name="feature_lyrics_title">Advanced Lyrics Support.</string>
+    <string name="feature_metadata_repair_library">At startup, N-Zik removes stale artist links, merges verified duplicate artist entries, and aligns saved credits with their linked artists.</string>
+    <string name="feature_metadata_repair_playback">During online playback, N-Zik looks up the track by its YouTube video ID to recover missing artist credits and album links when available.</string>
+    <string name="feature_metadata_repair_title">Automatic Metadata Repair</string>
     <string name="feature_modern_ui_description">A customizable interface with seamless navigation, YouTube integration, and an optional Glass player.</string>
     <string name="feature_modern_ui_title">Modern &amp; Intuitive UI.</string>
     <string name="feature_n_zik_rewind_alt" translatable="false">N-Zik Rewind</string>
