@@ -31,6 +31,9 @@
     <string name="feature_light_theme_alt">Světlý motiv</string>
     <string name="feature_lyrics_description">Načíst, zobrazovat, upravovat a překládat texty v reálném čase s přesnou synchronizací slov po slovu.</string>
     <string name="feature_lyrics_title">Pokročilá podpora textů.</string>
+    <string name="feature_metadata_repair_library">Při spuštění N-Zik odstraňuje zastaralé odkazy umělců, slučuje ověřené duplicitní zápisy umělců a zarovná uložené kredity s jejich propojenými umělci.</string>
+    <string name="feature_metadata_repair_playback">Během online přehrávání, N-Zik vyhledá skladbu podle svého YouTube video ID, aby obnovil chybějící umělecké kredity a odkazy na album, pokud jsou k dispozici.</string>
+    <string name="feature_metadata_repair_title">Automatická oprava metadat</string>
     <string name="feature_modern_ui_description">Přizpůsobitelné rozhraní s bezproblémovou navigací, integrací YouTube a volitelným přehrávačem skla.</string>
     <string name="feature_modern_ui_title">Moderní &amp; Intuitivní UI.</string>
     <string name="feature_n_zik_rewind_intro_alt">Úvod zpětného chodu N-Zik</string>
