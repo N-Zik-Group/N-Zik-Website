@@ -31,6 +31,9 @@
     <string name="feature_light_theme_alt">亮色主题</string>
     <string name="feature_lyrics_description">获取，显示，编辑，实时翻译歌词，按字逐字同步准确。</string>
     <string name="feature_lyrics_title">高级歌词支持。</string>
+    <string name="feature_metadata_repair_library">启动时，N-Zik将删除陈旧的艺术家链接，合并已验证的重复艺术家条目，并将保存的积分与其关联的艺术家进行匹配。</string>
+    <string name="feature_metadata_repair_playback">在在线播放过程中，N-Zik通过其YouTube视频ID查找该轨道，在可用时恢复缺失的艺术家积分和相册链接。</string>
+    <string name="feature_metadata_repair_title">自动修复元数据</string>
     <string name="feature_modern_ui_description">一个可自定义的接口，与无缝导航，YouTube集成和一个可选的玻璃玩家。</string>
     <string name="feature_modern_ui_title">现代 &amp; 直观界面。</string>
     <string name="feature_n_zik_rewind_intro_alt">N-Zik 后风简介</string>
