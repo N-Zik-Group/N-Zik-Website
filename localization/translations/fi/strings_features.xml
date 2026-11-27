@@ -31,6 +31,9 @@
     <string name="feature_light_theme_alt">Vaalea Teema</string>
     <string name="feature_lyrics_description">Noudetaan, näytetään, muokataan ja käännetään sanoituksia reaaliajassa täsmällisellä sanakohtaisella synkronoinnilla.</string>
     <string name="feature_lyrics_title">Edistynyt Sanoitusten Tuki.</string>
+    <string name="feature_metadata_repair_library">Käynnistyksessä N-Zik poistaa stale-artistien linkkejä, yhdistää todennetut kaksoiskappaleet artisteja ja linkittää tallennetut krediitit linkitettyjen artistien kanssa.</string>
+    <string name="feature_metadata_repair_playback">Online-toiston aikana N-Zik katselee YouTube-videotunnuksensa raitaa palauttaakseen puuttuvat artistikrediitit ja albumilinkit kun ne ovat saatavilla.</string>
+    <string name="feature_metadata_repair_title">Automaattinen Metatietojen Korjaus</string>
     <string name="feature_modern_ui_description">Muokattavissa oleva käyttöliittymä saumattomalla navigoinnilla, YouTube-integroinnilla ja valinnaisella lasinsoittimella.</string>
     <string name="feature_modern_ui_title">Moderni &amp; Intuitiivinen UI.</string>
     <string name="feature_n_zik_rewind_intro_alt">N-Zik Rewind Intro</string>
