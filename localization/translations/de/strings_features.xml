@@ -31,6 +31,9 @@
     <string name="feature_light_theme_alt">Helles Theme</string>
     <string name="feature_lyrics_description">Songtexte in Echtzeit abrufen, anzeigen, bearbeiten und übersetzen mit präziser Wort-für-Wort-Synchronisation.</string>
     <string name="feature_lyrics_title">Erweiterte Songtext-Unterstützung.</string>
+    <string name="feature_metadata_repair_library">Beim Start entfernt N-Zik veraltete Künstler-Links, fusioniert verifizierte doppelte Künstlereinträge und richtet die eingesparten Credits mit ihren verknüpften Künstlern aus.</string>
+    <string name="feature_metadata_repair_playback">Während der Online-Wiedergabe sucht N-Zik den Track mit seiner YouTube-Video-ID nach oben, um fehlende Interpretenkredite und Albumlinks wiederherzustellen, wenn verfügbar.</string>
+    <string name="feature_metadata_repair_title">Automatische Metadatenreparatur</string>
     <string name="feature_modern_ui_description">Eine anpassbare Oberfläche mit nahtloser Navigation, YouTube-Integration und optionalem Glas-Player.</string>
     <string name="feature_modern_ui_title">Moderne &amp; Intuitive Benutzeroberfläche.</string>
     <string name="feature_n_zik_rewind_intro_alt">N-Zik Rückenwind Einleitung</string>

@@ -31,6 +31,9 @@
     <string name="feature_light_theme_alt">Licht Thema</string>
     <string name="feature_lyrics_description">Ophalen, weergeven, bewerken en vertalen van songteksten in realtime met precieze woord-voor-woordsynchronisatie.</string>
     <string name="feature_lyrics_title">Ondersteuning voor geavanceerde songteksten.</string>
+    <string name="feature_metadata_repair_library">Bij het opstarten verwijdert N-Zik verouderde artiest links, voegt geverifieerde dubbele artiest items samen en legt de opgeslagen credits gelijk aan hun verbonden artiesten.</string>
+    <string name="feature_metadata_repair_playback">Tijdens het online spelen, N-Zik zoekt de track op zijn YouTube video ID om ontbrekende artiest credits en album links terug te krijgen, indien beschikbaar.</string>
+    <string name="feature_metadata_repair_title">Automatische Metadata Reparatie</string>
     <string name="feature_modern_ui_description">Een aanpasbare interface met naadloze navigatie, YouTube-integratie en een optionele Glazen speler.</string>
     <string name="feature_modern_ui_title">Moderne &amp; Intuïtieve UI.</string>
     <string name="feature_n_zik_rewind_intro_alt">N-Zik terugspoelen Intro</string>

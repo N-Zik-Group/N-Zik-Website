@@ -31,6 +31,9 @@
     <string name="feature_light_theme_alt">Светлая тема</string>
     <string name="feature_lyrics_description">Выборка, отображение, редактирование и перевод текстов песен в режиме реального времени с точной синхронизацией слов/слов.</string>
     <string name="feature_lyrics_title">Расширенная поддержка текстов.</string>
+    <string name="feature_metadata_repair_library">N-Zik при запуске удаляет ссылки на старого художника, слияния проверенных дубликатов записей художника и выравнивание кредитов с их связанными художниками.</string>
+    <string name="feature_metadata_repair_playback">N-Zik во время воспроизведения в Интернете ищет трек через свой YouTube ID видео, чтобы восстановить недостающие авторы и ссылки на альбомы, если таковые имеются.</string>
+    <string name="feature_metadata_repair_title">Автоматическое восстановление метаданных</string>
     <string name="feature_modern_ui_description">Настраиваемый интерфейс с бесшовной навигацией, интеграцией с YouTube и дополнительным Стеклянным плеером.</string>
     <string name="feature_modern_ui_title">Современный &amp; интуитивный интерфейс.</string>
     <string name="feature_n_zik_rewind_intro_alt">Введение в N-Zik Rewind</string>

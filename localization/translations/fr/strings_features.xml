@@ -31,6 +31,9 @@
     <string name="feature_light_theme_alt">Thème clair</string>
     <string name="feature_lyrics_description">Récupérez, affichez, modifiez et traduisez des paroles en temps réel grâce à une synchronisation précise, mot à mot.</string>
     <string name="feature_lyrics_title">Prise en charge avancée des paroles.</string>
+    <string name="feature_metadata_repair_library">Au démarrage, N-Zik supprime les liens vers des artistes obsolètes, fusionne les entrées d\'artistes en double qui ont été vérifiées et associe les crédits enregistrés aux artistes auxquels ils se rapportent.</string>
+    <string name="feature_metadata_repair_playback">Lors de la lecture en ligne, N-Zik recherche le titre à l\'aide de son identifiant YouTube afin de récupérer les informations manquantes sur l\'artiste et les liens vers l\'album, lorsqu\'ils sont disponibles.</string>
+    <string name="feature_metadata_repair_title">Réparation automatique des métadonnées</string>
     <string name="feature_modern_ui_description">Une interface personnalisable avec une navigation fluide, l\'intégration de YouTube et un lecteur Glass en option.</string>
     <string name="feature_modern_ui_title">Interface Utilisateur Moderne &amp; Intuitive.</string>
     <string name="feature_n_zik_rewind_intro_alt">Introduction au Rewind N-Zik</string>

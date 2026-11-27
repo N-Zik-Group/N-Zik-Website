@@ -31,6 +31,9 @@
     <string name="feature_light_theme_alt">Світла тема</string>
     <string name="feature_lyrics_description">Витягніть, відобразити, редагувати та перекладати тексти пісень в реальному часі з точним текстом за допомогою синхронізації слів.</string>
     <string name="feature_lyrics_title">Покращена підтримка текстів.</string>
+    <string name="feature_metadata_repair_library">Під час запуску N-Zik видаляє застарілі посилання для художника, об\'єднує перевірені дублікати записи художника та виганяє збережені кредити із пов\'язаними артистами.</string>
+    <string name="feature_metadata_repair_playback">Під час онлайн відтворення, N-Zik шукає трек за його відео ID, щоб відновити відсутні посилання виконавця та альбом, коли це можливо.</string>
+    <string name="feature_metadata_repair_title">Автоматичний ремонт метаданих</string>
     <string name="feature_modern_ui_description">Підлаштовуваний інтерфейс з безшовною навігацією, інтеграцією YouTube і додатковим гравцем у скло.</string>
     <string name="feature_modern_ui_title">Сучасний &amp; Інтуїтивний інтерфейс.</string>
     <string name="feature_n_zik_rewind_intro_alt">Вступ до ревітру проти Зіка</string>
