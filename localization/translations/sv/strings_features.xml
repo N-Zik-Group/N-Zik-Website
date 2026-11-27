@@ -31,6 +31,9 @@
     <string name="feature_light_theme_alt">Ljust tema</string>
     <string name="feature_lyrics_description">Hämta, visa, redigera och översätta låttexter i realtid med exakt synkronisering från ord till ord.</string>
     <string name="feature_lyrics_title">Avancerade låttexter stöd.</string>
+    <string name="feature_metadata_repair_library">Vid start tar N-Zik bort gamla konstnärslänkar, sammanfogar verifierade dubblettposter och anpassar sparade krediter med sina länkade konstnärer.</string>
+    <string name="feature_metadata_repair_playback">Under online-uppspelning ser N-Zik upp spåret genom dess YouTube video ID för att återställa saknade artist krediter och album länkar när det är tillgängligt.</string>
+    <string name="feature_metadata_repair_title">Automatisk Metadata Reparation</string>
     <string name="feature_modern_ui_description">Ett anpassningsbart gränssnitt med sömlös navigering, YouTube-integration och en valfri glasspelare.</string>
     <string name="feature_modern_ui_title">Modern &amp; intuitivt användargränssnitt.</string>
     <string name="feature_n_zik_rewind_intro_alt">N-Zik Rewind Intro</string>
