@@ -31,6 +31,9 @@
     <string name="feature_light_theme_alt">Lyst tema</string>
     <string name="feature_lyrics_description">Hent den, vise, rediger og oversetter tekster i sanntid med presis ord-etter-ord synkronisering.</string>
     <string name="feature_lyrics_title">Avansert tekst som støtte.</string>
+    <string name="feature_metadata_repair_library">Ved oppstarten fjerner N-Zik kleskunstneres lenker, sammenslåing av duplikatartister og innrettinger av lagrede kreditter med tilknyttede artister.</string>
+    <string name="feature_metadata_repair_playback">Under online avspilling, ser N-Zik opp sporet av YouTube-video ID for å gjenopprette manglende artistkreditt og albumlenker når tilgjengelig.</string>
+    <string name="feature_metadata_repair_title">Automatisk metadatareparasjon</string>
     <string name="feature_modern_ui_description">Et tilpasningsgrensesnitt med sømløs navigasjon, YouTube integrering, og en valgfri glassspiller</string>
     <string name="feature_modern_ui_title">Moderne &amp; Intuitive brukergrensesnitt.</string>
     <string name="feature_n_zik_rewind_intro_alt">N-Zik svindle intro</string>
