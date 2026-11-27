@@ -31,6 +31,9 @@
     <string name="feature_light_theme_alt">Ανοιχτό Θέμα</string>
     <string name="feature_lyrics_description">Ανάκτηση, προβολή, επεξεργασία και μετάφραση στίχων σε πραγματικό χρόνο με ακριβή συγχρονισμό λέξης-από-λέξη.</string>
     <string name="feature_lyrics_title">Προηγμένη Υποστήριξη Στίχων.</string>
+    <string name="feature_metadata_repair_library">Κατά την εκκίνηση, το N-Zik αφαιρεί τους παλιούς συνδέσμους καλλιτεχνών, συγχωνεύει τις επαληθευμένες διπλές καταχωρήσεις καλλιτεχνών, και ευθυγραμμίζει τις αποθηκευμένες πιστώσεις με τους συνδεδεμένους καλλιτέχνες τους.</string>
+    <string name="feature_metadata_repair_playback">Κατά τη διάρκεια της online αναπαραγωγής, το N-Zik κοιτάζει το κομμάτι από το YouTube video ID του για να ανακτήσει τους αγνοούμενους καλλιτέχνες πιστώσεις και συνδέσμους άλμπουμ όταν είναι διαθέσιμο.</string>
+    <string name="feature_metadata_repair_title">Αυτόματη Επισκευή Μεταδεδομένων</string>
     <string name="feature_modern_ui_description">Μια προσαρμόσιμη διεπαφή με απρόσκοπτη πλοήγηση, ενσωμάτωση YouTube και ένα προαιρετικό πρόγραμμα αναπαραγωγής γυαλιού.</string>
     <string name="feature_modern_ui_title">Modern &amp; Intuitive UI.</string>
     <string name="feature_n_zik_rewind_intro_alt">Εισαγωγή N-Zik Rewind</string>
