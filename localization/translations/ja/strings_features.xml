@@ -31,6 +31,9 @@
     <string name="feature_light_theme_alt">明るいテーマ</string>
     <string name="feature_lyrics_description">正確な単語ごとの同期により、リアルタイムで歌詞を取得、表示、編集、翻訳します。</string>
     <string name="feature_lyrics_title">高度な歌詞サポート。</string>
+    <string name="feature_metadata_repair_library">スタートアップ時に、N-Zik は古いアーティストのリンクを削除し、重複するアーティストのエントリをマージし、リンクされたアーティストとクレジットを保存します。</string>
+    <string name="feature_metadata_repair_playback">N-Zikはオンライン再生中にYouTubeの動画IDでトラックを検索し、不足しているアーティストのクレジットやアルバムのリンクを復元します。</string>
+    <string name="feature_metadata_repair_title">メタデータの自動修復</string>
     <string name="feature_modern_ui_description">シームレスなナビゲーション、YouTubeの統合、オプションのガラスプレーヤーを備えたカスタマイズ可能なインターフェース。</string>
     <string name="feature_modern_ui_title">現代的な &amp; 直感的なUI。</string>
     <string name="feature_n_zik_rewind_intro_alt">N-Zik Rewind Intro</string>
