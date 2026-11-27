@@ -31,6 +31,9 @@
     <string name="feature_light_theme_alt">Temă deschisă</string>
     <string name="feature_lyrics_description">Fetch, afişează, editează şi traduce versuri în timp real cu cuvinte precise sincronizate.</string>
     <string name="feature_lyrics_title">Suport versuri avansate.</string>
+    <string name="feature_metadata_repair_library">La pornire, N-Zik elimină legăturile vechi ale artistului, îmbină intrările duplicat verificate și aliniază creditele salvate cu artiștii legați.</string>
+    <string name="feature_metadata_repair_playback">În timpul redării online, N-Zik caută piesa după ID-ul video YouTube pentru a recupera creațiile artistului lipsă și link-urile albumului atunci când sunt disponibile.</string>
+    <string name="feature_metadata_repair_title">Reparație automată de metadate</string>
     <string name="feature_modern_ui_description">O interfață personalizabilă cu navigarea fără întreruperi, integrarea YouTube și un jucător opțional de sticlă.</string>
     <string name="feature_modern_ui_title">Modern &amp; UI Intuitiv.</string>
     <string name="feature_n_zik_rewind_intro_alt">Introducere N-Zik</string>
