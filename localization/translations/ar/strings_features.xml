@@ -31,6 +31,9 @@
     <string name="feature_light_theme_alt">سمة فاتحة</string>
     <string name="feature_lyrics_description">إحضار كلمات الأغاني وعرضها وتحريرها وترجمتها في الوقت الحقيقي مع مزامنة كلمة بكلمة على حدة.</string>
     <string name="feature_lyrics_title">دعم متقدم لكلمات الأغنية.</string>
+    <string name="feature_metadata_repair_library">عند بدء التشغيل، يزيل N-Zik روابط الفنان المعتاد ، ويدمج إدخالات الفنانين المكررة التي تم التحقق منها، ويحافظ على الأرصدة المحفوظة مع الفنانين المرتبطين بهم.</string>
+    <string name="feature_metadata_repair_playback">أثناء التشغيل عبر الإنترنت، يبحث N-Zik عن المسار بواسطة معرف الفيديو الخاص به على اليوتيوب لاستعادة أرصدة الفنانين المفقودين وروابط الألبوم عندما تكون متاحة.</string>
+    <string name="feature_metadata_repair_title">إصلاح تلقائي للبيانات الوصفية</string>
     <string name="feature_modern_ui_description">واجهة قابلة للتخصيص مع التنقل السلس، تكامل يوتيوب، ومشغل زجاج اختياري.</string>
     <string name="feature_modern_ui_title">عصري &amp; واجهة مستخدم بديهية.</string>
     <string name="feature_n_zik_rewind_intro_alt">مقدمة N-Zik Rewind</string>
